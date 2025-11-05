@@ -1,6 +1,8 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { LanguageContext } from "../../Context/Context";
+import { languageData } from "../../Hooks/language";
 
 export default function HomeIntro() {
   const stats = [
@@ -8,6 +10,8 @@ export default function HomeIntro() {
     { value: "500+", label: "Happy Students" },
     { value: "90%", label: "Success Rate" },
   ];
+
+  const {language} = useContext(LanguageContext)
 
   return (
     <section className="container mx-auto px-8 py-16">
@@ -73,25 +77,22 @@ export default function HomeIntro() {
           className="flex flex-col justify-center space-y-6 bg-gray-100 p-6 rounded-2xl"
         >
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-            We're KBM Education Consultancy Pvt. Ltd.
+            {
+              language === "en" ? languageData.en.weareKBM : languageData.jp.weareKBM
+            }
           </h1>
 
           <div className="space-y-4 text-gray-600 leading-relaxed">
             <p className="text-lg ">
-              At KBM Education Consultancy, we guide students toward achieving
-              their academic and career aspirations in Japan, USA, Australia,
-              UK, Canada, and other countries. With a focus on personalized
-              mentorship, practical guidance, and up-to-date industry insights,
-              we ensure every student is fully prepared for their international
-              journey.
+              {
+                language === "en" ? languageData.en.para_1_KBM : languageData.jp.para_1_KBM
+              }
             </p>
 
             <p className="text-lg ">
-              Our dedicated team works closely with each student, providing
-              end-to-end support — from understanding visa requirements to
-              navigating educational pathways and career opportunities. At KBM,
-              your success is our priority, and we empower you to make informed
-              decisions for a brighter future.
+                            {
+                language === "en" ? languageData.en.para_2_KBM : languageData.jp.para_2_KBM
+              }
             </p>
           </div>
 
@@ -102,7 +103,9 @@ export default function HomeIntro() {
                 whileTap={{ scale: 0.95 }}
                 className="bg-text text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-shadow"
               >
-                Learn More
+              {
+                language === "en" ? languageData.en.learnMore : languageData.jp.learnMore
+              }
               </motion.button>
             </Link>
           </div>

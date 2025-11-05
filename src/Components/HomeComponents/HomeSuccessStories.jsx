@@ -1,5 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import { languageData } from "../../Hooks/language";
+import { useContext } from "react";
+import { LanguageContext } from "../../Context/Context";
 
 export default function HomeSuccessStories() {
   const stories = [
@@ -11,14 +13,20 @@ export default function HomeSuccessStories() {
     { id: 6, image: "Uploads/home/three.jpeg" },
   ];
 
+  const {language} = useContext(LanguageContext)
+
   return (
     <section className="py-12 px-4 bg-gray-50 m-6 rounded-4xl">
       <div className="text-center mb-10">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 text-blue">
-          Results that Speak Volume
+         {
+            language === 'en' ? languageData.en.homeSuccessStoriesHeader : languageData.jp.homeSuccessStoriesHeader
+         }
         </h1>
         <h2 className="text-blue/80 text-2xl md:text-4xl">
-          Read Success Stories
+          {
+            language === 'en' ? languageData.en.readSuccessStories : languageData.jp.readSuccessStories
+          }
         </h2>
       </div>
 
@@ -42,7 +50,9 @@ export default function HomeSuccessStories() {
       <div className="text-center mt-10">
         <Link to="/about/success-stories">
           <button className="px-6 py-3 bg-background text-text text-lg font-semibold rounded-full ">
-            See More Stories
+            {
+              language === 'en' ? languageData.en.seeMoreStories : languageData.jp.seeMoreStories
+            }
           </button>
         </Link>
       </div>

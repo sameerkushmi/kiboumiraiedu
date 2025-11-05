@@ -1,45 +1,59 @@
-import React, { useState, useEffect } from "react";
+import { useContext, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { LanguageContext } from "../../Context/Context";
+import { languageData } from "../../Hooks/language";
 
-const content = [
-  {
-    id: 1,
-    name: "Counseling",
-    fullName: "Personalized Career & Study Counseling",
-    tags: ["Guidance", "Career Planning", "University Selection"],
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
-    description:
-      "We provide one-on-one counseling sessions to help students choose the right country, university, and course based on their academic background and career goals. Our experienced counselors ensure you make informed decisions for your future abroad.",
-    href: "/services/career-counseling",
-  },
-  {
-    id: 2,
-    name: "Documentation",
-    fullName: "Document Preparation & Application Support",
-    tags: ["SOP", "Financial Documents", "Application Forms"],
-    image: "/Uploads/home/services/docs.avif",
-    description:
-      "From preparing your Statement of Purpose to organizing financial and academic documents, our team ensures that every paper meets embassy and university standards. We guide you through every step of the application process with accuracy and care.",
-    href: "/services/documentation",
-  },
-  {
-    id: 3,
-    name: "Visa Processing",
-    fullName: "Visa Application & Interview Preparation",
-    tags: ["Visa Filing", "Interview Guidance", "Embassy Support"],
-    image: "/Uploads/home/services/vias.png",
-    description:
-      "Our experts assist in preparing all necessary visa documents and offer mock interview sessions to build your confidence. We stay updated with the latest immigration rules to ensure a smooth visa approval process.",
-    href: "/services/visa-assistance",
-  },
-];
+
 
 export default function HomeServices() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
+  const {language} = useContext(LanguageContext)
+
+  const content = [
+  {
+    id: 1,
+    name: language === 'en' ? languageData.en.counseling : languageData.jp.counseling,
+    fullName: language === 'en' ? languageData.en.careerStudyCounseling : languageData.jp.careerStudyCounseling,
+    tags: [
+            language === 'en' ? languageData.en.guidance : languageData.jp.guidance, 
+            language === 'en' ? languageData.en.careerPlanning : languageData.jp.careerPlanning,           
+            language === 'en' ? languageData.en.universitySelection : languageData.jp.universitySelection,           
+          ],
+    image:
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
+    description:language === 'en' ? languageData.en.homeServicesPara_2 : languageData.jp.homeServicesPara_2, 
+    href: "/services/career-counseling",
+  },
+  {
+    id: 2,
+    name:language === 'en' ? languageData.en.documentation : languageData.jp.documentation,
+    fullName: language === 'en' ? languageData.en.documentPreparation : languageData.jp.documentPreparation,
+    tags: [
+            language === 'en' ? languageData.en.documentation : languageData.jp.documentation, 
+            language === 'en' ? languageData.en.financialDocuments : languageData.jp.financialDocuments, 
+            language === 'en' ? languageData.en.applicationForms : languageData.jp.applicationForms, 
+          ],
+    image: "/Uploads/home/services/docs.avif",
+    description:language === 'en' ? languageData.en.homeServicesPara_3 : languageData.jp.homeServicesPara_3, 
+    href: "/services/documentation",
+  },
+  {
+    id: 3,
+    name: language === 'en' ? languageData.en.visaProcessing : languageData.jp.visaProcessing,
+    fullName: language === 'en' ? languageData.en.visaInterview : languageData.jp.visaInterview,
+    tags: [ 
+            language === 'en' ? languageData.en.visaFiling : languageData.jp.visaFiling,
+            language === 'en' ? languageData.en.interviewGuidance : languageData.jp.interviewGuidance,
+            language === 'en' ? languageData.en.embassySupport : languageData.jp.interviewGuidance,
+          ],
+    image: "/Uploads/home/services/vias.png",
+    description:language === 'en' ? languageData.en.homeServicesPara_4 : languageData.jp.homeServicesPara_4,
+    href: "/services/visa-assistance",
+  },
+];
 
   const slideVariants = {
     enter: (direction) => ({
@@ -87,12 +101,14 @@ export default function HomeServices() {
     <section className="container mx-auto px-4 py-12">
       <div className="mb-12 flex items-center flex-col gap-4">
         <h1 className="text-4xl lg:text-5xl text-center font-extrabold text-blue leading-tight ">
-          Explore Our Services
+          {
+            language === 'en' ? languageData.en.exploreOurServices : languageData.jp.exploreOurServices
+          }
         </h1>
         <p className="max-w-3xl text-center text-base md:text-lg mx-auto">
-          KBM Education Consultancy helps students and professionals achieve
-          their dreams abroad. We provide visa assistance, mentorship, and
-          career guidance for Japan, USA, Australia, UK, Canada, and more.
+          {
+            language === 'en' ? languageData.en.homeServicesPara_1 : languageData.jp.homeServicesPara_1
+          }
         </p>
       </div>
 
@@ -169,7 +185,9 @@ export default function HomeServices() {
                 </p>
                 <Link to={currentContent.href}>
                   <button className="bg-text text-white text-lg font-extrabold px-4 py-1 rounded-sm">
-                    Learn More
+                    {
+                      language === 'en' ? languageData.en.learnMore : languageData.jp.learnMore
+                    }
                   </button>
                 </Link>
               </div>
@@ -223,22 +241,6 @@ export default function HomeServices() {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-amber-500/20"></div>
-
-                {/* Navigation Arrows on Mobile */}
-                {/* <button
-                  onClick={goToPrev}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
-                  aria-label="Previous"
-                >
-                  <ChevronLeft className="w-5 h-5 text-amber-500" />
-                </button>
-                <button
-                  onClick={goToNext}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all hover:scale-110 shadow-lg"
-                  aria-label="Next"
-                >
-                  <ChevronRight className="w-5 h-5 text-amber-500" />
-                </button> */}
               </div>
 
               {/* Content */}
@@ -269,7 +271,9 @@ export default function HomeServices() {
                   </p>
                   <Link to={currentContent.href}>
                     <button className="bg-text text-white font-lg font-extrabold px-4 py-1 rounded-sm">
-                      Learn More
+                      {
+                        language === 'en' ? languageData.en.learnMore : languageData.jp.learnMore
+                      }
                     </button>
                   </Link>
                 </div>

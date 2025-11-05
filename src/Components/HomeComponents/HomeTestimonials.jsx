@@ -1,27 +1,29 @@
 import { ArrowUpRight } from "lucide-react";
-import React from "react";
+import { useContext } from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { LanguageContext } from "../../Context/Context";
+import { languageData } from "../../Hooks/language";
 
 export default function HomeTestimonials() {
+
+  const {language} = useContext(LanguageContext)
   const testimonials = [
     {
       id: 1,
-      name: "Aarav Sharma",
-      role: "Student – Japan",
+      name: language === 'en' ? languageData.en.AaravSharma : languageData.jp.AaravSharma,
+      role:language === 'en' ? languageData.en.studentJapan : languageData.jp.studentJapan,
       image: "Uploads/home/prof.jpg",
-      quote:
-        "KBM Education Consultancy made my journey to Japan completely stress-free. From guiding me through the visa interview process to helping me understand the necessary documentation, they ensured I was always well-prepared. Even after I arrived in Japan, their support continued with accommodation arrangements, orientation sessions, and regular check-ins to make sure I was adjusting well. Thanks to their professional guidance and encouragement, I gained the confidence to start my academic journey smoothly and settle into a new culture without worry.",
+      quote:language === 'en' ? languageData.en.homeTestimonialsQuote_1 : languageData.jp.homeTestimonialsQuote_1,
       bg: "bg-text/80 text-white",
     },
 
     {
       id: 2,
-      name: "Priya Karki",
-      role: "Undergraduate Student – Australia",
+      name: language === 'en' ? languageData.en.priyaKarki : languageData.jp.priyaKarki,
+      role: language === 'en' ? languageData.en.undergraduateStudentAustralia : languageData.jp.undergraduateStudentAustralia,
       image: "Uploads/home/prof.jpg",
-      quote:
-        "Getting my Australian student visa was one of the happiest moments of my life! KBM guided me from course selection to post-arrival assistance. Their team stayed in touch even after I landed in Sydney, making me feel like part of a family.",
+      quote:language === 'en' ? languageData.en.homeTestimonialsQuote_2 : languageData.jp.homeTestimonialsQuote_2,
       bg: "bg-white text-gray-900 shadow-2xl",
     },
     {
@@ -57,9 +59,15 @@ export default function HomeTestimonials() {
     <>
       <section className="px-4 sm:px-6 lg:px-8 my-12 mx-6">
         <div className="text-center text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-8 sm:mb-10">
-          <h1 className="mb-3 text-blue">Transforming Futures</h1>
+          <h1 className="mb-3 text-blue">
+            {
+              language === 'en' ? languageData.en.transformingFutures : languageData.jp.transformingFutures
+            }
+          </h1>
           <h2 className="text-blue/80 text-2xl md:text-4xl ">
-            Hear What Our Students Say About KBM
+            {
+              language === 'en' ? languageData.en.homeTestimonialHeader : languageData.jp.homeTestimonialHeader
+            }
           </h2>
         </div>
 
@@ -70,8 +78,15 @@ export default function HomeTestimonials() {
             >
               <div className="text-sm sm:text-base">
                 <p className="text-4xl md:text-6xl font-extrabold mb-7 md:mb-9">
-                  Visa Granted to{" "}
-                  <span className="inline-block">Australia 🇦🇺</span>
+                  {
+                    language === 'en' ? languageData.en.visaGranted : languageData.jp.visaGranted
+                  }
+                  {" "}
+                  <span className="inline-block">
+                    {
+                      language === 'en' ? languageData.en.visaGranted : languageData.jp.visaGranted
+                    } 
+                    🇦🇺</span>
                 </p>
 
                 <span className="block pr-2 mb-2">
@@ -178,12 +193,18 @@ export default function HomeTestimonials() {
 
         <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center sm:justify-around gap-4 sm:gap-0 mt-6 mb-16">
           <div className="text-base sm:text-lg text-center sm:text-left">
-            1000+ Satisfied Students from KBM
+            {
+              language === 'en' ? languageData.en.satisfiedStudents : languageData.jp.satisfiedStudents
+            }
           </div>
           <div>
             <Link to="/about/testimonials">
               <button className="px-4 sm:px-6 py-2 bg-background shadow-xl text-text text-base sm:text-lg font-extrabold rounded-xl flex items-center gap-2 hover:bg-gray-200 transition-colors">
-                <div>View All Reviews</div>
+                <div>
+                  {
+                    language === 'en' ? languageData.en.viewAllReviews : languageData.jp.viewAllReviews
+                  }
+                </div>
                 <div className="border rounded-full p-1">
                   <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>

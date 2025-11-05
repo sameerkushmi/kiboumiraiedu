@@ -180,12 +180,12 @@ export default function Navbar() {
                 </button>
               </div>
               {/* language change */}
-            <div>
-              <select name="language" className="px-2 py-1 outline-none" onChange={onLanguageChange}>
-                <option value="en">EN</option>
-                <option value="jp">JP</option>
-              </select>
-            </div>
+              <div>
+                <select name="language" className="px-2 py-1 outline-none" onChange={onLanguageChange}>
+                  <option value="en">EN</option>
+                  <option value="jp">JP</option>
+                </select>
+              </div>
             </div>
             {/* Contact Button */}
             <div className="hidden lg:block">

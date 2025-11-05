@@ -1,4 +1,5 @@
 export  const languageData = {
+    // english language list
     en: {
         home: "Home",
         about: "About Us",
@@ -41,8 +42,67 @@ export  const languageData = {
         contactSupport: 'Contact Support',
         yourGlobalPathway: 'Your Global Pathway',
         educationCareer: 'to Education & Career',
-        homeHeroDesc: " We help students and professionals achieve their dreams abroad whether it's Japan, USA, Australia, UK, Canada, or other countries. From visas and documentation to pre-departure guidance and cultural adaptation, we support you at every step of your international journey."
+        homeHeroDesc: " We help students and professionals achieve their dreams abroad whether it's Japan, USA, Australia, UK, Canada, or other countries. From visas and documentation to pre-departure guidance and cultural adaptation, we support you at every step of your international journey.",
+        weareKBM : " We're KBM Education Consultancy Pvt. Ltd.",
+        para_1_KBM : `At KBM Education Consultancy, we guide students toward achieving
+                    .their academic and career aspirations in Japan, USA, Australia,
+                    UK, Canada, and other countries. With a focus on personalized
+                    mentorship, practical guidance, and up-to-date industry insights,
+                    we ensure every student is fully prepared for their international
+                    journey`,
+        para_2_KBM : `Our dedicated team works closely with each student, providing
+                    end-to-end support — from understanding visa requirements to
+                    navigating educational pathways and career opportunities. At KBM,
+                    your success is our priority, and we empower you to make informed
+                    decisions for a brighter future.`,
+        exploreOurServices: 'Explore Our Services',
+        homeServicesPara_1: `KBM Education Consultancy helps students and professionals achieve
+                            their dreams abroad. We provide visa assistance, mentorship, and
+                            career guidance for Japan, USA, Australia, UK, Canada, and more.`,
+        careerStudyCounseling : 'Personalized Career & Study Counseling',
+        guidance: 'Guidance',
+        careerPlanning: 'Career Planning',
+        homeServicesPara_2: 'We provide one-on-one counseling sessions to help students choose the right country, university, and course based on their academic background and career goals. Our experienced counselors ensure you make informed decisions for your future abroad.',
+        documentation: 'Documentation',
+        documentPreparation: 'Document Preparation & Application Support',
+        SOP:'SOP',
+        financialDocuments: 'Financial Documents',
+        applicationForms: 'Application Forms',
+        homeServicesPara_3 : 'From preparing your Statement of Purpose to organizing financial and academic documents, our team ensures that every paper meets embassy and university standards. We guide you through every step of the application process with accuracy and care.',
+        visaProcessing: 'Visa Processing',
+        visaInterview: 'Visa Application & Interview Preparation',
+        visaFiling: 'Visa Filing',
+        interviewGuidance: 'Interview Guidance',
+        embassySupport: 'Embassy Support',
+        homeServicesPara_4: 'Our experts assist in preparing all necessary visa documents and offer mock interview sessions to build your confidence. We stay updated with the latest immigration rules to ensure a smooth visa approval process.',
+        homeSuccessStoriesHeader: 'Results that Speak Volume',
+        readSuccessStories: 'Read Success Stories',
+        seeMoreStories: 'See More Stories',
+        transformingFutures: 'Transforming Futures',
+        homeTestimonialHeader: 'Hear What Our Students Say About KBM',
+        visaGranted : 'Visa Granted to',
+        australia: 'Australia',
+        satisfiedStudents: '1000+ Satisfied Students from KBM',
+        viewAllReviews: 'View All Reviews',
+        AaravSharma : 'Aarav Sharma',
+        studentJapan: 'Student – Japan',
+        homeTestimonialsQuote_1: `KBM Education Consultancy made my journey to Japan completely 
+                                stress-free. From guiding me through the visa interview process to 
+                                helping me understand the necessary documentation, they ensured I was 
+                                always well-prepared. Even after I arrived in Japan, their support 
+                                continued with accommodation arrangements, orientation sessions, and 
+                                regular check-ins to make sure I was adjusting well. Thanks to their 
+                                professional guidance and encouragement, I gained the confidence to 
+                                start my academic journey smoothly and settle into a new culture without worry.`,
+        priyaKarki: 'Priya Karki',
+        undergraduateStudentAustralia: 'Undergraduate Student – Australia',
+        homeTestimonialsQuote_2:`Getting my Australian student visa was one of the happiest moments of 
+                                my life! KBM guided me from course selection to post-arrival assistance.
+                                Their team stayed in touch even after I landed in Sydney, making me feel
+                                like part of a family.`
+
     },
+    // japanese language list
     jp: {
         home: "ホーム",
         about: "私たちについて",
@@ -85,6 +145,53 @@ export  const languageData = {
         contactSupport: 'サポートに連絡',
         yourGlobalPathway: 'あなたのグローバルへの道',
         educationCareer: '教育とキャリアへ',
-        homeHeroDesc:'私たちは、学生や社会人が海外での夢を実現できるよう支援しています。日本、アメリカ、オーストラリア、イギリス、カナダ、その他の国々など、どこであっても対応します。ビザや書類手続きから出発前のガイダンス、文化への適応まで、国際的な旅のあらゆる段階であなたをサポートします。'
+        homeHeroDesc:'私たちは、学生や社会人が海外での夢を実現できるよう支援しています。日本、アメリカ、オーストラリア、イギリス、カナダ、その他の国々など、どこであっても対応します。ビザや書類手続きから出発前のガイダンス、文化への適応まで、国際的な旅のあらゆる段階であなたをサポートします。',
+        weareKBM: '私たちはKBMエデュケーションコンサルタンシー株式会社です。',
+        para_1_KBM: `KBMエデュケーションコンサルタンシーでは、日本、アメリカ、オーストラリア、イギリス、カナダ、その他の国々で、学生が学業およびキャリアの目標を達成できるよう導いています。
+                    私たちは、個別のメンタリング、実践的なガイダンス、そして最新の業界知識に焦点を当て、すべての学生が国際的な旅に万全の準備を整えられるようサポートしています。`,
+        para_2_KBM: `私たちの献身的なチームは、各学生と密接に連携し、ビザ要件の理解から教育プランやキャリアの機会まで、あらゆる面で包括的なサポートを提供します。
+                    KBMでは、あなたの成功を最優先に考え、より明るい未来に向けて最良の選択ができるよう支援しています。`,
+        exploreOurServices: '私たちのサービスを探る',
+        homeServicesPara_1: `KBMエデュケーションコンサルタンシーは、学生や社会人が海外での夢を実現できるよう支援しています。
+                            私たちは、日本、アメリカ、オーストラリア、イギリス、カナダなどへのビザサポート、メンタリング、そしてキャリアガイダンスを提供しています。`,
+        careerStudyCounseling: '個別のキャリアおよび留学カウンセリング',
+        guidance: 'ガイダンス',
+        careerPlanning: 'キャリアプランニング',
+        homeServicesPara_2: `私たちは、学生一人ひとりの学歴やキャリア目標に基づいて、最適な国、大学、コースを選択できるよう、マンツーマンのカウンセリングを提供しています。
+                            経験豊富なカウンセラーが、あなたが海外での将来に向けて最良の判断ができるようサポートします。`,
+        documentation: '書類手続き',
+        documentPreparation: '書類準備と申請サポート',
+        SOP:'志望理由書',
+        financialDocuments: '財務書類',
+        applicationForms: '申請書類',
+        homeServicesPara_3: `志望理由書の作成から、財務・学業関連書類の整理まで、私たちのチームはすべての書類が大使館や大学の基準を満たすようサポートします。
+                            申請プロセスのあらゆるステップを、正確かつ丁寧にご案内します。`,
+        visaProcessing: 'ビザ手続き',
+        visaInterview: 'ビザ申請および面接準備',
+        visaFiling: 'ビザ申請提出',
+        interviewGuidance: '面接ガイダンス',
+        embassySupport: '大使館サポート',
+        homeServicesPara_4:`私たちの専門家は、必要なビザ書類の準備をサポートし、模擬面接を通じて自信を高めます。
+                            最新の移民規則にも精通しており、スムーズなビザ承認プロセスをサポートします。`,
+        homeSuccessStoriesHeader: '成果が物語る',
+        readSuccessStories: '成功事例を読む',
+        seeMoreStories : 'さらに事例を見る',
+        transformingFutures: '未来を変える',
+        homeTestimonialHeader: 'KBMについて学生の声を聞く',
+        visaGranted:'ビザが許可された国',
+        australia: 'オーストラリア',
+        satisfiedStudents: 'KBMからの満足した学生 1000人以上',
+        viewAllReviews: 'KBMからの満足した学生 1000人以上',
+        AaravSharma:'アーラヴ・シャルマ',
+        studentJapan: '学生 – 日本',
+        homeTestimonialsQuote_1: `KBMエデュケーションコンサルタンシーのおかげで、私の日本への留学は完全にストレスフリーでした。
+                                ビザ面接のサポートから必要書類の理解まで、常に万全の準備ができるよう導いてくれました。
+                                日本に到着した後も、住居手配やオリエンテーション、定期的なフォローアップを通じて、順調に適応できるようサポートしてくれました。
+                                彼らの専門的な指導と励ましのおかげで、自信を持って学業を始め、新しい文化に安心して馴染むことができました。`,
+        priyaKarki: 'プリヤ・カルキ',
+        undergraduateStudentAustralia: '学部生 – オーストラリア',
+        homeTestimonialsQuote_2: `オーストラリアの学生ビザを取得できたことは、私の人生で最も嬉しい瞬間の一つでした！
+                                KBMは、コース選択から到着後のサポートまで丁寧に導いてくれました。
+                                シドニーに到着した後もチームが連絡を取り続けてくれ、まるで家族の一員のように感じられました。`
     },
 }
