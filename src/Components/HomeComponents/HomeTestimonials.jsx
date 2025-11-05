@@ -28,31 +28,29 @@ export default function HomeTestimonials() {
     },
     {
       id: 3,
-      name: "Rohit Thapa",
-      role: "Graduate Student – United States",
+      name: language === 'en' ? languageData.en.rohitThapa : languageData.jp.rohitThapa,
+      role: language === 'en' ? languageData.en.graduateUnitedStates : languageData.jp.graduateUnitedStates,
       image: "Uploads/home/prof.jpg",
-      quote:
-        "The process of applying to U.S. universities can be overwhelming, but KBM made it effortless. After my visa approval, they continued to guide me on housing, part-time work, and adapting to the new environment. I couldn’t have done it without them.",
+      quote:language === 'en' ? languageData.en.homeTestimonialsQuote_3 : languageData.jp.homeTestimonialsQuote_3,
       bg: "bg-text/80 text-white shadow-xl",
     },
     {
       id: 4,
-      name: "Sanjana Rai",
-      role: "Research Scholar – United Kingdom",
+      name: language === 'en' ? languageData.en.sanjanaRai : languageData.jp.sanjanaRai,
+      role: language === 'en' ? languageData.en.researchUnitedKingdom : languageData.jp.researchUnitedKingdom,
       image: "Uploads/home/prof.jpg",
-      quote:
-        "KBM Education Consultancy provided complete support — from university selection in the UK to pre-departure orientation. Even after my arrival, they followed up to ensure everything went smoothly. Their professionalism and care are unmatched.",
+      quote: language === 'en' ? languageData.en.homeTestimonialsQuote_4 : languageData.jp.homeTestimonialsQuote_4,
       bg: "bg-blue text-white",
     },
-    {
-      id: 5,
-      name: "Anish Gurung",
-      role: "Diploma Student – Canada",
-      image: "Uploads/home/prof.jpg",
-      quote:
-        "I’m now studying in Toronto, and it still feels unreal! KBM guided me through every stage — documentation, visa, and post-landing advice. Their encouragement gave me the confidence to start a new life here successfully.",
-      bg: "bg-white text-gray-900 shadow-2xl",
-    },
+    // {
+    //   id: 5,
+    //   name: "Anish Gurung",
+    //   role: "Diploma Student – Canada",
+    //   image: "Uploads/home/prof.jpg",
+    //   quote:
+    //     "I’m now studying in Toronto, and it still feels unreal! KBM guided me through every stage — documentation, visa, and post-landing advice. Their encouragement gave me the confidence to start a new life here successfully.",
+    //   bg: "bg-white text-gray-900 shadow-2xl",
+    // },
   ];
 
   return (

@@ -99,8 +99,28 @@ export  const languageData = {
         homeTestimonialsQuote_2:`Getting my Australian student visa was one of the happiest moments of 
                                 my life! KBM guided me from course selection to post-arrival assistance.
                                 Their team stayed in touch even after I landed in Sydney, making me feel
-                                like part of a family.`
-
+                                like part of a family.`,
+        rohitThapa: 'Rohit Thapa',
+        graduateUnitedStates: 'Graduate Student – United States',
+        homeTestimonialsQuote_3: `The process of applying to U.S. universities can be overwhelming, but 
+                                KBM made it effortless. After my visa approval, they continued to guide 
+                                me on housing, part-time work, and adapting to the new environment. 
+                                I couldn’t have done it without them.`,
+        sanjanaRai: 'Sanjana Rai',
+        researchUnitedKingdom: 'Research Scholar – United Kingdom',
+        homeTestimonialsQuote_4: `KBM Education Consultancy provided complete support — from university 
+                                selection in the UK to pre-departure orientation. Even after my arrival,
+                                they followed up to ensure everything went smoothly. Their 
+                                professionalism and care are unmatched.`,
+        LetStart: `Let's Start a`,
+        conversation: 'Conversation',
+        homeContactPara:`Have a question or project in mind? We'd love to hear from you.
+                        Reach out and let's create something amazing together.`,
+        phone:'Phone',
+        email: 'Email',
+        location : 'Location',
+        fullName: 'Full Name',
+        johnDoe: 'John Doe'
     },
     // japanese language list
     jp: {
@@ -192,6 +212,25 @@ export  const languageData = {
         undergraduateStudentAustralia: '学部生 – オーストラリア',
         homeTestimonialsQuote_2: `オーストラリアの学生ビザを取得できたことは、私の人生で最も嬉しい瞬間の一つでした！
                                 KBMは、コース選択から到着後のサポートまで丁寧に導いてくれました。
-                                シドニーに到着した後もチームが連絡を取り続けてくれ、まるで家族の一員のように感じられました。`
+                                シドニーに到着した後もチームが連絡を取り続けてくれ、まるで家族の一員のように感じられました。`,
+        rohitThapa: 'ロヒット・タパ',
+        graduateUnitedStates: '大学院生 – アメリカ',
+        homeTestimonialsQuote_3: `アメリカの大学への出願プロセスは大変ですが、KBMのおかげでスムーズに進めることができました。
+                                ビザが承認された後も、住居の手配、アルバイト、環境への適応などについてサポートしてくれました。
+                                彼らなしでは成し遂げられなかったでしょう。`,
+        sanjanaRai: 'サンジャナ・ライ',
+        researchUnitedKingdom:'研究者 – イギリス',
+        homeTestimonialsQuote_4: `KBMエデュケーションコンサルタンシーは、イギリスの大学選択から出発前オリエンテーションまで、完全なサポートを提供してくれました。
+                                到着後もフォローアップを行い、すべてが順調に進むようにしてくれました。
+                                彼らのプロフェッショナリズムと丁寧さは比類がありません。`,
+        LetStart: 'さあ、始めましょう',
+        conversation: '会話',
+        homeContactPara:`質問やプロジェクトのアイデアがありますか？ぜひご連絡ください。
+                        一緒に素晴らしいものを作りましょう。`,
+        phone : '電話',
+        email: 'メール',
+        location: '所在地',
+        fullName: 'フルネーム',
+        johnDoe: 'ジョン・ドウ'
     },
 }

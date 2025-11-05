@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import { useContext, useState } from "react";
+import { LanguageContext } from "../../Context/Context";
+import { languageData } from "../../Hooks/language";
 
 export default function HomeContact() {
   const [formData, setFormData] = useState({
@@ -8,6 +10,7 @@ export default function HomeContact() {
     query: "",
     message: "",
   });
+  const {language} = useContext(LanguageContext)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -40,12 +43,20 @@ export default function HomeContact() {
         {/* Left Side */}
         <div className="space-y-8 text-white">
           <h2 className="text-5xl md:text-6xl font-bold leading-tight">
-            Let's Start a<span className="block text">Conversation</span>
+            {
+              language === 'en' ? languageData.en.LetStart : languageData.jp.LetStart
+            }
+            <span className="block text">
+              {
+                language === 'en' ? languageData.en.conversation : languageData.jp.conversation
+              }
+            </span>
           </h2>
 
           <p className="text-gray-300 text-lg leading-relaxed">
-            Have a question or project in mind? We'd love to hear from you.
-            Reach out and let's create something amazing together.
+            {
+                language === 'en' ? languageData.en.homeContactPara : languageData.jp.homeContactPara
+            }
           </p>
 
           <div className="space-y-4 pt-4">
@@ -54,7 +65,11 @@ export default function HomeContact() {
                 <span className="text-2xl">📞</span>
               </div>
               <div>
-                <p className="text-sm text-gray-400">Phone</p>
+                <p className="text-sm text-gray-400">
+                  {
+                    language === 'en' ? languageData.en.phone : languageData.jp.phone
+                  }
+                </p>
                 <p className=" font-semibold">+977 9860904663</p>
               </div>
             </div>
@@ -64,7 +79,11 @@ export default function HomeContact() {
                 <span className="text-2xl">📧</span>
               </div>
               <div>
-                <p className="text-sm text-gray-400">Email</p>
+                <p className="text-sm text-gray-400">
+                  {
+                    language === 'en' ? languageData.en.email : languageData.jp.email
+                  }
+                </p>
                 <p className="text-gray-200">kbmedu.com@gmail.com</p>
               </div>
             </div>
@@ -74,7 +93,11 @@ export default function HomeContact() {
                 <span className="text-2xl">📍</span>
               </div>
               <div>
-                <p className="text-sm text-gray-400">Location</p>
+                <p className="text-sm text-gray-400">
+                  {
+                    language === 'en' ? languageData.en.location : languageData.jp.location
+                  }
+                </p>
                 <p className="text-gray-200">
                   Balaju Ring Rd, Nabil Bank Building (4th Floor), Kathmandu
                 </p>
@@ -88,14 +111,16 @@ export default function HomeContact() {
           <div className="space-y-5">
             <div>
               <label className="block mb-2 text-sm font-medium text-gray-700">
-                Full Name
+                {
+                    language === 'en' ? languageData.en.fullName : languageData.jp.fullName
+                }
               </label>
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="John Doe"
+                placeholder={language === 'en' ? languageData.en.johnDoe : languageData.jp.johnDoe}
                 className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
               />
             </div>
