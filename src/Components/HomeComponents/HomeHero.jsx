@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import { useContext, useState } from "react";
 import { Play, X } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { languageData } from "../../Hooks/language";
+import { LanguageContext } from "../../Context/Context";
 
 export default function HomeHero() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMedia, setSelectedMedia] = useState(null);
+  const {language} = useContext(LanguageContext)
 
   const mediaItems = [
     {
@@ -113,8 +116,13 @@ export default function HomeHero() {
               className="text-4xl lg:text-7xl font-extrabold tracking-tight leading-tight line-clamp-3"
               style={{ fontFamily: "system-ui, -apple-system, sans-serif" }}
             >
-              Your Global Pathway <br className="hidden sm:block" /> to
-              Education & Career
+              {
+                language === 'en' ? languageData.en.yourGlobalPathway : languageData.jp.yourGlobalPathway
+              }
+              <br className="hidden sm:block" /> 
+              {
+                language === 'en' ? languageData.en.educationCareer : languageData.jp.educationCareer
+              }
             </motion.h1>
 
             {/* Description */}
@@ -124,11 +132,9 @@ export default function HomeHero() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-base lg:text-xl max-w-2xl text-white/90 font-light tracking-wide line-clamp-4"
             >
-              We help students and professionals achieve their dreams abroad —
-              whether it's Japan, USA, Australia, UK, Canada, or other
-              countries. From visas and documentation to pre-departure guidance
-              and cultural adaptation, we support you at every step of your
-              international journey.
+             {
+                language === 'en' ? languageData.en.homeHeroDesc : languageData.jp.homeHeroDesc
+              }
             </motion.p>
 
             {/* CTA Button */}
@@ -141,7 +147,9 @@ export default function HomeHero() {
                 whileTap={{ scale: 0.95 }}
                 className="bg-text text-white px-10 py-4 rounded-lg font-extrabold transition w-fit tracking-wider text-md"
               >
-                Learn More
+              {
+                language === 'en' ? languageData.en.learnMore : languageData.jp.learnMore
+              }
               </motion.button>
             </Link>
           </motion.div>

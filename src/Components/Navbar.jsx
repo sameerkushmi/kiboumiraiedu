@@ -6,13 +6,10 @@ import {
   X,
   BookOpen,
   Grid,
-  Users,
-  Newspaper,
   Building2,
   Target,
   Briefcase,
   GraduationCap,
-  FileText,
 } from "lucide-react";
 import { LanguageContext } from "../Context/Context";
 import {languageData} from "../Hooks/language.js";
@@ -184,7 +181,7 @@ export default function Navbar() {
               </div>
               {/* language change */}
             <div>
-              <select name="language" onChange={onLanguageChange}>
+              <select name="language" className="px-2 py-1 outline-none" onChange={onLanguageChange}>
                 <option value="en">EN</option>
                 <option value="jp">JP</option>
               </select>
@@ -236,12 +233,15 @@ export default function Navbar() {
                             }
                           </h3>
                           <p className="text-text mb-4">
-                            Learn about our mission, vision, and the team that
-                            makes it all possible.
+                            {
+                              language === 'en' ? languageData.en.learnAbout : languageData.jp.learnAbout
+                            }
                           </p>
                           <Link to="/about" onClick={closeDropdown}>
                             <button className="text-text font-semibold hover:underline flex items-center gap-1">
-                              Learn More →
+                              {
+                                language === 'en' ? languageData.en.learnMore : languageData.jp.learnMore
+                              } →
                             </button>
                           </Link>
                         </div>
@@ -253,7 +253,9 @@ export default function Navbar() {
                       <div>
                         <h4 className="font-bold text-gray-800 mb-4 flex items-center gap-2">
                           <Building2 className="w-5 h-5" />
-                          Company
+                          {
+                            language === 'en' ? languageData.en.company : languageData.jp.company
+                          }
                         </h4>
                         <ul className="space-y-2">
                           <li>
@@ -273,7 +275,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Our Team
+                              {
+                                language === 'en' ? languageData.en.ourTeam : languageData.jp.ourTeam
+                              }
                             </Link>
                           </li>
                           <li>
@@ -282,7 +286,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Mission & Vision
+                              {
+                                language === 'en' ? languageData.en.missionVision : languageData.jp.missionVision
+                              }
                             </Link>
                           </li>
                         </ul>
@@ -291,7 +297,9 @@ export default function Navbar() {
                       <div>
                         <h4 className="font-bold text-gray-800 mb-4 flex items-center gap-2">
                           <Target className="w-5 h-5" />
-                          Why Choose Us
+                              {
+                                language === 'en' ? languageData.en.whyChooseUs : languageData.jp.whyChooseUs
+                              }
                         </h4>
                         <ul className="space-y-2">
                           <li>
@@ -300,7 +308,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Why Choose Us
+                              {
+                                language === 'en' ? languageData.en.whyChooseUs : languageData.jp.whyChooseUs
+                              }
                             </Link>
                           </li>
                           <li>
@@ -309,7 +319,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Success Stories
+                              {
+                                language === 'en' ? languageData.en.successStories : languageData.jp.successStories
+                              }
                             </Link>
                           </li>
                           <li>
@@ -318,7 +330,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Testimonials
+                              {
+                                language === 'en' ? languageData.en.testimonials : languageData.jp.testimonials
+                              }
                             </Link>
                           </li>
                         </ul>
@@ -352,15 +366,20 @@ export default function Navbar() {
                         </div>
                         <div>
                           <h3 className="text-xl font-bold text-text mb-2">
-                            Our Services
+                            {
+                              language === 'en' ? languageData.en.ourServices : languageData.jp.ourServices
+                            }
                           </h3>
                           <p className="text-text mb-4">
-                            Comprehensive solutions to help you achieve your
-                            academic and career goals abroad.
+                            {
+                              language === 'en' ? languageData.en.comprehensiveSolutions : languageData.jp.comprehensiveSolutions
+                            }
                           </p>
                           <Link to="/services" onClick={closeDropdown}>
                             <button className="text-text font-semibold hover:underline flex items-center gap-1">
-                              View All Services →
+                              {
+                              language === 'en' ? languageData.en.viewServices : languageData.jp.viewServices
+                              } →
                             </button>
                           </Link>
                         </div>
@@ -372,7 +391,9 @@ export default function Navbar() {
                       <div>
                         <h4 className="font-bold text-gray-800 mb-4 flex items-center gap-2">
                           <GraduationCap className="w-5 h-5" />
-                          Counseling
+                            {
+                              language === 'en' ? languageData.en.counseling : languageData.jp.counseling
+                            }
                         </h4>
                         <ul className="space-y-2">
                           <li>
@@ -381,7 +402,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Career Counseling
+                              {
+                                language === 'en' ? languageData.en.careerCounseling : languageData.jp.careerCounseling
+                              }
                             </Link>
                           </li>
                           <li>
@@ -390,7 +413,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              University Selection
+                              {
+                                language === 'en' ? languageData.en.universitySelection : languageData.jp.universitySelection
+                              }
                             </Link>
                           </li>
                           <li>
@@ -399,7 +424,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Visa Assistance
+                              {
+                                language === 'en' ? languageData.en.visaAssistance : languageData.jp.visaAssistance
+                              }
                             </Link>
                           </li>
                           <li>
@@ -408,7 +435,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Documentation Help
+                              {
+                                language === 'en' ? languageData.en.documentationHelp : languageData.jp.documentationHelp
+                              }
                             </Link>
                           </li>
                         </ul>
@@ -442,15 +471,20 @@ export default function Navbar() {
                         </div>
                         <div>
                           <h3 className="text-xl font-bold text-text mb-2">
-                            Start Your Future Abroad
+                            {
+                              language === 'en' ? languageData.en.startFuture : languageData.jp.startFuture
+                            }
                           </h3>
                           <p className="text-text mb-4">
-                            Explore study opportunities in top destinations
-                            worldwide with expert guidance.
+                            {
+                              language === 'en' ? languageData.en.exploreStudy : languageData.jp.exploreStudy
+                            }
                           </p>
                           <Link to="/study" onClick={closeDropdown}>
                             <button className="text-text font-semibold hover:underline flex items-center gap-1">
-                              Learn More →
+                              {
+                              language === 'en' ? languageData.en.learnMore : languageData.jp.learnMore
+                              } →
                             </button>
                           </Link>
                         </div>
@@ -462,7 +496,9 @@ export default function Navbar() {
                       <div>
                         <h4 className="font-bold text-gray-800 mb-4 flex items-center gap-2">
                           <BookOpen className="w-5 h-5" />
-                          Study In
+                          {
+                            language === 'en' ? languageData.en.studyIn : languageData.jp.studyIn
+                          }
                         </h4>
                         <ul className="space-y-2">
                           <li>
@@ -471,7 +507,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block text-lg"
                               onClick={closeDropdown}
                             >
-                              View Overview
+                            {
+                              language === 'en' ? languageData.en.viewOverview : languageData.jp.viewOverview
+                            }
                             </Link>
                           </li>
                           <li>
@@ -480,7 +518,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Study In Japan
+                              {
+                                language === 'en' ? languageData.en.studyInJapan : languageData.jp.studyInJapan
+                              }
                             </Link>
                           </li>
 
@@ -490,7 +530,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Study in Australia
+                              {
+                                language === 'en' ? languageData.en.studyinAustralia : languageData.jp.studyinAustralia
+                              }
                             </Link>
                           </li>
                           <li>
@@ -499,7 +541,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Study in United Kingdom
+                              {
+                                language === 'en' ? languageData.en.studyinUnitedKingdom : languageData.jp.studyinUnitedKingdom
+                              }
                             </Link>
                           </li>
                           <li>
@@ -508,7 +552,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Study in USA
+                              {
+                                language === 'en' ? languageData.en.studyinUSA : languageData.jp.studyinUSA
+                              }
                             </Link>
                           </li>
                           <li>
@@ -517,7 +563,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Study in Canada
+                              {
+                                language === 'en' ? languageData.en.studyinCanada : languageData.jp.studyinCanada
+                              }
                             </Link>
                           </li>
                         </ul>
@@ -551,11 +599,14 @@ export default function Navbar() {
                         </div>
                         <div>
                           <h3 className="text-xl font-bold text-gray-800 mb-2">
-                            Explore More
+                              {
+                                language === 'en' ? languageData.en.exploreMore : languageData.jp.exploreMore
+                              }
                           </h3>
                           <p className="text-gray-700 mb-4">
-                            Discover additional resources, support, and
-                            information to help you succeed.
+                              {
+                                language === 'en' ? languageData.en.discoveradditionalresources : languageData.jp.discoveradditionalresources
+                              }
                           </p>
                         </div>
                       </div>
@@ -565,7 +616,9 @@ export default function Navbar() {
                     <div className="grid grid-cols-2 gap-6">
                       <div>
                         <h4 className="font-bold text-gray-800 mb-4">
-                          Resources
+                          {
+                            language === 'en' ? languageData.en.resources : languageData.jp.resources
+                          }
                         </h4>
                         <ul className="space-y-2">
                           <li>
@@ -574,7 +627,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Gallery
+                            {
+                              language === 'en' ? languageData.en.gallery : languageData.jp.gallery
+                            }
                             </Link>
                           </li>
 
@@ -584,7 +639,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              FAQ
+                              {
+                                language === 'en' ? languageData.en.FAQ : languageData.jp.FAQ
+                              }
                             </Link>
                           </li>
                         </ul>
@@ -592,7 +649,9 @@ export default function Navbar() {
 
                       <div>
                         <h4 className="font-bold text-gray-800 mb-4">
-                          Support
+                          {
+                            language === 'en' ? languageData.en.support : languageData.jp.support
+                          }
                         </h4>
                         <ul className="space-y-2">
                           <li>
@@ -601,7 +660,9 @@ export default function Navbar() {
                               className="text-gray-700 hover:text-text transition block"
                               onClick={closeDropdown}
                             >
-                              Contact Support
+                              {
+                                language === 'en' ? languageData.en.contactSupport : languageData.jp.contactSupport
+                              }
                             </Link>
                           </li>
                         </ul>
