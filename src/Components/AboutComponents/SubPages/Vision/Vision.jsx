@@ -1,6 +1,12 @@
-import React from "react";
+import { useContext } from "react";
+import { LanguageContext } from "../../../../Context/Context";
+import { languageData } from "../../../../Hooks/language";
+
 
 export default function Vision() {
+
+  const {language} = useContext(LanguageContext)
+
   return (
     <section className="mx-6 bg-[#058241] text-white flex items-center py-12 md:py-20 rounded-4xl ">
       <div className="container mx-auto p-6 md:p-10">
@@ -12,7 +18,9 @@ export default function Vision() {
               (01)
             </div>
             <div className="text-5xl md:text-8xl font-extrabold text-center md:text-right">
-              Our Vision
+              {
+                language === 'en' ? languageData.en.ourVision : languageData.jp.ourVision
+              }
             </div>
           </div>
 

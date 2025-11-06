@@ -242,7 +242,11 @@ export  const languageData = {
         teamPara_7: `Our experienced Language Instructor provides comprehensive training for Japanese, 
                     English, and other language proficiency exams. With an engaging and supportive teaching style, 
                     they prepare students not only to pass tests but also to communicate confidently in their new 
-                    academic and cultural environment.`
+                    academic and cultural environment.`,
+        ourMissionVision: 'Our Mission & Vision',
+        visionHeroDesc: `We strive to  empower students with expert guidance, transparent processes, and 
+                        comprehensive support to achieve their global education goals.`,
+        ourVision: 'Our Vision'
     },
     // japanese language list
     jp: {
@@ -446,6 +450,10 @@ export  const languageData = {
         languageInstructor: '語学講師',
         teamPara_7: `私たちの経験豊富な語学講師は、日本語、英語、その他の語学能力試験に向けた包括的な指導を行います。
                     魅力的でサポート力のある教授法を通じて、学生が試験に合格するだけでなく、新しい学術・文化環境で自
-                    信を持ってコミュニケーションできるよう準備します。`
+                    信を持ってコミュニケーションできるよう準備します。`,
+        ourMissionVision: '私たちの使命とビジョン',
+        visionHeroDesc: `私たちは、専門的なガイダンス、透明性のあるプロセス、包括的なサポートを通じて、学生がグローバルな
+                        教育目標を達成できるよう力を与えることに努めています。`,
+        ourVision: '私たちのビジョン'
     },
 }

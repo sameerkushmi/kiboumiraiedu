@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Vision from "./Vision";
 import Mission from "./Mission";
 import Values from "./Values";
