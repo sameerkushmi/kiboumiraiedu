@@ -1,7 +1,12 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { LanguageContext } from "../../Context/Context";
+import { languageData } from "../../Hooks/language";
 
 export default function AboutIntro() {
+
+  const {language} = useContext(LanguageContext)
+
   return (
     <section className="relative bg-white text-black overflow-hidden ">
       {/* Angled Background with Parallax Effect */}
@@ -153,13 +158,20 @@ export default function AboutIntro() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
-                We're{" "}
+                {
+                  language === 'en' ? languageData.en.weAre : languageData.jp.weAre
+                }
+                {" "}
                 <span className="relative inline-block">
                   <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                    KBM Education
+                    {
+                      language === 'en' ? languageData.en.KBMEducation : languageData.jp.KBMEducation
+                    }
                   </span>
                 </span>{" "}
-                Consultancy
+                {
+                  language === 'en' ? languageData.en.consultancy : languageData.jp.consultancy
+                }
               </motion.h1>
 
               <motion.div
@@ -170,24 +182,21 @@ export default function AboutIntro() {
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
                 <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-blue-600 first-letter:mr-1 first-letter:float-left">
-                  KBM Education Consultancy is committed to empowering students
-                  to achieve their dreams of studying abroad. With years of
-                  experience, we provide trusted guidance in university
-                  selection, visa processing, and pre-departure support for
-                  destinations including Japan, Australia, the UK, the USA, and
-                  Canada.
+                  {
+                    language === 'en' ? languageData.en.aboutIntroPara_1 : languageData.jp.aboutIntroPara_1
+                  }
                 </p>
 
                 <p>
-                  Our dedicated team ensures each student receives personalized
-                  counseling and continuous support throughout their academic
-                  journey — from choosing the right course to settling into a
-                  new environment abroad.
+                  {
+                    language === 'en' ? languageData.en.aboutIntroPara_2 : languageData.jp.aboutIntroPara_2
+                  }
                 </p>
 
                 <p className="italic">
-                  “Guiding your journey beyond borders — from aspirations to
-                  global success.”
+                  {
+                    language === 'en' ? languageData.en.aboutIntroPara_3 : languageData.jp.aboutIntroPara_3
+                  }
                 </p>
               </motion.div>
             </div>

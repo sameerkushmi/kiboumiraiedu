@@ -148,7 +148,24 @@ export  const languageData = {
         termServices: 'TERM & SERVICES',
         allRight: 'ALL RIGHTS RESERVED. KBM EDUCATION CONSULTANCY ©2025',
         legal: 'Legal',
-        stayConnected: 'Stay Connected'
+        stayConnected: 'Stay Connected',
+        aboutKBMEducation: 'About KBM Education',
+        aboutHeroDesc: `we guide students toward achieving their academic and career aspirations in Japan, USA, Australia, UK, Canada, and other countries. With a focus on personalized mentorship, practical guidance, and up-to-date industry insights, we ensure every student is fully prepared for their international journey.`,
+        weAre: `We're`,
+        KBMEducation: 'KBM Education',
+        consultancy: 'Consultancy',
+        aboutIntroPara_1: `KBM Education Consultancy is committed to empowering students
+                        to achieve their dreams of studying abroad. With years of
+                        experience, we provide trusted guidance in university
+                        selection, visa processing, and pre-departure support for
+                        destinations including Japan, Australia, the UK, the USA, and
+                        Canada.`,
+        aboutIntroPara_2: `Our dedicated team ensures each student receives personalized
+                        counseling and continuous support throughout their academic
+                        journey — from choosing the right course to settling into a
+                        new environment abroad.`,
+        aboutIntroPara_3: `“Guiding your journey beyond borders — from aspirations to
+                        global success.”`
     },
     // japanese language list
     jp: {
@@ -284,6 +301,17 @@ export  const languageData = {
         termServices: '利用規約とサービス',
         allRight: '全著作権所有。KBMエデュケーションコンサルタンシー ©2025',
         legal: '法的情報',
-        stayConnected: 'つながりを保つ'
+        stayConnected: 'つながりを保つ',
+        aboutKBMEducation: 'KBMエデュケーションについて',
+        aboutHeroDesc: `私たちは、日本、アメリカ、オーストラリア、イギリス、カナダ、その他の国々で、学生が学業およびキャリアの目標を達成できるよう導いています。
+                        個別のメンタリング、実践的なガイダンス、そして最新の業界知識に焦点を当て、すべての学生が国際的な旅に万全の準備を整えられるよう支援しています。`,
+        weAre: '私たちは',
+        KBMEducation: 'KBMエデュケーション',
+        consultancy: 'コンサルタンシー',
+        aboutIntroPara_1: `KBMエデュケーションコンサルタンシーは、学生が海外留学の夢を実現できるよう力を与えることに尽力しています。
+                        長年の経験を活かし、日本、オーストラリア、イギリス、アメリカ、カナダなどの国々において、大学選択、ビザ手続き、出発前サポートに関する信頼できるガイダンスを提供しています。`,
+        aboutIntroPara_2: `私たちの献身的なチームは、学生一人ひとりが個別のカウンセリングと継続的なサポートを受けられるよう努めています。
+                        適切なコースの選択から海外での新しい環境への適応まで、学業の旅路全体を通して支援します。`,
+        aboutIntroPara_3: `「夢から世界的な成功へ――国境を越えたあなたの旅を導きます。」`
     },
 }
