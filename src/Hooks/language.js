@@ -24,6 +24,7 @@ export  const languageData = {
         universitySelection: 'University Selection',
         visaAssistance: 'Visa Assistance',
         documentationHelp: 'Documentation Help',
+        computerTraining: 'Computer Training',
         startFuture: 'Start Your Future Abroad',
         exploreStudy: 'Explore study opportunities in top destinations worldwide with expert guidance.',
         studyIn: 'Study In',
@@ -204,7 +205,44 @@ export  const languageData = {
                         after reaching their destination.`,
         aboutTeamPara_3: `With KBM, your goals are nurtured by people who truly care about
                         your success — because your achievement is our greatest reward.`,
-        meetOurInstructors: 'Meet Our Instructors'
+        meetOurInstructors: 'Meet Our Instructors',
+        // team components translate
+        meetOurDedicatedTeam: 'Meet Our Dedicated Team',
+        teamPara_1: `Our team at KBM Education Consultancy is committed to guiding students every step 
+                    of the way. From personalized counseling to visa assistance and language preparation, 
+                    we combine expertise and passion to help students achieve their dreams abroad.`,
+        teamPara_2: `Our expert team provides personalized guidance and support to help
+                    students succeed in their study abroad journey, from course
+                    selection to visa and exam preparation.`,
+        previous: 'Previous',
+        next: 'Next',
+        sumanTamang: 'Suman Tamang',
+        CEOFounder : 'CEO & Founder',
+        teamPara_3: `As the visionary behind KBM Education Consultancy, Suman Tamang has guided hundreds
+                    of students toward achieving their study abroad dreams. With a deep understanding of 
+                    international education systems and years of leadership experience, he ensures that every 
+                    student receives transparent, ethical, and personalized guidance throughout their journey.`,
+        rajibRajTamang: `Rajib Raj Tamang`,
+        managingDirector: 'Managing Director',
+        teamPara_4: `Rajib Raj Tamang oversees the daily operations and strategic direction of KBM. His 
+                    leadership focuses on maintaining excellence across departments—from counseling and 
+                    documentation to visa assistance—ensuring that every student experiences a smooth 
+                    and reliable process from start to finish.`,
+        anilChaudhary: 'Anil Chaudhary',
+        teamPara_5: `With a strong background in student counseling and international partnerships, 
+                    nil Chaudhary brings extensive expertise in matching students with the right institutions. His
+                    approach blends practical advice with empathy, helping students choose the best academic path 
+                    for their goals and aspirations.`,
+        frontDeskOfficer: 'Front Desk Officer',
+        teamPara_6: `As the first point of contact at KBM, our Front Desk Officer ensures that every 
+                    student feels welcomed and guided from the moment they walk in. With a friendly 
+                    approach and excellent communication skills, they assist with inquiries, 
+                    appointments, and initial counseling coordination.",`,
+        languageInstructor:`Language Instructor`,
+        teamPara_7: `Our experienced Language Instructor provides comprehensive training for Japanese, 
+                    English, and other language proficiency exams. With an engaging and supportive teaching style, 
+                    they prepare students not only to pass tests but also to communicate confidently in their new 
+                    academic and cultural environment.`
     },
     // japanese language list
     jp: {
@@ -231,6 +269,7 @@ export  const languageData = {
         universitySelection: '大学選択',
         visaAssistance: 'ビザサポート',
         documentationHelp: '書類作成サポート',
+        computerTraining: 'コンピュータトレーニング',
         startFuture: '海外であなたの未来を始めましょう',
         exploreStudy: '専門家のガイダンスで、世界の主要な留学先での学びの機会を探りましょう。',
         studyIn: '留学先',
@@ -379,6 +418,34 @@ export  const languageData = {
                         キャリアカウンセリングから出願サポート、ビザ手続き、出発前オリエンテーションに至るまで、私たちの専門家があなたの旅のすべての段階で寄り添います。
                         私たちの使命は、すべての学生が目的地に到達した後も、透明性のあるアドバイス、誠実なガイダンス、そして生涯にわたるサポートを受けられるようにすることです。`,
         aboutIntroPara_3: `KBMでは、あなたの目標は本当にあなたの成功を願う人々によって支えられます——なぜなら、あなたの達成こそが私たちにとって最大の喜びだからです。`,
-        meetOurInstructors: '私たちの講師陣をご紹介'
+        meetOurInstructors: '私たちの講師陣をご紹介',
+        // team components translate
+        meetOurDedicatedTeam: '私たちの献身的なチームをご紹介',
+        teamPara_1: `KBMエデュケーションコンサルタンシーのチームは、学生一人ひとりの旅路を全力でサポートすることに尽力しています。
+                    個別カウンセリングからビザサポート、語学準備に至るまで、専門知識と情熱を融合させ、学生が海外での夢を実現できるよう支援します。`,
+        teamPara_2: `私たちの専門チームは、学生が留学の旅で成功できるよう、コース選択からビザ・試験準備まで、個別のガイダンスとサポートを提供します。`,
+        previous: '前へ',
+        next: '次へ',
+        sumanTamang: 'スマン・タマング',
+        CEOFounder : 'CEO兼創設者',
+        teamPara_3: `KBMエデュケーションコンサルタンシーのビジョナリーとして、スマン・タマングは数百人の学生が留学の夢を実現できるよう導いてきました。
+                    国際教育システムへの深い理解と長年のリーダーシップ経験を活かし、すべての学生が旅の過程で透明性のある、
+                    倫理的で個別のガイダンスを受けられるよう保証しています。`,
+        rajibRajTamang: 'ラジブ・ラジ・タマング',
+        managingDirector: 'マネージングディレクター',
+        teamPara_4: `ラジブ・ラジ・タマングは、KBMの日々の運営と戦略的方向性を監督しています。
+                    彼のリーダーシップは、カウンセリングや書類手続き、ビザサポートなど、各部門での卓越性を維持することに重
+                    点を置いており、すべての学生が初めから終わりまでスムーズで信頼できるプロセスを体験できるようにしています
+                    。`,
+        anilChaudhary: 'アニル・チャウダリー',
+        teamPara_5:`学生カウンセリングと国際的パートナーシップの豊富な経験を持つアニル・チャウダリーは、学生と最適な教育機関を結びつける幅広い専門知識を提供します。
+                    彼のアプローチは、実践的なアドバイスと共感を融合させ、学生が目標や夢に最適な学習の道を選べるよう支援します。`,
+        frontDeskOfficer: 'フロントデスク担当',
+        teamPara_6: `KBMの最初の窓口として、フロントデスク担当は学生が来訪した瞬間から歓迎され、適切に案内されるよう努めています。
+                    親しみやすい対応と優れたコミュニケーションスキルで、お問い合わせ、予約、初回カウンセリングの調整をサポートします。`,
+        languageInstructor: '語学講師',
+        teamPara_7: `私たちの経験豊富な語学講師は、日本語、英語、その他の語学能力試験に向けた包括的な指導を行います。
+                    魅力的でサポート力のある教授法を通じて、学生が試験に合格するだけでなく、新しい学術・文化環境で自
+                    信を持ってコミュニケーションできるよう準備します。`
     },
 }

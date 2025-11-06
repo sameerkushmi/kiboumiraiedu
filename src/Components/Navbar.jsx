@@ -20,7 +20,7 @@ export default function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const dropdownTimeout = useRef(null);
-  const {language,setLanguage} = useContext(LanguageContext)
+  const {language} = useContext(LanguageContext)
   
 
   // Handle scroll behavior
@@ -77,10 +77,6 @@ export default function Navbar() {
     setActiveDropdown(null);
     setMobileMenuOpen(false);
   };
-
-  const onLanguageChange = (e) => {
-    setLanguage(e.target.value);
-  }
 
   return (
     <>
@@ -178,13 +174,6 @@ export default function Navbar() {
                     }`}
                   />
                 </button>
-              </div>
-              {/* language change */}
-              <div>
-                <select name="language" className="px-2 py-1 outline-none" onChange={onLanguageChange}>
-                  <option value="en">EN</option>
-                  <option value="jp">JP</option>
-                </select>
               </div>
             </div>
             {/* Contact Button */}
@@ -437,6 +426,17 @@ export default function Navbar() {
                             >
                               {
                                 language === 'en' ? languageData.en.documentationHelp : languageData.jp.documentationHelp
+                              }
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/services/courses"
+                              className="text-gray-700 hover:text-text transition block"
+                              onClick={closeDropdown}
+                            >
+                              {
+                                language === 'en' ? languageData.en.computerTraining : languageData.jp.computerTraining
                               }
                             </Link>
                           </li>

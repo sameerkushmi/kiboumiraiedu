@@ -21,7 +21,6 @@ import UkMain from "./Components/StudyComponents/UK/UkMain";
 import CadMain from "./Components/StudyComponents/Canada/CadMain";
 import UsMain from "./Components/StudyComponents/USA/UsMain";
 import TestsMain from "./Components/TestsComponents/TestsMain";
-import ContactMain from "./Components/ContactComponents/ContactMain";
 import GalleryPage from "./Pages/GalleryPage";
 import { Toaster } from "react-hot-toast";
 import CounsellingMain from "./Components/ServicesComponents/SubPages/Counselling/CounsellingMain";
@@ -30,6 +29,7 @@ import NotFound from "./Components/HelperComponents/NotFound";
 import VisaMain from "./Components/ServicesComponents/SubPages/VisaAssistance.jsx/VisaMain";
 import DocMain from "./Components/ServicesComponents/SubPages/Documentation/DocMain";
 import { LanguageContext } from "./Context/Context";
+import CoursesMain from "./Components/ServicesComponents/SubPages/Courses/CoursesMain";
 
 function App() {
   const location = useLocation();
@@ -66,6 +66,7 @@ function App() {
         />
         <Route element={<VisaMain />} path="/services/visa-assistance" />
         <Route element={<DocMain />} path="/services/documentation" />
+        <Route path='/services/courses' element={<CoursesMain/>}/>
         {/* to="/services/visa-assistance" */}
         {/* to="/services/documentation" */}
         <Route element={<StudyPage />} path="/study" />

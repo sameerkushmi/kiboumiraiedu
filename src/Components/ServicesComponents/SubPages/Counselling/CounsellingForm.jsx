@@ -6,7 +6,6 @@ import {
   User,
   ChevronDown,
   ArrowRight,
-  BookCheck,
 } from "lucide-react";
 
 export default function CounsellingForm() {

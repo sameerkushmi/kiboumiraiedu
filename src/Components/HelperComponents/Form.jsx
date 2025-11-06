@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useContext, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight } from "lucide-react";
+import { LanguageContext } from "../../Context/Context";
 
 export default function Form() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,6 +11,7 @@ export default function Form() {
     phone: "",
     message: "",
   });
+  const {language,setLanguage} = useContext(LanguageContext)
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,6 +27,10 @@ export default function Form() {
       [e.target.name]: e.target.value,
     });
   };
+  
+  const onChangeLanguage = () => {
+    setLanguage(language === 'en' ? 'jp' : 'en')
+  }
 
   return (
     <>
@@ -43,6 +49,16 @@ export default function Form() {
             className="mr-2  group-hover:scale-105 transition-transform"
             size={18}
           />
+        </motion.button>
+        <motion.button
+          className=" bg-white fixed right-5 bottom-5 rounded-full cursor-pointer "
+        >
+          <div className={`flex ${language === 'en' ? 'flex-row-reverse': 'flex-row'} gap-3 hover:scale-105 border-3 border-orange-300 transition items-center justify-center px-3 py-2 text-sm rounded-full shadow-lg font-medium tracking-wide`} onClick={onChangeLanguage}>
+            <img src={`/Uploads/flag/${language === 'en' ? 'jp.png' : 'en.png'}`} alt=""  className="w-6 h-6 rounded-full object-cover" />
+            <div className="text-black block font-extrabold pt-1">
+              {language === 'en' ? 'JP' : 'EN'}
+            </div>
+          </div>
         </motion.button>
 
         {/* Mobile Button */}
