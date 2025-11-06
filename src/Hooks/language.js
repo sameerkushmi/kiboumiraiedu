@@ -120,7 +120,26 @@ export  const languageData = {
         email: 'Email',
         location : 'Location',
         fullName: 'Full Name',
-        johnDoe: 'John Doe'
+        johnDoe: 'John Doe',
+        emailAddress: 'Email Address',
+        emailExample: 'john@example.com',
+        number: 'Number',
+        inquiryType:'Inquiry Type',
+        selectoption: 'Select an option',
+        generalInquiry: 'General Inquiry',
+        visaProcessing: 'Visa Processing',
+        testsInterviewPrep: 'Tests & Interview Prep',
+        other: 'Other',
+        message: 'Message',
+        tellaboutproject: 'Tell us about your project or inquiry',
+        sendviaWhatsApp: 'Send via WhatsApp',
+        KBM: 'KBM',
+        educationConsultancy: 'Education Consultancy',
+        footerPara: `KBM Education Consultancy is dedicated to helping students achieve
+                    their global education dreams. From career counseling and
+                    university selection to visa guidance and pre-departure support,
+                    we ensure every step of your study abroad journey is smooth and
+                    successful.`
     },
     // japanese language list
     jp: {
@@ -231,6 +250,22 @@ export  const languageData = {
         email: 'メール',
         location: '所在地',
         fullName: 'フルネーム',
-        johnDoe: 'ジョン・ドウ'
+        johnDoe: 'ジョン・ドウ',
+        emailAddress: 'メールアドレス',
+        emailExample: 'ジョン@エグザンプル.com',
+        number: '番号',
+        inquiryType:'お問い合わせの種類',
+        selectoption: 'オプションを選択',
+        generalInquiry: '一般的なお問い合わせ',
+        visaProcessing: 'ビザ手続き',
+        testsInterviewPrep: 'ビザ手続き',
+        other: 'その他',
+        message: 'メッセージ',
+        tellaboutproject: 'あなたのプロジェクトまたはお問い合わせ内容をお聞かせください',
+        sendviaWhatsApp: 'WhatsAppで送信',
+        KBM: 'ケー・ビー・エム',
+        educationConsultancy: '教育コンサルタント',
+        footerPara: `KBMエデュケーションコンサルタンシーは、学生がグローバルな教育の夢を実現できるよう支援しています。
+                    キャリアカウンセリングや大学選択から、ビザガイダンス、出発前サポートまで、留学のあらゆるステップをスムーズかつ成功に導きます。`
     },
 }

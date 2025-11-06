@@ -1,12 +1,14 @@
+import { useContext } from "react";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
-import React from "react";
-import { BsTiktok, BsWhatsapp } from "react-icons/bs";
-import { FaWhatsapp } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
-import { ImWhatsapp } from "react-icons/im";
 import { Link } from "react-router-dom";
+import { LanguageContext } from "../Context/Context";
+import { languageData } from "../Hooks/language";
 
 export default function Footer2() {
+
+  const {language} = useContext(LanguageContext) 
+
   return (
     <>
       <section className="m-6 md:h-[120vh] bgwhite rounded-4xl ">
@@ -14,7 +16,7 @@ export default function Footer2() {
         <div className="relative min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh] rounded-t-4xl overflow-hidden">
           {/* Background Image */}
           <div
-            className="absolute inset-0 w-full h-full bg-cover bg-center md:bg-left"
+            className="absolute inset-0 w-full h-full bg-cover bg-center md:bg-left "
             style={{
               backgroundImage: "url('/Uploads/home/hero3.jpg')",
               zIndex: 0,
@@ -26,17 +28,19 @@ export default function Footer2() {
           {/* Text Content */}
           <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-6 sm:px-10 lg:px-20 py-16 md:py-24 space-y-4">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-wide">
-              KBM
+              {
+                language === 'en' ? languageData.en.KBM : languageData.jp.KBM
+              }
             </h1>
             <p className="text-xl sm:text-2xl md:text-4xl font-semibold opacity-80">
-              Education Consultancy
+              {
+                language === 'en' ? languageData.en.educationConsultancy : languageData.jp.educationConsultancy
+              }
             </p>
             <p className="max-w-3xl md:max-w-4xl text-sm sm:text-base md:text-lg opacity-90 leading-relaxed">
-              KBM Education Consultancy is dedicated to helping students achieve
-              their global education dreams. From career counseling and
-              university selection to visa guidance and pre-departure support,
-              we ensure every step of your study abroad journey is smooth and
-              successful.
+              {
+                language === 'en' ? languageData.en.footerPara : languageData.jp.footerPara
+              }
             </p>
 
             {/* Button and QR Section */}

@@ -127,20 +127,24 @@ export default function HomeContact() {
 
             <div>
               <label className="block mb-2 text-sm font-medium text-gray-700">
-                Email Address
+                {
+                  language === 'en' ? languageData.en.johnDoe : languageData.jp.johnDoe
+                }
               </label>
               <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="john@example.com"
+                placeholder={language === 'en' ? languageData.en.emailExample : languageData.jp.emailExample}
                 className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
               />
             </div>
             <div>
               <label className="block mb-2 text-sm font-medium text-gray-700">
-                Number
+                {
+                  language === 'en' ? languageData.en.number : languageData.jp.number
+                }
               </label>
               <input
                 type="number"
@@ -154,7 +158,9 @@ export default function HomeContact() {
 
             <div>
               <label className="block mb-2 text-sm font-medium text-gray-700">
-                Inquiry Type
+                {
+                  language === 'en' ? languageData.en.inquiryType : languageData.jp.inquiryType
+                }
               </label>
               <select
                 name="query"
@@ -162,27 +168,47 @@ export default function HomeContact() {
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
               >
-                <option value="">Select an option</option>
-                <option value="General Inquiry">General Inquiry</option>
-                <option value="Visa Processing">Visa Processing</option>
+                <option value="">
+                {
+                  language === 'en' ? languageData.en.selectoption : languageData.jp.selectoption
+                }
+                </option>
+                <option value="General Inquiry">
+                {
+                  language === 'en' ? languageData.en.generalInquiry : languageData.jp.generalInquiry
+                }
+                </option>
+                <option value="Visa Processing">
+                {
+                  language === 'en' ? languageData.en.visaProcessing : languageData.jp.visaProcessing
+                }
+                </option>
                 <option value="Class Inquiry">Class Inquiry</option>
                 <option value="Tests & Interview preparation">
-                  Tests & Interview Prep
+                {
+                  language === 'en' ? languageData.en.testsInterviewPrep : languageData.jp.testsInterviewPrep
+                }
                 </option>
-                <option value="Other">Other</option>
+                <option value="Other">
+                {
+                  language === 'en' ? languageData.en.other : languageData.jp.other
+                }
+                </option>
               </select>
             </div>
 
             <div>
               <label className="block mb-2 text-sm font-medium text-gray-700">
-                Message
+                {
+                  language === 'en' ? languageData.en.message : languageData.jp.message
+                }
               </label>
               <textarea
                 name="message"
                 rows={4}
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Tell us about your project or inquiry..."
+                placeholder={language === 'en' ? languageData.en.tellaboutproject : languageData.jp.tellaboutproject}
                 className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none"
               />
             </div>
@@ -191,7 +217,9 @@ export default function HomeContact() {
               onClick={handleSubmit}
               className="w-full bg-text text-white font-semibold py-3.5 rounded-lg transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl"
             >
-              Send via WhatsApp
+                {
+                  language === 'en' ? languageData.en.sendviaWhatsApp : languageData.jp.sendviaWhatsApp
+                }
             </button>
           </div>
         </div>
