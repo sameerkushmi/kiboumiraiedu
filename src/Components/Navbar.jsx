@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { LanguageContext } from "../Context/Context";
 import {languageData} from "../Hooks/language.js";
+import LanguageButton from './HelperComponents/LanguageButton/LanguageButton.jsx'
 
 export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -80,6 +81,10 @@ export default function Navbar() {
 
   return (
     <>
+
+    {/* floating lanuage button */}
+
+    <LanguageButton/>
       <motion.nav
         initial={{ y: 0 }}
         animate={{ y: isVisible ? 0 : -100 }}
