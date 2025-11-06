@@ -1,19 +1,25 @@
-import React from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { languageData } from "../../Hooks/language";
+import { LanguageContext } from "../../Context/Context";
 
 export default function AboutWhy() {
+
+  const {language} = useContext(LanguageContext)
+
   return (
     <section className="relative py-16 px-4 sm:px-6 lg:px-8">
       {/* Heading */}
       <div className="flex flex-col items-center mb-10 text-center">
         <h2 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900">
-          What Makes KBM Stand Out?
+          {
+            language === 'en' ? languageData.en.aboutWhyHeader: languageData.jp.aboutWhyHeader
+          }
         </h2>
         <p className="max-w-3xl text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
-          At KBM Education Consultancy, we go beyond counseling — we build
-          lifelong partnerships with students. With expert advisors, a
-          transparent process, and personalized guidance, we help you turn your
-          study abroad dream into reality.
+          {
+            language === 'en' ? languageData.en.aboutWhyPara_1: languageData.jp.aboutWhyPara_1
+          }
         </p>
       </div>
 
@@ -34,13 +40,14 @@ export default function AboutWhy() {
             </div>
             <div className="absolute bottom-3 p-4 text-background">
               <div className="text-lg font-semibold mb-1">
-                Personalized Counselling
+                {
+                  language === 'en' ? languageData.en.personalizedCounselling :languageData.jp.personalizedCounselling
+                }
               </div>
               <p className="text-base max-w-4xl">
-                Every student is unique — and so is our guidance. We offer
-                one-on-one counseling sessions to help you choose the right
-                destination, course, and institution that aligns with your
-                goals.
+                {
+                  language === 'en' ? languageData.en.aboutWhyCardPara_1 :languageData.jp.aboutWhyCardPara_1
+                }
               </p>
             </div>
           </div>
@@ -58,12 +65,14 @@ export default function AboutWhy() {
             </div>
             <div className="absolute bottom-3 p-4 text-background">
               <div className="text-lg font-semibold mb-1">
-                Experienced Industry Experts
+                {
+                  language === 'en' ? languageData.en.experiencedIndustryExperts:languageData.jp.experiencedIndustryExperts
+                }
               </div>
               <p className="text-base max-w-4xl">
-                Our team of seasoned counselors and education experts bring
-                years of experience guiding students to top universities in
-                Japan, Australia, the UK, the USA, and Canada.
+                {
+                  language === 'en' ? languageData.en.abooutWhyCardPara_2:languageData.jp.abooutWhyCardPara_2
+                }
               </p>
             </div>
           </div>
@@ -84,12 +93,14 @@ export default function AboutWhy() {
             </div>
             <div className="absolute bottom-3 p-4 text-background">
               <div className="text-lg font-semibold mb-1">
-                Transparent Process
+                {
+                  language === 'en' ? languageData.en.transparentProcess : languageData.jp.transparentProcess
+                }
               </div>
               <p className="text-base max-w-4xl">
-                We believe in honesty and clarity. From documentation to visa
-                filing, you’ll always know what’s happening at each stage — no
-                hidden fees, no surprises.
+                {
+                  language === 'en' ? languageData.en.aboutWhyCardPara_3 : languageData.jp.aboutWhyCardPara_3
+                }
               </p>
             </div>
           </div>
@@ -109,12 +120,14 @@ export default function AboutWhy() {
               </div>
               <div className="absolute bottom-3 p-4 text-background">
                 <div className="text-lg font-semibold mb-1">
-                  End-to-End Support
+                  {
+                    language === 'en' ? languageData.en.endToEndSupport: languageData.jp.endToEndSupport
+                  }
                 </div>
                 <p className="text-base max-w-4xl">
-                  From counseling to pre-departure briefings, we support you
-                  every step of the way — even after you arrive in your chosen
-                  country.
+                  {
+                    language === 'en' ? languageData.en.aboutWhyCardPara_4: languageData.jp.aboutWhyCardPara_4
+                  }
                 </p>
               </div>
             </div>
@@ -132,12 +145,14 @@ export default function AboutWhy() {
               </div>
               <div className="absolute bottom-3 p-4 text-background">
                 <div className="text-lg font-semibold mb-1">
-                  Global University Network
+                  {
+                    language === 'en' ? languageData.en.globalUniversityNetwork: languageData.jp.globalUniversityNetwork
+                  }
                 </div>
                 <p className="text-base max-w-4xl">
-                  We partner with a wide range of reputed universities and
-                  institutions worldwide, offering students access to the best
-                  academic programs and scholarship opportunities.
+                  {
+                    language === 'en' ? languageData.en.aboutWhyCardPara_5: languageData.jp.aboutWhyCardPara_5
+                  }
                 </p>
               </div>
             </div>
@@ -147,10 +162,16 @@ export default function AboutWhy() {
 
       {/* CTA */}
       <div className="flex items-center justify-center mt-8 flex-col text-base md:text-xl gap-3">
-        <p>Discover how KBM can guide your study abroad journey</p>
+        <p>
+          {
+            language === 'en' ? languageData.en.aboutWhyCTA : languageData.jp.aboutWhyCTA
+          }
+        </p>
         <Link to="/about/why-choose-us">
           <button className="px-6 py-2 text-lg md:text-2xl bg-text text-white rounded-xl hover:scale-105 duration-500 ease-in-out">
-            Learn More
+            {
+              language === 'en' ? languageData.en.learnMore: languageData.jp.learnMore
+            }
           </button>
         </Link>
       </div>

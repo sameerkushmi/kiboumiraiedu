@@ -165,7 +165,30 @@ export  const languageData = {
                         journey — from choosing the right course to settling into a
                         new environment abroad.`,
         aboutIntroPara_3: `“Guiding your journey beyond borders — from aspirations to
-                        global success.”`
+                        global success.”`,
+        aboutWhyHeader: 'What Makes KBM Stand Out?',
+        aboutWhyPara_1: ` At KBM Education Consultancy, we go beyond counseling — we build
+                        lifelong partnerships with students. With expert advisors, a
+                        transparent process, and personalized guidance, we help you turn your
+                        study abroad dream into reality.`,
+        personalizedCounselling: 'Personalized Counselling',
+        aboutWhyCardPara_1: `Every student is unique — and so is our guidance. We offer
+                        one-on-one counseling sessions to help you choose the right
+                        destination, course, and institution that aligns with your
+                        goals.`,
+         experiencedIndustryExperts: ' Experienced Industry Experts',
+         abooutWhyCardPara_2: `Our team of seasoned counselors and education experts bring
+                years of experience guiding students to top universities in
+                Japan, Australia, the UK, the USA, and Canada.`,
+        transparentProcess: 'Transparent Process',
+        aboutWhyCardPara_3: ` We believe in honesty and clarity. From documentation to visa
+                            filing, you’ll always know what’s happening at each stage — no
+                            hidden fees, no surprises.`,
+        endToEndSupport: `エンドツーエンドサポート`,
+        aboutWhyCardPara_4: `From counseling to pre-departure briefings, we support you
+                            every step of the way — even after you arrive in your chosen
+                            country`,
+        aboutWhyCTA: 'Discover how KBM can guide your study abroad journey'
     },
     // japanese language list
     jp: {
@@ -312,6 +335,25 @@ export  const languageData = {
                         長年の経験を活かし、日本、オーストラリア、イギリス、アメリカ、カナダなどの国々において、大学選択、ビザ手続き、出発前サポートに関する信頼できるガイダンスを提供しています。`,
         aboutIntroPara_2: `私たちの献身的なチームは、学生一人ひとりが個別のカウンセリングと継続的なサポートを受けられるよう努めています。
                         適切なコースの選択から海外での新しい環境への適応まで、学業の旅路全体を通して支援します。`,
-        aboutIntroPara_3: `「夢から世界的な成功へ――国境を越えたあなたの旅を導きます。」`
+        aboutIntroPara_3: `「夢から世界的な成功へ――国境を越えたあなたの旅を導きます。」`,
+        aboutWhyHeader: 'KBMが選ばれる理由',
+        aboutWhyPara_1: `KBMエデュケーションコンサルタンシーでは、単なるカウンセリングにとどまらず、学生との生涯にわたるパートナーシップを築いています。
+                        専門的なアドバイザー、透明性のあるプロセス、そして個別のガイダンスを通じて、あなたの留学の夢を現実にします。`,
+        personalizedCounselling: '個別カウンセリング',
+        aboutWhyCardPara_1: `すべての学生は一人ひとり異なります——だからこそ、私たちのガイダンスも個別です。
+                        目標に合った最適な留学先、コース、教育機関を選択できるよう、マンツーマンのカウンセリングを提供しています。`,
+        experiencedIndustryExperts: '経験豊富な業界専門家',
+        abooutWhyCardPara_2: `私たちの熟練したカウンセラーおよび教育専門家チームは、日本、オーストラリア、イギリス、
+                            アメリカ、カナダの一流大学へ学生を導いてきた豊富な経験を持っています。`,
+        transparentProcess:`透明性のあるプロセス`,
+        aboutWhyCardPara_3: `私たちは誠実さと明確さを大切にしています。
+                            書類手続きからビザ申請まで、各段階で何が行われているかを常に把握できるようにしています。
+                            隠れた費用や予期せぬトラブルは一切ありません。`,
+        endToEndSupport: `エンドツーエンドサポート`,
+        aboutWhyCardPara_4: `カウンセリングから出発前の説明会まで、私たちはあらゆる段階であなたをサポートします。
+                            選んだ国に到着した後も、その支援は続きます。`,
+        globalUniversityNetwork: 'グローバル大学ネットワーク',
+        aboutWhyCardPara_5: `私たちは、世界中の有名大学や教育機関と提携しており、学生が最高の学術プログラムや奨学金の機会にアクセスできるよう支援しています。`,
+        aboutWhyCTA: 'KBMがあなたの留学の旅をどのように導けるかをご覧ください'
     },
 }
