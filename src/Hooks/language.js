@@ -139,7 +139,16 @@ export  const languageData = {
                     their global education dreams. From career counseling and
                     university selection to visa guidance and pre-departure support,
                     we ensure every step of your study abroad journey is smooth and
-                    successful.`
+                    successful.`,
+        letsConnect: 'Let’s Connect',
+        scanToConnect: 'Scan to Connect',
+        index : 'Index',
+        joinUs: 'JOIN US',
+        privacyPolicy: 'PRIVACY POLICY',
+        termServices: 'TERM & SERVICES',
+        allRight: 'ALL RIGHTS RESERVED. KBM EDUCATION CONSULTANCY ©2025',
+        legal: 'Legal',
+        stayConnected: 'Stay Connected'
     },
     // japanese language list
     jp: {
@@ -266,6 +275,15 @@ export  const languageData = {
         KBM: 'ケー・ビー・エム',
         educationConsultancy: '教育コンサルタント',
         footerPara: `KBMエデュケーションコンサルタンシーは、学生がグローバルな教育の夢を実現できるよう支援しています。
-                    キャリアカウンセリングや大学選択から、ビザガイダンス、出発前サポートまで、留学のあらゆるステップをスムーズかつ成功に導きます。`
+                    キャリアカウンセリングや大学選択から、ビザガイダンス、出発前サポートまで、留学のあらゆるステップをスムーズかつ成功に導きます。`,
+        letsConnect: 'つながりましょう',
+        scanToConnect: 'スキャンしてつながる',
+        index: 'インデックス',
+        joinUs: '参加する',
+        privacyPolicy: 'プライバシーポリシー',
+        termServices: '利用規約とサービス',
+        allRight: '全著作権所有。KBMエデュケーションコンサルタンシー ©2025',
+        legal: '法的情報',
+        stayConnected: 'つながりを保つ'
     },
 }

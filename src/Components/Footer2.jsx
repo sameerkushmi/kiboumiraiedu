@@ -47,7 +47,9 @@ export default function Footer2() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-6">
               <Link to="/contact">
                 <button className="px-6 sm:px-8 py-2 sm:py-3 bg-text text-white font-semibold rounded-full hover:scale-105 transition duration-300 shadow-md">
-                  Let’s Connect
+                  {
+                    language === 'en' ? languageData.en.letsConnect : languageData.jp.letsConnect
+                  }
                 </button>
               </Link>
               |{/* QR Code Area */}
@@ -57,7 +59,11 @@ export default function Footer2() {
                   alt="QR Code"
                   className="w-20 h-20 bg-white sm:w-24 sm:h-24 rounded-lg shadow-lg border border-white/30"
                 />
-                <p className="text-xs opacity-80 mt-2">Scan to Connect</p>
+                <p className="text-xs opacity-80 mt-2">
+                  {
+                    language === 'en' ? languageData.en.scanToConnect : languageData.jp.letsConnect
+                  }
+                </p>
               </div>
             </div>
           </div>
@@ -67,32 +73,64 @@ export default function Footer2() {
         <div className="grid grid-cols-1 md:grid-cols-3 border-white border-t-4 border-b-4 bg-[#F4E9DC] text-[#7A542F] rounded-b-4xl overflow-hidden ">
           {/* Column 1 */}
           <div className="flex flex-col justify-between p-8 min-h-[40vh] border-b md:border-r border-white ">
-            <h2 className="text-2xl font-semibold mb-4">Index</h2>
-            <ul className="space-y-2 text-md font-medium">
+            <h2 className="text-2xl font-semibold mb-4">
+              {
+                language === 'en' ? languageData.en.index : languageData.jp.index
+              }
+            </h2>
+            <ul className="space-y-2 text-md font-medium uppercase">
               <li>
-                <Link to="/">HOME</Link>
+                <Link to="/">
+                  {
+                    language === 'en' ? languageData.en.home: languageData.jp.home
+                  }
+                </Link>
               </li>
               <li>
-                <Link to="/about">ABOUT US</Link>
+                <Link to="/about">
+                  {
+                    language === 'en' ? languageData.en.about: languageData.jp.about
+                  }
+                </Link>
               </li>
               <li>
-                <Link to="/services">OUR SERVICES</Link>
+                <Link to="/services">
+                  {
+                    language === 'en' ? languageData.en.ourServices: languageData.jp.ourServices
+                  }
+                </Link>
               </li>
               <li>
-                <Link to="/gallery">GALLERY</Link>
+                <Link to="/gallery">
+                  {
+                    language === 'en' ? languageData.en.gallery: languageData.jp.gallery
+                  }
+                </Link>
               </li>
             </ul>
           </div>
 
           {/* Column 2 */}
           <div className="flex flex-col justify-between p-8 min-h-[40vh] border-b md:border-r border-white ">
-            <h2 className="text-2xl font-semibold mb-4">Stay Connected</h2>
+            <h2 className="text-2xl font-semibold mb-4">
+              {
+                language === 'en' ? languageData.en.stayConnected: languageData.jp.stayConnected
+              }
+            </h2>
             <ul className="space-y-2 text-md font-medium">
               <li>
-                <Link to="#">CONTACT US</Link>
+                <Link to="#">
+                  {
+                    language === 'en' ? languageData.en.contact: languageData.jp.contact
+                  }
+                </Link>
               </li>
               <li>
-                <Link to="#">JOIN US</Link>
+                <Link to="#">
+                  {
+                    language === 'en' ? languageData.en.joinUs: languageData.jp.joinUs
+                  }
+                </Link>
               </li>
               <div className="flex items-center gap-4">
                 <li>
@@ -121,16 +159,30 @@ export default function Footer2() {
 
           {/* Column 3 */}
           <div className="flex flex-col justify-between p-8 min-h-[40vh]">
-            <h2 className="text-2xl font-semibold mb-4">Legal</h2>
+            <h2 className="text-2xl font-semibold mb-4">
+              {
+                language === 'en' ? languageData.en.legal: languageData.jp.legal
+              }
+            </h2>
             <ul className="space-y-2 textmd font-medium">
               <li>
-                <Link to="#">PRIVACY POLICY</Link>
+                <Link to="#">
+                  {
+                    language === 'en' ? languageData.en.privacyPolicy:languageData.jp.privacyPolicy 
+                  }
+                </Link>
               </li>
               <li>
-                <Link to="#">TERM & SERVICES</Link>
+                <Link to="#">
+                  {
+                    language === 'en' ? languageData.en.privacyPolicy:languageData.jp.privacyPolicy 
+                  }
+                </Link>
               </li>
               <p className=" font-light opacity-80 mt-4">
-                ALL RIGHTS RESERVED. KBM EDUCATION CONSULTANCY ©2025
+                  {
+                    language === 'en' ? languageData.en.allRight:languageData.jp.allRight 
+                  }
               </p>
             </ul>
           </div>
