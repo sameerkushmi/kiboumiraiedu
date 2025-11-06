@@ -1,20 +1,14 @@
-import React from "react";
+import { useContext } from "react";
+import { languageData } from "../../Hooks/language";
 import { motion } from "framer-motion";
+import { LanguageContext } from "../../Context/Context";
 
 export default function AboutTeam() {
+
+  const {language} = useContext(LanguageContext)
+
   return (
     <section className="container mx-auto px-4 py-20">
-      {/* Heading */}
-      {/* <motion.div
-        className="text-3xl md:text-5xl font-extrabold text-center md:text-left mb-8"
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.8 }}
-      >
-        Who are behind Your Success?
-      </motion.div> */}
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Text Section */}
 
@@ -26,34 +20,42 @@ export default function AboutTeam() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900">
-            Who’s Behind Your Success?
+            {
+              language === 'en' ? languageData.en.aboutTeamHeader: languageData.jp.aboutTeamHeader
+            }
           </h2>
           <p className="text-justify text-lg">
-            At{" "}
+            {
+              language === 'en' ? languageData.en.at : languageData.jp.at
+            }
+            {" "}
             <span className="font-semibold text-blue-700">
-              KBM Education Consultancy
+            {
+              language === 'en' ? languageData.en.KBM: languageData.jp.KBM
+            }
+            {
+              language === 'en' ? languageData.en.consultancy: languageData.jp.consultancy
+            }
             </span>
-            , our team of experienced counsellors, academic advisors, and
-            international education experts are dedicated to helping you achieve
-            your study abroad dreams. Each of our professionals brings years of
-            experience in guiding students toward the right universities and
-            programs in Japan, the USA, Australia, the UK, Canada, and beyond.
+            {
+              language === 'en' ? languageData.en.aboutTeamPara_1: languageData.jp.aboutTeamPara_1
+            }
             <br />
             <br />
-            We believe that success begins with personalized mentorship. From
-            career counselling to application assistance, visa processing, and
-            pre-departure sessions, our experts walk beside you at every step of
-            your journey. Our mission is to ensure that every student receives
-            transparent advice, genuine guidance, and lifelong support even
-            after reaching their destination.
+            {
+              language === 'en' ? languageData.en.aboutTeamPara_2: languageData.jp.aboutTeamPara_2
+            }
             <br />
             <br />
-            With KBM, your goals are nurtured by people who truly care about
-            your success — because your achievement is our greatest reward.
+            {
+              language === 'en' ? languageData.en.aboutIntroPara_3: languageData.jp.aboutIntroPara_3
+            }
           </p>
 
           <button className="text-lg px-4 py-1 rounded-xl bg-text text-white hover:scale-105 duration-300">
-            Meet Our Instructors
+            {
+              language === 'en' ? languageData.en.meetOurInstructors: languageData.jp.meetOurInstructors
+            }
           </button>
         </motion.div>
 

@@ -188,7 +188,23 @@ export  const languageData = {
         aboutWhyCardPara_4: `From counseling to pre-departure briefings, we support you
                             every step of the way — even after you arrive in your chosen
                             country`,
-        aboutWhyCTA: 'Discover how KBM can guide your study abroad journey'
+        aboutWhyCTA: 'Discover how KBM can guide your study abroad journey',
+        aboutTeamHeader: 'Who’s Behind Your Success?',
+        at: 'At',
+        aboutTeamPara_1:`, our team of experienced counsellors, academic advisors, and
+                        international education experts are dedicated to helping you achieve
+                        your study abroad dreams. Each of our professionals brings years of
+                        experience in guiding students toward the right universities and
+                        programs in Japan, the USA, Australia, the UK, Canada, and beyond.`,
+        aboutTeamPara_2: `We believe that success begins with personalized mentorship. From
+                        career counselling to application assistance, visa processing, and
+                        pre-departure sessions, our experts walk beside you at every step of
+                        your journey. Our mission is to ensure that every student receives
+                        transparent advice, genuine guidance, and lifelong support even
+                        after reaching their destination.`,
+        aboutTeamPara_3: `With KBM, your goals are nurtured by people who truly care about
+                        your success — because your achievement is our greatest reward.`,
+        meetOurInstructors: 'Meet Our Instructors'
     },
     // japanese language list
     jp: {
@@ -354,6 +370,15 @@ export  const languageData = {
                             選んだ国に到着した後も、その支援は続きます。`,
         globalUniversityNetwork: 'グローバル大学ネットワーク',
         aboutWhyCardPara_5: `私たちは、世界中の有名大学や教育機関と提携しており、学生が最高の学術プログラムや奨学金の機会にアクセスできるよう支援しています。`,
-        aboutWhyCTA: 'KBMがあなたの留学の旅をどのように導けるかをご覧ください'
+        aboutWhyCTA: 'KBMがあなたの留学の旅をどのように導けるかをご覧ください',
+        aboutTeamHeader: 'あなたの成功を支えるのは誰？',
+        at: 'で',
+        aboutTeamPara_1:`, 私たちのチームは、経験豊富なカウンセラー、学術アドバイザー、そして国際教育の専門家で構成されており、あなたの留学の夢を実現するために全力を尽くしています。
+                        それぞれの専門家が、日本、アメリカ、オーストラリア、イギリス、カナダなどの国々で、学生を最適な大学やプログラムへ導いてきた豊富な経験を持っています。`,
+        aboutTeamPara_2: `私たちは、成功は個別のメンタリングから始まると信じています。
+                        キャリアカウンセリングから出願サポート、ビザ手続き、出発前オリエンテーションに至るまで、私たちの専門家があなたの旅のすべての段階で寄り添います。
+                        私たちの使命は、すべての学生が目的地に到達した後も、透明性のあるアドバイス、誠実なガイダンス、そして生涯にわたるサポートを受けられるようにすることです。`,
+        aboutIntroPara_3: `KBMでは、あなたの目標は本当にあなたの成功を願う人々によって支えられます——なぜなら、あなたの達成こそが私たちにとって最大の喜びだからです。`,
+        meetOurInstructors: '私たちの講師陣をご紹介'
     },
 }
