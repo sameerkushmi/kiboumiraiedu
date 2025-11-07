@@ -1,10 +1,5 @@
-import React from "react";
-import Accordion from "../../../HelperComponents/Accordion";
 import Carrer from "./Info/Carrer";
 import Benefit from "./Info/Benefit";
-import InfoParallax from "./InfoParallax";
-
-function Career() {}
 
 export default function CounsellingInfo() {
   return (
