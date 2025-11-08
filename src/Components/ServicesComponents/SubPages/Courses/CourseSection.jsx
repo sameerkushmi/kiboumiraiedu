@@ -3,7 +3,6 @@ import { Tabs } from "antd";
 import { Star } from "lucide-react";
 
 const CourseSection = () => {
-  const [activeKey, setActiveKey] = useState("0");
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   // ✅ Detect window resize
@@ -53,7 +52,6 @@ const CourseSection = () => {
     { title: "Adobe PremierePro", img: "/Uploads/courses/premierepro.jpeg", caption: "Learn Professional Video Editing from Start to Finish.", tagLine: "Perfect course for creators, filmmakers, and professionals.", rate: "5" },
   ];
 
-  const onTabChange = (key) => setActiveKey(key);
 
   const renderCourses = (key) => {
     const selectedTitles = courseList[key] || [];
@@ -111,7 +109,6 @@ const CourseSection = () => {
 
       {/* Tabs */}
       <Tabs
-        onChange={onTabChange}
         tabPosition={windowSize <= 720 ? "top" : "left"}
         items={courseTitle.map((title, i) => ({
           label: title,

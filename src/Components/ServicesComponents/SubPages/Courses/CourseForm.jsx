@@ -39,10 +39,11 @@ export default function CourseForm() {
                 *Course:* ${formData.course || "Not provided"}
                 *Additional Message:* ${formData.additionalMessage || "No message provided"}
                 `.trim();
+        
+        const encodedText = encodeURIComponent(message)
+        const Mobilenumber = '+9779769774665'
 
-        const whatsappUrl = `https://wa.me/9769774665?text=${encodeURIComponent(
-            message
-        )}`;
+        const whatsappUrl = `https://wa.me/${Mobilenumber}?text=${encodedText}`;
         window.open(whatsappUrl, "_blank");
         setFormData({
             fullName: "",
