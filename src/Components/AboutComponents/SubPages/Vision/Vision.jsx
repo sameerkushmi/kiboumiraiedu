@@ -27,20 +27,7 @@ export default function Vision() {
           {/* Description */}
           <div className="flex items-center justify-center text-center px-4">
             <p className="max-w-6xl text-sm sm:text-base md:text-lg leading-relaxed">
-              At KBM Education Consultancy, our vision is to empower students
-              across the globe to achieve their academic and professional
-              aspirations through personalized guidance and unwavering support.
-              We strive to provide a transparent, comprehensive, and ethical
-              approach to study abroad planning, ensuring each student receives
-              tailored counseling, accurate information, and practical advice
-              for every step of their journey—from selecting the right courses
-              and universities to visa preparation and post-arrival support. By
-              fostering a culture of trust, mentorship, and excellence, we aim
-              to bridge the gap between students’ ambitions and opportunities
-              worldwide, helping them navigate challenges with confidence. Our
-              ultimate goal is to equip every student with the knowledge,
-              resources, and skills necessary to succeed academically,
-              professionally, and personally in their chosen destination.
+              {language === 'en' ? languageData.en.visionDesc : languageData.jp.visionDesc}
             </p>
           </div>
 

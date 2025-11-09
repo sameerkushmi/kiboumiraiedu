@@ -1,6 +1,11 @@
-import React from "react";
+import { useContext } from "react";
+import { LanguageContext } from "../../../../Context/Context";
+import { languageData } from "../../../../Hooks/language";
 
 export default function Mission() {
+
+  const {language}  = useContext(LanguageContext)
+  
   return (
     <section className="mx-6 bg-blue text-white flex items-center py-12 md:py-20 rounded-4xl">
       <div className="container mx-auto p-6 md:p-10">
@@ -12,25 +17,19 @@ export default function Mission() {
               (02)
             </div>
             <div className="text-5xl md:text-8xl font-extrabold text-center md:text-right">
-              Our Mission
+              {
+                language === 'en' ? languageData.en.ourMission: languageData.jp.ourMission
+              }
+
             </div>
           </div>
 
           {/* Description */}
           <div className="flex items-center justify-center text-center px-4">
             <p className="max-w-6xl text-sm sm:text-base md:text-lg leading-relaxed">
-              Our mission at KBM Education Consultancy is to guide students in
-              realizing their academic and professional dreams with clarity,
-              confidence, and personalized support. We are committed to
-              providing accurate information, transparent processes, and
-              practical advice throughout every step of the study abroad
-              journey—from selecting the right courses and universities to visa
-              preparation and post-arrival guidance. By fostering a supportive
-              environment, we aim to empower students to make informed
-              decisions, overcome challenges, and embrace global opportunities.
-              Through mentorship, expertise, and dedication, our goal is to help
-              each student unlock their full potential, achieve success in their
-              chosen destination, and grow both academically and personally.
+              {
+                language === 'en' ? languageData.en.ourMissionDesc : languageData.jp.ourMissionDesc
+              }
             </p>
           </div>
 

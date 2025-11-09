@@ -246,7 +246,43 @@ export  const languageData = {
         ourMissionVision: 'Our Mission & Vision',
         visionHeroDesc: `We strive to  empower students with expert guidance, transparent processes, and 
                         comprehensive support to achieve their global education goals.`,
-        ourVision: 'Our Vision'
+        ourVision: 'Our Vision',
+        visionDesc: `At KBM Education Consultancy, our vision is to empower students
+                    across the globe to achieve their academic and professional
+                    aspirations through personalized guidance and unwavering support.
+                    We strive to provide a transparent, comprehensive, and ethical
+                    approach to study abroad planning, ensuring each student receives
+                    tailored counseling, accurate information, and practical advice
+                    for every step of their journey—from selecting the right courses
+                    and universities to visa preparation and post-arrival support. By
+                    fostering a culture of trust, mentorship, and excellence, we aim
+                    to bridge the gap between students’ ambitions and opportunities
+                    worldwide, helping them navigate challenges with confidence. Our
+                    ultimate goal is to equip every student with the knowledge,
+                    resources, and skills necessary to succeed academically,
+                    professionally, and personally in their chosen destination.`,
+        ourMission: 'Our Mission',
+        ourMissionDesc: `Our mission at KBM Education Consultancy is to guide students in realizing their
+                         academic and professional dreams with clarity, confidence, and personalized 
+                         support. We are committed to providing accurate information, transparent 
+                         processes, and practical advice throughout every step of the study abroad 
+                         ourney—from selecting the right courses and universities to visa preparation 
+                         and post-arrival guidance. By fostering a supportive environment, we aim to 
+                         empower students to make informed decisions, overcome challenges, and embrace 
+                         global opportunities. Through mentorship, expertise, and dedication, our goal 
+                         is to help each student unlock their full potential, achieve success in their 
+                         chosen destination, and grow both academically and personally.`,
+        ourValues: 'Our Values',
+        ourValuesDesc: `Our mission at KBM Education Consultancy is to guide students in realizing their 
+                        academic and professional dreams with clarity, confidence, and personalized 
+                        support. We are committed to providing accurate information, transparent 
+                        processes, and practical advice throughout every step of the study abroad 
+                        journey—from selecting the right courses and universities to visa preparation 
+                        and post-arrival guidance. By fostering a supportive environment, we aim to 
+                        empower students to make informed decisions, overcome challenges, and embrace
+                        global opportunities. Through mentorship, expertise, and dedication, our goal 
+                        is to help each student unlock their full potential, achieve success in their 
+                        chosen destination, and grow both academically and personally.`
     },
     // japanese language list
     jp: {
@@ -454,6 +490,31 @@ export  const languageData = {
         ourMissionVision: '私たちの使命とビジョン',
         visionHeroDesc: `私たちは、専門的なガイダンス、透明性のあるプロセス、包括的なサポートを通じて、学生がグローバルな
                         教育目標を達成できるよう力を与えることに努めています。`,
-        ourVision: '私たちのビジョン'
-    },
+        ourVision: '私たちのビジョン',
+        visionDesc: `KBM教育コンサルタンシーでは、世界中の学生が自分の学業的および職業的な夢を実現できるよう、個別の指導と揺るぎないサポートを通じて力を与えることを私たちのビジョンとしています。
+                    私たちは、留学計画において透明性が高く、包括的で、倫理的なアプローチを提供することを目指しています。
+                    学生一人ひとりが、自分に合ったコースや大学の選択からビザ準備、渡航後のサポートに至るまで、適切なカウン
+                    セリング、正確な情報、そして実践的なアドバイスを受けられるよう努めています。
+                    信頼・指導・卓越性の文化を育むことで、学生の「夢」と「チャンス」の架け橋となり、彼らが自信を持って課題
+                    を乗り越えられるよう支援します。
+                    最終的な目標は、学生が選んだ国で学業的にも職業的にも、そして個人的にも成功するために必要な知識・リソー
+                    ス・スキルを身につけられるよう支援することです。`,
+        ourMission : '私たちの使命',
+        ourMissionDesc: `KBM教育コンサルタントの使命は、学生が明確なビジョンと自信、そして個別のサポートをもって学問的・職業的な夢を実現できるよう導くことです。私たちは、正確な情報、透明なプロセス、
+                        そして実践的なアドバイスを、留学のあらゆる段階—コースや大学の選択からビザ準備、到着後のサポートまで—で提供することに尽力しています。
+                        支援的な環境を育むことで、学生が正しい判断を下し、困難を乗り越え、世界的なチャンスを掴む力を身につけることを目指しています。
+                        メンタリング、専門知識、そして献身を通じて、私たちはすべての学生が自らの可能性を最大限に引き出し、
+                        選んだ国で学業的にも個人的にも成功を収められるよう支援することを目標としています。`,
+        ourValues: '私たちの価値観',
+        ourValuesDesc : `KBM教育コンサルタントでは、私たちの中核となる価値観がすべての決定と行動を導いています。
+                    私たちは **誠実さ・透明性・正直さ** を大切にし、学生が留学の過程を通じて正確で信頼でき
+                    るアドバイスを受けられるよう努めています。
+                    **卓越性** を追求し、質の高いメンタリング、個別カウンセリング、そして学生が学業・キャリ
+                    ア目標を達成できるよう支援する実践的なソリューションを提供します。
+                    また、私たちは **共感と尊重** を重視し、すべての学生が理解され、励まされるサポート環境を
+                    育んでいます。
+                    さらに、**協働・革新・継続的な学び** を中心に据え、変化する世界の教育動向に柔軟に対応し
+                    ながら、学生の成功と全人的な成長への献身を貫いています。`
+
+}
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import AboutWhyHero from "./AboutWhyHero";
 import AboutSubWhy from "./AboutSubWhy";
 
