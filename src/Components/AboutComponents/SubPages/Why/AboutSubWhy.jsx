@@ -1,57 +1,58 @@
-import React, { useState } from "react";
+import { useContext, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, LampIcon, X } from "lucide-react";
-import { video } from "motion/react-client";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { LanguageContext } from "../../../../Context/Context";
+import { languageData } from "../../../../Hooks/language";
 
-const reasons = [
+
+
+export default function AboutSubWhy() {
+  const {language} = useContext(LanguageContext)
+
+  // reason list array 
+   const reasons = [
   {
     id: 1,
-    title: "Years of Industry Expertise",
-    description:
-      "With over a decade of experience, our consultancy has guided hundreds of students and professionals toward successful academic and career outcomes both locally and internationally.",
+    title: language === 'en' ? languageData.en.aboutSubWhyTitle_1 : languageData.jp.aboutSubWhyTitle_1,
+    description:language === 'en' ? languageData.en.aboutSubWhyDesc_1 : languageData.jp.aboutSubWhyDesc_1,
     image: "uploads/home/why/experience.jpg",
   },
   {
     id: 2,
-    title: "Personalized Guidance",
-    description:
-      "We believe every individual’s journey is unique. Our counselors provide tailored advice based on your goals, background, and aspirations to help you make the best decisions for your future.",
+    title: language === 'en' ? languageData.en.aboutSubWhyTitle_2 : languageData.jp.aboutSubWhyTitle_2,
+    description:language === 'en' ? languageData.en.aboutSubWhyDesc_2 : languageData.jp.aboutSubWhyDesc_2,
     image: "uploads/home/why/personalized.jpg",
   },
   {
     id: 3,
-    title: "Transparent Process",
-    description:
-      "We maintain complete transparency in every step—from counseling to application, documentation, and visa support—ensuring you are informed and confident throughout the process.",
+    title: language === 'en' ? languageData.en.aboutSubWhyTitle_3: languageData.jp.aboutSubWhyTitle_3,
+    description:language === 'en' ? languageData.en.aboutSubWhyDesc_3 : languageData.jp.aboutSubWhyDesc_3,
     image: "uploads/home/why/transparent.jpg",
   },
   {
     id: 4,
-    title: "Experienced Counselors",
-    description:
-      "Our certified and experienced counselors have deep knowledge of international education systems, visa procedures, and career pathways, ensuring you receive expert advice and reliable support.",
+    title: language === 'en' ? languageData.en.aboutSubWhyTitle_4: languageData.jp.aboutSubWhyTitle_4,
+    description:language === 'en' ? languageData.en.aboutSubWhyDesc_4 : languageData.jp.aboutSubWhyDesc_4,
     image: "uploads/home/why/counselors.jpg",
   },
   {
     id: 5,
-    title: "Wide Network of Partner Institutions",
-    description:
-      "We collaborate with top universities, colleges, and training institutes worldwide, providing you with multiple options and scholarship opportunities to suit your preferences.",
+    title: language === 'en' ? languageData.en.aboutSubWhyTitle_5: languageData.jp.aboutSubWhyTitle_5,
+    description:language === 'en' ? languageData.en.aboutSubWhyDesc_5 : languageData.jp.aboutSubWhyDesc_5,
     image: "uploads/home/why/network.jpg",
   },
   {
     id: 6,
-    title: "End-to-End Support",
-    description:
-      "From career counseling to university selection, documentation, interview preparation, and post-arrival assistance — we stay with you every step of the way to ensure a smooth journey.",
+    title: language === 'en' ? languageData.en.aboutSubWhyTitle_6: languageData.jp.aboutSubWhyTitle_6,
+    description:language === 'en' ? languageData.en.aboutSubWhyDesc_6 : languageData.jp.aboutSubWhyDesc_6,
     image: "uploads/home/why/support.jpg",
   },
 ];
 
-export default function AboutSubWhy() {
   const [activeReason, setActiveReason] = useState(reasons[0]);
-  const defaultImage =
-    "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=600&h=400&fit=crop";
+  const defaultImage ="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=600&h=400&fit=crop";
+
+ 
 
   const handleReasonClick = (reason) => {
     if (activeReason?.id === reason.id) {
@@ -186,12 +187,14 @@ export default function AboutSubWhy() {
         {/* Header Section - Always Visible */}
         <div className="flex items-center flex-col mb-6">
           <div className="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
-            Why makes KBM stand Out?
+            {
+              language === 'en' ? languageData.en.aboutSubWhyHeader : languageData.jp.aboutSubWhyHeader
+            }
           </div>
           <div className="max-w-3xl text-xl text-gray-600 leading-relaxed text-center">
-            KBM Education Consultancy provides personalized guidance, expert
-            mentorship, and a wide university network to help students achieve
-            their study abroad goals with confidence.
+            {
+              language === 'en' ? languageData.en.aboutSubWhyDesc : languageData.jp.aboutSubWhyDesc
+            }
           </div>
         </div>
 

@@ -284,7 +284,36 @@ export  const languageData = {
                         is to help each student unlock their full potential, achieve success in their 
                         chosen destination, and grow both academically and personally.`,
         whyChooseKBM: 'Why Choose KBM?',
-        aboutWhyHeroDesc: 'Personalized guidance, expert mentorship, and a global university network to help students achieve their study abroad goals with confidence.'
+        aboutWhyHeroDesc: `Personalized guidance, expert mentorship, and a global university network to
+                            help students achieve their study abroad goals with confidence.`,
+        aboutSubWhyHeader: 'Why makes KBM stand Out?',
+        aboutSubWhyDesc: `KBM Education Consultancy provides personalized guidance, expert mentorship, 
+                        and a wide university network to help students achieve their study abroad goals 
+                        with confidence.`,
+        aboutSubWhyTitle_1: 'Years of Industry Expertise',
+        aboutSubWhyDesc_1: `With over a decade of experience, our consultancy has guided hundreds of 
+                            students and professionals toward successful academic and career outcomes both locally and 
+                            internationally.`,
+        aboutSubWhyTitle_2 : 'Personalized Guidance',
+        aboutSubWhyDesc_2: `We believe every individual’s journey is unique. Our counselors provide tailored
+                            advice based on your goals, background, and aspirations to help you make the best
+                            decisions for your future.`,
+        aboutSubWhyTitle_3: 'Transparent Process',
+        aboutSubWhyDesc_3: `We maintain complete transparency in every step—from counseling to application,
+                            documentation, and visa support—ensuring you are informed and confident throughout
+                            the process.`,
+        aboutSubWhyTitle_4: 'Experienced Counselors',
+        aboutSubWhyDesc_4: `Our certified and experienced counselors have deep knowledge of international 
+                            education systems, visa procedures, and career pathways, ensuring you receive
+                            expert advice and reliable support.`,
+        aboutSubWhyTitle_5: 'Wide Network of Partner Institutions',
+        aboutSubWhyDesc_5: `We collaborate with top universities, colleges, and training institutes worldwide, 
+                            providing you with multiple options and scholarship opportunities to suit your
+                            preferences.`,
+        aboutSubWhyTitle_6: 'End-to-End Support',
+        aboutSubWhyDesc_6: `From career counseling to university selection, documentation, interview 
+                            preparation, and post-arrival assistance — we stay with you every step of the
+                            way to ensure a smooth journey.`
     },
     // japanese language list
     jp: {
@@ -519,7 +548,27 @@ export  const languageData = {
                     ながら、学生の成功と全人的な成長への献身を貫いています。`,
         whyChooseKBM: 'なぜKBMを選ぶのか？',
         aboutWhyHeroDesc: `個別のガイダンス、専門的なメンタリング、そしてグローバルな大学ネットワークを通じて、学生が自信
-                            を持って留学の目標を達成できるよう支援します。`
-        
-}
+                            を持って留学の目標を達成できるよう支援します。`,
+        aboutSubWhyHeader: 'KBMが際立つ理由',
+        aboutSubWhyDesc: `KBMエデュケーションコンサルタンシーは、学生が自信を持って留学目標を達成できるよう、個別の指導、
+                            専門的なメンターシップ、そして広範な大学ネットワークを提供しています。`,
+        aboutSubWhyTitle_1: '業界での豊富な経験',
+        aboutSubWhyDesc_1: `10年以上の経験を持つ当コンサルタンシーは、国内外で数百人の学生や社会人が学業・キャリアで成功
+                            を収めるための指導を行ってきました。`,
+        aboutSubWhyTitle_2: '個別指導',
+        aboutSubWhyDesc_2: `私たちは、すべての人の旅が独自であると信じています。カウンセラーは、あなたの目標、背景、志向
+                            に基づいて個別のアドバイスを提供し、将来に向けて最良の判断ができるよう支援します。`,
+        aboutSubWhyTitle_3: '透明性のあるプロセス',
+        aboutSubWhyDesc_3: `カウンセリングから出願、書類手続き、ビザサポートに至るまで、すべての段階で完全な透明性を維持
+                            し、プロセス全体を通じてあなたが情報を把握し、自信を持てるようにします。`,
+        aboutSubWhyTitle_4: '経験豊富なカウンセラー',
+        aboutSubWhyDesc_4: `当社の認定された経験豊富なカウンセラーは、国際教育制度、ビザ手続き、キャリアパスに関する深い
+                            知識を持ち、専門的なアドバイスと信頼できるサポートを提供します。`,
+        aboutSubWhyTitle_5: '幅広い提携教育機関ネットワーク',
+        aboutSubWhyDesc_5: `私たちは、世界中の一流大学、カレッジ、教育機関と提携しており、あなたの希望に合った複数の選択
+                            肢や奨学金の機会を提供します。`,
+        aboutSubWhyTitle_6: 'エンドツーエンドサポート',
+        aboutSubWhyDesc_6: `キャリアカウンセリングから大学選択、書類手続き、面接準備、到着後のサポートまで、留学のあらゆる
+                            段階であなたを支え、スムーズな旅を実現します。`
+    }
 }
