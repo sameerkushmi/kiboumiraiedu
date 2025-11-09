@@ -282,7 +282,9 @@ export  const languageData = {
                         empower students to make informed decisions, overcome challenges, and embrace
                         global opportunities. Through mentorship, expertise, and dedication, our goal 
                         is to help each student unlock their full potential, achieve success in their 
-                        chosen destination, and grow both academically and personally.`
+                        chosen destination, and grow both academically and personally.`,
+        whyChooseKBM: 'Why Choose KBM?',
+        aboutWhyHeroDesc: 'Personalized guidance, expert mentorship, and a global university network to help students achieve their study abroad goals with confidence.'
     },
     // japanese language list
     jp: {
@@ -514,7 +516,10 @@ export  const languageData = {
                     また、私たちは **共感と尊重** を重視し、すべての学生が理解され、励まされるサポート環境を
                     育んでいます。
                     さらに、**協働・革新・継続的な学び** を中心に据え、変化する世界の教育動向に柔軟に対応し
-                    ながら、学生の成功と全人的な成長への献身を貫いています。`
-
+                    ながら、学生の成功と全人的な成長への献身を貫いています。`,
+        whyChooseKBM: 'なぜKBMを選ぶのか？',
+        aboutWhyHeroDesc: `個別のガイダンス、専門的なメンタリング、そしてグローバルな大学ネットワークを通じて、学生が自信
+                            を持って留学の目標を達成できるよう支援します。`
+        
 }
 }
