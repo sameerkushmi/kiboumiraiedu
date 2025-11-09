@@ -313,7 +313,19 @@ export  const languageData = {
         aboutSubWhyTitle_6: 'End-to-End Support',
         aboutSubWhyDesc_6: `From career counseling to university selection, documentation, interview 
                             preparation, and post-arrival assistance — we stay with you every step of the
-                            way to ensure a smooth journey.`
+                            way to ensure a smooth journey.`,
+        successStoriesTitle: 'Our Success Stories',
+        successStoriesDesc: `Discover how KBM Education Consultancy has guided students to achieve their 
+                        study abroad dreams with confidence and success.`,
+        successStoriesHeader: `Celebrating Our Students' Achievements`,
+        successStoriesDesc: `See how KBM Education Consultancy has helped students fulfill their
+                            dreams of studying abroad and achieving success in their academic
+                            journey.`,
+        viewMore: 'View More',
+        testimonialsHeroHeader: 'Hear From Students',
+        testimonialsDesc: `Discover the experiences of our students and how KBM Education Consultancy 
+                            helped them achieve their study abroad dreams.`,
+        joinNow: 'Join Now'
     },
     // japanese language list
     jp: {
@@ -569,6 +581,17 @@ export  const languageData = {
                             肢や奨学金の機会を提供します。`,
         aboutSubWhyTitle_6: 'エンドツーエンドサポート',
         aboutSubWhyDesc_6: `キャリアカウンセリングから大学選択、書類手続き、面接準備、到着後のサポートまで、留学のあらゆる
-                            段階であなたを支え、スムーズな旅を実現します。`
+                            段階であなたを支え、スムーズな旅を実現します。`,
+        successStoriesTitle: '私たちの成功事例',
+        successStoriesDesc: `KBMエデュケーションコンサルタンシーが、学生が自信を持って留学の夢を実現できるようどのように導いて
+                            きたかをご覧ください。`,
+        successStoriesHeader: '学生の成果を祝う',
+        successStoriesDesc: `KBMエデュケーションコンサルタンシーが、学生が留学の夢を叶え、学業で成功を収める手助けをどのようにし
+                            てきたかをご覧ください。`,
+        viewMore: 'さらに見る',
+        testimonialsHeroHeader: '学生の声を聞く',
+        testimonialsDesc: `学生たちの体験と、KBMエデュケーションコンサルタンシーがどのように彼らの留学の夢の実現を支援し
+                            たかをご覧ください。`,
+        joinNow: '今すぐ参加'
     }
 }

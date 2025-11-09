@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import { useContext, useState } from "react";
 import HeroSection2 from "../../../HelperComponents/AboutSubComponent/HeroSection2";
+import { languageData } from "../../../../Hooks/language";
+import { LanguageContext } from "../../../../Context/Context";
 
 export default function SuccessStories() {
+  const {language} = useContext(LanguageContext)
   // Array of success stories
   const successStories = [
     { id: 1, image: "/Uploads/home/success1.jpg", title: "Story 1" },
@@ -29,20 +32,22 @@ export default function SuccessStories() {
   return (
     <div>
       <HeroSection2
-        title="Our Success Stories"
-        description="Discover how KBM Education Consultancy has guided students to achieve their study abroad dreams with confidence and success."
-        // btnText="Learn More"
+        title={language === 'en' ? languageData.en.successStoriesTitle : languageData.jp.successStoriesTitle}
+        description={language === 'en' ? languageData.en.successStoriesDesc : languageData.jp.successStoriesDesc}
+        btnText={language === 'en' ? languageData.en.learnMore : languageData.jp.learnMore}
       />
       <section className="container mx-auto my-12">
         {/* Heading */}
         <div className="mb-12 flex items-center flex-col gap-4">
           <h1 className="text-4xl lg:text-5xl text-center font-bold text-gray-900 leading-tight">
-            Celebrating Our Students' Achievements
+            {
+              language === 'en' ? languageData.en.successStoriesHeader : languageData.jp.successStoriesHeader
+            }
           </h1>
           <p className="max-w-3xl text-center text-base md:text-lg">
-            See how KBM Education Consultancy has helped students fulfill their
-            dreams of studying abroad and achieving success in their academic
-            journey.
+            {
+              language === 'en' ? languageData.en.successStoriesDesc : languageData.jp.successStoriesDesc
+            }
           </p>
         </div>
 
@@ -69,7 +74,9 @@ export default function SuccessStories() {
               onClick={handleLoadMore}
               className="px-6 py-2 bg-text text-white rounded-full  transition-colors duration-300"
             >
-              View More
+              {
+                language === 'en' ? languageData.en.viewMore : languageData.jp.viewMore
+              }
             </button>
           </div>
         )}
