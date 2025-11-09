@@ -325,7 +325,59 @@ export  const languageData = {
         testimonialsHeroHeader: 'Hear From Students',
         testimonialsDesc: `Discover the experiences of our students and how KBM Education Consultancy 
                             helped them achieve their study abroad dreams.`,
-        joinNow: 'Join Now'
+        joinNow: 'Join Now',
+        testimonialsHeader: 'What Do Our Students Say?',
+        testimonialsDesc: `Hear from our students who experienced personal growth,
+                        practical learning, and success through our programs.`,
+        testimonialsName_1 : 'Aarav Sharma',
+        testimonialsquote_1: `Thanks to KBM Education Consultancy, I’m now pursuing my IT degree in Japan.
+                            From university selection to post-arrival guidance, they supported me like family.
+                            Their constant communication after my visa approval made me feel secure and confident.`,
+        testimonialsName_2: 'Priya Karki',
+        testimonialsquote_2: `Getting my visa for Australia was the biggest dream of my life, and KBM made
+                            it a reality. They explained every step clearly, prepared me for the interview,
+                            and even guided me after I landed in Melbourne. Truly a life-changing experience!`,
+        testimonialsName_3: 'Rohit Thapa',
+        testimonialsquote_3: `I’m currently studying in Toronto, and I still remember how smoothly KBM 
+                            handled my Canada process. From choosing the right college to completing all 
+                            documentation, they made it stress-free. Their team genuinely cares about every
+                            student.`,
+        testimonialsName_4: 'Sanjana Rai',
+        testimonialsquote_4: `KBM guided me throughout my UK journey — from SOP writing to accommodation 
+                            assistance. Even after I reached London, they followed up to ensure I was 
+                            settling well. I couldn’t have asked for better support!`,
+        testimonialsName_5: 'Nirajan Shrestha',
+        testimonialsquote_5: `I always dreamt of studying in the U.S., but the process seemed complicated.
+                            KBM made it simple and stress-free. Their guidance during the visa interview 
+                            helped me gain confidence, and now I’m studying in New York happily.`,
+        testimonialsName_6: 'Manisha Gurung',
+        testimonialsquote_6: `The consultants at KBM were professional and friendly. They provided genuine
+                            advice on course selection for Australia and helped me prepare all my documents
+                            perfectly. I highly recommend them to anyone planning to study abroad.`,
+        testimonialsName_7: 'Bibek Tamang',
+        testimonialsquote_7: `I’m now studying business management in the UK, thanks to KBM’s expert 
+                            counseling. They made sure I understood everything clearly — from university 
+                            options to pre-departure sessions. Their personalized guidance really stood out.`,
+        testimonialsName_8: 'Anjali Adhikari',
+        testimonialsquote_8: `KBM Education Consultancy helped me with every detail for my study in Japan.
+                            From language school application to part-time job guidance after arrival, they 
+                            made sure I was well-prepared for a new chapter of my life.`,
+        testimonialsName_9: 'Kiran Maharjan',
+        testimonialsquote_9: `My Canada visa process was quick and smooth thanks to KBM. They were transparent,
+                            honest, and professional from start to finish. Even now, they check in occasionally,
+                            which shows how much they care about their students.`,
+        testimonialsName_10: 'Sneha Lama',
+        testimonialsquote_10: `Studying in Sydney has been an incredible experience. KBM made the whole 
+                            process—from course counseling to flight booking—completely stress-free. I’m 
+                            so grateful for their dedication and patience throughout.`,
+        testimonialsName_11: 'Rajesh KC',
+        testimonialsquote_11: `I had almost given up on my dream of studying in the USA due to a previous
+                            visa rejection, but KBM helped me rebuild my confidence and reapply successfully.
+                            Their motivation and experience truly changed my future.`,
+        testimonialsName_12: 'Asmita Bhattarai',
+        testimonialsquote_12: `KBM made my journey to Canada completely hassle-free. They not only 
+                            handled my visa process but also provided genuine pre-departure guidance.
+                            I’m thankful for their continuous support and care.`
     },
     // japanese language list
     jp: {
@@ -592,6 +644,54 @@ export  const languageData = {
         testimonialsHeroHeader: '学生の声を聞く',
         testimonialsDesc: `学生たちの体験と、KBMエデュケーションコンサルタンシーがどのように彼らの留学の夢の実現を支援し
                             たかをご覧ください。`,
-        joinNow: '今すぐ参加'
+        joinNow: '今すぐ参加',
+        testimonialsHeader: '学生たちは何と言っているか？',
+        testimonialsDesc: `私たちのプログラムを通じて、自己成長、実践的な学び、そして成功を体験した学生たちの声をご紹介します。`,
+        testimonialsName_1: 'アーラヴ・シャルマ',
+        testimonialsquote_1: `KBMエデュケーションコンサルタンシーのおかげで、私は今、日本でITの学位を取得しています。
+                            大学選びから到着後のサポートまで、家族のように支えてくれました。ビザ承認後も絶え間なく連絡
+                            を取り続けてくれたことで、安心して自信を持って留学生活を始めることができました。`,
+        testimonialsName_2: 'プリヤ・カルキ',
+        testimonialsquote_2: `オーストラリアのビザを取得することは、私の人生で最大の夢でしたが、KBMのおかげでそれを実現
+                            できました。彼らはすべての手順を明確に説明し、面接の準備をしてくれ、メルボルンに到着した後も
+                            サポートしてくれました。本当に人生を変える経験でした！`,
+        testimonialsName_3: 'ロヒット・タパ',
+        testimonialsquote_3: `私は現在トロントで学んでおり、KBMがカナダでの手続きをどれほどスムーズに進めてくれたかを今
+                            でも覚えています。適切なカレッジの選択から書類手続きの完了まで、すべてをストレスなくサポート
+                            してくれました。彼らのチームは、すべての学生を本当に大切にしています。`,
+        testimonialsName_4: 'サンジャナ・ライ',
+        testimonialsquote_4: `KBMは、私のイギリスでの留学の旅を通じてサポートしてくれました——志望理由書の作成から住居の
+                            手配まで。ロンドンに到着した後もフォローアップを行い、順調に生活できているか確認してくれまし
+                            た。これ以上のサポートは望めませんでした！`,
+        testimonialsName_5: 'ニラジャン・シュレスタ',
+        testimonialsquote_5: `私はずっとアメリカでの留学を夢見ていましたが、手続きは複雑に思えました。KBMのおかげで、
+                            それが簡単でストレスフリーになりました。ビザ面接の際の指導で自信を持てるようになり、今では
+                            ニューヨークで楽しく学んでいます。`,
+        testimonialsName_6: 'マニシャ・グルン',
+        testimonialsquote_6: `KBMのコンサルタントは、プロフェッショナルで親しみやすかったです。オーストラリアのコース選
+                            択について誠実なアドバイスを提供してくれ、すべての書類の準備も完璧にサポートしてくれました。
+                            留学を計画している人には、ぜひおすすめします`,
+        testimonialsName_7: 'ビベク・タマング',
+        testimonialsquote_7: `私は現在、イギリスでビジネスマネジメントを学んでいます。KBMの専門的なカウンセリングのおか
+                            げです。大学の選択から出発前の準備まで、すべてを明確に理解できるようサポートしてくれました。
+                            個別に対応してくれるガイダンスが本当に印象的でした。`,
+        testimonialsName_8: 'アンジャリ・アディカリ',
+        testimonialsquote_8: `KBMエデュケーションコンサルタンシーは、日本での留学に関するあらゆる細部をサポートしてくれ
+                            ました。語学学校の申請から、到着後のアルバイト指導まで、新しい人生の章に向けて万全の準備がで
+                            きるよう支援してくれました。`,
+        testimonialsName_9: 'キラン・マハルジャン',
+        testimonialsquote_9: `私のカナダビザの手続きは、KBMのおかげで迅速かつスムーズに進みました。
+                            最初から最後まで透明で誠実、そしてプロフェッショナルな対応でした。
+                            現在も時折連絡をくれることで、学生をどれだけ大切にしているかが伝わってきます。`,
+        testimonialsName_10: 'スネハ・ラマ',
+        testimonialsquote_10: `シドニーでの留学は素晴らしい経験でした。KBMは、コースカウンセリングから航空券の手配まで、
+                            すべての手続きをストレスフリーにしてくれました。彼らの献身と忍耐に心から感謝しています。`,
+        testimonialsName_11: 'ラジェシュ・KC',
+        testimonialsquote_11: `以前のビザ拒否でアメリカ留学の夢を諦めかけていましたが、KBMが自信を取り戻す手助けをしてく
+                            れ、無事に再申請を成功させることができました。彼らの励ましと経験が、私の未来を本当に変えてくれました。`,
+        testimonialsName_12: 'アスミタ・バッタライ',
+        testimonialsquote_12: `KBMのおかげで、私のカナダへの留学は完全にスムーズに進みました。
+                            ビザ手続きだけでなく、出発前の誠実なガイダンスも提供してくれました。
+                            継続的なサポートと配慮に感謝しています。`
     }
 }

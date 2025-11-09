@@ -1,92 +1,85 @@
-import React, { useState } from "react";
+import { useContext, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { languageData } from "../../../../Hooks/language";
+import { LanguageContext } from '../../../../Context/Context'
 
 export default function Testimonials() {
+
+  const {language} = useContext(LanguageContext)
+
   const testimonials = [
     {
       id: 1,
-      name: "Aarav Sharma",
+      name: language === 'en' ? languageData.en.testimonialsName_1 : languageData.jp.testimonialsName_1,
       image: "/Uploads/home/prof.jpg",
-      quote:
-        "Thanks to KBM Education Consultancy, I’m now pursuing my IT degree in Japan. From university selection to post-arrival guidance, they supported me like family. Their constant communication after my visa approval made me feel secure and confident.",
+      quote:language === 'en' ? languageData.en.testimonialsquote_1 : languageData.jp.testimonialsquote_1,
     },
     {
       id: 2,
-      name: "Priya Karki",
+      name: language === 'en' ? languageData.en.testimonialsName_2 : languageData.jp.testimonialsName_2,
       image: "/Uploads/home/prof.jpg",
-      quote:
-        "Getting my visa for Australia was the biggest dream of my life, and KBM made it a reality. They explained every step clearly, prepared me for the interview, and even guided me after I landed in Melbourne. Truly a life-changing experience!",
+      quote:language === 'en' ? languageData.en.testimonialsquote_2 : languageData.jp.testimonialsquote_2,
     },
     {
       id: 3,
-      name: "Rohit Thapa",
+      name: language === 'en' ? languageData.en.testimonialsName_3 : languageData.jp.testimonialsName_3,
       image: "/Uploads/home/prof.jpg",
-      quote:
-        "I’m currently studying in Toronto, and I still remember how smoothly KBM handled my Canada process. From choosing the right college to completing all documentation, they made it stress-free. Their team genuinely cares about every student.",
+      quote:language === 'en' ? languageData.en.testimonialsquote_3 : languageData.jp.testimonialsquote_3,
     },
     {
       id: 4,
-      name: "Sanjana Rai",
+      name: language === 'en' ? languageData.en.testimonialsName_4 : languageData.jp.testimonialsName_4,
       image: "/Uploads/home/prof.jpg",
-      quote:
-        "KBM guided me throughout my UK journey — from SOP writing to accommodation assistance. Even after I reached London, they followed up to ensure I was settling well. I couldn’t have asked for better support!",
+      quote:language === 'en' ? languageData.en.testimonialsquote_4 : languageData.jp.testimonialsquote_4,
     },
     {
       id: 5,
-      name: "Nirajan Shrestha",
+      name: language === 'en' ? languageData.en.testimonialsName_5 : languageData.jp.testimonialsName_5,
       image: "/Uploads/home/prof.jpg",
-      quote:
-        "I always dreamt of studying in the U.S., but the process seemed complicated. KBM made it simple and stress-free. Their guidance during the visa interview helped me gain confidence, and now I’m studying in New York happily.",
+      quote:language === 'en' ? languageData.en.testimonialsquote_5 : languageData.jp.testimonialsquote_5,
     },
     {
       id: 6,
-      name: "Manisha Gurung",
+      name: language === 'en' ? languageData.en.testimonialsName_6 : languageData.jp.testimonialsName_6,
       image: "/Uploads/home/prof.jpg",
-      quote:
-        "The consultants at KBM were professional and friendly. They provided genuine advice on course selection for Australia and helped me prepare all my documents perfectly. I highly recommend them to anyone planning to study abroad.",
+      quote:language === 'en' ? languageData.en.testimonialsquote_6 : languageData.jp.testimonialsquote_6,
     },
     {
       id: 7,
-      name: "Bibek Tamang",
+      name: language === 'en' ? languageData.en.testimonialsName_7 : languageData.jp.testimonialsName_7,
       image: "/Uploads/home/prof.jpg",
-      quote:
-        "I’m now studying business management in the UK, thanks to KBM’s expert counseling. They made sure I understood everything clearly — from university options to pre-departure sessions. Their personalized guidance really stood out.",
+      quote:language === 'en' ? languageData.en.testimonialsquote_7 : languageData.jp.testimonialsquote_7,
     },
     {
       id: 8,
-      name: "Anjali Adhikari",
+      name: language === 'en' ? languageData.en.testimonialsName_8 : languageData.jp.testimonialsName_8,
       image: "/Uploads/home/prof.jpg",
-      quote:
-        "KBM Education Consultancy helped me with every detail for my study in Japan. From language school application to part-time job guidance after arrival, they made sure I was well-prepared for a new chapter of my life.",
+      quote:language === 'en' ? languageData.en.testimonialsquote_8 : languageData.jp.testimonialsquote_8,
     },
     {
       id: 9,
-      name: "Kiran Maharjan",
+      name: language === 'en' ? languageData.en.testimonialsName_9 : languageData.jp.testimonialsName_9,
       image: "/Uploads/home/prof.jpg",
-      quote:
-        "My Canada visa process was quick and smooth thanks to KBM. They were transparent, honest, and professional from start to finish. Even now, they check in occasionally, which shows how much they care about their students.",
+      quote:language === 'en' ? languageData.en.testimonialsquote_9 : languageData.jp.testimonialsquote_9,
     },
     {
       id: 10,
-      name: "Sneha Lama",
+      name: language === 'en' ? languageData.en.testimonialsName_10 : languageData.jp.testimonialsName_10,
       image: "/Uploads/home/prof.jpg",
-      quote:
-        "Studying in Sydney has been an incredible experience. KBM made the whole process—from course counseling to flight booking—completely stress-free. I’m so grateful for their dedication and patience throughout.",
+      quote:language === 'en' ? languageData.en.testimonialsquote_10 : languageData.jp.testimonialsquote_10,
     },
     {
       id: 11,
-      name: "Rajesh KC",
+      name: language === 'en' ? languageData.en.testimonialsName_11 : languageData.jp.testimonialsName_11,
       image: "/Uploads/home/prof.jpg",
-      quote:
-        "I had almost given up on my dream of studying in the USA due to a previous visa rejection, but KBM helped me rebuild my confidence and reapply successfully. Their motivation and experience truly changed my future.",
+      quote:language === 'en' ? languageData.en.testimonialsquote_11 : languageData.jp.testimonialsquote_11,
     },
     {
       id: 12,
-      name: "Asmita Bhattarai",
+      name: language === 'en' ? languageData.en.testimonialsName_12 : languageData.jp.testimonialsName_12,
       image: "/Uploads/home/prof.jpg",
-      quote:
-        "KBM made my journey to Canada completely hassle-free. They not only handled my visa process but also provided genuine pre-departure guidance. I’m thankful for their continuous support and care.",
+      quote:language === 'en' ? languageData.en.testimonialsquote_12 : languageData.jp.testimonialsquote_12,
     },
   ];
 
@@ -113,11 +106,14 @@ export default function Testimonials() {
               {/* Main heading */}
               <div className="relative z-10">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-                  What Do Our Students Say?
+                  {
+                    language === 'en' ? languageData.en.testimonialsHeader : languageData.jp.testimonialsHeader
+                  }
                 </h1>
                 <p className="text-gray-600 text-base md:text-lg">
-                  Hear from our students who experienced personal growth,
-                  practical learning, and success through our programs.
+                  {
+                    language === 'en' ? languageData.en.testimonialsDesc : languageData.jp.testimonialsDesc
+                  }
                 </p>
               </div>
             </div>
@@ -162,7 +158,7 @@ export default function Testimonials() {
                 onClick={handleLoadMore}
                 className="px-6 py-2 bg-text text-white rounded-full  transition-colors duration-300"
               >
-                View More
+                {language === 'en' ? languageData.en.viewMore : languageData.jp.viewMore}
               </button>
             </div>
           )}
