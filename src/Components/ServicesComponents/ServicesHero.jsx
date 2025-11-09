@@ -1,13 +1,17 @@
-import React from "react";
+import { useContext } from "react";
 import MainHeroHelper from "../HelperComponents/MainHeroHelper";
+import {LanguageContext} from '../../Context/Context'
+import { languageData } from "../../Hooks/language";
 
 export default function ServicesHero() {
+
+  const {language} = useContext(LanguageContext)
+
   return (
     <div>
-      {" "}
       <MainHeroHelper
-        title="KBM's Services"
-        description="From career counselling and university selection to visa assistance and documentation support, KBM provides end-to-end guidance. Our personalized mentorship and expert support ensure students are fully prepared for studying abroad in Japan, USA, Australia, UK, Canada, and beyond."
+        title={language === 'en' ? languageData.en.servicesHeroTitle: languageData.jp.servicesHeroTitle}
+        description={language === 'en' ? languageData.en.servicesHeroDesc : languageData.jp.servicesHeroDesc}
       />
     </div>
   );

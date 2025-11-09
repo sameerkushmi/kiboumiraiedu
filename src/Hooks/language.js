@@ -377,7 +377,9 @@ export  const languageData = {
         testimonialsName_12: 'Asmita Bhattarai',
         testimonialsquote_12: `KBM made my journey to Canada completely hassle-free. They not only 
                             handled my visa process but also provided genuine pre-departure guidance.
-                            I’m thankful for their continuous support and care.`
+                            I’m thankful for their continuous support and care.`,
+        servicesHeroTitle: `KBM's Services`,
+        servicesHeroDesc: `From career counselling and university selection to visa assistance and documentation support, KBM provides end-to-end guidance. Our personalized mentorship and expert support ensure students are fully prepared for studying abroad in Japan, USA, Australia, UK, Canada, and beyond.`
     },
     // japanese language list
     jp: {
@@ -692,6 +694,10 @@ export  const languageData = {
         testimonialsName_12: 'アスミタ・バッタライ',
         testimonialsquote_12: `KBMのおかげで、私のカナダへの留学は完全にスムーズに進みました。
                             ビザ手続きだけでなく、出発前の誠実なガイダンスも提供してくれました。
-                            継続的なサポートと配慮に感謝しています。`
+                            継続的なサポートと配慮に感謝しています。`,
+        servicesHeroTitle: `KBMのサービス`,
+        servicesHeroDesc: `KBMは、キャリアカウンセリングや大学選択からビザ支援、書類手続きまで、ワンストップでサポートを
+                        提供します。個別のメンタリングと専門的なサポートにより、学生が日本、アメリカ、オーストラリア、イギ
+                        リス、カナダなどでの留学に万全の準備を整えられるよう支援します。`
     }
 }
