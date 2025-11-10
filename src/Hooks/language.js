@@ -623,7 +623,9 @@ export  const languageData = {
         enterYourScore :'Enter your score...',
         whichTestYouplanTake: 'Which test do you plan to take?',
         additionalMessage: 'Additional Message / Notes' ,
-        submitForm: 'Submit Form'
+        submitForm: 'Submit Form',
+        uniSelheroTitle: 'Our Partner Universities',
+        uniSelheroDesc: `Explore our global network of partner universities to find the perfect fit for your academic journey.`
     },
     // japanese language list
     jp: {
@@ -1149,6 +1151,8 @@ export  const languageData = {
         enterYourScore: 'スコアを入力してください。...',
         whichTestYouplanTake: '受験予定の試験は何ですか？',
         additionalMessage: '追加メッセージ・備考',
-        submitForm: 'フォームを送信'
+        submitForm: 'フォームを送信',
+        uniSelheroTitle: '提携大学',
+        uniSelheroDesc: `あなたの学術的な旅に最適な大学を見つけるために、私たちの世界的な提携大学ネットワークを探索してください。`
     }
 }
