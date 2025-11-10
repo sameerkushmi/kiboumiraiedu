@@ -523,7 +523,80 @@ export  const languageData = {
         workFlowDesc_10: `We help identify scholarships and funding opportunities in Japan, Australia, UK, US, and Canada to 
                         reduce financial burden.`,
         counsellingHeroTitle: 'Career Counselling',
-        counsellingHeroDesc: `Get personalized guidance to plan your career path and achieve your study abroad goals.`
+        counsellingHeroDesc: `Get personalized guidance to plan your career path and achieve your study abroad goals.`,
+        counsellingServices: 'Counselling Services',
+        counsellingInfoDesc: `Expert guidance to help you navigate your academic journey and achieve
+                            your study abroad dreams with confidence.`,
+        carrerDesc: `Unlock your potential with expert career guidance tailored just for you. Our Career Counselling services 
+                    help you identify your strengths, explore career paths, and make informed decisions for a successful future.`,
+        carrerContent_1: `Every student is unique, with different academic backgrounds, learning styles, and career aspirations. 
+                        We provide one-on-one guidance tailored to each student’s needs. This includes analyzing grades, skills, 
+                        interests, and future ambitions to recommend the most suitable study paths. By understanding their 
+                        personal and professional goals, we help students choose the right courses, universities, and countries, 
+                        ensuring their education aligns with long-term career objectives. This personalized approach prevents 
+                        generic advice and maximizes the student’s chances of success abroad.`,
+        carrerTitle_2: 'Course & University Selection',
+        carrerContent_2: `Selecting the right course and university is critical for academic success and career growth. Our 
+                        counselors provide in-depth analysis of universities’ curriculum, faculty expertise, campus life, and 
+                        internship opportunities. We explain the differences between programs, highlight global rankings, and 
+                        suggest courses that match the student’s interests and strengths. We also advise on universities that 
+                        provide strong research opportunities, international exposure, and industry connections, helping students 
+                        make informed choices that enhance their employability.`,
+        carrerTitle_3: 'Visa & Immigration Support',
+        carrerContent_3: `Obtaining a student visa can be complicated and stressful. We guide students step by step through visa 
+                        procedures, document preparation, and submission timelines. This includes guidance on visa interviews, 
+                        financial proofs, health insurance requirements, and legal compliance. Our support reduces the risk of 
+                        errors, delays, or rejection, ensuring a smooth and stress-free visa process. Students gain confidence 
+                        knowing they have professional backing and clear instructions for a successful application.`,
+        carrerTitle_4: 'Test Preparation Advice',
+        carrerContent_4: `Standardized tests such as IELTS, TOEFL, PTE, SAT, and JLPT often determine admission eligibility. We 
+                        assist students in selecting the tests required for their chosen programs and countries. Beyond this, we 
+                        provide strategies for efficient preparation, suggest high-quality study resources, and design personalized
+                        study schedules. Students learn how to focus on their weak areas, manage time effectively, and maximize 
+                        scores, increasing their chances of admission into competitive programs. Our guidance ensures they are fully
+                        prepared and confident on exam day.`,
+        carrerTitle_5: 'Financial Planning & Scholarships',
+        carrerContent_5: `Studying abroad requires careful financial planning to cover tuition, accommodation, living expenses, and
+                        other costs. We help students create a detailed budget tailored to their destination, program, and lifestyle.
+                        We also identify scholarship opportunities, grants, and financial aid options available from universities, 
+                        governments, or private institutions. By understanding these opportunities and learning to manage expenses 
+                        wisely, students can reduce financial stress, make informed decisions, and explore ways to fund their 
+                        education efficiently.`,
+        benefitHeader: 'Benefits of Counselling',
+        benefitDesc : `Counselling empowers you to understand yourself better, make informed decisions, and overcome challenges 
+                    with confidence. It helps improve focus, reduce stress, and enhance personal and professional growth. By 
+                    providing guidance, support, and clarity, counselling enables you to achieve your goals, explore new 
+                    opportunities, and build a successful and fulfilling future.`,
+        benefitTitle_1: 'Comprehensive Pre-Departure Support',
+        benefitContent_1: `Preparing to study abroad goes beyond securing admission and visas. We provide guidance on travel 
+                        arrangements, accommodation options, health insurance, banking, and essential documentation. Students also
+                        receive cultural orientation, tips on adjusting to a new environment, and advice on managing homesickness.
+                        This thorough pre-departure preparation ensures students arrive in their destination country confident, 
+                        informed, and ready to succeed both academically and socially.`,
+        benefitTitle_2: 'Career & Internship Guidance',
+        benefitContent_2: `Counseling goes beyond academics. We assist students in identifying potential career paths, internships,
+                        and part-time opportunities aligned with their field of study. We provide insights on industry trends, job 
+                        prospects, and networking strategies. Students are guided on how to gain relevant work experience during 
+                        studies, build resumes, and connect with professional mentors. This practical support enhances employability
+                        and prepares students for a successful career after graduation.`,
+        benefitTitle_3: 'Personalized Study Plans',
+        benefitContent_3: `Each student receives a customized roadmap for success, covering test preparation, course selection, 
+                        and university applications. These plans are tailored to individual strengths, weaknesses, and timelines.
+                        By following a structured study plan, students can efficiently manage preparation, track progress, and 
+                        stay motivated. This methodical approach ensures they achieve their educational goals without feeling 
+                        overwhelmed, while also balancing other responsibilities.`,
+        benefitTitle_4: 'Networking & Mentorship',
+        benefitContent_4: `Building connections is crucial when studying abroad. We provide access to alumni networks, peer groups,
+                        and mentors who share guidance, advice, and support. These connections help students navigate academic 
+                        challenges, adapt to new cultural environments, and gain industry insights. Mentorship programs offer 
+                        personal encouragement, practical tips, and professional exposure, giving students confidence and a sense of
+                        belonging in a foreign country.`,
+        benefitTitle_5: 'Confidence & Clarity',
+        benefitContent_5: `Many students feel uncertain about choosing the right courses, universities, or countries. Our 
+                        counseling provides clear insights, step-by-step guidance, and informed recommendations, helping students 
+                        make confident decisions. By addressing questions, providing evidence-based advice, and clarifying doubts,
+                        students gain a solid understanding of their options. This clarity empowers them to take ownership of 
+                        their educational journey and approach challenges with assurance.`
     },
     // japanese language list
     jp: {
@@ -967,6 +1040,62 @@ export  const languageData = {
         workFlowDesc_9: `現地での初期生活の定着、宿泊手配、アルバイト案内、緊急サポートを提供します。`,
         workFlowDesc_10: `日本、オーストラリア、イギリス、アメリカ、カナダでの奨学金や資金援助の機会を特定し、経済的負担を軽減するお手伝いをします。`,
         counsellingHeroTitle: 'キャリアカウンセリング',
-        counsellingHeroDesc:`あなたのキャリアパスを計画し、留学目標を達成するための個別指導を受けられます。`
+        counsellingHeroDesc:`あなたのキャリアパスを計画し、留学目標を達成するための個別指導を受けられます。`,
+        counsellingServices: 'カウンセリングサービス',
+        counsellingInfoDesc: `学業の道筋をサポートし、自信を持って留学の夢を実現できる専門的なガイダンス。`,
+        carrerDesc: `あなたの可能性を最大限に引き出す、個別にカスタマイズされた専門的なキャリアガイダンス。キャリアカウンセリングサービスでは、強みの特定
+                    、キャリアパスの探索、成功する未来のための情報に基づいた意思決定をサポートします。`,
+        carrerContent_1: `すべての学生はそれぞれ異なる学歴、学習スタイル、キャリア目標を持っています。私たちは、各学生のニーズに合わせた一対一の指導を提供
+                        します。成績、スキル、興味、将来の目標を分析し、最適な留学プランを提案します。学生の個人的・職業的目標を理解することで、適切なコー
+                        ス、大学、国を選ぶ手助けをし、教育が長期的なキャリア目標と一致するようにします。この個別対応により、一般的なアドバイスに頼らず、学
+                        生が海外で成功する可能性を最大化します。`,
+        carrerTitle_2: 'コースおよび大学の選択',
+        carrerContent_2: `適切なコースと大学の選択は、学業の成功とキャリア成長において非常に重要です。私たちのカウンセラーは、大学のカリキュラム、教員の
+                        専門性、キャンパスライフ、インターンシップの機会を詳細に分析します。プログラムの違いを説明し、世界ランキングを紹介し、学生の興味\
+                        や強みに合ったコースを提案します。さらに、研究機会、国際経験、業界とのつながりが充実した大学についてもアドバイスし、学生が就職力
+                        を高めるための情報に基づいた選択ができるようサポートします。`,
+        carrerTitle_3: 'ビザおよび移民サポート',
+        carrerContent_3: `学生ビザの取得は複雑でストレスが伴うことがあります。私たちは、ビザ手続き、書類準備、提出期限に至るまで、学生をステップごとにサ
+                        ポートします。これには、ビザ面接の指導、財務証明、健康保険要件、法的遵守に関するガイダンスが含まれます。私たちのサポートにより、
+                        エラー、遅延、却下のリスクを減らし、スムーズでストレスのないビザ取得を実現します。専門家のサポートと明確な指示があることで、学生
+                        は自信を持って申請を進めることができます。`,
+        carrerTitle_4: '試験準備アドバイス',
+        carrerContent_4: `IELTS、TOEFL、PTE、SAT、JLPTなどの標準化試験は、入学資格を左右することがあります。私たちは、学生が希望するプログラムや国に必要
+                        な試験を選択する手助けをします。さらに、効率的な準備のための戦略を提供し、高品質な学習リソースを提案し、個別の学習スケジュールを
+                        作成します。学生は弱点に重点を置き、時間を効果的に管理し、スコアを最大化する方法を学び、競争の激しいプログラムへの入学チャンスを
+                        高めます。私たちの指導により、試験当日も自信を持って臨むことができます。`,
+        carrerTitle_5: '資金計画と奨学金サポート',
+        carrerContent_5 : `留学には、授業料、宿泊費、生活費、その他の費用をカバーするための慎重な資金計画が必要です。私たちは、学生の渡航先、プログラム、
+                        ライフスタイルに合わせた詳細な予算作成をサポートします。さらに、大学、政府、民間機関から提供される奨学金、助成金、経済的支援の機
+                        会を特定します。これらの機会を理解し、賢く費用を管理する方法を学ぶことで、学生は経済的ストレスを軽減し、情報に基づいた意思決定を
+                        行い、効率的に教育資金を確保することができます。`,
+        benefitHeader: 'カウンセリングの利点',
+        benefitDesc: `カウンセリングは、自分自身をより深く理解し、情報に基づいた意思決定を行い、自信を持って課題を克服できるようにします。
+                    集中力の向上、ストレスの軽減、個人および職業の成長の促進にも役立ちます。
+                    ガイダンス、サポート、明確な指針を提供することで、目標達成、新しい機会の探求、そして成功かつ充実した未来の構築を可能にします。`,
+        benefitTitle_1: '出発前の包括的サポート',
+        benefitContent_1: `留学準備は、入学やビザの取得だけでは完結しません。私たちは、渡航手配、宿泊先の選択、健康保険、銀行手続き、必要書類に関するガ
+                        イダンスを提供します。さらに、文化オリエンテーション、新しい環境への適応のコツ、ホームシックへの対処法についてもサポートします。
+                        この徹底した出発前の準備により、学生は自信を持って情報を理解した状態で渡航し、学業面でも社会面でも成功する準備が整います。`,
+        benefitTitle_2: 'キャリアおよびインターンシップ指導',
+        benefitContent_2: `カウンセリングは学業にとどまりません。私たちは、学生が学問分野に沿ったキャリアパス、インターンシップ、パートタイムの機会を特
+                        定する手助けをします。業界動向、就職見通し、ネットワーキング戦略に関する情報も提供します。学生は、学業中に関連する実務経験を積む
+                        方法、履歴書の作成、専門家メンターとのつながり方について指導を受けます。この実践的なサポートにより、就職力が向上し、卒業後の成功
+                        したキャリアへの準備が整います。`,
+        benefitTitle_3: '個別学習プラン',
+        benefitContent_3: `各学生には、テスト準備、コース選択、大学出願を含む成功へのカスタマイズされたロードマップが提供されます。
+                            これらのプランは、個々の強み、弱み、スケジュールに合わせて調整されます。
+                            構造化された学習プランに従うことで、学生は効率的に準備を進め、進捗を追跡し、モチベーションを維持できます。
+                            この体系的なアプローチにより、教育目標を達成しながら他の責任とのバランスも保つことができます。`,
+        benefitTitle_4: 'ネットワーキングとメンターシップ',
+        benefitContent_4: `留学中における人脈作りは非常に重要です。私たちは、卒業生ネットワーク、同輩グループ、メンターへのアクセスを提供し、指導や助言、
+                        サポートを受けられるようにします。これらのつながりは、学生が学業上の課題を乗り越え、新しい文化環境に適応し、業界の知見を得る助け
+                        となります。メンターシッププログラムは、個別の励まし、実践的なアドバイス、専門的な経験を提供し、学生に自信と異国での所属感を与え
+                        ます。`,
+        benefitTitle_5: '自信と明確さ',
+        benefitContent_5: `多くの学生は、正しいコース、大学、または国を選ぶことに不安を感じています。私たちのカウンセリングは、明確な洞察、段階的なガイ
+                        ダンス、そして根拠に基づいた提案を提供し、学生が自信を持って決断できるよう支援します。質問に答え、証拠に基づくアドバイスを行い、
+                        疑問を解消することで、学生は自分の選択肢について確かな理解を得ることができます。この明確さが、彼らに学びの旅を自らの手で切り開き、
+                        自信を持って課題に取り組む力を与えます。`
     }
 }
