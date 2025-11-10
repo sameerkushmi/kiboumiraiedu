@@ -521,7 +521,9 @@ export  const languageData = {
         workFlowDesc_9: `We assist with initial settlement, accommodation setup, part-time job guidance, and emergency support
                          in your destination country.`,
         workFlowDesc_10: `We help identify scholarships and funding opportunities in Japan, Australia, UK, US, and Canada to 
-                        reduce financial burden.`
+                        reduce financial burden.`,
+        counsellingHeroTitle: 'Career Counselling',
+        counsellingHeroDesc: `Get personalized guidance to plan your career path and achieve your study abroad goals.`
     },
     // japanese language list
     jp: {
@@ -964,5 +966,7 @@ export  const languageData = {
         workFlowDesc_8: `渡航先の文化的知識、基礎的な言語スキル、マナーのアドバイスを通じて、海外生活への準備を整えます。`,
         workFlowDesc_9: `現地での初期生活の定着、宿泊手配、アルバイト案内、緊急サポートを提供します。`,
         workFlowDesc_10: `日本、オーストラリア、イギリス、アメリカ、カナダでの奨学金や資金援助の機会を特定し、経済的負担を軽減するお手伝いをします。`,
+        counsellingHeroTitle: 'キャリアカウンセリング',
+        counsellingHeroDesc:`あなたのキャリアパスを計画し、留学目標を達成するための個別指導を受けられます。`
     }
 }

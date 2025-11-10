@@ -9,8 +9,8 @@ export default function CounsellingHero() {
   return (
     <div>
       <HeroSection2
-        title="Career Counselling"
-        description="Get personalized guidance to plan your career path and achieve your study abroad goals."
+        title={language === 'en' ? languageData.en.counsellingHeroTitle:  languageData.jp.counsellingHeroTitle}
+        description={language === 'en' ? languageData.en.counsellingHeroDesc : languageData.jp.counsellingHeroDesc}
         btnText={language === 'en' ? languageData.en.learnMore:languageData.jp.learnMore}
       />
     </div>
