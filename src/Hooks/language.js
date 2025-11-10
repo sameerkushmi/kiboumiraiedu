@@ -596,7 +596,34 @@ export  const languageData = {
                         counseling provides clear insights, step-by-step guidance, and informed recommendations, helping students 
                         make confident decisions. By addressing questions, providing evidence-based advice, and clarifying doubts,
                         students gain a solid understanding of their options. This clarity empowers them to take ownership of 
-                        their educational journey and approach challenges with assurance.`
+                        their educational journey and approach challenges with assurance.`,
+        counsellingFormHeader: 'Fill Out the Counselling Form',
+        enterFullName: 'Enter your full name...',
+        enterYourEmail: 'Enter your email address...',
+        preferredCountry: 'Preferred Country',
+        selectYourCountry: 'Select your preferred country...',
+        USA : 'USA',
+        UK : 'UK',
+        canada : 'Canada',
+        japan: 'Japan',
+        korea: 'Korea',
+        preferredUniversity: 'Preferred University',
+        enterPreferredUniversity: 'Enter preferred university...',
+        furtherDegree: 'Further Degree',
+        selectDegree: 'Select degree',
+        bachelors: 'Bachelors',
+        diploma: 'Diploma',
+        masters: 'Masters',
+        enterYourPhone: 'Enter your phone number',
+        haveYouTakenTestBefore: 'Have you taken any test before?',
+        yes: 'Yes',
+        no: 'No',
+        testTaken: 'Test Taken',
+        yourScore: ' Your Score',
+        enterYourScore :'Enter your score...',
+        whichTestYouplanTake: 'Which test do you plan to take?',
+        additionalMessage: 'Additional Message / Notes' ,
+        submitForm: 'Submit Form'
     },
     // japanese language list
     jp: {
@@ -707,9 +734,9 @@ export  const languageData = {
         phone : '電話',
         email: 'メール',
         location: '所在地',
-        fullName: 'フルネーム',
+        fullName: 'フルネーム...',
         johnDoe: 'ジョン・ドウ',
-        emailAddress: 'メールアドレス',
+        emailAddress: 'メールアドレス...',
         emailExample: 'ジョン@エグザンプル.com',
         number: '番号',
         inquiryType:'お問い合わせの種類',
@@ -1096,6 +1123,32 @@ export  const languageData = {
         benefitContent_5: `多くの学生は、正しいコース、大学、または国を選ぶことに不安を感じています。私たちのカウンセリングは、明確な洞察、段階的なガイ
                         ダンス、そして根拠に基づいた提案を提供し、学生が自信を持って決断できるよう支援します。質問に答え、証拠に基づくアドバイスを行い、
                         疑問を解消することで、学生は自分の選択肢について確かな理解を得ることができます。この明確さが、彼らに学びの旅を自らの手で切り開き、
-                        自信を持って課題に取り組む力を与えます。`
+                        自信を持って課題に取り組む力を与えます。`,
+        counsellingFormHeader: 'カウンセリングフォームにご記入ください。',
+        enterFullName: 'フルネームを入力してください。...',
+        preferredCountry: '希望する国',
+        selectYourCountry: '希望する国を選択してください…',
+        USA: 'アメリカ合衆国（USA）',
+        UK: 'イギリス（UK）',
+        canada: 'カナダ',
+        japan: '日本',
+        korea: '韓国',
+        preferredUniversity: '希望する大学',
+        enterPreferredUniversity : '希望する大学名を入力してください。...',
+        furtherDegree: '希望する学位',
+        selectDegree: '学位を選択してください。',
+        bachelors: '学士（Bachelor）',
+        diploma: 'ディプロマ（Diploma）',
+        masters: '修士（Masters）',
+        enterYourPhone: '電話番号を入力してください。',
+        haveYouTakenTestBefore : 'これまでに試験を受けたことはありますか？',
+        yes: 'はい',
+        no: 'いいえ',
+        testTaken: '受験した試験',
+        yourScore: 'スコア',
+        enterYourScore: 'スコアを入力してください。...',
+        whichTestYouplanTake: '受験予定の試験は何ですか？',
+        additionalMessage: '追加メッセージ・備考',
+        submitForm: 'フォームを送信'
     }
 }
