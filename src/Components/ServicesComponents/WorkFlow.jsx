@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import {
   UserCheck,
@@ -10,78 +11,72 @@ import {
   Languages,
   HelpingHand,
   Trophy,
-  ClipboardCheck,
 } from "lucide-react";
+import { LanguageContext } from "../../Context/Context";
+import { languageData } from "../../Hooks/language";
 
 export default function WorkFlow() {
+
+  const {language} = useContext(LanguageContext)
+
   const steps = [
     {
-      title: "1-on-1 Personalized Consultation",
-      description:
-        "We start with a private consultation to understand your study goals, preferred country (Japan, Australia, UK, US, Canada), financial situation, and visa requirements. This helps us design the most suitable plan for your application.",
+      title: language === 'en' ? languageData.en.ourServicesTitle_1 : languageData.jp.ourServicesTitle_1,
+      description:language === 'en' ? languageData.en.workFlowDesc_1 : languageData.jp.workFlowDesc_1,
       icon: UserCheck,
       color: "from-blue-500 to-indigo-500",
     },
     {
-      title: "Course & Country Guidance",
-      description:
-        "Based on your academic background and interests, we help you choose the right course and country that aligns with your career goals and visa eligibility.",
+      title: language === 'en' ? languageData.en.workFlowTitle_2 : languageData.jp.workFlowTitle_2,
+      description:language === 'en' ? languageData.en.workFlowDesc_2 : languageData.jp.workFlowDesc_2,
       icon: BookOpen,
       color: "from-purple-500 to-pink-500",
     },
     {
-      title: "Test & Exam Preparation Support",
-      description:
-        "We provide guidance for language and eligibility tests such as IELTS, TOEFL, JLPT, or country-specific exams, to ensure you meet visa and admission requirements.",
+      title: language === 'en' ? languageData.en.workFlowTitle_3 : languageData.jp.workFlowTitle_3,
+      description:language === 'en' ? languageData.en.workFlowDesc_3 : languageData.jp.workFlowDesc_3,
       icon: GraduationCap,
       color: "from-green-500 to-emerald-500",
     },
     {
-      title: "University & Program Selection",
-      description:
-        "We shortlist the best universities and programs across Japan, Australia, UK, US, and Canada based on your budget, preferences, and scholarship opportunities.",
+      title: language === 'en' ? languageData.en.workFlowTitle_4 : languageData.jp.workFlowTitle_4,
+      description:language === 'en' ? languageData.en.workFlowDesc_4 : languageData.jp.workFlowDesc_4,
       icon: Globe2,
       color: "from-orange-500 to-red-500",
     },
     {
-      title: "Visa Documentation Assistance",
-      description:
-        "Our experts guide you in preparing, verifying, and submitting all documents required for your visa applications across different countries.",
+      title: language === 'en' ? languageData.en.workFlowTitle_5 : languageData.jp.workFlowTitle_5,
+      description:language === 'en' ? languageData.en.workFlowDesc_5 : languageData.jp.workFlowDesc_5,
       icon: FileCheck,
       color: "from-cyan-500 to-teal-500",
     },
     {
-      title: "Visa Interview & Embassy Prep",
-      description:
-        "We conduct mock interviews and provide guidance for embassy questions to help you confidently present your case for Japan, Australia, UK, US, or Canada.",
+      title: language === 'en' ? languageData.en.workFlowTitle_6 : languageData.jp.workFlowTitle_6,
+      description:language === 'en' ? languageData.en.workFlowDesc_6 : languageData.jp.workFlowDesc_6,
       icon: MessageSquare,
       color: "from-rose-500 to-pink-500",
     },
     {
-      title: "Pre-departure Orientation",
-      description:
-        "We brief you on travel arrangements, accommodation, local culture, and essential tips for a smooth transition to your chosen country.",
+      title: language === 'en' ? languageData.en.ourServicesTitle_7 : languageData.jp.ourServicesTitle_7,
+      description:language === 'en' ? languageData.en.workFlowDesc_7 : languageData.jp.workFlowDesc_7,
       icon: PlaneTakeoff,
       color: "from-indigo-500 to-blue-500",
     },
     {
-      title: "Cultural & Language Training",
-      description:
-        "Prepare for life abroad with cultural insights, basic language skills, and etiquette tips for your destination country.",
+      title: language === 'en' ? languageData.en.ourServicesTitle_8 : languageData.jp.ourServicesTitle_8,
+      description:language === 'en' ? languageData.en.workFlowDesc_8 : languageData.jp.workFlowDesc_8,
       icon: Languages,
       color: "from-yellow-500 to-orange-500",
     },
     {
-      title: "Post-arrival Support",
-      description:
-        "We assist with initial settlement, accommodation setup, part-time job guidance, and emergency support in your destination country.",
+      title: language === 'en' ? languageData.en.ourServicesTitle_9 : languageData.jp.ourServicesTitle_9,
+      description:language === 'en' ? languageData.en.workFlowDesc_9 : languageData.jp.workFlowDesc_9,
       icon: HelpingHand,
       color: "from-teal-500 to-green-500",
     },
     {
-      title: "Scholarship & Financial Guidance",
-      description:
-        "We help identify scholarships and funding opportunities in Japan, Australia, UK, US, and Canada to reduce financial burden.",
+      title: language === 'en' ? languageData.en.ourServicesTitle_10 : languageData.jp.ourServicesTitle_10,
+      description:language === 'en' ? languageData.en.workFlowDesc_10 : languageData.jp.workFlowDesc_10,
       icon: Trophy,
       color: "from-fuchsia-500 to-purple-500",
     },
@@ -98,11 +93,14 @@ export default function WorkFlow() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Our End-to-End Student Journey
+            {
+              language === 'en' ? languageData.en.workFlowHeader : languageData.jp.workFlowHeader
+            }
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            From your first consultation to post-arrival support, we guide you
-            at every step of your study abroad journey.
+            {
+              language === 'en' ? languageData.en.workFlowDesc: languageData.jp.workFlowDesc
+            }
           </p>
         </div>
 
@@ -210,16 +208,21 @@ export default function WorkFlow() {
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-5 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
             <div className="relative z-10">
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Start Your Journey?
+                {
+                  language === 'en' ? languageData.en.workFlowCTAHeader : languageData.jp.workFlowCTAHeader
+                }
               </h3>
               <p className="text-blue-100 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-                Connect with our experts to plan your study abroad journey
-                step-by-step, from consultation to post-arrival support.
+                {
+                  language === 'en' ? languageData.en.workFlowCTADesc : languageData.jp.workFlowCTADesc
+                }
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link to="/contact">
                   <button className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-blue-600 transition-all duration-300">
-                    Connect With Us
+                    {
+                      language === 'en' ? languageData.en.contactWithUs : languageData.jp.contactWithUs
+                    }
                   </button>
                 </Link>
               </div>

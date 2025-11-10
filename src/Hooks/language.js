@@ -378,8 +378,150 @@ export  const languageData = {
         testimonialsquote_12: `KBM made my journey to Canada completely hassle-free. They not only 
                             handled my visa process but also provided genuine pre-departure guidance.
                             I’m thankful for their continuous support and care.`,
-        servicesHeroTitle: `KBM's Services`,
-        servicesHeroDesc: `From career counselling and university selection to visa assistance and documentation support, KBM provides end-to-end guidance. Our personalized mentorship and expert support ensure students are fully prepared for studying abroad in Japan, USA, Australia, UK, Canada, and beyond.`
+        KBMServices: `KBM's Services`,
+        servicesHeroDesc: `From career counselling and university selection to visa assistance and 
+                        documentation support, KBM provides end-to-end guidance. Our personalized 
+                        mentorship and expert support ensure students are fully prepared for studying 
+                        abroad in Japan, USA, Australia, UK, Canada, and beyond.`,
+        ourServicesHeader: ' Our Core Services',
+        ourServicesDesc: `Expert guidance to help you navigate your academic journey and achieve
+                        your study abroad dreams with confidence.`,
+        ourServicesTitle_1: '1-on-1 Personalized Consultation',
+        ourServicesSubTitle_1: 'Personalized Consultation',
+        ourServicesDesc_1: `Your journey begins with a private one-on-one consultation where our experienced
+                        counselors take time to understand your academic background, career aspirations, 
+                        financial capability, and preferred destination. This step ensures that your study 
+                        abroad plan is uniquely crafted for your goals rather than following a one-size-fits-all
+                        approach. Our expert team provides realistic insights, helps you clarify doubts, and builds
+                        a roadmap that aligns with your ambitions.`,
+        ourServicesConsultationOffer_1: `Comprehensive academic and financial profiling`,
+        ourServicesConsultationOffer_2: `Comprehensive academic and financial profiling`,
+        ourServicesConsultationOffer_3: `Personalized study abroad roadmap`,
+        ourServicesConsultationOffer_4: `Guidance on course eligibility and requirements`,
+        ourServicesConsultationOffer_5: `Initial advice on scholarships and budgeting`,
+        ourServicesTitle_2: 'Course & Career Guidance',
+        ourServicesDesc_2: `Choosing the right course is crucial to building a successful career abroad. 
+                            Our counselors analyze your academic interests, skill set, and future 
+                            aspirations to help you identify the best-fit programs across top global 
+                            universities. We also consider job market trends, internship opportunities,
+                            and future prospects to ensure your education investment pays off long-term.`,
+        ourServicesCourseGuidanceOffer_1: `Career-oriented course selection assistance`,
+        ourServicesCourseGuidanceOffer_2: `Guidance on high-demand programs globally`,
+        ourServicesCourseGuidanceOffer_3: `Comparison of universities and course structures`,
+        ourServicesCourseGuidanceOffer_4: `Future job market and PR pathway insights`,
+        ourServicesCourseGuidanceOffer_5: `Expert advice on aligning course with career goals`,
+        ourServicesTitle_3: 'Test Preparation Support',
+        ourServicesSubTitle_3: 'Test Preparation',
+        ourServicesDesc_3: `Many international universities require standardized test scores such as IELTS, TOEFL, or JLPT. We 
+                            provide expert-led preparation support to help you achieve competitive results. Our training covers 
+                            exam strategy, time management, and personalized practice to strengthen your performance and confidence.`,
+        ourServicesTestPreOffer_1: 'IELTS, TOEFL, PTE, and JLPT preparation support',
+        ourServicesTestPreOffer_2: 'Customized study plans and mock tests',
+        ourServicesTestPreOffer_3: 'Expert-led grammar, vocabulary, and speaking sessions',
+        ourServicesTestPreOffer_4: 'One-on-one progress tracking and feedback',
+        ourServicesTestPreOffer_5: 'Access to study materials and practice resources',
+        ourServicesTitle_4: 'University & Country Selection',
+        ourServicesDesc_4: `Selecting the right university and country determines your academic experience and long-term success. 
+                            We analyze your academic background, field of interest, and financial plans to shortlist universities
+                            that fit your profile. Our global insights ensure you make informed decisions about where and what to 
+                            study.`,
+        ourServicesUniversitySelctionOffer_1: 'Profile-based university shortlisting',
+        ourServicesUniversitySelctionOffer_2: 'Comparison of living costs and tuition fees',
+        ourServicesUniversitySelctionOffer_3: 'Advice on country-specific admission requirements',
+        ourServicesUniversitySelctionOffer_4: 'Guidance on scholarship and funding options',
+        ourServicesUniversitySelctionOffer_5: 'Recommendations for safe and student-friendly destinations',
+        ourServicesTitle_5: 'Documentation & Application Assistance',
+        ourServicesDesc_5: `Proper documentation plays a vital role in your admission and visa process. Our dedicated team ensures 
+                            that all your academic, financial, and identification documents meet the exact requirements of 
+                            universities and embassies. We assist you in drafting statements of purpose (SOPs), resumes, and 
+                            recommendation letters that make your application stand out.`,
+        ourServicesDocumentationOffer_1: 'End-to-end assistance with application forms',
+        ourServicesDocumentationOffer_2: 'SOP, resume, and reference letter guidance',
+        ourServicesDocumentationOffer_3: 'Document verification and formatting support',
+        ourServicesDocumentationOffer_4: 'University and embassy submission tracking',
+        ourServicesDocumentationOffer_5: 'Error-free document preparation for visa compliance',
+        ourServicesTitle_6: 'Visa & University Interview Prep',
+        ourServicesSubTitle_6: 'Interview Preparation',
+        ourServicesDesc_6: `Interviews are often the final step before admission or visa approval. Our experts train you to 
+                            communicate clearly, handle difficult questions confidently, and present your intent effectively. With 
+                            mock sessions and feedback, you’ll be fully prepared to make a positive impression before the university
+                            panel or embassy officials.`,
+        ourServicesInterviewPrepOffer_1: 'Mock interviews for visa and university preparation',
+        ourServicesInterviewPrepOffer_2: 'Feedback on communication and confidence',
+        ourServicesInterviewPrepOffer_3: 'Tips for handling tricky questions professionally',
+        ourServicesInterviewPrepOffer_4: 'Training on required documents and interview etiquette',
+        ourServicesInterviewPrepOffer_5: 'Cultural briefing for country-specific interviews',
+        ourServicesTitle_7: 'Pre-departure Orientation',
+        ourServicesDesc_7:`Before you board your flight, we ensure you’re well-prepared for the journey 
+                        ahead. Our pre-departure session covers essential travel tips, cultural 
+                        guidance, financial management advice, and what to expect during your first 
+                        few weeks abroad. It helps you transition smoothly into your new environment.`,
+        ourServicesPreDepartureOffer_1: 'Detailed briefing on travel and arrival procedures',
+        ourServicesPreDepartureOffer_2: 'Advice on accommodation, banking, and SIM setup',
+        ourServicesPreDepartureOffer_3: 'Guidelines on safety and student rights abroad',
+        ourServicesPreDepartureOffer_4: 'Tips for managing culture shock and homesickness',
+        ourServicesPreDepartureOffer_5: 'Checklist of essentials before departure',
+        ourServicesTitle_8: 'Cultural & Language Training',
+        ourServicesDesc_8: `Studying abroad means adapting to new cultures and languages. We provide 
+                            interactive cultural orientation and beginner-level language training to 
+                            help students settle easily and communicate effectively. These sessions 
+                            enhance confidence and foster a respectful understanding of your host 
+                            country’s customs.`,
+        ourServicesCultureTrainingOffer_1: 'Basic language and communication training',
+        ourServicesCultureTrainingOffer_2: 'Cultural etiquette and social norms orientation',
+        ourServicesCultureTrainingOffer_3: 'Workplace behavior and academic communication guidance',
+        ourServicesCultureTrainingOffer_4: 'Interactive workshops with experienced mentors',
+        ourServicesCultureTrainingOffer_5: 'Cultural integration and adaptation strategies',
+        ourServicesTitle_9: 'Post-arrival Support',
+        ourServicesPostArrivalOffer_1: 'Airport pickup coordination and accommodation support',
+        ourServicesPostArrivalOffer_2: 'Guidance on local transportation and registration',
+        ourServicesPostArrivalOffer_3: 'Help with opening bank accounts and part-time jobs',
+        ourServicesPostArrivalOffer_4: 'Emergency contact and welfare assistance',
+        ourServicesPostArrivalOffer_5: 'Continuous communication support from home office',
+        ourServicesTitle_10: 'Scholarship & Financial Guidance',
+        ourServicesDesc_10: `Education abroad can be expensive, but we make it manageable. Our counselors
+                            help you explore scholarship opportunities, tuition discounts, and financial 
+                            aid options available across universities. We guide you through the complete 
+                            application process so you can focus on your studies without unnecessary 
+                            stress.`,
+        ourServicesScholarshipOffer_1: 'Scholarship eligibility assessment',
+        ourServicesScholarshipOffer_2: 'Guidance on need-based and merit-based funding',
+        ourServicesScholarshipOffer_3: 'Assistance with scholarship essays and forms',
+        ourServicesScholarshipOffer_4: 'Tips to strengthen your financial profile',
+        ourServicesScholarshipOffer_5: 'Information on tuition fee waivers and grants',
+        workFlowHeader: 'Our End-to-End Student Journey',
+        workFlowDesc: `From your first consultation to post-arrival support, we guide you
+                        at every step of your study abroad journey.`,
+        workFlowCTAHeader: 'Ready to Start Your Journey?',
+        workFlowCTADesc: ` Connect with our experts to plan your study abroad journey
+                            step-by-step, from consultation to post-arrival support.`,
+        contactWithUs: 'Connect With Us',
+        workFlowDesc_1: `We start with a private consultation to understand your study goals, preferred 
+                        country (Japan, Australia, UK, US, Canada), financial situation, and visa 
+                        requirements. This helps us design the most suitable plan for your application.`,
+        workFlowTitle_2: 'Course & Country Guidance',
+        workFlowDesc_2: `Based on your academic background and interests, we help you choose the right 
+                        course and country that aligns with your career goals and visa eligibility.`,
+        workFlowTitle_3: 'Test & Exam Preparation Support',
+        workFlowDesc_3: `We provide guidance for language and eligibility tests such as IELTS, TOEFL, 
+                        JLPT, or country-specific exams, to ensure you meet visa and admission requirements.`,
+        workFlowTitle_4: 'University & Program Selection',
+        workFlowDesc_4 : `We shortlist the best universities and programs across Japan, Australia, UK, 
+                        US, and Canada based on your budget, preferences, and scholarship opportunities.`,
+        workFlowTitle_5: 'Visa Documentation Assistance',
+        workFlowDesc_5: `Our experts guide you in preparing, verifying, and submitting all documents 
+                        required for your visa applications across different countries.`,
+        workFlowTitle_6: 'Visa Interview & Embassy Prep',
+        workFlowDesc_6: `We conduct mock interviews and provide guidance for embassy questions to help
+                        you confidently present your case for Japan, Australia, UK, US, or Canada.`,
+        workFlowDesc_7: `We brief you on travel arrangements, accommodation, local culture, and essential tips for a smooth 
+                        transition to your chosen country.`,
+        workFlowDesc_8: `Prepare for life abroad with cultural insights, basic language skills, and etiquette tips for your 
+                        destination country.`,
+        workFlowDesc_9: `We assist with initial settlement, accommodation setup, part-time job guidance, and emergency support
+                         in your destination country.`,
+        workFlowDesc_10: `We help identify scholarships and funding opportunities in Japan, Australia, UK, US, and Canada to 
+                        reduce financial burden.`
     },
     // japanese language list
     jp: {
@@ -695,9 +837,132 @@ export  const languageData = {
         testimonialsquote_12: `KBMのおかげで、私のカナダへの留学は完全にスムーズに進みました。
                             ビザ手続きだけでなく、出発前の誠実なガイダンスも提供してくれました。
                             継続的なサポートと配慮に感謝しています。`,
-        servicesHeroTitle: `KBMのサービス`,
+        KBMServices: `KBMのサービス`,
         servicesHeroDesc: `KBMは、キャリアカウンセリングや大学選択からビザ支援、書類手続きまで、ワンストップでサポートを
                         提供します。個別のメンタリングと専門的なサポートにより、学生が日本、アメリカ、オーストラリア、イギ
-                        リス、カナダなどでの留学に万全の準備を整えられるよう支援します。`
+                        リス、カナダなどでの留学に万全の準備を整えられるよう支援します。`,
+        ourServicesHeader: '私たちの主要サービス',
+        ourServicesDesc: `専門的なガイダンスにより、学業の道をスムーズに進め、留学の夢を自信を持って実現できるよう支援します。`,
+        ourServicesTitle_1:'1対1の個別相談',
+        ourServicesSubTitle_1: '個別相談',
+        ourServicesDesc_1: `あなたの留学の旅は、経験豊富なカウンセラーとの個別相談から始まります。この面談では、あなたの
+                            学歴、キャリアの目標、経済的な状況、希望する留学先を丁寧に理解し、あなたの目標に合わせた独自
+                            の留学プランを作成します（一般的なテンプレートではありません）。私たちの専門チームは、現実的な
+                            アドバイスを提供し、不安や疑問を解消しながら、あなたの夢に沿った明確なロードマップを構築します。`,
+        ourServicesConsultationOffer_1: `包括的な学業および財務プロファイリング`,
+        ourServicesConsultationOffer_2: `留学先と目標に関する詳細な相談`,
+        ourServicesConsultationOffer_3: `個別の留学ロードマップ`,
+        ourServicesConsultationOffer_4: `コースの適格性と要件に関するガイダンス`,
+        ourServicesConsultationOffer_5: `奨学金と予算計画に関する初期アドバイス`,
+        ourServicesTitle_2 : 'コースとキャリアのガイダンス',
+        ourServicesDesc_2: `正しいコースを選ぶことは、海外での成功したキャリアを築くために非常に重要です。私たちのカウン
+                            セラーは、あなたの学問的な興味、スキル、そして将来の目標を分析し、世界の一流大学の中から最適
+                            なプログラムを見つけるお手伝いをします。また、就職市場の動向、インターンシップの機会、将来の
+                            キャリア展望なども考慮し、あなたの教育への投資が長期的に実を結ぶようにサポートします。`,
+        ourServicesCourseGuidanceOffer_1: 'キャリア志向のコース選択支援',
+        ourServicesCourseGuidanceOffer_2: '世界的に需要の高いプログラムに関するガイダンス',
+        ourServicesCourseGuidanceOffer_3: '大学およびコース構成の比較',
+        ourServicesCourseGuidanceOffer_4: '将来の就職市場および永住権（PR）取得の見通しに関する情報',
+        ourServicesCourseGuidanceOffer_5: 'コースとキャリア目標の整合性に関する専門的なアドバイス',
+        ourServicesTitle_3: '試験準備サポート',
+        ourServicesSubTitle_3: '試験準備',
+        ourServicesDesc_3: `多くの海外の大学では、IELTS、TOEFL、JLPTなどの標準化試験のスコアが必要です。私たちは、専門家による試験準備サポートを提供し、
+                            競争力のあるスコア取得を支援します。トレーニングでは、試験戦略、時間管理、個別の練習を通じて、実力と自信を高める内容をカバー
+                            しています。`,
+        ourServicesTestPreOffer_1: 'IELTS、TOEFL、PTE、JLPTの試験準備サポート',
+        ourServicesTestPreOffer_2: 'カスタマイズされた学習プランと模擬試験',
+        ourServicesTestPreOffer_3: '専門家による文法、語彙、スピーキングの指導セッション',
+        ourServicesTestPreOffer_4: '1対1の進捗管理とフィードバック',
+        ourServicesTestPreOffer_5: '学習教材および練習用リソースへのアクセス',
+        ourServicesTitle_4: '大学・国の選択',
+        ourServicesDesc_4: `適切な大学と国の選択は、学業経験と長期的な成功を左右します。私たちは、あなたの学歴、関心分野、予算計画を分析し、プロフィール
+                            に合った大学を絞り込みます。グローバルな知見を活かして、どこで何を学ぶかについて、情報に基づいた判断ができるよう支援します。`,
+        ourServicesUniversitySelctionOffer_1: 'プロフィールに基づく大学の絞り込み',
+        ourServicesUniversitySelctionOffer_2: '生活費と授業料の比較',
+        ourServicesUniversitySelctionOffer_3: '国別の入学要件に関するアドバイス',
+        ourServicesUniversitySelctionOffer_4: '奨学金および資金調達のオプションに関するガイダンス',
+        ourServicesUniversitySelctionOffer_5: '安全で学生に適した留学先のおすすめ',
+        ourServicesTitle_5: '書類作成および出願サポート',
+        ourServicesDesc_5: `適切な書類は、入学およびビザ手続きにおいて非常に重要です。私たちの専任チームは、学業関連、財務関連、身分証明書など、すべての書
+                            類が大学や大使館の要件を満たすよう確認します。また、志望理由書（SOP）、履歴書、推薦状の作成をサポートし、あなたの出願が際立つ
+                            ようにします。`,
+        ourServicesDocumentationOffer_1: `出願書類のエンドツーエンドサポート`,
+        ourServicesDocumentationOffer_2: `志望理由書（SOP）、履歴書、推薦状の指導`,
+        ourServicesDocumentationOffer_3: `書類の確認およびフォーマットサポート`,
+        ourServicesDocumentationOffer_4: `大学および大使館への提出状況の追跡`,
+        ourServicesDocumentationOffer_5: `ビザ要件に準拠した、エラーのない書類作成`,
+        ourServicesTitle_6: 'ビザ・大学面接準備',
+        ourServicesSubTitle_6: '面接準備',
+        ourServicesDesc_6: `面接は、入学やビザ承認の前の最終ステップであることが多いです。私たちの専門家は、明確に意思を伝え、難しい質問にも自信を持って
+                            対応し、意図を効果的に表現する方法を指導します。模擬面接とフィードバックを通じて、大学の担当者や大使館職員に好印象を与える準
+                            備を完全に整えます。`,
+        ourServicesInterviewPrepOffer_1: 'ビザおよび大学準備のための模擬面接',
+        ourServicesInterviewPrepOffer_2: 'コミュニケーションと自信に関するフィードバック',
+        ourServicesInterviewPrepOffer_3: '難しい質問へのプロフェッショナルな対応のためのアドバイス',
+        ourServicesInterviewPrepOffer_4: '必要書類と面接マナーに関するトレーニング',
+        ourServicesInterviewPrepOffer_5: '国別面接のための文化的オリエンテーション',
+        ourServicesTitle_7: '出発前オリエンテーション',
+        ourServicesDesc_7: `飛行機に搭乗する前に、これから始まる旅に向けて十分な準備ができるようサポートします。出発前の
+                            オリエンテーションでは、旅行の基本的な注意点、文化的なアドバイス、資金管理の方法、そして留学
+                            初期に知っておくべきことを詳しく説明します。これにより、新しい環境への移行がスムーズに行える
+                            ようになります。`,
+        ourServicesPreDepartureOffer_1: '渡航および到着手続きに関する詳細な説明',
+        ourServicesPreDepartureOffer_2: '宿泊施設、銀行口座、SIMカードの設定に関するアドバイス',
+        ourServicesPreDepartureOffer_3: '海外での安全対策と学生の権利に関するガイドライン',
+        ourServicesPreDepartureOffer_4: 'カルチャーショックやホームシックへの対処法のヒント',
+        ourServicesPreDepartureOffer_5: '出発前の必需品チェックリスト', 
+        ourServicesTitle_8: '文化と言語トレーニング',
+        ourServicesDesc_8: `海外留学は、新しい文化や言語への適応を意味します。私たちは、学生がスムーズに現地の生活に馴染
+                            み、効果的にコミュニケーションを取れるよう、インタラクティブな文化オリエンテーションと初級レ
+                            ベルの語学トレーニングを提供しています。これらのセッションは、自信を高め、留学先の国の習慣を
+                            尊重し理解する力を養います。`,
+        ourServicesCultureTrainingOffer_1: '基礎的な言語およびコミュニケーショントレーニング',
+        ourServicesCultureTrainingOffer_2: '文化的マナーと社会的ルールのオリエンテーション',
+        ourServicesCultureTrainingOffer_3: '職場での振る舞いと学業上のコミュニケーションに関するガイダンス',
+        ourServicesCultureTrainingOffer_4: '経験豊富なメンターによるインタラクティブワークショップ',
+        ourServicesCultureTrainingOffer_5: '文化への適応および統合のための戦略',
+        ourServicesTitle_9: '到着後サポート',
+        ourServicesDesc_9 : `私たちのサポートは、あなたが留学先に到着した後も終わりません。到着後の最初の数か月間、宿泊施
+                            設の手配、アルバイト探し、現地での生活適応などをサポートします。必要な場合は、緊急時や相談時に
+                            いつでも連絡を取ることができます。`,
+        ourServicesPostArrivalOffer_1: '空港送迎の手配および宿泊サポート',
+        ourServicesPostArrivalOffer_2: '現地の交通手段および登録手続きに関するガイダンス',
+        ourServicesPostArrivalOffer_3: '銀行口座の開設およびアルバイト探しのサポート',
+        ourServicesPostArrivalOffer_4: '緊急連絡先および生活サポート',
+        ourServicesPostArrivalOffer_5: '本部オフィスからの継続的なコミュニケーションサポート',
+        ourServicesTitle_10: '奨学金および資金サポート',
+        ourServicesDesc_10: `海外での教育は費用がかかりますが、私たちはその負担を管理可能にします。カウンセラーが奨学金の
+                            機会、授業料割引、大学で利用可能な経済的支援のオプションを一緒に検討します。出願プロセス全体
+                            をサポートすることで、余計なストレスを感じずに学業に集中できるようにします。`,
+        ourServicesScholarshipOffer_1 : '奨学金適格性の評価',
+        ourServicesScholarshipOffer_2 : 'ニーズベースおよびメリットベースの資金援助に関するガイダンス',
+        ourServicesScholarshipOffer_3 : '奨学金のエッセイおよび申請書のサポート',
+        ourServicesScholarshipOffer_4 : '財務状況を強化するためのアドバイス',
+        ourServicesScholarshipOffer_5 : '授業料免除および助成金に関する情報',
+        workFlowHeader: '私たちのワンストップ学生サポートの流れ',
+        workFlowDesc: `初回の相談から到着後のサポートまで、私たちは留学の全てのステップであなたをサポートします。`,
+        workFlowCTAHeader: '留学の旅を始める準備はできましたか？',
+        workFlowCTADesc: `相談から到着後のサポートまで、ステップごとにあなたの留学プランを専門家と一緒に作りましょう。`,
+        contactWithUs : '私たちとつながる',
+        workFlowDesc_1: `まず、個別相談を通じて、あなたの留学目標、希望国（日本、オーストラリア、イギリス、アメリカ、カナ
+                        ダ）、財務状況、ビザ要件を把握します。これにより、出願に最適なプランを設計することができます。`,
+        workFlowTitle_2: 'コースおよび国のガイダンス',
+        workFlowDesc_2: `あなたの学歴や興味に基づき、キャリア目標やビザ適格性に合った適切なコースと留学先の国を選ぶお手伝
+                        いをします。`,
+        workFlowTitle_3: '試験・検定準備サポート',
+        workFlowDesc_3: `IELTS、TOEFL、JLPT、または国別の試験など、語学や適性テストに関するガイダンスを提供し、ビザおよ
+                        び入学要件を満たせるようサポートします。`,
+        workFlowTitle_4: '大学およびプログラムの選択',
+        workFlowDesc_4: `予算、希望条件、奨学金の機会に基づき、日本、オーストラリア、イギリス、アメリカ、カナダの中から最
+                        適な大学とプログラムを絞り込みます。`,
+        workFlowTitle_5: 'ビザ書類サポート',
+        workFlowDesc_5: `私たちの専門家が、各国のビザ申請に必要な書類の準備、確認、提出をサポートします。`,
+        workFlowTitle_6: 'ビザ面接・大使館準備',
+        workFlowDesc_6: `模擬面接を実施し、大使館での質問に対するガイダンスを提供することで、日本、オーストラリア、イギリス、アメリカ、カナダで自信を持っ
+                        て自分のケースを伝えられるようサポートします。`,
+        workFlowDesc_7: `渡航手配、宿泊施設、現地の文化、スムーズな移行のための必須ポイントについて説明します。`,
+        workFlowDesc_8: `渡航先の文化的知識、基礎的な言語スキル、マナーのアドバイスを通じて、海外生活への準備を整えます。`,
+        workFlowDesc_9: `現地での初期生活の定着、宿泊手配、アルバイト案内、緊急サポートを提供します。`,
+        workFlowDesc_10: `日本、オーストラリア、イギリス、アメリカ、カナダでの奨学金や資金援助の機会を特定し、経済的負担を軽減するお手伝いをします。`,
     }
 }

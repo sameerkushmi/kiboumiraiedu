@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {
   UserCheck,
   BookOpen,
@@ -13,199 +13,192 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import {LanguageContext} from '../../Context/Context'
+import { languageData } from "../../Hooks/language";
 
 export default function OurServices() {
+  const {language} = useContext(LanguageContext)
   const [activeService, setActiveService] = useState("consultation");
   const [openAccordion, setOpenAccordion] = useState(null);
 
   const services = [
     {
       id: "consultation",
-      title: "1-on-1 Personalized Consultation",
+      title: language === 'en' ? languageData.en.ourServicesTitle_1:languageData.jp.ourServicesTitle_1,
       icon: UserCheck,
       content: {
-        title: "Personalized Consultation",
-        description:
-          "Your journey begins with a private one-on-one consultation where our experienced counselors take time to understand your academic background, career aspirations, financial capability, and preferred destination. This step ensures that your study abroad plan is uniquely crafted for your goals rather than following a one-size-fits-all approach. Our expert team provides realistic insights, helps you clarify doubts, and builds a roadmap that aligns with your ambitions.",
+      title: language === 'en' ? languageData.en.ourServicesSubTitle_1:languageData.jp.ourServicesSubTitle_1,
+        description:language === 'en' ? languageData.en.ourServicesDesc_1: languageData.jp.ourServicesDesc_1,
         image:
           "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80",
         offers: [
-          "Comprehensive academic and financial profiling",
-          "Detailed discussion on study destinations and goals",
-          "Personalized study abroad roadmap",
-          "Guidance on course eligibility and requirements",
-          "Initial advice on scholarships and budgeting",
+          language === 'en' ? languageData.en.ourServicesConsultationOffer_1 : languageData.jp.ourServicesConsultationOffer_1 ,
+          language === 'en' ? languageData.en.ourServicesConsultationOffer_2 : languageData.jp.ourServicesConsultationOffer_2 ,
+          language === 'en' ? languageData.en.ourServicesConsultationOffer_3 : languageData.jp.ourServicesConsultationOffer_3 ,
+          language === 'en' ? languageData.en.ourServicesConsultationOffer_4 : languageData.jp.ourServicesConsultationOffer_4 ,
+          language === 'en' ? languageData.en.ourServicesConsultationOffer_5 : languageData.jp.ourServicesConsultationOffer_5 ,
         ],
       },
     },
     {
       id: "course-guidance",
-      title: "Course & Career Guidance",
+      title: language === 'en' ? languageData.en.ourServicesTitle_2:languageData.jp.ourServicesTitle_2,
       icon: BookOpen,
       content: {
-        title: "Course & Career Guidance",
-        description:
-          "Choosing the right course is crucial to building a successful career abroad. Our counselors analyze your academic interests, skill set, and future aspirations to help you identify the best-fit programs across top global universities. We also consider job market trends, internship opportunities, and future prospects to ensure your education investment pays off long-term.",
+      title: language === 'en' ? languageData.en.ourServicesTitle_2:languageData.jp.ourServicesTitle_2,
+        description:language === 'en' ? languageData.en.ourServicesDesc_2: languageData.jp.ourServicesDesc_2,
         image:
           "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80",
         offers: [
-          "Career-oriented course selection assistance",
-          "Guidance on high-demand programs globally",
-          "Comparison of universities and course structures",
-          "Future job market and PR pathway insights",
-          "Expert advice on aligning course with career goals",
+          language === 'en' ? languageData.en.ourServicesCourseGuidanceOffer_1:languageData.jp.ourServicesCourseGuidanceOffer_1,
+          language === 'en' ? languageData.en.ourServicesCourseGuidanceOffer_2:languageData.jp.ourServicesCourseGuidanceOffer_2,
+          language === 'en' ? languageData.en.ourServicesCourseGuidanceOffer_3:languageData.jp.ourServicesCourseGuidanceOffer_3,
+          language === 'en' ? languageData.en.ourServicesCourseGuidanceOffer_4:languageData.jp.ourServicesCourseGuidanceOffer_4,
+          language === 'en' ? languageData.en.ourServicesCourseGuidanceOffer_5:languageData.jp.ourServicesCourseGuidanceOffer_5,
         ],
       },
     },
     {
       id: "test-prep",
-      title: "Test Preparation Support",
+      title: language === 'en' ? languageData.en.ourServicesTitle_3: languageData.jp.ourServicesTitle_3,
       icon: GraduationCap,
       content: {
-        title: "Test Preparation",
-        description:
-          "Many international universities require standardized test scores such as IELTS, TOEFL, or JLPT. We provide expert-led preparation support to help you achieve competitive results. Our training covers exam strategy, time management, and personalized practice to strengthen your performance and confidence.",
+        title: language === 'en' ? languageData.en.ourServicesSubTitle_3: languageData.jp.ourServicesSubTitle_3,
+        description:language === 'en' ? languageData.en.ourServicesDesc_3: languageData.jp.ourServicesDesc_3,
         image:
           "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
         offers: [
-          "IELTS, TOEFL, PTE, and JLPT preparation support",
-          "Customized study plans and mock tests",
-          "Expert-led grammar, vocabulary, and speaking sessions",
-          "One-on-one progress tracking and feedback",
-          "Access to study materials and practice resources",
+          language === 'en' ? languageData.en.ourServicesTestPreOffer_1: languageData.jp.ourServicesTestPreOffer_1,
+          language === 'en' ? languageData.en.ourServicesTestPreOffer_2: languageData.jp.ourServicesTestPreOffer_2,
+          language === 'en' ? languageData.en.ourServicesTestPreOffer_3: languageData.jp.ourServicesTestPreOffer_3,
+          language === 'en' ? languageData.en.ourServicesTestPreOffer_4: languageData.jp.ourServicesTestPreOffer_4,
+          language === 'en' ? languageData.en.ourServicesTestPreOffer_5: languageData.jp.ourServicesTestPreOffer_5,
         ],
       },
     },
     {
       id: "university-selection",
-      title: "University & Country Selection",
+      title: language === 'en' ? languageData.en.ourServicesTitle_4: languageData.jp.ourServicesTitle_4,
       icon: Globe2,
       content: {
-        title: "University & Country Selection",
-        description:
-          "Selecting the right university and country determines your academic experience and long-term success. We analyze your academic background, field of interest, and financial plans to shortlist universities that fit your profile. Our global insights ensure you make informed decisions about where and what to study.",
+      title: language === 'en' ? languageData.en.ourServicesTitle_4: languageData.jp.ourServicesTitle_4,
+        description:language === 'en' ? languageData.en.ourServicesDesc_4: languageData.jp.ourServicesDesc_4,
         image:
           "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80",
         offers: [
-          "Profile-based university shortlisting",
-          "Comparison of living costs and tuition fees",
-          "Advice on country-specific admission requirements",
-          "Guidance on scholarship and funding options",
-          "Recommendations for safe and student-friendly destinations",
+          language === 'en' ? languageData.en.ourServicesUniversitySelctionOffer_1:languageData.jp.ourServicesUniversitySelctionOffer_1,
+          language === 'en' ? languageData.en.ourServicesUniversitySelctionOffer_2:languageData.jp.ourServicesUniversitySelctionOffer_2,
+          language === 'en' ? languageData.en.ourServicesUniversitySelctionOffer_3:languageData.jp.ourServicesUniversitySelctionOffer_3,
+          language === 'en' ? languageData.en.ourServicesUniversitySelctionOffer_4:languageData.jp.ourServicesUniversitySelctionOffer_4,
+          language === 'en' ? languageData.en.ourServicesUniversitySelctionOffer_5:languageData.jp.ourServicesUniversitySelctionOffer_5,
         ],
       },
     },
     {
       id: "documentation",
-      title: "Documentation & Application Assistance",
+      title: language === 'en' ? languageData.en.ourServicesTitle_5: languageData.jp.ourServicesTitle_5,
       icon: FileCheck,
       content: {
-        title: "Documentation & Application Assistance",
-        description:
-          "Proper documentation plays a vital role in your admission and visa process. Our dedicated team ensures that all your academic, financial, and identification documents meet the exact requirements of universities and embassies. We assist you in drafting statements of purpose (SOPs), resumes, and recommendation letters that make your application stand out.",
+      title: language === 'en' ? languageData.en.ourServicesTitle_5: languageData.jp.ourServicesTitle_5,
+        description:language === 'en' ? languageData.en.ourServicesDesc_5: languageData.jp.ourServicesDesc_5,
         image:
           "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
         offers: [
-          "End-to-end assistance with application forms",
-          "SOP, resume, and reference letter guidance",
-          "Document verification and formatting support",
-          "University and embassy submission tracking",
-          "Error-free document preparation for visa compliance",
+          language === 'en'? languageData.en.ourServicesDocumentationOffer_1: languageData.jp.ourServicesDocumentationOffer_1,
+          language === 'en'? languageData.en.ourServicesDocumentationOffer_2: languageData.jp.ourServicesDocumentationOffer_2,
+          language === 'en'? languageData.en.ourServicesDocumentationOffer_3: languageData.jp.ourServicesDocumentationOffer_3,
+          language === 'en'? languageData.en.ourServicesDocumentationOffer_4: languageData.jp.ourServicesDocumentationOffer_4,
+          language === 'en'? languageData.en.ourServicesDocumentationOffer_5: languageData.jp.ourServicesDocumentationOffer_5,
         ],
       },
     },
     {
       id: "interview-prep",
-      title: "Visa & University Interview Prep",
+      title: language === 'en' ? languageData.en.ourServicesTitle_6: languageData.jp.ourServicesTitle_6,
       icon: MessageSquare,
       content: {
-        title: "Interview Preparation",
-        description:
-          "Interviews are often the final step before admission or visa approval. Our experts train you to communicate clearly, handle difficult questions confidently, and present your intent effectively. With mock sessions and feedback, you’ll be fully prepared to make a positive impression before the university panel or embassy officials.",
+        title: language === 'en' ? languageData.en.ourServicesSubTitle_6: languageData.jp.ourServicesSubTitle_6,
+        description:language === 'en' ? languageData.en.ourServicesDesc_6: languageData.jp.ourServicesDesc_6,
         image:
           "https://images.unsplash.com/photo-1600718373744-878dfc0a6f52?w=800&q=80",
         offers: [
-          "Mock interviews for visa and university preparation",
-          "Feedback on communication and confidence",
-          "Tips for handling tricky questions professionally",
-          "Training on required documents and interview etiquette",
-          "Cultural briefing for country-specific interviews",
+          language === 'en'? languageData.en.ourServicesInterviewPrepOffer_1: languageData.jp.ourServicesInterviewPrepOffer_1,
+          language === 'en'? languageData.en.ourServicesInterviewPrepOffer_2: languageData.jp.ourServicesInterviewPrepOffer_2,
+          language === 'en'? languageData.en.ourServicesInterviewPrepOffer_3: languageData.jp.ourServicesInterviewPrepOffer_3,
+          language === 'en'? languageData.en.ourServicesInterviewPrepOffer_4: languageData.jp.ourServicesInterviewPrepOffer_4,
+          language === 'en'? languageData.en.ourServicesInterviewPrepOffer_5: languageData.jp.ourServicesInterviewPrepOffer_5,
         ],
       },
     },
     {
       id: "pre-departure",
-      title: "Pre-departure Orientation",
+      title: language === 'en' ? languageData.en.ourServicesTitle_7:languageData.jp.ourServicesTitle_7,
       icon: PlaneTakeoff,
       content: {
-        title: "Pre-departure Orientation",
-        description:
-          "Before you board your flight, we ensure you’re well-prepared for the journey ahead. Our pre-departure session covers essential travel tips, cultural guidance, financial management advice, and what to expect during your first few weeks abroad. It helps you transition smoothly into your new environment.",
+        title: language === 'en' ? languageData.en.ourServicesTitle_7:languageData.jp.ourServicesTitle_7,
+        description:language === 'en' ? languageData.en.ourServicesDesc_7: languageData.jp.ourServicesDesc_7,
         image:
           "https://images.unsplash.com/photo-1600566752187-2b3b6f0b1b12?w=800&q=80",
         offers: [
-          "Detailed briefing on travel and arrival procedures",
-          "Advice on accommodation, banking, and SIM setup",
-          "Guidelines on safety and student rights abroad",
-          "Tips for managing culture shock and homesickness",
-          "Checklist of essentials before departure",
+          language === 'en' ? languageData.en.ourServicesPreDepartureOffer_1:languageData.jp.ourServicesPreDepartureOffer_1,
+          language === 'en' ? languageData.en.ourServicesPreDepartureOffer_2:languageData.jp.ourServicesPreDepartureOffer_2,
+          language === 'en' ? languageData.en.ourServicesPreDepartureOffer_3:languageData.jp.ourServicesPreDepartureOffer_3,
+          language === 'en' ? languageData.en.ourServicesPreDepartureOffer_4:languageData.jp.ourServicesPreDepartureOffer_4,
+          language === 'en' ? languageData.en.ourServicesPreDepartureOffer_5:languageData.jp.ourServicesPreDepartureOffer_5,
         ],
       },
     },
     {
       id: "cultural-training",
-      title: "Cultural & Language Training",
+      title: language === 'en' ? languageData.en.ourServicesTitle_8 : languageData.jp.ourServicesTitle_8,
       icon: Languages,
       content: {
-        title: "Cultural & Language Training",
-        description:
-          "Studying abroad means adapting to new cultures and languages. We provide interactive cultural orientation and beginner-level language training to help students settle easily and communicate effectively. These sessions enhance confidence and foster a respectful understanding of your host country’s customs.",
+        title: language === 'en' ? languageData.en.ourServicesTitle_8 : languageData.jp.ourServicesTitle_8,
+        description:language === 'en' ? languageData.en.ourServicesDesc_8: languageData.jp.ourServicesDesc_8,
         image:
           "https://images.unsplash.com/photo-1600566752600-b6d06aa0991a?w=800&q=80",
         offers: [
-          "Basic language and communication training",
-          "Cultural etiquette and social norms orientation",
-          "Workplace behavior and academic communication guidance",
-          "Interactive workshops with experienced mentors",
-          "Cultural integration and adaptation strategies",
+          language === 'en' ? languageData.en.ourServicesCultureTrainingOffer_1:languageData.jp.ourServicesCultureTrainingOffer_1,
+          language === 'en' ? languageData.en.ourServicesCultureTrainingOffer_2:languageData.jp.ourServicesCultureTrainingOffer_2,
+          language === 'en' ? languageData.en.ourServicesCultureTrainingOffer_3:languageData.jp.ourServicesCultureTrainingOffer_3,
+          language === 'en' ? languageData.en.ourServicesCultureTrainingOffer_4:languageData.jp.ourServicesCultureTrainingOffer_4,
+          language === 'en' ? languageData.en.ourServicesCultureTrainingOffer_5:languageData.jp.ourServicesCultureTrainingOffer_5,
         ],
       },
     },
     {
       id: "post-arrival",
-      title: "Post-arrival Support",
+      title: language === 'en' ? languageData.en.ourServicesTitle_9 : languageData.jp.ourServicesTitle_9,
       icon: HelpingHand,
       content: {
-        title: "Post-arrival Support",
-        description:
-          "Our relationship doesn’t end once you arrive at your destination. We continue supporting you during your early months abroad by assisting with accommodation setup, part-time job search, and local adjustments. You can always reach out for emergency or guidance support whenever needed.",
+        title: language === 'en' ? languageData.en.ourServicesTitle_9 : languageData.jp.ourServicesTitle_9,
+        description:language === 'en' ? languageData.en.ourServicesDesc_9: languageData.jp.ourServicesDesc_9,
         image:
           "https://images.unsplash.com/photo-1590959651373-a3db0f1d7c61?w=800&q=80",
         offers: [
-          "Airport pickup coordination and accommodation support",
-          "Guidance on local transportation and registration",
-          "Help with opening bank accounts and part-time jobs",
-          "Emergency contact and welfare assistance",
-          "Continuous communication support from home office",
+          language === 'en' ? languageData.en.ourServicesPostArrivalOffer_1:languageData.jp.ourServicesPostArrivalOffer_1 ,
+          language === 'en' ? languageData.en.ourServicesPostArrivalOffer_2:languageData.jp.ourServicesPostArrivalOffer_2 ,
+          language === 'en' ? languageData.en.ourServicesPostArrivalOffer_3:languageData.jp.ourServicesPostArrivalOffer_3 ,
+          language === 'en' ? languageData.en.ourServicesPostArrivalOffer_4:languageData.jp.ourServicesPostArrivalOffer_4 ,
+          language === 'en' ? languageData.en.ourServicesPostArrivalOffer_5:languageData.jp.ourServicesPostArrivalOffer_5 ,
         ],
       },
     },
     {
       id: "scholarships",
-      title: "Scholarship & Financial Guidance",
+      title: language === 'en' ? languageData.en.ourServicesTitle_10 : languageData.jp.ourServicesTitle_10,
       icon: Trophy,
       content: {
-        title: "Scholarship & Financial Guidance",
-        description:
-          "Education abroad can be expensive, but we make it manageable. Our counselors help you explore scholarship opportunities, tuition discounts, and financial aid options available across universities. We guide you through the complete application process so you can focus on your studies without unnecessary stress.",
+        title: language === 'en' ? languageData.en.ourServicesTitle_10 : languageData.jp.ourServicesTitle_10,
+        description:language === 'en' ? languageData.en.ourServicesDesc_10 : languageData.jp.ourServicesDesc_10,
         image:
           "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&q=80",
         offers: [
-          "Scholarship eligibility assessment",
-          "Guidance on need-based and merit-based funding",
-          "Assistance with scholarship essays and forms",
-          "Tips to strengthen your financial profile",
-          "Information on tuition fee waivers and grants",
+          language === 'en' ? languageData.en.ourServicesScholarshipOffer_1: languageData.jp.ourServicesScholarshipOffer_1,
+          language === 'en' ? languageData.en.ourServicesScholarshipOffer_2: languageData.jp.ourServicesScholarshipOffer_2,
+          language === 'en' ? languageData.en.ourServicesScholarshipOffer_3: languageData.jp.ourServicesScholarshipOffer_3,
+          language === 'en' ? languageData.en.ourServicesScholarshipOffer_4: languageData.jp.ourServicesScholarshipOffer_4,
+          language === 'en' ? languageData.en.ourServicesScholarshipOffer_5: languageData.jp.ourServicesScholarshipOffer_5,
         ],
       },
     },
@@ -220,11 +213,14 @@ export default function OurServices() {
     <section className="px-6 py-16 my-16 mx-6 bg-blue/10 rounded-4xl">
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-          Our Core Services
+          {
+            language === 'en' ? languageData.en.ourServicesHeader: languageData.jp.ourServicesHeader
+          }
         </h1>
         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-          Expert guidance to help you navigate your academic journey and achieve
-          your study abroad dreams with confidence.
+          {
+            language === 'en' ? languageData.en.ourServicesDesc: languageData.jp.ourServicesDesc
+          }
         </p>
       </div>
 
@@ -235,7 +231,9 @@ export default function OurServices() {
           <div>
             <div className="flex flex-col">
               <h2 className="text-3xl font-extralight text-gray-900 mb-1">
-                KBM's Services
+                {
+                  language === 'en' ? languageData.en.KBMServices: languageData.jp.KBMServices
+                }
               </h2>
               <div className="h-[2px] w-full bg-black mb-3" />
             </div>
@@ -339,7 +337,8 @@ export default function OurServices() {
         {/* Mobile Accordion */}
         <div className="lg:hidden">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            Our Core Services
+            {
+            }
           </h2>
 
           <div className="space-y-4">

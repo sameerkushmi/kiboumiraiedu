@@ -10,7 +10,7 @@ export default function ServicesHero() {
   return (
     <div>
       <MainHeroHelper
-        title={language === 'en' ? languageData.en.servicesHeroTitle: languageData.jp.servicesHeroTitle}
+        title={language === 'en' ? languageData.en.KBMServices: languageData.jp.KBMServices}
         description={language === 'en' ? languageData.en.servicesHeroDesc : languageData.jp.servicesHeroDesc}
       />
     </div>
