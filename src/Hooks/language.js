@@ -854,7 +854,22 @@ export  const languageData = {
         studyDestinationDesc_6:'South Korea combines cutting-edge innovation, affordable tuition, and a vibrant culture, making it a fast-rising destination for international learners.',
         KInnovation: 'K-Innovation',
         affordable: 'Affordable',
-        dynamicCulture:'Dynamic Culture'
+        dynamicCulture:'Dynamic Culture',
+        studyTestDesc_1: 'The International English Language Testing System (IELTS) is one of the most popular English proficiency exams accepted globally for study, migration, and work.',
+        listening : 'Listening',
+        reading: 'Reading',
+        wrinting: 'Writing',
+        speaking: 'Speaking',
+        studyTestDuration_1: '2 hours 45 minutes',
+        twoYear: '2 years',
+        studyTestWhyNeeded_1: `IELTS demonstrates English proficiency for academic admission, professional registration, and immigration. It's accepted by over 11,000 organizations worldwide including universities, employers, and governments.`,
+        studyTestBachelorScore_1: '6.0 - 6.5 overall (with no band less than 5.5)',
+        studyTestMasterScore_1: '6.5 - 7.0 overall (with no band less than 6.0)',
+        studyTestDiplomaScore_1: '5.5 - 6.0 overall (with no band less than 5.0)',
+        studyTestsFormat_1: 'Paper-based or Computer-based',
+        studyTestsDesc_2: 'The Pearson Test of English (PTE) evaluates your English skills using AI-based scoring, offering fast results and wide acceptance for studying abroad.',
+        aiScoring: 'AI Scoring',
+        
     },
     // japanese language list
     jp: {
@@ -1583,6 +1598,19 @@ export  const languageData = {
         studyDestinationDesc_6: `韓国は最先端のイノベーション、手頃な授業料、活気ある文化を兼ね備えており、海外からの学習者にとって急速に人気が高まっている留学先となっています。`,
         KInnovation: 'Kイノベーション',
         affordable: '手頃な価格',
-        dynamicCulture: 'ダイナミックな文化'
+        dynamicCulture: 'ダイナミックな文化',
+        studyTestDesc_1: '国際英語能力テスト（IELTS）は、留学、移住、仕事などで世界的に認められている最も人気のある英語能力試験の 1 つです。',
+        listening:'リスニング' ,
+        reading: '読む',
+        wrinting: '書き込み',
+        speaking:'話し中',
+        studyTestDuration_1: '2時間45分',
+        twoYear:'2年',
+        studyTestWhyNeeded_1: `IELTSは、大学入学、専門職登録、移民申請に必要な英語能力を証明するテストです。大学、雇用主、政府など、世界中の11,0​​00以上の組織で認められています。`,
+        studyTestBachelorScore_1: '全体で6.0～6.5（5.5未満のバンドはない）',
+        studyTestMasterScore_1: '全体で6.5～7.0（6.0未満のバンドはない）',
+        studyTestDiplomaScore_1: '全体で5.5～6.0（5.0未満のバンドはない）',
+        studyTestsFormat_1: '紙ベースまたはコンピュータベース',
+        studyTestDesc_2: 'ピアソン英語テスト（PTE）は、AI ベースの採点を使用して英語スキルを評価し、迅速な結果と留学のための幅広い受け入れを提供します。',
     }
 }
