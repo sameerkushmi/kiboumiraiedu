@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Tabs } from "antd";
 import { Star } from "lucide-react";
+import { languageData } from "../../../../Hooks/language";
+import { LanguageContext } from "../../../../Context/Context";
 
 const CourseSection = () => {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const { language } = useContext(LanguageContext)
 
   // ✅ Detect window resize
   useEffect(() => {
@@ -13,12 +16,12 @@ const CourseSection = () => {
   }, []);
 
   const courseTitle = [
-    "Basic Course",
-    "Advance Office Package",
-    "Accounting Training",
-    "Graphic Design",
-    "Video Editing",
-    "Advance Diploma & Job Oriented Course",
+    language === 'en' ? languageData.en.basicCourse : languageData.jp.basicCourse,
+    language === 'en' ? languageData.en.advanceOfficePackage : languageData.jp.advanceOfficePackage,
+    language === 'en' ? languageData.en.accountingTraining : languageData.jp.accountingTraining,
+    language === 'en' ? languageData.en.graphicDesign : languageData.jp.graphicDesign,
+    language === 'en' ? languageData.en.videoEditing : languageData.jp.videoEditing,
+    language === 'en' ? languageData.en.advanceDiploma : languageData.jp.advanceDiploma,
   ];
 
   const courseList = {
@@ -35,22 +38,113 @@ const CourseSection = () => {
   };
 
   const allCourses = [
-    { title: "MS Powerpoint", img: "/Uploads/courses/ms-powerpoint.jpg", caption: "Create Powerful Slides, Tell Impactful Stories", tagLine: "From classrooms to boardrooms — PowerPoint skills that shine anywhere.", rate: "5" },
-    { title: "MS Paint", caption: "Start Your Art Journey with Microsoft Paint.", tagLine: "Bring Your Imagination to Life with MS Paint.", img: "/Uploads/courses/msPaint.jpeg", rate: "5" },
-    { title: "MS Word", img: "/Uploads/courses/ms-word.png", caption: "Boost Your Office Skills with Our MS Word Course.", tagLine: "From reports to resumes — create with confidence in MS Word.", rate: "5" },
-    { title: "MS Excel", img: "/Uploads/courses/ms-excel.jpeg", caption: "The Complete MS Excel Course for Students & Professionals.", tagLine: "From formulas to dashboards — become an Excel powerhouse.", rate: "5" },
-    { title: "Typing Master", img: "/Uploads/courses/typingmaster.png", caption: "Boost Your Typing Speed and Accuracy.", tagLine: "Type faster, smarter, and confidently with Typing Master.", rate: "5" },
-    { title: "Email", img: "/Uploads/courses/email.png", caption: "Professional Communication Starts with Email.", tagLine: "From Inbox to Impact — Master Professional Emailing.", rate: "5" },
-    { title: "Adobe Indesign", img: "/Uploads/courses/indesign.jpg", caption: "Design Smarter. Publish Better. Master InDesign.", tagLine: "Turn your passion for design into real-world publishing skills.", rate: "5" },
-    { title: "Adobe Photoshop", img: "/Uploads/courses/photoshop.png", caption: "Transform your photos and your career with Photoshop skills.", tagLine: "Design Stunning Graphics and Bring Your Ideas to Life.", rate: "5" },
-    { title: "Canva", img: "/Uploads/courses/canva.jpg", caption: "Design Smarter, Faster, and Easier with Canva.", tagLine: "From ideas to amazing designs — Start your Canva journey now!", rate: "5" },
-    { title: "Tally ERP9", img: "/Uploads/courses/tally-erp-9.jpg", caption: "Upgrade Your Accounting Skills with Practical Tally Training.", tagLine: "Master Business Accounting with Tally ERP 9.", rate: "5" },
-    { title: "Tally Prime", img: "/Uploads/courses/tally-prime.png", caption: "Step-by-step Tally training for students, accountants, and business owners", tagLine: "Simplify Accounting, Amplify Growth.", rate: "5" },
-    { title: "Busy Accounting", img: "/Uploads/courses/busy.jpg", caption: "Professional Accounting Made Easy with Busy Accounting.", tagLine: "Perfect course for students, accountants, and business owners.", rate: "5" },
-    { title: "Adobe Illustrator", img: "/Uploads/courses/illustrator.png", caption: "Learn Vector Design, Logo Creation & Digital Illustration with Illustrator.", tagLine: "Create Limitless Designs with Illustrator.", rate: "5" },
-    { title: "CorelDraw", img: "/Uploads/courses/coreldraw.png", caption: "Master CorelDRAW — The Complete Graphic Design Solution.", tagLine: "Design. Draw. Dominate.", rate: "5" },
-    { title: "Adobe PremierePro", img: "/Uploads/courses/premierepro.jpeg", caption: "Learn Professional Video Editing from Start to Finish.", tagLine: "Perfect course for creators, filmmakers, and professionals.", rate: "5" },
+    {
+      title: "MS Powerpoint",
+      img: "/Uploads/courses/ms-powerpoint.jpg",
+      caption: language === 'en' ? languageData.en.MSPowerPointCaption : languageData.jp.MSPowerPointCaption,
+      tagLine: language === 'en' ? languageData.en.MSPowerPointTagline : languageData.jp.MSPowerPointTagline,
+      rate: "5",
+    },
+    {
+      title: "MS Paint",
+      img: "/Uploads/courses/msPaint.jpeg",
+      caption: language === 'en' ? languageData.en.MSPaintCaption : languageData.jp.MSPaintCaption,
+      tagLine: language === 'en' ? languageData.en.MSPaintTagline : languageData.jp.MSPaintTagline,
+      rate: "5",
+    },
+    {
+      title: "MS Word",
+      img: "/Uploads/courses/ms-word.png",
+      caption: language === 'en' ? languageData.en.MSWordCaption : languageData.jp.MSWordCaption,
+      tagLine: language === 'en' ? languageData.en.MSWordTagline : languageData.jp.MSWordTagline,
+      rate: "5",
+    },
+    {
+      title: "MS Excel",
+      img: "/Uploads/courses/ms-excel.jpeg",
+      caption: language === 'en' ? languageData.en.MSExcelCaption: languageData.jp.MSExcelCaption,
+      tagLine: language === 'en' ? languageData.en.MSExcelTagline: languageData.jp.MSExcelTagline,
+      rate: "5",
+    },
+    {
+      title: "Typing Master",
+      img: "/Uploads/courses/typingmaster.png",
+      caption: language === 'en' ? languageData.en.TypingMasterCaption: languageData.jp.TypingMasterCaption,
+      tagLine: language === 'en' ? languageData.en.TypingMasterTagline: languageData.jp.TypingMasterTagline,
+      rate: "5",
+    },
+    {
+      title: "Email",
+      img: "/Uploads/courses/email.png",
+      caption: language === 'en' ? languageData.en.emailCaption: languageData.jp.emailCaption,
+      tagLine: language === 'en' ? languageData.en.emailTagline: languageData.jp.emailTagline,
+      rate: "5",
+    },
+    {
+      title: "Adobe Indesign",
+      img: "/Uploads/courses/indesign.jpg",
+      caption: language === 'en' ? languageData.en.adobeIndesignCaption: languageData.jp.adobeIndesignCaption,
+      tagLine: language === 'en' ? languageData.en.adobeIndesignTagline: languageData.jp.adobeIndesignTagline,
+      rate: "5",
+    },
+    {
+      title: "Adobe Photoshop",
+      img: "/Uploads/courses/photoshop.png",
+      caption: language === 'en' ? languageData.en.adobePhotoshopCaption: languageData.jp.adobePhotoshopCaption,
+      tagLine: language === 'en' ? languageData.en.adobePhotoshopTagline: languageData.jp.adobePhotoshopTagline,
+      rate: "5",
+    },
+    {
+      title: "Canva",
+      img: "/Uploads/courses/canva.jpg",
+      caption: language === 'en' ? languageData.en.canvaCapiton: languageData.jp.canvaCapiton,
+      tagLine: language === 'en' ? languageData.en.canvaTagline: languageData.jp.canvaTagline,
+      rate: "5",
+    },
+    {
+      title: "Tally ERP9",
+      img: "/Uploads/courses/tally-erp-9.jpg",
+      caption: language === 'en' ? languageData.en.tallyERP9Caption: languageData.jp.tallyERP9Caption,
+      tagLine: language === 'en' ? languageData.en.tallyERP9Tagline: languageData.jp.tallyERP9Tagline,
+      rate: "5",
+    },
+    {
+      title: "Tally Prime",
+      img: "/Uploads/courses/tally-prime.png",
+      caption: language === 'en' ? languageData.en.tallyPrimeCaption: languageData.jp.tallyPrimeCaption,
+      tagLine: language === 'en' ? languageData.en.tallyPrimeTagline: languageData.jp.tallyPrimeTagline,
+      rate: "5",
+    },
+    {
+      title: "Busy Accounting",
+      img: "/Uploads/courses/busy.jpg",
+      caption: language === 'en' ? languageData.en.busyAccountingCaption: languageData.jp.busyAccountingCaption,
+      tagLine: language === 'en' ? languageData.en.busyAccountingTagline: languageData.jp.busyAccountingTagline,
+      rate: "5",
+    },
+    {
+      title: "Adobe Illustrator",
+      img: "/Uploads/courses/illustrator.png",
+      caption: language === 'en' ? languageData.en.adobeIllustratorCaption: languageData.jp.adobeIllustratorCaption,
+      tagLine: language === 'en' ? languageData.en.adobeIllustratorTagline: languageData.jp.adobeIllustratorTagline,
+      rate: "5",
+    },
+    {
+      title: "CorelDraw",
+      img: "/Uploads/courses/coreldraw.png",
+      caption: language === 'en' ? languageData.en.coreldrwaCaption: languageData.jp.coreldrwaCaption,
+      tagLine: language === 'en' ? languageData.en.coreldrwaTagline: languageData.jp.coreldrwaTagline,
+      rate: "5",
+    },
+    {
+      title: "Adobe PremierePro",
+      img: "/Uploads/courses/premierepro.jpeg",
+      caption: language === 'en' ? languageData.en.adobepremiereproCaption: languageData.jp.adobepremiereproCaption,
+      tagLine: language === 'en' ? languageData.en.adobepremiereproTagline: languageData.jp.adobepremiereproTagline,
+      rate: "5",
+    },
   ];
+
 
 
   const renderCourses = (key) => {
@@ -100,10 +194,14 @@ const CourseSection = () => {
       {/* Header */}
       <div className="text-center mb-16">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-          Our Best Courses
+          {
+            language === 'en' ? languageData.en.courseSectionHeader : languageData.jp.courseSectionHeader
+          }
         </h1>
         <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
-          Master computers. Build skills. Shape your future.
+          {
+            language === 'en' ? languageData.en.courseSectionMainDesc : languageData.jp.courseSectionMainDesc
+          }
         </p>
       </div>
 
