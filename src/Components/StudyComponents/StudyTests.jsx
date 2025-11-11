@@ -1,3 +1,4 @@
+import { useContext, useEffect, useState } from "react";
 import {
   BookOpenCheck,
   ArrowRight,
@@ -6,109 +7,117 @@ import {
   Target,
   Award,
 } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import { LanguageContext } from "../../Context/Context";
+import { languageData } from "../../Hooks/language";
 
-const tests = [
-  {
-    id: 1,
-    name: "IELTS",
-    href: "/tests/ielts",
-    icon: "🇬🇧",
-    desc: "The International English Language Testing System (IELTS) is one of the most popular English proficiency exams accepted globally for study, migration, and work.",
-    highlights: ["Listening", "Reading", "Writing", "Speaking"],
-    duration: "2 hours 45 minutes",
-    validity: "2 years",
-    whyNeeded:
-      "IELTS demonstrates English proficiency for academic admission, professional registration, and immigration. It's accepted by over 11,000 organizations worldwide including universities, employers, and governments.",
-    requiredScores: {
-      bachelor: "6.0 - 6.5 overall (with no band less than 5.5)",
-      master: "6.5 - 7.0 overall (with no band less than 6.0)",
-      diploma: "5.5 - 6.0 overall (with no band less than 5.0)",
-    },
-    format: "Paper-based or Computer-based",
-    cost: "$215 - $250 USD",
-  },
-  {
-    id: 2,
-    name: "PTE",
-    href: "/tests/pte",
-    icon: "🗣️",
-    desc: "The Pearson Test of English (PTE) evaluates your English skills using AI-based scoring, offering fast results and wide acceptance for studying abroad.",
-    highlights: ["AI Scoring", "Quick Results", "Widely Accepted"],
-    duration: "2 hours",
-    validity: "2 years",
-    whyNeeded:
-      "PTE Academic uses AI technology for unbiased scoring and delivers results within 48 hours. It's recognized by thousands of institutions globally and is ideal for those seeking quick turnaround times.",
-    requiredScores: {
-      bachelor: "50 - 58 overall (with communicative skills at 50+)",
-      master: "58 - 65 overall (with communicative skills at 58+)",
-      diploma: "42 - 50 overall (with communicative skills at 42+)",
-    },
-    format: "Computer-based only",
-    cost: "$185 - $210 USD",
-  },
-  {
-    id: 3,
-    name: "TOEFL",
-    href: "/tests/toefl",
-    icon: "📚",
-    desc: "The Test of English as a Foreign Language (TOEFL) measures English proficiency for academic purposes, accepted by over 11,000 universities worldwide.",
-    highlights: ["Academic English", "Global Recognition", "Online Test"],
-    duration: "2 hours (iBT)",
-    validity: "2 years",
-    whyNeeded:
-      "TOEFL is specifically designed for academic English and is the preferred test for North American universities. It assesses your ability to understand and use English in university settings.",
-    requiredScores: {
-      bachelor: "70 - 80 overall (with section scores 17+)",
-      master: "85 - 100 overall (with section scores 20+)",
-      diploma: "60 - 70 overall (with section scores 15+)",
-    },
-    format: "Internet-based (iBT) or Paper-based",
-    cost: "$180 - $300 USD",
-  },
-  {
-    id: 4,
-    name: "SAT",
-    href: "/tests/sat",
-    icon: "🧠",
-    desc: "The Scholastic Assessment Test (SAT) evaluates mathematical, reading, and writing abilities, and is a key requirement for many U.S. universities.",
-    highlights: ["Math & English", "College Admissions", "Scholarship Aid"],
-    duration: "3 hours (without essay)",
-    validity: "5 years",
-    whyNeeded:
-      "The SAT is a standardized test for college admissions in the US. High scores can qualify you for merit-based scholarships and demonstrate readiness for college-level coursework.",
-    requiredScores: {
-      bachelor: "1200 - 1400 (competitive institutions: 1400+)",
-      master: "Not typically required",
-      diploma: "1000 - 1200",
-    },
-    format: "Paper-based or Digital",
-    cost: "$60 USD (without essay), $85 USD (with essay)",
-  },
-  {
-    id: 5,
-    name: "JLPT (N5–N1)",
-    href: "/tests/jlpt",
-    icon: "🇯🇵",
-    desc: "The Japanese Language Proficiency Test (JLPT) assesses non-native speakers' Japanese abilities, from beginner (N5) to advanced (N1), and is essential for study or work in Japan.",
-    highlights: ["5 Levels", "Language Proficiency", "Study & Work in Japan"],
-    duration: "105 - 170 minutes (varies by level)",
-    validity: "No expiration",
-    whyNeeded:
-      "JLPT certification is required for academic admissions, employment, and visa applications in Japan. It validates your Japanese language proficiency from basic communication to advanced business-level fluency.",
-    requiredScores: {
-      bachelor: "N2 level (score 90+/180) - Upper intermediate",
-      master: "N1 level (score 100+/180) - Advanced",
-      diploma: "N3 level (score 95+/180) - Intermediate",
-    },
-    format: "Paper-based only",
-    cost: "$60 - $80 USD",
-  },
-];
+
 
 export default function StudyTests() {
   const [hoveredCard, setHoveredCard] = useState(null);
   const [selectedTest, setSelectedTest] = useState(null);
+  const { language } = useContext(LanguageContext)
+
+  const tests = [
+    {
+      id: 1,
+      name: "IELTS",
+      href: "/tests/ielts",
+      icon: "🇬🇧",
+      desc: language === 'en' ? languageData.en.studyTestDesc_1 : languageData.jp.studyTestDesc_1,
+      highlights: [
+        language === 'en' ? languageData.en.listening : languageData.jp.listening,
+        language === 'en' ? languageData.en.reading : languageData.jp.reading,
+        language === 'en' ? languageData.en.wrinting : languageData.jp.wrinting,
+        language === 'en' ? languageData.en.speaking : languageData.jp.speaking,
+      ],
+      duration: language === 'en' ? languageData.en.studyTestDuration_1 : languageData.jp.studyTestDuration_1,
+      validity: language === 'en' ? languageData.en.twoYear : languageData.jp.twoYear,
+      whyNeeded:language === 'en' ? languageData.en.studyTestWhyNeeded_1 : languageData.jp.studyTestWhyNeeded_1,
+      requiredScores: {
+        bachelor: language === 'en' ? languageData.en.studyTestBachelorScore_1 : languageData.jp.studyTestBachelorScore_1,
+        master: language === 'en' ? languageData.en.studyTestMasterScore_1 : languageData.jp.studyTestMasterScore_1,
+        diploma: language === 'en' ? languageData.en.studyTestDiplomaScore_1 : languageData.jp.studyTestDiplomaScore_1,
+      },
+      format: language === 'en' ? languageData.en.studyTestsFormat_1 : languageData.jp.studyTestsFormat_1,
+      cost: "$215 - $250 USD",
+    },
+    {
+      id: 2,
+      name: "PTE",
+      href: "/tests/pte",
+      icon: "🗣️",
+      desc: language === 'en' ? languageData.en.studyTestsDesc_2 : languageData.jp.studyTestDesc_2,
+      highlights: ["AI Scoring", "Quick Results", "Widely Accepted"],
+      duration: "2 hours",
+      validity: "2 years",
+      whyNeeded:
+        "PTE Academic uses AI technology for unbiased scoring and delivers results within 48 hours. It's recognized by thousands of institutions globally and is ideal for those seeking quick turnaround times.",
+      requiredScores: {
+        bachelor: "50 - 58 overall (with communicative skills at 50+)",
+        master: "58 - 65 overall (with communicative skills at 58+)",
+        diploma: "42 - 50 overall (with communicative skills at 42+)",
+      },
+      format: "Computer-based only",
+      cost: "$185 - $210 USD",
+    },
+    {
+      id: 3,
+      name: "TOEFL",
+      href: "/tests/toefl",
+      icon: "📚",
+      desc: "The Test of English as a Foreign Language (TOEFL) measures English proficiency for academic purposes, accepted by over 11,000 universities worldwide.",
+      highlights: ["Academic English", "Global Recognition", "Online Test"],
+      duration: "2 hours (iBT)",
+      validity: "2 years",
+      whyNeeded:
+        "TOEFL is specifically designed for academic English and is the preferred test for North American universities. It assesses your ability to understand and use English in university settings.",
+      requiredScores: {
+        bachelor: "70 - 80 overall (with section scores 17+)",
+        master: "85 - 100 overall (with section scores 20+)",
+        diploma: "60 - 70 overall (with section scores 15+)",
+      },
+      format: "Internet-based (iBT) or Paper-based",
+      cost: "$180 - $300 USD",
+    },
+    {
+      id: 4,
+      name: "SAT",
+      href: "/tests/sat",
+      icon: "🧠",
+      desc: "The Scholastic Assessment Test (SAT) evaluates mathematical, reading, and writing abilities, and is a key requirement for many U.S. universities.",
+      highlights: ["Math & English", "College Admissions", "Scholarship Aid"],
+      duration: "3 hours (without essay)",
+      validity: "5 years",
+      whyNeeded:
+        "The SAT is a standardized test for college admissions in the US. High scores can qualify you for merit-based scholarships and demonstrate readiness for college-level coursework.",
+      requiredScores: {
+        bachelor: "1200 - 1400 (competitive institutions: 1400+)",
+        master: "Not typically required",
+        diploma: "1000 - 1200",
+      },
+      format: "Paper-based or Digital",
+      cost: "$60 USD (without essay), $85 USD (with essay)",
+    },
+    {
+      id: 5,
+      name: "JLPT (N5–N1)",
+      href: "/tests/jlpt",
+      icon: "🇯🇵",
+      desc: "The Japanese Language Proficiency Test (JLPT) assesses non-native speakers' Japanese abilities, from beginner (N5) to advanced (N1), and is essential for study or work in Japan.",
+      highlights: ["5 Levels", "Language Proficiency", "Study & Work in Japan"],
+      duration: "105 - 170 minutes (varies by level)",
+      validity: "No expiration",
+      whyNeeded:
+        "JLPT certification is required for academic admissions, employment, and visa applications in Japan. It validates your Japanese language proficiency from basic communication to advanced business-level fluency.",
+      requiredScores: {
+        bachelor: "N2 level (score 90+/180) - Upper intermediate",
+        master: "N1 level (score 100+/180) - Advanced",
+        diploma: "N3 level (score 95+/180) - Intermediate",
+      },
+      format: "Paper-based only",
+      cost: "$60 - $80 USD",
+    },
+  ];
 
   // 🧩 Disable background scroll when modal is open
   useEffect(() => {
