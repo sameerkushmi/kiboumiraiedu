@@ -819,8 +819,8 @@ export  const languageData = {
         male: 'Male',
         female: 'Female',
         courses: 'Courses',
-        additionalQue: 'Enter any additional details or questions...'
-
+        additionalQue: 'Enter any additional details or questions...',
+        studyHeroheader: 'Your Global Education Journey'
     },
     // japanese language list
     jp: {
@@ -1520,6 +1520,7 @@ export  const languageData = {
         male: '男性',
         female: '女性',
         courses: 'コース',
-        additionalQue: '追加の詳細や質問を入力してください…'
+        additionalQue: '追加の詳細や質問を入力してください…',
+        studyHeroheader:'あなたのグローバル教育の旅'
     }
 }

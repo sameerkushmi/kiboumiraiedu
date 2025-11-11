@@ -1,4 +1,3 @@
-import React from "react";
 import StudyHero from "./StudyHero";
 import StudyDestinations from "./StudyDestinations";
 import StudyForm from "./StudyForm";
