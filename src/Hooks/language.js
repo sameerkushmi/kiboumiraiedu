@@ -652,7 +652,25 @@ export  const languageData = {
         sydneyNSW: 'Sydney, NSW',
         UniversitySingapore: 'National University of Singapore',
         singapore: 'Singapore',
-        visaHeroDesc: `Get expert guidance for a smooth visa application process and hassle-free approval for your study abroad plans.`
+        visaHeroDesc: `Get expert guidance for a smooth visa application process and hassle-free approval for your study abroad plans.`,
+        visaProcessHeader: 'Our Visa Assistance Process',
+        visaProcessDesc: `A guided, end-to-end approach to ensure your visa journey is smooth,accurate, and stress-free — from the
+                        first consultation to final approval.`,
+        visaProcessTitle_1: 'Initial Consultation & Profile Review',
+        visaProcessDesc_1: `We assess your background, academic qualifications, and target destination to understand which visa 
+                            suits your profile best.`,
+        visaProcessTitle_2: 'Visa Type Selection & Eligibility Check',
+        visaProcessDesc_2: `Our experts guide you in choosing the correct visa type (Student, SSW, TITP, or Work Visa) and ensure 
+                            you meet all eligibility requirements.`,
+        visaProcessTitle_3: 'Document Preparation & Review',
+        visaProcessDesc_3: `We help you gather and prepare every required document — from financial proofs to academic records — 
+                            according to embassy standards.`,
+        visaProcessTitle_4: 'Application Submission & Embassy Guidance',
+        visaProcessDesc_4: `Our team assists in filling out visa forms, scheduling embassy appointments, and submitting 
+                            applications through the correct channels.`,
+        visaProcessTitle_5: 'Interview & Pre-Departure Support',
+        visaProcessDesc_5: `We provide interview preparation, travel guidance, and post-approval steps including ticketing, 
+                            accommodation, and orientation support.`
     },
     // japanese language list
     jp: {
@@ -1206,6 +1224,19 @@ export  const languageData = {
         sydneyNSW: 'オーストラリア、ニューサウスウェールズ州シドニー',
         UniversitySingapore: 'シンガポール国立大学',
         singapore: 'シンガポール',
-        visaHeroDesc: `留学計画のために、スムーズなビザ申請手続きと手間のかからない承認を実現する専門的なサポートを受けましょう。`
+        visaHeroDesc: `留学計画のために、スムーズなビザ申請手続きと手間のかからない承認を実現する専門的なサポートを受けましょう。`,
+        visaProcessHeader: 'ビザサポートの手順',
+        visaProcessDesc: `最初の相談から最終承認まで、ビザ申請の過程がスムーズで正確、かつストレスフリーになるように、ガイド付きの包括的なサポートを提供
+                        します。`,
+        visaProcessTitle_1 : '初回相談とプロフィール確認',
+        visaProcessDesc_1: 'あなたの経歴、学歴、希望渡航先を評価し、最適なビザを判断します。',
+        visaProcessTitle_2: `ビザ種類の選択と適格性確認`,
+        visaProcessDesc_2: `専門家が適切なビザ種類（学生ビザ、SSW、TITP、または就労ビザ）の選択をサポートし、すべての適格要件を満たしているか確認します。`,
+        visaProcessTitle_3: '書類準備と確認',
+        visaProcessDesc_3: `財務証明や学歴証明など、必要なすべての書類を大使館の基準に沿って収集・準備するサポートを行います。`,
+        visaProcessTitle_4: '申請書提出と大使館サポート',
+        visaProcessDesc_4: `私たちのチームが、ビザ申請書の記入、面接予約、大使館への適切な提出をサポートします。`,
+        visaProcessTitle_5: '面接および出発前サポート',
+        visaProcessDesc_5: `面接対策、渡航ガイダンス、承認後の手続き（航空券手配、宿泊、オリエンテーションサポート）を提供します。`
     }
 }

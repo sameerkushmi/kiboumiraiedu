@@ -1,47 +1,46 @@
-import React from "react";
 import {
   ClipboardList,
   FileSearch,
   FileSignature,
   FileCheck,
   PlaneTakeoff,
-  CheckCircle,
 } from "lucide-react";
+import { languageData } from "../../../../Hooks/language";
+import { useContext } from "react";
+import { LanguageContext } from "../../../../Context/Context";
 
 export default function VisaProcess() {
+
+  const {language} = useContext(LanguageContext)
+
   const steps = [
     {
-      title: "Initial Consultation & Profile Review",
-      description:
-        "We assess your background, academic qualifications, and target destination to understand which visa suits your profile best.",
+      title: language === 'en' ? languageData.en.visaProcessTitle_1 : languageData.jp.visaProcessTitle_1,
+      description:language === 'en' ? languageData.en.visaProcessDesc_1 : languageData.jp.visaProcessDesc_1,
       icon: ClipboardList,
       color: "from-blue-500 to-cyan-500",
     },
     {
-      title: "Visa Type Selection & Eligibility Check",
-      description:
-        "Our experts guide you in choosing the correct visa type (Student, SSW, TITP, or Work Visa) and ensure you meet all eligibility requirements.",
+      title: language === 'en' ? languageData.en.visaProcessTitle_2 : languageData.jp.visaProcessTitle_2,
+      description:language === 'en' ? languageData.en.visaProcessDesc_2 : languageData.jp.visaProcessDesc_2,
       icon: FileSearch,
       color: "from-purple-500 to-pink-500",
     },
     {
-      title: "Document Preparation & Review",
-      description:
-        "We help you gather and prepare every required document — from financial proofs to academic records — according to embassy standards.",
+      title: language === 'en' ? languageData.en.visaProcessTitle_3 : languageData.jp.visaProcessTitle_3,
+      description:language === 'en' ? languageData.en.visaProcessDesc_3 : languageData.jp.visaProcessDesc_3,
       icon: FileSignature,
       color: "from-orange-500 to-red-500",
     },
     {
-      title: "Application Submission & Embassy Guidance",
-      description:
-        "Our team assists in filling out visa forms, scheduling embassy appointments, and submitting applications through the correct channels.",
+      title: language === 'en' ? languageData.en.visaProcessTitle_4 : languageData.jp.visaProcessTitle_4,
+      description:language === 'en' ? languageData.en.visaProcessDesc_4 : languageData.jp.visaProcessDesc_4,
       icon: FileCheck,
       color: "from-green-500 to-emerald-500",
     },
     {
-      title: "Interview & Pre-Departure Support",
-      description:
-        "We provide interview preparation, travel guidance, and post-approval steps including ticketing, accommodation, and orientation support.",
+      title: language === 'en' ? languageData.en.visaProcessTitle_5 : languageData.jp.visaProcessTitle_5,
+      description:language === 'en' ? languageData.en.visaProcessDesc_5 : languageData.jp.visaProcessDesc_5,
       icon: PlaneTakeoff,
       color: "from-indigo-500 to-blue-500",
     },
@@ -58,12 +57,14 @@ export default function VisaProcess() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Our Visa Assistance Process
+            {
+              language === 'en' ? languageData.en.visaProcessHeader : languageData.jp.visaProcessHeader
+            }
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            A guided, end-to-end approach to ensure your visa journey is smooth,
-            accurate, and stress-free — from the first consultation to final
-            approval.
+            {
+              language === 'en' ? languageData.en.visaProcessDesc : languageData.jp.visaProcessDesc
+            }
           </p>
         </div>
 
