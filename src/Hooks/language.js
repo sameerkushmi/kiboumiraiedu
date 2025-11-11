@@ -769,7 +769,10 @@ export  const languageData = {
                             pre-submission summary so nothing is missed.`,
         readyToGetStarted: 'Ready to Get Started?',
         docProcessDesc_6: `Want us to prepare a personalized checklist for your specific application? Get expert guidance on your
-                            documentation journey today.`
+                            documentation journey today.`,
+        // courseHero translate
+        courseHeroDesc: `Unlock your potential in technology! Our computer courses are designed for beginners and professionals 
+                        who want to master practical computer skills, coding, and IT tools step by step.`
     },
     // japanese language list
     jp: {
@@ -1420,6 +1423,8 @@ export  const languageData = {
         finalCrossCheck: '最終確認',
         docProcessDesc_5: '提出前に最終確認（署名、日付、印章）を行い、漏れがないように事前の提出サマリーを提供します。',
         readyToGetStarted: '始める準備はできましたか？',
-        docProcessDesc_6: `あなたの申請に合わせた個別チェックリストを作成してほしいですか？今日から専門家の指導で書類手続きを進めましょう。`
+        docProcessDesc_6: `あなたの申請に合わせた個別チェックリストを作成してほしいですか？今日から専門家の指導で書類手続きを進めましょう。`,
+        courseHeroDesc: `テクノロジーの可能性を広げましょう！当社のコンピューターコースは、実践的なパソコンスキル、コーディング、ITツールをステッ
+                        プごとに習得したい初心者からプロまでを対象に設計されています。`
     }
 }

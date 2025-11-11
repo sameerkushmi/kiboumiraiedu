@@ -9,8 +9,8 @@ const {language} = useContext(LanguageContext)
   return (
     <div>
         <HeroSection2
-            title={`Computer Training`}
-            description={`Unlock your potential in technology! Our computer courses are designed for beginners and professionals who want to master practical computer skills, coding, and IT tools step by step.`}
+            title={language === 'en' ? languageData.en.computerTraining : languageData.jp.computerTraining}
+            description={language === 'en' ? languageData.en.courseHeroDesc : languageData.jp.courseHeroDesc}
             btnText={language === 'en' ? languageData.en.learnMore : languageData.jp.learnMore}
         />
     </div>
