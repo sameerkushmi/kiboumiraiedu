@@ -693,7 +693,8 @@ export  const languageData = {
         visaCTAHeader: 'Ready to Start Your Visa Journey?',
         visaCTADesc: `Connect with our expert advisors to simplify your visa application
                     and get personalized guidance for your dream destination.`,
-        bookConsultation: 'Book a Consultation'
+        bookConsultation: 'Book a Consultation',
+        docHeroDesc: `Receive expert support for preparing and organizing all necessary documents for your study abroad journey.`
     },
     // japanese language list
     jp: {
@@ -1276,6 +1277,7 @@ export  const languageData = {
         visaWhyUsDesc_6: `効率的なシステムにより、すべての大使館の期限を確実に守り、入学や渡航計画の遅延を防ぎます。`,
         visaCTAHeader: 'ビザ取得の旅を始める準備はできましたか？',
         visaCTADesc: `専門アドバイザーとつながり、ビザ申請を簡単にし、夢の渡航先に向けた個別サポートを受けましょう。`,
-        bookConsultation: '相談を予約する'
+        bookConsultation: '相談を予約する',
+        docHeroDesc: `留学のために必要なすべての書類の準備・整理を専門家のサポートで受けましょう。`
     }
 }
