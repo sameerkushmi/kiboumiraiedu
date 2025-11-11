@@ -820,7 +820,41 @@ export  const languageData = {
         female: 'Female',
         courses: 'Courses',
         additionalQue: 'Enter any additional details or questions...',
-        studyHeroheader: 'Your Global Education Journey'
+        studyHeroheader: 'Your Global Education Journey',
+        studyDestinationHeader: `Top Study Destinations`,
+        studyDestinationMainDesc: `Discover the most popular global education hubs offering exceptional
+                                    learning environments, cultural diversity, and future-ready career
+                                    opportunities.`,
+        studyDestinationDesc_1: `Known for its world-class universities and multicultural environment, Australia offers students a
+                                 relaxed lifestyle, strong academic standards, and post-study work opportunities.`,
+        topUniversities: 'Top Universities',
+        workOpportunities: 'Work Opportunities',
+        beachLifestyle: 'Beach Lifestyle',
+        studyDestinationDesc_2: `Home to top-ranked universities and cutting-edge research facilities, the United States provides 
+                                endless opportunities for innovation, career growth, and cultural diversity.`,
+        ivyLeague: 'Ivy League',
+        researchHub: 'Research Hub',
+        techInnovation: 'Tech Innovation',
+        unitedKingdom: 'United Kingdom',
+        studyDestinationDesc_3: `With a strong academic heritage and globally recognized degrees, the UK offers a rich cultural 
+                                experience, shorter study durations, and excellent global employability.`,
+        historicUniversities: 'Historic Universities',
+        shorterDegrees: 'Shorter Degrees',
+        globalRecognition: 'Global Recognition',
+        studyDestinationDesc_4: `Canada stands out for its high-quality education system, affordable tuition, and welcoming 
+                                immigration policies that make it a top choice for international students.`,
+        affordableTuition: 'Affordable Tuition',
+        PRPathways: 'PR Pathways',
+        safeEnvironment: 'Safe Environment',
+        studyDestinationDesc_5: `Blending tradition and technology, Japan offers unique educational experiences, government 
+                                scholarships, and career opportunities in one of Asia's most advanced nations.`,
+        teachLeader: 'Tech Leader',
+        scholarships: 'Scholarships',
+        richCulture:'Rich Culture',
+        studyDestinationDesc_6:'South Korea combines cutting-edge innovation, affordable tuition, and a vibrant culture, making it a fast-rising destination for international learners.',
+        KInnovation: 'K-Innovation',
+        affordable: 'Affordable',
+        dynamicCulture:'Dynamic Culture'
     },
     // japanese language list
     jp: {
@@ -1521,6 +1555,34 @@ export  const languageData = {
         female: '女性',
         courses: 'コース',
         additionalQue: '追加の詳細や質問を入力してください…',
-        studyHeroheader:'あなたのグローバル教育の旅'
+        studyHeroheader:'あなたのグローバル教育の旅',
+        studyDestinationHeader: '人気の留学先',
+        studyDestinationMainDesc: `卓越した学習環境、多様な文化、将来に備えたキャリアの機会を提供する、世界の人気教育拠点を紹介します。`,
+        studyDestinationDesc_1: `世界トップクラスの大学と多文化環境で知られるオーストラリアは、学生にリラックスした生活、優れた学問水準、そし
+                                て卒業後の就労機会を提供します。`,
+        topUniversities: 'トップ大学',
+        workOpportunities: '就労機会',
+        beachLifestyle: 'ビーチライフスタイル',
+        studyDestinationDesc_2: 'アメリカは、世界有数の大学や最先端の研究施設が集まる国であり、革新、キャリアの発展、そして文化的多様性に満ちた無限の機会を提供しています。',
+        ivyLeague: 'アイビーリーグ',
+        researchHub: '研究拠点',
+        techInnovation: '技術革新',
+        unitedKingdom: '技術革新',
+        studyDestinationDesc_3: '英国は、優れた学問的伝統と世界的に認められた学位を持ち、豊かな文化体験、短期間の学習プログラム、そして高い国際的就業力を提供しています。',
+        historicUniversities: '歴史ある大学',
+        shorterDegrees: '短期間の学位課程',
+        globalRecognition: '世界的に認められる',
+        studyDestinationDesc_4: `カナダは、質の高い教育システム、手頃な授業料、そして移民を歓迎する政策で際立っており、留学生にとって最適な選択肢となっています。`,
+        affordableTuition: '手頃な授業料',
+        PRPathways: 'PR経路',
+        safeEnvironment: '安全な環境',
+        studyDestinationDesc_5: '日本は伝統とテクノロジーを融合し、アジアの最先端国の一つとして、ユニークな教育体験、政府奨学金、そしてキャリアのチャンスを提供しています。',
+        teachLeader: 'テクノロジーリーダー',
+        scholarships: '奨学金',
+        richCulture: '豊かな文化',
+        studyDestinationDesc_6: `韓国は最先端のイノベーション、手頃な授業料、活気ある文化を兼ね備えており、海外からの学習者にとって急速に人気が高まっている留学先となっています。`,
+        KInnovation: 'Kイノベーション',
+        affordable: '手頃な価格',
+        dynamicCulture: 'ダイナミックな文化'
     }
 }

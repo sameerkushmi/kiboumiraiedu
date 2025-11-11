@@ -1,64 +1,88 @@
-import { PlaneTakeoff, ArrowRight, GraduationCap } from "lucide-react";
-import React, { useState } from "react";
+import { useContext, useState } from "react";
+import { PlaneTakeoff, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { languageData } from "../../Hooks/language";
+import { LanguageContext } from "../../Context/Context";
 
-const destinations = [
-  {
-    id: 1,
-    location: "Australia",
-    href: "/study/australia",
-    flag: "🇦🇺",
-    desc: "Known for its world-class universities and multicultural environment, Australia offers students a relaxed lifestyle, strong academic standards, and post-study work opportunities.",
-    highlights: ["Top Universities", "Work Opportunities", "Beach Lifestyle"],
-  },
-  {
-    id: 2,
-    location: "USA",
-    href: "/study/usa",
-    flag: "🇺🇸",
-    desc: "Home to top-ranked universities and cutting-edge research facilities, the United States provides endless opportunities for innovation, career growth, and cultural diversity.",
-    highlights: ["Ivy League", "Research Hub", "Tech Innovation"],
-  },
-  {
-    id: 3,
-    location: "United Kingdom",
-    href: "/study/uk",
-    flag: "🇬🇧",
-    desc: "With a strong academic heritage and globally recognized degrees, the UK offers a rich cultural experience, shorter study durations, and excellent global employability.",
-    highlights: [
-      "Historic Universities",
-      "Shorter Degrees",
-      "Global Recognition",
-    ],
-  },
-  {
-    id: 4,
-    location: "Canada",
-    href: "/study/canada",
-    flag: "🇨🇦",
-    desc: "Canada stands out for its high-quality education system, affordable tuition, and welcoming immigration policies that make it a top choice for international students.",
-    highlights: ["Affordable Tuition", "PR Pathways", "Safe Environment"],
-  },
-  {
-    id: 5,
-    location: "Japan",
-    href: "/study/japan",
-    flag: "🇯🇵",
-    desc: "Blending tradition and technology, Japan offers unique educational experiences, government scholarships, and career opportunities in one of Asia's most advanced nations.",
-    highlights: ["Tech Leader", "Scholarships", "Rich Culture"],
-  },
-  {
-    id: 6,
-    location: "Korea",
-    href: "#",
-    flag: "🇰🇷",
-    desc: "South Korea combines cutting-edge innovation, affordable tuition, and a vibrant culture, making it a fast-rising destination for international learners.",
-    highlights: ["K-Innovation", "Affordable", "Dynamic Culture"],
-  },
-];
 
 export default function StudyDestinations() {
+  const { language } = useContext(LanguageContext)
   const [hoveredCard, setHoveredCard] = useState(null);
+
+  const destinations = [
+    {
+      id: 1,
+      location: language === 'en' ? languageData.en.australia : languageData.jp.australia,
+      href: "/study/australia",
+      flag: "🇦🇺",
+      desc: language === 'en' ? languageData.en.studyDestinationDesc_1 : languageData.jp.studyDestinationDesc_1,
+      highlights: [
+        language === 'en' ? languageData.en.topUniversities : languageData.jp.topUniversities,
+        language === 'en' ? languageData.en.workOpportunities : languageData.jp.workOpportunities,
+        language === 'en' ? languageData.en.beachLifestyle : languageData.jp.beachLifestyle,
+      ],
+    },
+    {
+      id: 2,
+      location: language === 'en' ? languageData.en.USA : languageData.jp.USA,
+      href: "/study/usa",
+      flag: "🇺🇸",
+      desc: language === 'en' ? languageData.en.studyDestinationDesc_2 : languageData.jp.studyDestinationDesc_2,
+      highlights: [
+        language === 'en' ? languageData.en.ivyLeague : languageData.jp.ivyLeague,
+        language === 'en' ? languageData.en.researchHub : languageData.jp.researchHub,
+        language === 'en' ? languageData.en.techInnovation : languageData.jp.techInnovation,
+      ],
+    },
+    {
+      id: 3,
+      location: language === 'en' ? languageData.en.unitedKingdom : languageData.jp.unitedKingdom,
+      href: "/study/uk",
+      flag: "🇬🇧",
+      desc: language === 'en' ? languageData.en.studyDestinationDesc_3 : languageData.jp.studyDestinationDesc_3,
+      highlights: [
+        language === 'en' ? languageData.en.historicUniversities : languageData.jp.historicUniversities,
+        language === 'en' ? languageData.en.shorterDegrees : languageData.jp.shorterDegrees,
+        language === 'en' ? languageData.en.globalRecognition : languageData.jp.globalRecognition,
+      ],
+    },
+    {
+      id: 4,
+      location: language === 'en' ? languageData.en.canada : languageData.jp.canada,
+      href: "/study/canada",
+      flag: "🇨🇦",
+      desc: language === 'en' ? languageData.en.studyDestinationDesc_4 : languageData.jp.studyDestinationDesc_4,
+      highlights: [
+        language === 'en' ? languageData.en.affordableTuition : languageData.jp.affordableTuition,
+        language === 'en' ? languageData.en.PRPathways : languageData.jp.PRPathways,
+        language === 'en' ? languageData.en.safeEnvironment : languageData.jp.safeEnvironment,
+      ],
+    },
+    {
+      id: 5,
+      location: language === 'en' ? languageData.en.japan : languageData.jp.japan,
+      href: "/study/japan",
+      flag: "🇯🇵",
+      desc: language === 'en' ? languageData.en.studyDestinationDesc_5 : languageData.jp.studyDestinationDesc_5,
+      highlights: [
+        language === 'en' ? languageData.en.teachLeader : languageData.jp.teachLeader,
+        language === 'en' ? languageData.en.scholarships : languageData.jp.scholarships,
+        language === 'en' ? languageData.en.richCulture : languageData.jp.richCulture,
+      ],
+    },
+    {
+      id: 6,
+      location: language === 'en' ? languageData.en.korea : languageData.jp.korea,
+      href: "#",
+      flag: "🇰🇷",
+      desc: language === 'en' ? languageData.en.studyDestinationDesc_6 : languageData.jp.studyDestinationDesc_6,
+      highlights: [
+        language === 'en' ? languageData.en.KInnovation : languageData.jp.KInnovation,
+        language === 'en' ? languageData.en.affordable : languageData.jp.affordable,
+        language === 'en' ? languageData.en.dynamicCulture : languageData.jp.dynamicCulture,
+      ],
+    },
+  ];
 
   return (
     <section
@@ -76,9 +100,6 @@ export default function StudyDestinations() {
         }}
       />
 
-      {/* Gradient Overlays */}
-      {/* <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/80 via-purple-900/75 to-pink-900/80" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" /> */}
       <div className="absolute inset-0  bg-black/60 via-transparent to-transparent" />
 
       {/* Animated Particles */}
@@ -105,14 +126,16 @@ export default function StudyDestinations() {
           <h2 className="text-5xl md:text-6xl font-black text-white drop-shadow-2xl flex items-center gap-4 flex-col justify-center">
             <PlaneTakeoff size={56} className="text-background" />
             <span className="bg-gradient-to-r from-white via-yellow-100 to-white bg-clip-text text-transparent">
-              Top Study Destinations
+              {
+                language === 'en' ? languageData.en.studyDestinationHeader : languageData.jp.studyDestinationHeader
+              }
             </span>
           </h2>
 
           <p className="text-lg md:text-xl max-w-3xl text-gray-100 drop-shadow-lg leading-relaxed">
-            Discover the most popular global education hubs offering exceptional
-            learning environments, cultural diversity, and future-ready career
-            opportunities.
+            {
+              language === 'en' ? languageData.en.studyDestinationMainDesc : languageData.jp.studyDestinationMainDesc
+            }
           </p>
         </div>
 
