@@ -811,7 +811,16 @@ export  const languageData = {
         coreldrwaCaption: 'Master CorelDRAW — The Complete Graphic Design Solution.',
         coreldrwaTagline: 'Design. Draw. Dominate.',
         adobepremiereproCaption: 'Learn Professional Video Editing from Start to Finish.',
-        adobepremiereproTagline: 'Perfect course for creators, filmmakers, and professionals.'
+        adobepremiereproTagline: 'Perfect course for creators, filmmakers, and professionals.',
+        computerTrainingForm: 'Computer Training Form',
+        age: 'Age',
+        enterYourAge: 'Enter your Age here...',
+        gender:'Gender',
+        male: 'Male',
+        female: 'Female',
+        courses: 'Courses',
+        additionalQue: 'Enter any additional details or questions...'
+
     },
     // japanese language list
     jp: {
@@ -1314,6 +1323,7 @@ export  const languageData = {
                         自信を持って課題に取り組む力を与えます。`,
         counsellingFormHeader: 'カウンセリングフォームにご記入ください。',
         enterFullName: 'フルネームを入力してください。...',
+        enterYourEmail: 'メールアドレスを入力してください',
         preferredCountry: '希望する国',
         selectYourCountry: '希望する国を選択してください…',
         USA: 'アメリカ合衆国（USA）',
@@ -1502,6 +1512,14 @@ export  const languageData = {
         coreldrwaCaption: 'CorelDRAWをマスター — 完全なグラフィックデザインソリューション。',
         coreldrwaTagline: 'デザインし、描き、極めよう。',
         adobepremiereproCaption: 'プロのビデオ編集を初めから完成まで学ぼう。',
-        adobepremiereproTagline: 'クリエイター、映画制作者、プロ向けの最適なコース。'
+        adobepremiereproTagline: 'クリエイター、映画制作者、プロ向けの最適なコース。',
+        computerTrainingForm: 'コンピュータートレーニング申込フォーム',
+        age: '年齢',
+        enterYourAge: 'ここに年齢を入力してください…',
+        gender: '性別',
+        male: '男性',
+        female: '女性',
+        courses: 'コース',
+        additionalQue: '追加の詳細や質問を入力してください…'
     }
 }
