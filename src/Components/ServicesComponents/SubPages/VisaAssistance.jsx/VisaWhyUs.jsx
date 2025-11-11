@@ -1,4 +1,4 @@
-import React from "react";
+import { useContext } from "react";
 import {
   Globe2,
   FileCheck,
@@ -7,48 +7,47 @@ import {
   Clock,
   UserCheck,
 } from "lucide-react";
+import { languageData } from "../../../../Hooks/language";
+import { LanguageContext } from "../../../../Context/Context";
 
 export default function VisaWhyUs() {
+
+  const { language } = useContext(LanguageContext)
+
   const reasons = [
     {
-      title: "Expert Visa Consultants",
-      description:
-        "Our experienced visa advisors handle all the technicalities, from document preparation to interview guidance, ensuring smooth approvals.",
+      title: language === 'en' ? languageData.en.expertVisaConsultants : languageData.jp.expertVisaConsultants,
+      description: language === 'en' ? languageData.en.visaWhyUsDesc_1 : languageData.jp.visaWhyUsDesc_1 ,
       icon: UserCheck,
       color: "from-blue-500 to-cyan-500",
     },
     {
-      title: "Country-Specific Guidance",
-      description:
-        "We specialize in Japan, USA, UK, Canada, and Australia visa systems — tailoring our process according to each country's unique regulations.",
+      title: language === 'en' ? languageData.en.countrySpecificGuidance : languageData.jp.countrySpecificGuidance,
+      description: language === 'en' ? languageData.en.visaWhyUsDesc_2 : languageData.jp.visaWhyUsDesc_2 ,
       icon: Globe2,
       color: "from-green-500 to-emerald-500",
     },
     {
-      title: "Error-Free Documentation",
-      description:
-        "Avoid costly rejections with our double-verification process that ensures every form, document, and signature meets embassy standards.",
+      title: language === 'en' ? languageData.en.errorFreeDocumentation : languageData.jp.errorFreeDocumentation,
+      description: language === 'en' ? languageData.en.visaWhyUsDesc_3 : languageData.jp.visaWhyUsDesc_3 ,
       icon: FileCheck,
       color: "from-purple-500 to-pink-500",
     },
     {
-      title: "End-to-End Support",
-      description:
-        "From filling visa applications to scheduling appointments and follow-ups, we assist you at every step until approval.",
+      title: language === 'en' ? languageData.en.aboutSubWhyTitle_6 : languageData.jp.aboutSubWhyTitle_6,
+      description: language === 'en' ? languageData.en.visaWhyUsDesc_4 : languageData.jp.visaWhyUsDesc_4 ,
       icon: MessageCircle,
       color: "from-orange-500 to-red-500",
     },
     {
-      title: "Secure and Confidential",
-      description:
-        "We prioritize your privacy — all sensitive documents and personal data are stored and handled securely.",
+      title: language === 'en' ? languageData.en.secureConfidential : languageData.jp.secureConfidential,
+      description: language === 'en' ? languageData.en.visaWhyUsDesc_5 : languageData.jp.visaWhyUsDesc_5 ,
       icon: ShieldCheck,
       color: "from-indigo-500 to-blue-500",
     },
     {
-      title: "Timely Processing",
-      description:
-        "Our streamlined system ensures you meet all embassy deadlines, avoiding delays in your admission or travel plan.",
+      title: language === 'en' ? languageData.en.timelyProcessing : languageData.jp.timelyProcessing,
+      description: language === 'en' ? languageData.en.visaWhyUsDesc_6 : languageData.jp.visaWhyUsDesc_6 ,
       icon: Clock,
       color: "from-pink-500 to-rose-500",
     },
@@ -64,11 +63,14 @@ export default function VisaWhyUs() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-            Why Choose Our Visa Assistance?
+            {
+              language === 'en' ? languageData.en.visaWhyUsHeader : languageData.jp.visaWhyUsHeader
+            }
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            We simplify your visa journey with transparent processes, accurate
-            documentation, and dedicated guidance from start to finish.
+            {
+              language === 'en' ? languageData.en.visaWhyUsDesc : languageData.jp.visaWhyUsDesc
+            }
           </p>
         </div>
 

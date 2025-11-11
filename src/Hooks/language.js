@@ -670,7 +670,26 @@ export  const languageData = {
                             applications through the correct channels.`,
         visaProcessTitle_5: 'Interview & Pre-Departure Support',
         visaProcessDesc_5: `We provide interview preparation, travel guidance, and post-approval steps including ticketing, 
-                            accommodation, and orientation support.`
+                            accommodation, and orientation support.`,
+        visaWhyUsHeader: 'Why Choose Our Visa Assistance?',
+        visaWhyUsDesc: `We simplify your visa journey with transparent processes, accurate documentation, and dedicated guidance 
+                        from start to finish.`,
+        expertVisaConsultants: 'Expert Visa Consultants',
+        visaWhyUsDesc_1: `Our experienced visa advisors handle all the technicalities, from document preparation to interview 
+                        guidance, ensuring smooth approvals.`,
+        countrySpecificGuidance: `Country-Specific Guidance`,
+        visaWhyUsDesc_2: `We specialize in Japan, USA, UK, Canada, and Australia visa systems — tailoring our process according to
+                         each country's unique regulations.`,
+        errorFreeDocumentation: 'Error-Free Documentation',
+        visaWhyUsDesc_3: `Avoid costly rejections with our double-verification process that ensures every form, document, and 
+                        signature meets embassy standards.`,
+        visaWhyUsDesc_4: `From filling visa applications to scheduling appointments and follow-ups, we assist you at every step 
+                        until approval.`,
+        secureConfidential: 'Secure and Confidential',
+        visaWhyUsDesc_5: `We prioritize your privacy — all sensitive documents and personal data are stored and handled securely.`,
+        timelyProcessing: 'Timely Processing',
+        visaWhyUsDesc_6: `Our streamlined system ensures you meet all embassy deadlines, avoiding delays in your admission or 
+                        travel plan.`
     },
     // japanese language list
     jp: {
@@ -1237,6 +1256,19 @@ export  const languageData = {
         visaProcessTitle_4: '申請書提出と大使館サポート',
         visaProcessDesc_4: `私たちのチームが、ビザ申請書の記入、面接予約、大使館への適切な提出をサポートします。`,
         visaProcessTitle_5: '面接および出発前サポート',
-        visaProcessDesc_5: `面接対策、渡航ガイダンス、承認後の手続き（航空券手配、宿泊、オリエンテーションサポート）を提供します。`
+        visaProcessDesc_5: `面接対策、渡航ガイダンス、承認後の手続き（航空券手配、宿泊、オリエンテーションサポート）を提供します。`,
+        visaWhyUsHeader: 'なぜ私たちのビザサポートを選ぶのか？',
+        visaWhyUsDesc: `透明な手続き、正確な書類作成、そして最初から最後までの専任サポートで、あなたのビザ取得の旅を簡単にします。`,
+        expertVisaConsultants: '専門ビザコンサルタント',
+        visaWhyUsDesc_1: `経験豊富なビザアドバイザーが、書類準備から面接対策まであらゆる手続きをサポートし、スムーズな承認を実現します。`,
+        countrySpecificGuidance: '国別サポート',
+        visaWhyUsDesc_2: '日本、アメリカ、イギリス、カナダ、オーストラリアのビザ制度に精通しており、それぞれの国の規定に合わせたサポートを提供します。',
+        errorFreeDocumentation: '書類作成のミスゼロサポート',
+        visaWhyUsDesc_3: `当社の二重確認プロセスにより、すべての申請書、書類、署名が大使館の基準を満たしていることを確認し、費用のかかる却下を回避します。`,
+        visaWhyUsDesc_4: `ビザ申請の記入から面接予約、フォローアップまで、承認されるまでのすべてのステップでサポートします。`,
+        secureConfidential: '安全・機密保持',
+        visaWhyUsDesc_5: 'お客様のプライバシーを最優先に、すべての機密書類や個人情報を安全に保管・管理します。',
+        timelyProcessing: '迅速な処理',
+        visaWhyUsDesc_6: `効率的なシステムにより、すべての大使館の期限を確実に守り、入学や渡航計画の遅延を防ぎます。`
     }
 }
