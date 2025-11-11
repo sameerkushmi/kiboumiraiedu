@@ -1,48 +1,47 @@
-import React from "react";
 import {
   FileCheck,
   Search,
   Languages,
   Send,
   CheckSquare,
-  ArrowRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { languageData } from "../../../../Hooks/language";
+import { useContext } from "react";
+import { LanguageContext } from "../../../../Context/Context";
 
 export default function DocProcess() {
+
+  const {language} = useContext(LanguageContext)
+
   const steps = [
     {
-      title: "Document Checklist Creation",
-      description:
-        "We create a personalized checklist based on your target country, university, and visa type so you know exactly which documents are required.",
+      title:language === 'en' ? languageData.en.documentChecklistCreation : languageData.jp.documentChecklistCreation,
+      description:language === 'en' ? languageData.en.docProcessDesc_1 : languageData.jp.docProcessDesc_1,
       icon: FileCheck,
       color: "from-blue-500 to-cyan-500",
     },
     {
-      title: "Verification & Formatting",
-      description:
-        "Our team verifies transcripts, certificates and financial proofs, then formats them according to embassy and university standards.",
+      title:language === 'en' ? languageData.en.verificationFormatting : languageData.jp.verificationFormatting,
+      description:language === 'en' ? languageData.en.docProcessDesc_2 : languageData.jp.docProcessDesc_2,
       icon: Search,
       color: "from-purple-500 to-pink-500",
     },
     {
-      title: "Translation & Notarization (If Needed)",
-      description:
-        "We arrange certified translations and notarizations where required, and advise on attestation or apostille processes for specific countries.",
+      title:language === 'en' ? languageData.en.translationNotarization : languageData.jp.translationNotarization,
+      description:language === 'en' ? languageData.en.docProcessDesc_3 : languageData.jp.docProcessDesc_3,
       icon: Languages,
       color: "from-orange-500 to-red-500",
     },
     {
-      title: "Submission Preparation",
-      description:
-        "We prepare files for online submission or physical courier—naming, scanning, and packaging documents to avoid rejection due to format errors.",
+      title:language === 'en' ? languageData.en.submissionPreparation : languageData.jp.submissionPreparation,
+      description:language === 'en' ? languageData.en.docProcessDesc_4 : languageData.jp.docProcessDesc_4,
       icon: Send,
       color: "from-green-500 to-emerald-500",
     },
     {
-      title: "Final Cross-check",
-      description:
-        "Before submission we perform a final cross-check (signatures, dates, seals) and provide a pre-submission summary so nothing is missed.",
+      title:language === 'en' ? languageData.en.finalCrossCheck : languageData.jp.finalCrossCheck,
+      description:language === 'en' ? languageData.en.docProcessDesc_5 : languageData.jp.docProcessDesc_5,
       icon: CheckSquare,
       color: "from-indigo-500 to-blue-500",
     },
@@ -59,11 +58,14 @@ export default function DocProcess() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Our Documentation Process
+            {
+              language === 'en' ? languageData.en.ourDocumentationProcess:  languageData.jp.ourDocumentationProcess
+            }
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            A clear, step-by-step workflow designed to make your documentation
-            accurate, compliant, and submission-ready with zero hassle.
+            {
+              language === 'en' ? languageData.en.DocProcessDesc:  languageData.jp.DocProcessDesc
+            }
           </p>
         </div>
 
@@ -187,17 +189,21 @@ export default function DocProcess() {
 
             <div className="relative z-10">
               <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to Get Started?
+                {
+                  language === 'en' ? languageData.en.readyToGetStarted : languageData.jp.readyToGetStarted
+                }
               </h3>
               <p className="text-blue-100 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-                Want us to prepare a personalized checklist for your specific
-                application? Get expert guidance on your documentation journey
-                today.
+                {
+                  language === 'en' ? languageData.en.docProcessDesc_6 : languageData.jp.docProcessDesc_6
+                }
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link to="/contact">
                   <button className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-blue-600 transition-all duration-300">
-                    Connect With Us
+                    {
+                      language === 'en' ? languageData.en.contactWithUs: languageData.jp.contactWithUs
+                    }
                   </button>
                 </Link>
               </div>

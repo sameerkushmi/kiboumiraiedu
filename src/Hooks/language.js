@@ -748,7 +748,28 @@ export  const languageData = {
         docTypesNeedHelp: `Need help with this document? Our team provides personalized guidance and verification services.`,
         needHelpwithDocuments: 'Need help with your documents?',
         contactOurPersonalizedDocumentation: 'Contact our experts for personalized documentation support' ,
-        getStarted: 'Get Started'
+        getStarted: 'Get Started',
+        ourDocumentationProcess: 'Our Documentation Process',
+        DocProcessDesc: `A clear, step-by-step workflow designed to make your documentation
+                        accurate, compliant, and submission-ready with zero hassle.`,
+        documentChecklistCreation: 'Document Checklist Creation',
+        docProcessDesc_1: `We create a personalized checklist based on your target country, university, and visa type so you know
+                        exactly which documents are required.`,
+        verificationFormatting: 'Verification & Formatting',
+        docProcessDesc_2: `Our team verifies transcripts, certificates and financial proofs, then formats them according to 
+                            embassy and university standards.`,
+        translationNotarization: 'Translation & Notarization (If Needed)',
+        docProcessDesc_3: `We arrange certified translations and notarizations where required, and advise on attestation or 
+                            apostille processes for specific countries.`,
+        submissionPreparation: 'Submission Preparation',
+        docProcessDesc_4: `We prepare files for online submission or physical courier—naming, scanning, and packaging documents 
+                            to avoid rejection due to format errors.`,
+        finalCrossCheck: 'Final Cross-check',
+        docProcessDesc_5: `Before submission we perform a final cross-check (signatures, dates, seals) and provide a 
+                            pre-submission summary so nothing is missed.`,
+        readyToGetStarted: 'Ready to Get Started?',
+        docProcessDesc_6: `Want us to prepare a personalized checklist for your specific application? Get expert guidance on your
+                            documentation journey today.`
     },
     // japanese language list
     jp: {
@@ -1385,6 +1406,20 @@ export  const languageData = {
         docTypesNeedHelp: 'この書類についてサポートが必要ですか？当チームが個別の指導と確認サービスを提供します。',
         needHelpwithDocuments: '書類のサポートが必要ですか？',
         contactOurPersonalizedDocumentation: '個別対応の書類サポートについては、専門家にお問い合わせください。',
-        getStarted: '始める'
+        getStarted: '始める',
+        ourDocumentationProcess: '当社の書類手続きプロセス',
+        DocProcessDesc: '書類を正確で規定に準拠し、提出準備完了の状態にするための、わかりやすいステップごとのワークフローです。',
+        documentChecklistCreation: '書類チェックリストの作成',
+        docProcessDesc_1: '対象国、大学、ビザの種類に基づき、必要な書類を正確に把握できる個別のチェックリストを作成します。',
+        verificationFormatting: '書類の確認と形式整備',
+        docProcessDesc_2: `当チームが成績証明書、資格証明書、財務証明書を確認し、大使館や大学の基準に沿って形式を整えます。`,
+        translationNotarization: '翻訳および公証（必要に応じて）',
+        docProcessDesc_3: '必要に応じて認証済み翻訳や公証を手配し、特定の国向けの認証やアポスティーユ手続きについてもアドバイスします。',
+        submissionPreparation: '提出準備',
+        docProcessDesc_4: 'オンライン提出や郵送用にファイルを準備し、書類の命名、スキャン、梱包を行って形式の不備による却下を防ぎます。',
+        finalCrossCheck: '最終確認',
+        docProcessDesc_5: '提出前に最終確認（署名、日付、印章）を行い、漏れがないように事前の提出サマリーを提供します。',
+        readyToGetStarted: '始める準備はできましたか？',
+        docProcessDesc_6: `あなたの申請に合わせた個別チェックリストを作成してほしいですか？今日から専門家の指導で書類手続きを進めましょう。`
     }
 }
