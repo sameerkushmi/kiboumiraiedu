@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import StudyHero from "../../HelperComponents/StudyHero/StudyHero";
+import { languageData } from "../../../Hooks/language";
+import {LanguageContext} from '../../../Context/Context'
 
 export default function JapanHero() {
+
+  const {language} = useContext(LanguageContext)
+
   return (
     <div>
       <StudyHero
         bgImg="/Uploads/study/jap/jap.jpg"
-        title="Japan 🇯🇵"
-        description="Experience world-class education in Japan while enjoying a vibrant culture, advanced technology, and unique traditions. Study in Japan offers students personal growth, career opportunities, and an unforgettable international experience."
+        title={`${ language === 'en' ? languageData.en.japan : languageData.jp.japan}  🇯🇵`}
+        description= {language === 'en' ? languageData.en.japanHeroDescription : languageData.jp.japanHeroDescription}
         img="/Uploads/home/hero.avif"
         video="/Uploads/home/hero.mp4"
       />

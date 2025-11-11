@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { LanguageContext } from "../../../Context/Context";
+import { languageData } from "../../../Hooks/language";
 
 export default function StudyHero({ title, description, bgImg, img, video }) {
   const [isVisible, setIsVisible] = useState(false);
-
+  const { language } = React.useContext(LanguageContext);
   useEffect(() => {
     setIsVisible(true);
   }, []);
@@ -53,7 +55,10 @@ export default function StudyHero({ title, description, bgImg, img, video }) {
               {/* Title */}
               <div className="text-left">
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-gray-900 leading-none tracking-tight">
-                  Study in {title}
+                  {/* Study in {title} */}
+                
+                  { language === 'en' ? languageData.en.studyIn : languageData.jp.studyIn } {title}
+                  
                   {/* <span className=" mt-1">Japan</span> */}
                 </h1>
               </div>
