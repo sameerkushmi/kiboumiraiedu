@@ -1,13 +1,18 @@
-import React from "react";
+import { useContext } from "react";
+import { languageData } from "../../../../Hooks/language";
+import { LanguageContext } from "../../../../Context/Context";
 import HeroSection2 from "../../../HelperComponents/AboutSubComponent/HeroSection2";
 
 export default function VisaHero() {
+
+  const {language} = useContext(LanguageContext)
+
   return (
     <div>
       <HeroSection2
-        title="Visa Assistance"
-        description="Get expert guidance for a smooth visa application process and hassle-free approval for your study abroad plans."
-        // btnText="Learn More"
+        title={language === 'en' ? languageData.en.visaAssistance : languageData.jp.visaAssistance}
+        description={language === 'en' ? languageData.en.visaHeroDesc : languageData.jp.visaHeroDesc}
+        btnText={language === 'en' ? languageData.en.learnMore : languageData.jp.learnMore}
       />
     </div>
   );

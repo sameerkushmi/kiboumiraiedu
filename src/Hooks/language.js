@@ -651,7 +651,8 @@ export  const languageData = {
         universitySydney: 'University of Sydney',
         sydneyNSW: 'Sydney, NSW',
         UniversitySingapore: 'National University of Singapore',
-        singapore: 'Singapore'
+        singapore: 'Singapore',
+        visaHeroDesc: `Get expert guidance for a smooth visa application process and hassle-free approval for your study abroad plans.`
     },
     // japanese language list
     jp: {
@@ -1204,6 +1205,7 @@ export  const languageData = {
         universitySydney: 'シドニー大学',
         sydneyNSW: 'オーストラリア、ニューサウスウェールズ州シドニー',
         UniversitySingapore: 'シンガポール国立大学',
-        singapore: 'シンガポール'
+        singapore: 'シンガポール',
+        visaHeroDesc: `留学計画のために、スムーズなビザ申請手続きと手間のかからない承認を実現する専門的なサポートを受けましょう。`
     }
 }

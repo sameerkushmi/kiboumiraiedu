@@ -1,4 +1,3 @@
-import React from "react";
 import VisaHero from "./VisaHero";
 import VisaProcess from "./VisaProcess";
 import VisaWhyUs from "./VisaWhyUs";
