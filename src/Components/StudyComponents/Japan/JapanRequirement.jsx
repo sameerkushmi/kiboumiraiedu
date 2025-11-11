@@ -1,57 +1,63 @@
 import React from "react";
 import { GraduationCap, DollarSign, FileText, Globe } from "lucide-react";
 import ReqAccordion from "../../HelperComponents/StudyReq/ReqAccordion";
+import { LanguageContext } from "../../../Context/Context"; 
+import { languageData } from "../../../Hooks/language"; 
 
-const japanData = {
-  title: "Requirement to Study in Japan 🇯🇵",
+
+
+export default function JapanRequirement() {
+
+  const { language } = React.useContext(LanguageContext); 
+
+  const japanData = {
+  title: (language=== 'en' ? languageData.en.japanRequirementTitle : languageData.jp.japanRequirementTitle) + '🇯🇵',
   subtitle:
-    "Understand all key requirements before applying for your Japanese student visa.",
+    language=== 'en' ? languageData.en.japanRequirementSubTitle : languageData.jp.japanRequirementSubTitle,
   backgroundImage:
     "https://images.unsplash.com/photo-1528164344705-47542687000d?w=1920",
   ctaText: "Apply Now",
   items: [
     {
-      title: "Educational Requirements",
+      title: language=== 'en' ? languageData.en.japanEducationalRequirement : languageData.jp.japanEducationalRequirement,
       icon: GraduationCap,
       content: [
-        "Completion of at least 12 years of formal education (high school level).",
-        "Official academic transcripts and certificates in English or Japanese.",
-        "JLPT N5 or above preferred; N3–N2 may be required for universities.",
-        "Some programs accept English-based courses depending on the institution.",
+        language=== 'en' ? languageData.en.japanEducationalRequirementContent1: languageData.jp.japanEducationalRequirementContent1,
+        language=== 'en' ? languageData.en.japanEducationalRequirementContent2 : languageData.jp.japanEducationalRequirementContent2,
+        language=== 'en' ? languageData.en.japanEducationalRequirementContent3 : languageData.jp.japanEducationalRequirementContent3,
+        language=== 'en' ? languageData.en.japanEducationalRequirementContent4 : languageData.jp.japanEducationalRequirementContent4,
       ],
     },
     {
-      title: "Financial Requirements",
+      title: language=== 'en' ? languageData.en.japanFinancialRequirement : languageData.jp.japanFinancialRequirement,
       icon: DollarSign,
       content: [
-        "Proof of sufficient funds to cover tuition and living expenses.",
-        "A minimum balance of ¥1,000,000 is recommended in your/sponsor’s account.",
-        "Recent bank statements or certificates of deposit required.",
-        "Affidavit of financial support if sponsored by a parent or guardian.",
+        language=== 'en' ? languageData.en.japanFinancialRequirementContent1 : languageData.jp.japanFinancialRequirementContent1,
+        language=== 'en' ? languageData.en.japanFinancialRequirementContent2 : languageData.jp.japanFinancialRequirementContent2,
+        language=== 'en' ? languageData.en.japanFinancialRequirementContent3 : languageData.jp.japanFinancialRequirementContent3,
+        language=== 'en' ? languageData.en.japanFinancialRequirementContent4 : languageData.jp.japanFinancialRequirementContent4,
       ],
     },
     {
-      title: "Other Requirements",
+      title: language=== 'en' ? languageData.en.japanOtherRequirement : languageData.jp.japanOtherRequirement,
       icon: FileText,
       content: [
-        "Valid passport (minimum 1-year validity).",
-        "Medical certificate confirming good health.",
-        "Statement of Purpose explaining goals and motivation.",
-        "Certificate of Eligibility (COE) from the Japanese institution.",
+        language=== 'en' ? languageData.en.japanOtherRequirementContent1 : languageData.jp.japanOtherRequirementContent1,
+        language=== 'en' ? languageData.en.japanOtherRequirementContent2 : languageData.jp.japanOtherRequirementContent2,
+        language=== 'en' ? languageData.en.japanOtherRequirementContent3 : languageData.jp.japanOtherRequirementContent3,
+        language=== 'en' ? languageData.en.japanOtherRequirementContent4 : languageData.jp.japanOtherRequirementContent4,
       ],
     },
     {
-      title: "Cultural & Practical Preparation",
+      title: language=== 'en' ? languageData.en.japanCulturalRequirement : languageData.jp.japanCulturalRequirement,
       icon: Globe,
       content: [
-        "Learn basic Japanese conversation and culture etiquette.",
-        "Understand part-time work regulations and housing options.",
-        "Attend orientation programs before departure.",
+        language=== 'en' ? languageData.en.japanCulturalRequirementContent1 : languageData.jp.japanCulturalRequirementContent1,
+        language=== 'en' ? languageData.en.japanCulturalRequirementContent2 : languageData.jp.japanCulturalRequirementContent2,
+        language=== 'en' ? languageData.en.japanCulturalRequirementContent3 : languageData.jp.japanCulturalRequirementContent3,
       ],
     },
   ],
 };
-
-export default function JapanRequirement() {
   return <ReqAccordion {...japanData} />;
 }
