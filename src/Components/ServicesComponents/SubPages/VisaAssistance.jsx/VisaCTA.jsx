@@ -1,7 +1,12 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import { languageData } from "../../../../Hooks/language";
+import { useContext } from "react";
+import { LanguageContext } from "../../../../Context/Context";
 
 export default function VisaCTA() {
+
+  const {language} = useContext(LanguageContext)
+
   return (
     <>
       <div className="mt-14 m-6">
@@ -11,16 +16,21 @@ export default function VisaCTA() {
 
           <div className="relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Start Your Visa Journey?
+              {
+                language === 'en' ? languageData.en.visaCTAHeader : languageData.jp.visaCTAHeader
+              }
             </h3>
             <p className="text-blue-100 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-              Connect with our expert advisors to simplify your visa application
-              and get personalized guidance for your dream destination.
+              {
+                language === 'en' ? languageData.en.visaCTADesc : languageData.jp.visaCTADesc
+              }
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/contact">
                 <button className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-xl hover:bg-white hover:text-blue-600 transition-all duration-300">
-                  Book a Consultation
+                  {
+                    language === 'en' ? languageData.en.bookConsultation : languageData.jp.bookConsultation
+                  }
                 </button>
               </Link>
             </div>

@@ -689,7 +689,11 @@ export  const languageData = {
         visaWhyUsDesc_5: `We prioritize your privacy — all sensitive documents and personal data are stored and handled securely.`,
         timelyProcessing: 'Timely Processing',
         visaWhyUsDesc_6: `Our streamlined system ensures you meet all embassy deadlines, avoiding delays in your admission or 
-                        travel plan.`
+                        travel plan.`,
+        visaCTAHeader: 'Ready to Start Your Visa Journey?',
+        visaCTADesc: `Connect with our expert advisors to simplify your visa application
+                    and get personalized guidance for your dream destination.`,
+        bookConsultation: 'Book a Consultation'
     },
     // japanese language list
     jp: {
@@ -1269,6 +1273,9 @@ export  const languageData = {
         secureConfidential: '安全・機密保持',
         visaWhyUsDesc_5: 'お客様のプライバシーを最優先に、すべての機密書類や個人情報を安全に保管・管理します。',
         timelyProcessing: '迅速な処理',
-        visaWhyUsDesc_6: `効率的なシステムにより、すべての大使館の期限を確実に守り、入学や渡航計画の遅延を防ぎます。`
+        visaWhyUsDesc_6: `効率的なシステムにより、すべての大使館の期限を確実に守り、入学や渡航計画の遅延を防ぎます。`,
+        visaCTAHeader: 'ビザ取得の旅を始める準備はできましたか？',
+        visaCTADesc: `専門アドバイザーとつながり、ビザ申請を簡単にし、夢の渡航先に向けた個別サポートを受けましょう。`,
+        bookConsultation: '相談を予約する'
     }
 }
