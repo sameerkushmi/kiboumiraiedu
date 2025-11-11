@@ -1,85 +1,88 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Search, MapPin, Globe } from "lucide-react";
+import { languageData } from "../../../../Hooks/language";
+import { LanguageContext } from "../../../../Context/Context";
 
 export default function UniSelList() {
+  const {language} = useContext(LanguageContext)
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCountry, setSelectedCountry] = useState("All");
 
   const universities = [
     {
-      name: "Tokyo University",
+      name: language === 'en' ? languageData.en.tokyoUniversity : languageData.jp.tokyoUniversity,
       country: "Japan",
-      location: "Tokyo, Japan",
+      location: language === 'en'? languageData.en.tokyoJapan : languageData.jp.tokyoJapan,
       image:
         "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&q=80",
     },
     {
-      name: "Kyoto University",
+      name: language === 'en' ? languageData.en.kyotoUniversity : languageData.jp.kyotoUniversity,
       country: "Japan",
-      location: "Kyoto, Japan",
+      location: language === 'en'? languageData.en.kyotoJapan : languageData.jp.kyotoJapan,
       image:
         "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80",
     },
     {
-      name: "Harvard University",
+      name: language === 'en' ? languageData.en.harvardUniversity : languageData.jp.harvardUniversity,
       country: "USA",
-      location: "Cambridge, Massachusetts",
+      location: language === 'en'? languageData.en.cambridgeMassachusetts : languageData.jp.cambridgeMassachusetts,
       image:
         "https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80",
     },
     {
-      name: "Stanford University",
+      name: language === 'en' ? languageData.en.stanfordUniversity : languageData.jp.stanfordUniversity,
       country: "USA",
-      location: "Stanford, California",
+      location: language === 'en'? languageData.en.stanfordCalifornia : languageData.jp.stanfordCalifornia,
       image:
         "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800&q=80",
     },
     {
-      name: "University of Oxford",
+      name: language === 'en' ? languageData.en.universityOxford : languageData.jp.universityOxford,
       country: "UK",
-      location: "Oxford, England",
+      location: language === 'en'? languageData.en.oxfordEngland : languageData.jp.oxfordEngland,
       image:
         "https://images.unsplash.com/photo-1541535650810-10d26f5c2ab1?w=800&q=80",
     },
     {
-      name: "University of Cambridge",
+      name: language === 'en' ? languageData.en.universityCambridge : languageData.jp.universityCambridge,
       country: "UK",
-      location: "Cambridge, England",
+      location: language === 'en'? languageData.en.cambridgeEngland : languageData.jp.cambridgeEngland,
       image:
         "https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=800&q=80",
     },
     {
-      name: "University of Toronto",
+      name: language === 'en' ? languageData.en.universityToronto : languageData.jp.universityToronto,
       country: "Canada",
-      location: "Toronto, Ontario",
+      location: language === 'en'? languageData.en.torontoOntario : languageData.jp.torontoOntario,
       image:
         "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
     },
     {
-      name: "University of British Columbia",
+      name: language === 'en' ? languageData.en.universityBritishColumbia : languageData.jp.universityBritishColumbia,
       country: "Canada",
-      location: "Vancouver, BC",
+      location: language === 'en'? languageData.en.vancouverBC : languageData.jp.vancouverBC,
       image:
         "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800&q=80",
     },
     {
-      name: "University of Melbourne",
+      name: language === 'en' ? languageData.en.universityMelbourne : languageData.jp.universityMelbourne,
       country: "AUS",
-      location: "Melbourne, Victoria",
+      location: language === 'en'? languageData.en.melbourneVictoria : languageData.jp.melbourneVictoria,
       image:
         "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
     },
     {
-      name: "University of Sydney",
+      name: language === 'en' ? languageData.en.universitySydney : languageData.jp.universitySydney,
       country: "AUS",
-      location: "Sydney, NSW",
+      location: language === 'en'? languageData.en.sydneyNSW : languageData.jp.sydneyNSW,
       image:
         "https://images.unsplash.com/photo-1546514355-7fdc90ccbd03?w=800&q=80",
     },
     {
-      name: "National University of Singapore",
+      name: language === 'en' ? languageData.en.UniversitySingapore : languageData.jp.UniversitySingapore,
       country: "Others",
-      location: "Singapore",
+      location: language === 'en'? languageData.en.singapore : languageData.jp.singapore,
       image:
         "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&q=80",
     },
@@ -101,11 +104,14 @@ export default function UniSelList() {
       {/* Header */}
       <div className="text-center mb-16">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-2 leading-tight">
-          Our Partner Universities
+          {
+            language === 'en' ? languageData.en.uniSelheroTitle : languageData.jp.uniSelheroTitle
+          }
         </h1>
         <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          Explore our network of prestigious universities across the globe. Find
-          your dream institution among our trusted partners.
+          {
+            language === 'en' ? languageData.en.uniSelListDesc : languageData.jp.uniSelListDesc
+          }
         </p>
       </div>
 
@@ -118,7 +124,7 @@ export default function UniSelList() {
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
               <input
                 type="text"
-                placeholder="Search universities..."
+                placeholder={language === 'en' ? languageData.en.searchUniversities : languageData.jp.searchUniversities}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
