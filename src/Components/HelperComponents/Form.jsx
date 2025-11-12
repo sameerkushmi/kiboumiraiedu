@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight,} from "lucide-react";
 import { LanguageContext } from "../../Context/Context";
+import { languageData } from "../../Hooks/language";
 
 export default function Form() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -43,7 +44,9 @@ export default function Form() {
           className="bg-text text-white font-extrabold fixed left-0 top-1/3 hidden md:flex items-center gap-1 rounded-r-full shadow-lg transition-all cursor-pointer group"
           >
           <div className="px-4 py-3 text-sm font-medium tracking-wide">
-            Reach Us Out
+            {
+              language === 'en' ? languageData.en.ReachUsOut : languageData.jp.ReachUsOut
+            }
           </div>
           <ChevronRight
             className="mr-2  group-hover:scale-105 transition-transform"
@@ -108,7 +111,9 @@ export default function Form() {
                       transition={{ delay: 0.3, duration: 0.4 }}
                       className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-4 md:mb-6 text-center drop-shadow-lg"
                     >
-                      Connect With Us
+                      {
+                        language === 'en' ? languageData.en.contactWithUs : languageData.jp.contactWithUs
+                      }
                     </motion.h3>
                     <motion.div
                       initial={{ scale: 0.8, opacity: 0 }}
@@ -131,7 +136,9 @@ export default function Form() {
                       transition={{ delay: 0.5, duration: 0.4 }}
                       className="text-xs sm:text-sm text-white/90 text-center drop-shadow-md px-4"
                     >
-                      Scan to connect with us instantly
+                      {
+                        language === 'en' ? languageData.en.scanToConnectWithUs : languageData.jp.scanToConnectWithUs
+                      }
                     </motion.p>
                   </div>
                 </motion.div>
@@ -145,7 +152,9 @@ export default function Form() {
                 >
                   <div className="flex justify-between items-center mb-4 md:mb-6">
                     <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
-                      Get In Touch
+                      {
+                        language === 'en' ? languageData.en.contactFormHeader : languageData.jp.contactFormHeader
+                      }
                     </h2>
                     <motion.button
                       whileHover={{ scale: 1.1, rotate: 90 }}
@@ -164,7 +173,10 @@ export default function Form() {
                       transition={{ delay: 0.3, duration: 0.3 }}
                     >
                       <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
-                        Name *
+                        {
+                          language === 'en' ? languageData.en.fullName : languageData.jp.fullName
+                        }
+                        *
                       </label>
                       <input
                         type="text"
@@ -172,7 +184,7 @@ export default function Form() {
                         value={formData.name}
                         onChange={handleChange}
                         className="w-full px-3 sm:px-4 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none"
-                        placeholder="Your full name"
+                        placeholder={language === 'en' ? languageData.en.enterFullName : languageData.jp.enterFullName}
                       />
                     </motion.div>
 
@@ -182,7 +194,9 @@ export default function Form() {
                       transition={{ delay: 0.35, duration: 0.3 }}
                     >
                       <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
-                        Email *
+                        {
+                          language === 'en' ? languageData.en.email : languageData.jp.email
+                        } *
                       </label>
                       <input
                         type="email"
@@ -190,7 +204,7 @@ export default function Form() {
                         value={formData.email}
                         onChange={handleChange}
                         className="w-full px-3 sm:px-4 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none"
-                        placeholder="your.email@example.com"
+                        placeholder={language === 'en' ? languageData.en.enterYourEmail : languageData.jp.enterYourEmail}
                       />
                     </motion.div>
 
@@ -200,7 +214,9 @@ export default function Form() {
                       transition={{ delay: 0.4, duration: 0.3 }}
                     >
                       <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
-                        Phone
+                        {
+                          language === 'en' ? languageData.en.phone : languageData.jp.phone
+                        }
                       </label>
                       <input
                         type="tel"
@@ -208,7 +224,7 @@ export default function Form() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-3 sm:px-4 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none"
-                        placeholder="Your phone number"
+                        placeholder={language === 'en' ? languageData.en.enterYourPhone : languageData.jp.enterYourPhone}
                       />
                     </motion.div>
 
@@ -218,7 +234,10 @@ export default function Form() {
                       transition={{ delay: 0.45, duration: 0.3 }}
                     >
                       <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1">
-                        Message *
+                        {
+                          language === 'en' ? languageData.en.message : languageData.jp.message
+                        }
+                         *
                       </label>
                       <textarea
                         name="message"
@@ -226,7 +245,7 @@ export default function Form() {
                         onChange={handleChange}
                         rows="4"
                         className="w-full px-3 sm:px-4 py-2 text-sm sm:text-base border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none resize-none"
-                        placeholder="Tell us how we can help you..."
+                        placeholder={language === 'en' ? languageData.en.TellUshowWeCanHelpYou : languageData.jp.TellUshowWeCanHelpYou}
                       />
                     </motion.div>
 
@@ -242,7 +261,9 @@ export default function Form() {
                       onClick={handleSubmit}
                       className="w-full bg-text text-white py-3 sm:py-3.5 rounded-lg text-sm sm:text-base font-bold hover:from-red-700 hover:to-red-600 transition-all shadow-lg hover:shadow-red-500/50"
                     >
-                      Send Message
+                      {
+                        language === 'en' ? languageData.en.sendMessage : languageData.jp.sendMessage
+                      }
                     </motion.button>
                   </div>
                 </motion.div>

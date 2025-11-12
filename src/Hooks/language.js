@@ -1217,7 +1217,11 @@ export const languageData = {
         GetDirections: 'Get Directions',
         exploreMap : 'Explore Map',
         ExitMap: 'Exit Map',
-        Clicktointeractwithmap: 'Click to interact with map'
+        Clicktointeractwithmap: 'Click to interact with map',
+        scanToConnectWithUs : 'Scan to connect with us instantly' ,
+        sendMessage : 'Send Message',
+        TellUshowWeCanHelpYou: 'Tell us how we can help you...',
+        ReachUsOut: 'Reach Us Out'
     },
     // japanese language list
     jp: {
@@ -2306,6 +2310,10 @@ export const languageData = {
         GetDirections: '道順を調べる',
         exploreMap: '探索マップ',
         ExitMap: '出口マップ',
-        Clicktointeractwithmap: 'クリックして地図を操作します'
+        Clicktointeractwithmap: 'クリックして地図を操作します',
+        scanToConnectWithUs: 'スキャンしてすぐに接続',
+        sendMessage: 'メッセージを送信する',
+        TellUshowWeCanHelpYou: 'どのようにお手伝いできるか教えてください...',
+        ReachUsOut: 'お問い合わせください'
     }
 }
