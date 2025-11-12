@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {
   Phone,
   Mail,
@@ -6,10 +6,14 @@ import {
   User,
   ChevronDown,
   ArrowRight,
-  BookCheck,
 } from "lucide-react";
+import { languageData } from "../../Hooks/language";
+import { LanguageContext } from "../../Context/Context";
 
 export default function StudyForm() {
+
+  const {language} = useContext(LanguageContext)
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -63,7 +67,10 @@ ${
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-8 mx-6 rounded-4xl my-10">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-6xl font-extrabold text-center text-slate-800 mb-8">
-          <br /> Fill Out the Form Below
+          <br /> 
+          {
+            language === 'en' ? languageData.en.fillOurtForm : languageData.jp.fillOurtForm
+          }
         </h2>
 
         <div className="bg-white rounded-lg p-8 shadow-sm">
@@ -72,7 +79,9 @@ ${
             {/* Full Name */}
             <div>
               <label className="block text-slate-700 font-medium mb-2">
-                Full Name
+                {
+                  language === 'en' ? languageData.en.fullName : languageData.jp.fullName
+                }
               </label>
               <div className="relative">
                 <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -81,7 +90,7 @@ ${
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleInputChange}
-                  placeholder="Enter your full name..."
+                  placeholder={language === 'en' ? languageData.en.enterFullName : languageData.jp.enterFullName}
                   className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
                 />
               </div>
@@ -90,7 +99,9 @@ ${
             {/* Email */}
             <div>
               <label className="block text-slate-700 font-medium mb-2">
-                Email
+                {
+                  language === 'en' ? languageData.en.email : languageData.jp.email
+                }
               </label>
               <div className="relative">
                 <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -99,7 +110,7 @@ ${
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="Enter your email address..."
+                  placeholder={language === 'en' ? languageData.en.enterEmail : languageData.jp.enterEmail}
                   className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
                 />
               </div>
@@ -111,7 +122,9 @@ ${
             {/* Preferred Country */}
             <div>
               <label className="block text-slate-700 font-medium mb-2">
-                Phone Number
+                {
+                  language === 'en' ? languageData.en.phone : languageData.jp.phone
+                }
               </label>
               <div className="relative">
                 <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -120,7 +133,7 @@ ${
                   name="phoneNumber"
                   value={formData.phoneNumber}
                   onChange={handleInputChange}
-                  placeholder="Enter your phone number..."
+                  placeholder={language === 'en' ? languageData.en.enterYourPhone : languageData.jp.enterYourPhone}
                   className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
                 />
               </div>
@@ -128,7 +141,9 @@ ${
 
             <div>
               <label className="block text-slate-700 font-medium mb-2">
-                Preferred Country
+                {
+                  language === 'en' ? languageData.en.preferredCountry : languageData.jp.preferredCountry
+                }
               </label>
               <div className="relative">
                 <Globe className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -138,13 +153,41 @@ ${
                   onChange={handleInputChange}
                   className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
                 >
-                  <option value="">Select your preferred country...</option>
-                  <option value="Australia">Australia</option>
-                  <option value="USA">USA</option>
-                  <option value="UK">UK</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Japan">Japan</option>
-                  <option value="Korea">Korea</option>
+                  <option value="">
+                    {
+                      language === 'en' ? languageData.en.selectYourCountry : languageData.jp.selectYourCountry
+                    }
+                  </option>
+                  <option value="Australia">
+                    {
+                      language === 'en' ? languageData.en.australia : languageData.jp.australia
+                    }
+                  </option>
+                  <option value="USA">
+                    {
+                      language === 'en' ? languageData.en.usa : languageData.jp.usa
+                    }
+                  </option>
+                  <option value="UK">
+                    {
+                      language === 'en' ? languageData.en.uk : languageData.jp.uk
+                    }
+                  </option>
+                  <option value="Canada">
+                    {
+                      language === 'en' ? languageData.en.canada : languageData.jp.canada
+                    }
+                  </option>
+                  <option value="Japan">
+                    {
+                      language === 'en' ? languageData.en.japan : languageData.jp.japan
+                    }
+                  </option>
+                  <option value="Korea">
+                    {
+                      language === 'en' ? languageData.en.korea : languageData.jp.korea
+                    }
+                  </option>
                 </select>
                 <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 w-4 h-4 pointer-events-none" />
               </div>
@@ -157,20 +200,24 @@ ${
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
               <label className="block text-slate-700 font-medium mb-2">
-                Preferred University
+                {
+                  language === 'en' ? languageData.en.preferredUniversity : languageData.jp.preferredUniversity
+                }
               </label>
               <input
                 type="text"
                 name="preferredUniversity"
                 value={formData.preferredUniversity}
                 onChange={handleInputChange}
-                placeholder="Enter preferred university..."
+                placeholder={language === 'en' ? languageData.en.enterPreferredUniversity : languageData.jp.enterPreferredUniversity}
                 className="w-full pl-4 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
               />
             </div>
             <div>
               <label className="block text-slate-700 font-medium mb-2">
-                Further Degree
+                {
+                  language === 'en' ? languageData.en.furtherDegree : languageData.jp.furtherDegree
+                }
               </label>
               <select
                 name="degree"
@@ -178,10 +225,26 @@ ${
                 onChange={handleInputChange}
                 className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
               >
-                <option value="">Select degree...</option>
-                <option value="Bachelors">Bachelors</option>
-                <option value="Diploma">Diploma</option>
-                <option value="Masters">Masters</option>
+                <option value="">
+                {
+                  language === 'en' ? languageData.en.selectDegree : languageData.jp.selectDegree
+                }  
+                ...</option>
+                <option value="Bachelors">
+                  {
+                    language === 'en' ? languageData.en.bachelors : languageData.jp.bachelors
+                  }
+                </option>
+                <option value="Diploma">
+                  {
+                    language === 'en' ? languageData.en.diploma : languageData.jp.diploma
+                  }
+                </option>
+                <option value="Masters">
+                  {
+                    language === 'en' ? languageData.en.masters : languageData.jp.masters
+                  }
+                </option>
               </select>
             </div>
           </div>
@@ -189,14 +252,16 @@ ${
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
               <label className="block text-slate-700 font-medium mb-2">
-                Preferred Course Stream
+                {
+                  language === 'en' ? languageData.en.preferredCourseStream : languageData.jp.preferredCourseStream
+                }
               </label>
               <input
                 type="text"
                 name="preferredCourse"
                 value={formData.preferredCourse}
                 onChange={handleInputChange}
-                placeholder="Enter preferred course stream..."
+                placeholder={language === 'en' ? languageData.en.enterpreferredCourseStream : languageData.jp.enterpreferredCourseStream}
                 className="w-full pl-4 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
               />
             </div>
@@ -205,7 +270,9 @@ ${
           {/* Test Section */}
           <div className="mb-6">
             <label className="block text-slate-700 font-medium mb-3">
-              Have you taken any test before?
+             {
+              language === 'en' ? languageData.en.haveYouTakenTestBefore : languageData.jp.haveYouTakenTestBefore
+             }
             </label>
             <div className="flex gap-6 mb-4">
               <label className="flex items-center gap-2">
@@ -216,7 +283,9 @@ ${
                   checked={formData.hasTakenTest === "yes"}
                   onChange={handleInputChange}
                 />
-                Yes
+                {
+                  language === 'en' ? languageData.en.yes : languageData.jp.yes
+                }
               </label>
               <label className="flex items-center gap-2">
                 <input
@@ -226,7 +295,9 @@ ${
                   checked={formData.hasTakenTest === "no"}
                   onChange={handleInputChange}
                 />
-                No
+                {
+                  language === 'en' ? languageData.en.no : languageData.jp.no
+                }
               </label>
             </div>
 
@@ -236,7 +307,9 @@ ${
                 {/* Tests Taken */}
                 <div>
                   <label className="block text-slate-700 font-medium mb-2">
-                    Test Taken
+                    {
+                      language === 'en' ? languageData.en.testTaken : languageData.jp.testTaken
+                    }
                   </label>
                   <div className="flex flex-wrap gap-4">
                     {["IELTS", "PTE", "TOEFL", "SAT", "JLPT"].map((test) => (
@@ -257,14 +330,16 @@ ${
                 {/* Score */}
                 <div>
                   <label className="block text-slate-700 font-medium mb-2">
-                    Your Score
+                    {
+                      language === 'en' ? languageData.en.yourScore : languageData.jp.yourScore
+                    }
                   </label>
                   <input
                     type="text"
                     name="testScore"
                     value={formData.testScore}
                     onChange={handleInputChange}
-                    placeholder="Enter your score..."
+                    placeholder={language === 'en' ? languageData.en.enterYourScore : languageData.jp.enterYourScore}
                     className="w-full pl-4 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
                   />
                 </div>
@@ -275,7 +350,9 @@ ${
             {formData.hasTakenTest === "no" && (
               <div className="mt-4">
                 <label className="block text-slate-700 font-medium mb-2">
-                  Which test do you plan to take?
+                  {
+                    language === 'en' ? languageData.en.whichTestYouplanTake : languageData.jp.whichTestYouplanTake
+                  }
                 </label>
                 <div className="flex flex-wrap gap-4">
                   {["IELTS", "PTE", "TOEFL", "SAT", "JLPT"].map((test) => (
@@ -301,7 +378,9 @@ ${
               onClick={handleSubmit}
               className="bg-slate-700 hover:bg-slate-800 text-white font-medium px-8 py-3 rounded-lg transition-colors flex items-center gap-2"
             >
-              Submit Form
+             {
+              language === 'en' ? languageData.en.submitForm : languageData.jp.submitForm
+             }
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>

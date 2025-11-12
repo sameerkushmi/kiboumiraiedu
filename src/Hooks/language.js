@@ -954,6 +954,9 @@ export  const languageData = {
         studyTestsNote : `Requirements may vary by institution and country. Always check specific university requirements
                         before applying.`,
         note: 'Note:',
+        fillOurtForm : 'Fill Out the Form Below',
+        preferredCourseStream: 'Preferred Course Stream',
+        enterpreferredCourseStream: 'Enter preferred course stream...',
     },
     // japanese language list
     jp: {
@@ -1780,5 +1783,8 @@ export  const languageData = {
         diplomaProgram: 'ディプロマプログラム',
         studyTestsNote: `要件は大学や国によって異なる場合があります。申請前に必ず各大学の要件をご確認ください。`,
         note: '注：',
+        fillOurtForm: '以下のフォームにご記入ください',
+        preferredCourseStream: '優先コースストリーム',
+        enterpreferredCourseStream: 'ここに優先コースストリームを入力してください…',
     }
 }
