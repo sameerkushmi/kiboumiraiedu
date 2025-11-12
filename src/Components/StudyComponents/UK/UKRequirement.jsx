@@ -1,60 +1,66 @@
-import React from "react";
+import { useContext } from "react";
 import { GraduationCap, DollarSign, FileText, Globe } from "lucide-react";
 
 import ReqAccordion from "../../HelperComponents/StudyReq/ReqAccordion";
+import { languageData } from "../../../Hooks/language";
+import { LanguageContext } from "../../../Context/Context";
 
-const australiaData = {
-  title: "Requirements to Study in UK 🇬🇧",
-  subtitle:
-    "Find out what you need to apply for your Australian student visa and start your studies in one of the world's best education systems.",
+
+
+export default function UKRequirement() {
+
+  const {language} = useContext(LanguageContext)
+
+  const australiaData = {
+  title: language === 'en' ? languageData.en.UKRequirementTitle + "🇬🇧" : languageData.jp.ukRequirementTitle + '🇬🇧',
+  subtitle: language === 'en' ? languageData.en.UKRequirementSubTitle : languageData.jp.UKRequirementSubTitle,
   backgroundImage: "/Uploads/study/uk/ukreq.jpg",
   ctaText: "Apply Now",
   accentColor: "text-sky-400",
   items: [
     {
-      title: "Educational Requirements",
+      title: language === 'en' ? languageData.en.japanEducationalRequirement : languageData.jp.japanEducationalRequirement,
       icon: GraduationCap,
       content: [
-        "Completion of at least 12 years of formal education (equivalent to UK A-levels or International Baccalaureate).",
-        "Certified copies of academic transcripts and certificates in English.",
-        "For higher education, submission of English proficiency scores (IELTS, TOEFL, or PTE Academic).",
-        "Universities may have specific entry requirements—check individual course prerequisites before applying.",
+        language === 'en' ? languageData.en.UKRequirementContent1 : languageData.jp.UKRequirementContent1,
+        language === 'en' ? languageData.en.UKRequirementContent2 : languageData.jp.UKRequirementContent2,
+        language === 'en' ? languageData.en.UKRequirementContent3 : languageData.jp.UKRequirementContent3,
+        language === 'en' ? languageData.en.UKRequirementContent4 : languageData.jp.UKRequirementContent4,
       ],
     },
     {
-      title: "Financial Requirements",
+      title: language === 'en' ? languageData.en.japanFinancialRequirement : languageData.jp.japanFinancialRequirement,
       icon: DollarSign,
       content: [
-        "Proof of sufficient funds to cover tuition fees, accommodation, and living expenses.",
-        "Estimated living cost: at least £1,334 per month in London or £1,023 per month outside London (for up to 9 months).",
-        "Acceptable proof includes bank statements, sponsor letters, or financial guarantee documents.",
-        "Sponsored or scholarship students must provide an official confirmation letter from the sponsor or funding body.",
+        language === 'en' ? languageData.en.UKFinancialRequirementContent1 : languageData.jp.UKFinancialRequirementContent1,
+        language === 'en' ? languageData.en.UKFinancialRequirementContent2 : languageData.jp.UKFinancialRequirementContent2,
+        language === 'en' ? languageData.en.UKFinancialRequirementContent3 : languageData.jp.UKFinancialRequirementContent3,
+        language === 'en' ? languageData.en.UKFinancialRequirementContent4 : languageData.jp.UKFinancialRequirementContent4,
       ],
     },
     {
-      title: "Visa & Documentation",
+      title: language === 'en' ? languageData.en.visaDocumentation : languageData.jp.visaDocumentation,
       icon: FileText,
       content: [
-        "Valid passport with at least 6 months of remaining validity.",
-        "Confirmation of Acceptance for Studies (CAS) issued by a licensed UK institution.",
-        "Completed Student Visa (formerly Tier 4) application and payment of the Immigration Health Surcharge (IHS).",
-        "Proof of English language proficiency and financial evidence as per UKVI guidelines.",
-        "Medical test (tuberculosis clearance) may be required depending on country of residence.",
+        language === 'en' ? languageData.en.UKVisaDocumentationContent1 : languageData.jp.UKVisaDocumentationContent1,
+        language === 'en' ? languageData.en.UKVisaDocumentationContent2 : languageData.jp.UKVisaDocumentationContent2,
+        language === 'en' ? languageData.en.UKVisaDocumentationContent3 : languageData.jp.UKVisaDocumentationContent3,
+        language === 'en' ? languageData.en.UKVisaDocumentationContent4 : languageData.jp.UKVisaDocumentationContent4,
+        language === 'en' ? languageData.en.UKVisaDocumentationContent5 : languageData.jp.UKVisaDocumentationContent5,
       ],
     },
     {
-      title: "Cultural & Practical Preparation",
+      title: language === 'en' ? languageData.en.culturalPracticalPreparation : languageData.jp.culturalPracticalPreparation,
       icon: Globe,
       content: [
-        "Familiarize yourself with the UK’s academic culture focused on independent study and critical thinking.",
-        "Understand student work rights—up to 20 hours per week during term time and full-time during holidays.",
-        "Research accommodation options such as university halls, private housing, or homestays.",
-        "Learn about public transport systems, NHS healthcare registration, and emergency services before arrival.",
+        language === 'en' ? languageData.en.UKCulturalPracticalPreparationContent1 : languageData.jp.UKCulturalPracticalPreparationContent1,
+        language === 'en' ? languageData.en.UKCulturalPracticalPreparationContent2 : languageData.jp.UKCulturalPracticalPreparationContent2,
+        language === 'en' ? languageData.en.UKCulturalPracticalPreparationContent3 : languageData.jp.UKCulturalPracticalPreparationContent3,
+        language === 'en' ? languageData.en.UKCulturalPracticalPreparationContent4 : languageData.jp.UKCulturalPracticalPreparationContent4,
       ],
     },
   ],
 };
 
-export default function UKRequirement() {
   return <ReqAccordion {...australiaData} />;
 }

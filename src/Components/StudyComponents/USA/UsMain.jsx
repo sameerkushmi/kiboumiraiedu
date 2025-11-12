@@ -1,4 +1,3 @@
-import React from "react";
 import UsHero from "./UsHero";
 import UsRequirement from "./UsRequirement";
 import UsWhy from "./UsWhy";

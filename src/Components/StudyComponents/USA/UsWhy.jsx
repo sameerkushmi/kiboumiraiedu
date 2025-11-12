@@ -1,23 +1,29 @@
+import { useContext } from "react";
 import StudyWhy from "../../HelperComponents/StudyReq/StudyWhy";
+import { LanguageContext } from "../../../Context/Context";
+import { languageData } from "../../../Hooks/language";
 
 export default function WhyUS() {
+
+  const {language} = useContext(LanguageContext)
+
   const usReasons = [
-    "Home to globally ranked universities and top research institutions.",
-    "Wide variety of courses and flexible learning programs.",
-    "Innovative and technology-driven environment for students and professionals.",
-    "Part-time work and internship opportunities during studies.",
-    "Strong post-graduation employment prospects with STEM OPT programs.",
-    "Diverse and multicultural society welcoming international students.",
-    "High-quality infrastructure and world-class campus facilities.",
-    "Abundant scholarship and financial aid opportunities.",
-    "Vibrant student life with cultural, social, and networking opportunities.",
-    "Global recognition of US degrees boosting career prospects worldwide.",
+    language === 'en' ? languageData.en.USWhyReason1 : languageData.jp.USWhyReason1,
+    language === 'en' ? languageData.en.USWhyReason2 : languageData.jp.USWhyReason2,
+    language === 'en' ? languageData.en.USWhyReason3 : languageData.jp.USWhyReason3,
+    language === 'en' ? languageData.en.USWhyReason4 : languageData.jp.USWhyReason4,
+    language === 'en' ? languageData.en.USWhyReason5 : languageData.jp.USWhyReason5,
+    language === 'en' ? languageData.en.USWhyReason6 : languageData.jp.USWhyReason6,
+    language === 'en' ? languageData.en.USWhyReason7 : languageData.jp.USWhyReason7,
+    language === 'en' ? languageData.en.USWhyReason8 : languageData.jp.USWhyReason8,
+    language === 'en' ? languageData.en.USWhyReason9 : languageData.jp.USWhyReason9,
+    language === 'en' ? languageData.en.USWhyReason10 : languageData.jp.USWhyReason10,
   ];
 
   return (
     <StudyWhy
-      title="Why Choose the US 🇺🇸"
-      description="The United States provides excellent education, professional opportunities, and global recognition — making it ideal for ambitious students and professionals."
+      title={language === 'en' ? languageData.en.whyChooseUSTitle : languageData.jp.whyChooseUSTitle}
+      description={language === 'en' ? languageData.en.UsWhyDesc : languageData.jp.UsWhyDesc}
       backgroundImage="/Uploads/study/us/uswhy.jpg"
       reasons={usReasons}
     />

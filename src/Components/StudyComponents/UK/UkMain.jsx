@@ -1,5 +1,3 @@
-import React from "react";
-import { SiUnpkg } from "react-icons/si";
 import UkHero from "./UkHero";
 import UKRequirement from "./UKRequirement";
 import UKWhy from "./UKWhy";

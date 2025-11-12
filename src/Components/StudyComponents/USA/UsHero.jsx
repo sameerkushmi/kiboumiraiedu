@@ -1,13 +1,18 @@
-import React from "react";
+import { useContext } from "react";
 import StudyHero from "../../HelperComponents/StudyHero/StudyHero";
+import { LanguageContext } from "../../../Context/Context";
+import { languageData } from "../../../Hooks/language";
 
 export default function UsHero() {
+
+  const {language} = useContext(LanguageContext);
+
   return (
     <div>
       <StudyHero
         bgImg="/Uploads/study/us/us.png"
-        title="USA 🇺🇸"
-        description="Experience world-class education in the USA with cutting-edge technology, diverse culture, and endless opportunities. Study in the USA enhances personal growth and career prospects."
+        title={ language === 'en' ? languageData.en.USA + "🇺🇸" : languageData.jp.USA + "🇺🇸"}
+        description={ language === 'en' ? languageData.en.usHeroDesc : languageData.jp.usHeroDesc}
         img="/Uploads/home/hero.avif"
         video="/Uploads/home/hero.mp4"
       />

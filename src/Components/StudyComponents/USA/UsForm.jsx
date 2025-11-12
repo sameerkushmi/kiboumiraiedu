@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {
   Phone,
   Mail,
@@ -9,8 +9,13 @@ import {
   ArrowRight,
   Globe,
 } from "lucide-react";
+import { LanguageContext } from "../../../Context/Context";
+import { languageData } from "../../../Hooks/language";
 
 export default function UsForm() {
+
+  const {language} = useContext(LanguageContext);
+
   const [formData, setFormData] = useState({
     inquiryPurpose: "",
     description: "",
@@ -84,7 +89,10 @@ ${formData.message || "No message provided"}
         </div> */}
 
         <h2 className="text-4xl md:text-6xl font-extrabold text-center text-slate-800 mb-8">
-          <br /> Fill out the form below
+          <br /> 
+          {
+            language === 'en' ? languageData.en.fillOurtForm : languageData.jp.fillOurtForm
+          }
         </h2>
 
         <div className="bg-white rounded-lg p-8 shadow-sm">
@@ -92,7 +100,9 @@ ${formData.message || "No message provided"}
             {/* Full Name */}
             <div>
               <label className="block text-slate-700 font-medium mb-2">
-                Full Name
+                {
+                  language === 'en' ? languageData.en.fullName : languageData.jp.fullName
+                }
               </label>
               <div className="relative">
                 <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -101,7 +111,7 @@ ${formData.message || "No message provided"}
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleInputChange}
-                  placeholder="Enter your full name..."
+                  placeholder={language === 'en' ? languageData.en.enterFullName : languageData.jp.enterFullName}
                   className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
                 />
               </div>
@@ -110,7 +120,9 @@ ${formData.message || "No message provided"}
             {/* Email */}
             <div>
               <label className="block text-slate-700 font-medium mb-2">
-                Email
+                {
+                  language === 'en' ? languageData.en.email : languageData.jp.email
+                }
               </label>
               <div className="relative">
                 <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -119,7 +131,7 @@ ${formData.message || "No message provided"}
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="Enter your email address..."
+                  placeholder={language === 'en' ? languageData.en.enterYourEmail : languageData.jp.enterYourEmail}
                   className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
                 />
               </div>
@@ -130,7 +142,9 @@ ${formData.message || "No message provided"}
             {/* Preferred Country */}
             <div>
               <label className="block text-slate-700 font-medium mb-2">
-                Preferred University
+                {
+                  language === 'en' ? languageData.en.preferredUniversity : languageData.jp.preferredUniversity
+                }
               </label>
               <div className="relative">
                 <Globe className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -140,35 +154,67 @@ ${formData.message || "No message provided"}
                   onChange={handleInputChange}
                   className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
                 >
-                  <option value="">Select your preferred university...</option>
-                  <option value="Harvard University">Harvard University</option>
+                  <option value="">
+                    {
+                      language === 'en' ? languageData.en.selectYourUniversity : languageData.jp.selectYourUniversity
+                    }
+                  </option>
+                  <option value="Harvard University">
+                    {
+                      language === 'en' ? languageData.en.harvardUniversity : languageData.jp.harvardUniversity
+                    }
+                  </option>
                   <option value="Stanford University">
-                    Stanford University
+                    {
+                      language === 'en' ? languageData.en.stanfordUniversity : languageData.jp.stanfordUniversity
+                    }
                   </option>
                   <option value="Massachusetts Institute of Technology">
-                    Massachusetts Institute of Technology (MIT)
+                    {
+                      language === 'en' ? languageData.en.MIT : languageData.jp.MIT
+                    }
                   </option>
                   <option value="University of California, Berkeley">
-                    University of California, Berkeley
+                    {
+                      language === 'en' ? languageData.en.UniversityofCaliforniaBerkeley : languageData.jp.UniversityofCaliforniaBerkeley
+                    }
                   </option>
                   <option value="Columbia University">
-                    Columbia University
+                    {
+                      language === 'en' ? languageData.en.ColumbiaUniversity : languageData.jp.ColumbiaUniversity
+                    }
                   </option>
                   <option value="University of Chicago">
-                    University of Chicago
+                   {
+                    language === 'en' ? languageData.en.UniversityofChicago : languageData.jp.UniversityofChicago
+                   }
                   </option>
-                  <option value="Yale University">Yale University</option>
+                  <option value="Yale University">
+                    {
+                      language === 'en' ? languageData.en.YaleUniversity : languageData.jp.YaleUniversity
+                    }
+                  </option>
                   <option value="Princeton University">
-                    Princeton University
+                    {
+                      language === 'en' ? languageData.en.PrincetonUniversity : languageData.jp.PrincetonUniversity
+                    }
                   </option>
                   <option value="University of Michigan">
-                    University of Michigan
+                    {
+                      language === 'en' ? languageData.en.UniversityofMichigan : languageData.jp.UniversityofMichigan
+                    }
                   </option>
                   <option value="New York University">
-                    New York University
+                    {
+                      language === 'en' ? languageData.en.NewYorkUniversity : languageData.jp.NewYorkUniversity
+                    }
                   </option>
 
-                  <option value="Other">Other</option>
+                  <option value="Other">
+                    {
+                      language === 'en' ? languageData.en.other : languageData.jp.other
+                    }
+                  </option>
                 </select>
                 <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                   <ChevronDown className="w-4 h-4 text-slate-400" />
@@ -181,7 +227,7 @@ ${formData.message || "No message provided"}
                   name="customCountry"
                   value={formData.customCountry}
                   onChange={handleInputChange}
-                  placeholder="Enter your preferred University..."
+                  placeholder={language === 'en' ? languageData.en.enterPreferredUniversity : languageData.jp.enterPreferredUniversity}
                   className="mt-3 w-full pl-4 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
                 />
               )}
@@ -190,7 +236,9 @@ ${formData.message || "No message provided"}
             {/* Phone Number */}
             <div>
               <label className="block text-slate-700 font-medium mb-2">
-                Phone Number
+                {
+                  language === 'en' ? languageData.en.phone : languageData.jp.phone
+                }
               </label>
               <div className="relative">
                 <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
@@ -199,7 +247,7 @@ ${formData.message || "No message provided"}
                   name="phoneNumber"
                   value={formData.phoneNumber}
                   onChange={handleInputChange}
-                  placeholder="Enter your phone number..."
+                  placeholder={language === 'en' ? languageData.en.phone : languageData.jp.phone}
                   className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
                 />
               </div>
@@ -210,7 +258,10 @@ ${formData.message || "No message provided"}
             {/* Description Dropdown */}
             <div>
               <label className="block text-slate-700 font-medium mb-2">
-                Your further Degree<span className="text-red-500">*</span>
+                {
+                  language === 'en' ? languageData.en.furtherDegree : languageData.jp.furtherDegree
+                }
+                <span className="text-red-500">*</span>
               </label>
               <div className="relative">
                 <select
@@ -219,10 +270,26 @@ ${formData.message || "No message provided"}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700"
                 >
-                  <option value="">Choose one option...</option>
-                  <option value="Bachleros">Bachleros</option>
-                  <option value="Diploma">Diploma</option>
-                  <option value="Masters">Masters</option>
+                  <option value="">
+                    {
+                      language === 'en' ? languageData.en.chooseOption : languageData.jp.chooseOption
+                    }
+                  </option>
+                  <option value="Bachleros">
+                    {
+                      language === 'en' ? languageData.en.bachelors : languageData.jp.bachelors
+                    }
+                  </option>
+                  <option value="Diploma">
+                    {
+                      language === 'en' ? languageData.en.diploma : languageData.jp.diploma
+                    }
+                  </option>
+                  <option value="Masters">
+                    {
+                      language === 'en' ? languageData.en.masters : languageData.jp.masters
+                    }
+                  </option>
                 </select>
                 <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                   <ChevronDown className="w-4 h-4 text-slate-400" />
@@ -234,7 +301,10 @@ ${formData.message || "No message provided"}
           {/* Message */}
           <div className="mb-6">
             <label className="block text-slate-700 font-medium mb-2">
-              Message<span className="text-red-500">*</span>
+              {
+                language === 'en' ? languageData.en.message : languageData.jp.message
+              }
+              <span className="text-red-500">*</span>
             </label>
             <div className="relative">
               <MessageSquare className="absolute left-4 top-4 w-5 h-5 text-slate-400" />
@@ -242,7 +312,7 @@ ${formData.message || "No message provided"}
                 name="message"
                 value={formData.message}
                 onChange={handleInputChange}
-                placeholder="Enter your message here..."
+                placeholder={language === 'en' ? languageData.en.enterYourMessage : languageData.jp.enterYourMessage}
                 rows="6"
                 className="w-full pl-12 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-400 text-slate-700 resize-none"
               ></textarea>
@@ -255,7 +325,9 @@ ${formData.message || "No message provided"}
               onClick={handleSubmit}
               className="bg-slate-700 hover:bg-slate-800 text-white font-medium px-8 py-3 rounded-lg transition-colors flex items-center gap-2"
             >
-              Submit Form
+              {
+                language === 'en' ? languageData.en.submitForm : languageData.jp.submitForm
+              }
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>

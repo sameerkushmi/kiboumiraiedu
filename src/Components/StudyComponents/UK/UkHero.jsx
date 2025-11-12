@@ -1,13 +1,18 @@
-import React from "react";
+import { useContext } from "react";
 import StudyHero from "../../HelperComponents/StudyHero/StudyHero";
+import { LanguageContext } from "../../../Context/Context";
+import { languageData } from "../../../Hooks/language";
 
 export default function UkHero() {
+
+  const {language} =  useContext(LanguageContext);
+
   return (
     <div>
       <StudyHero
         bgImg="/Uploads/study/uk/uk.webp"
-        title="United Kingdom 🇬🇧"
-        description="Experience prestigious education in the UK, rich history, and global networks. Study in the UK develops personal growth, professional skills, and international exposure."
+        title={language === 'en' ? languageData.en.unitedKingdom + '🇬🇧' : languageData.jp.unitedKingdom + '🇬🇧'}
+        description={language === 'en' ? languageData.en.ukHeroDesc : languageData.jp.ukHeroDesc}
         img="/Uploads/home/hero.avif"
         video="/Uploads/home/hero.mp4"
       />

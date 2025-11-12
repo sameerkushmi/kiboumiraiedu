@@ -1,23 +1,29 @@
+import { useContext } from "react";
 import StudyWhy from "../../HelperComponents/StudyReq/StudyWhy";
+import { LanguageContext } from "../../../Context/Context";
+import { languageData } from "../../../Hooks/language";
 
 export default function WhyUK() {
+
+  const {language} = useContext(LanguageContext)
+
   const ukReasons = [
-    "Home to some of the world’s oldest and most prestigious universities.",
-    "High-quality education recognized globally across multiple disciplines.",
-    "Vibrant international student community from all over the world.",
-    "Opportunities for part-time work and internships during studies.",
-    "Post-study work visa allowing graduates to gain professional experience.",
-    "Rich cultural heritage and modern cities providing a dynamic lifestyle.",
-    "Strong research opportunities and access to cutting-edge facilities.",
-    "Safe and supportive environment for international students.",
-    "Financial support and scholarships for deserving students.",
-    "Excellent networking opportunities and global career prospects.",
+    language === 'en' ? languageData.en.UKWhyReason1 : languageData.jp.UKWhyReason1,
+    language === 'en' ? languageData.en.UKWhyReason2 : languageData.jp.UKWhyReason2,
+    language === 'en' ? languageData.en.UKWhyReason3 : languageData.jp.UKWhyReason3,
+    language === 'en' ? languageData.en.UKWhyReason4 : languageData.jp.UKWhyReason4,
+    language === 'en' ? languageData.en.UKWhyReason5 : languageData.jp.UKWhyReason5,
+    language === 'en' ? languageData.en.UKWhyReason6 : languageData.jp.UKWhyReason6,
+    language === 'en' ? languageData.en.UKWhyReason7 : languageData.jp.UKWhyReason7,
+    language === 'en' ? languageData.en.UKWhyReason8 : languageData.jp.UKWhyReason8,
+    language === 'en' ? languageData.en.UKWhyReason9 : languageData.jp.UKWhyReason9,
+    language === 'en' ? languageData.en.UKWhyReason10 : languageData.jp.UKWhyReason10,
   ];
 
   return (
     <StudyWhy
-      title="Why Choose the UK 🇬🇧"
-      description="The UK is a top destination for higher education and international careers, offering world-class universities, rich culture, and excellent global exposure."
+      title={language === 'en' ? languageData.en.whyChooseUKTitle : languageData.jp.whyChooseUKTitle}
+      description={language === 'en' ? languageData.en.whyChooseUKDesc : languageData.jp.whyChooseUKDesc}
       backgroundImage="/Uploads/study/uk/whyuk.jpg"
       reasons={ukReasons}
     />
