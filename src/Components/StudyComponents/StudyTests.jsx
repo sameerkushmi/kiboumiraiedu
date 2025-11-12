@@ -32,7 +32,7 @@ export default function StudyTests() {
       ],
       duration: language === 'en' ? languageData.en.studyTestDuration_1 : languageData.jp.studyTestDuration_1,
       validity: language === 'en' ? languageData.en.twoYear : languageData.jp.twoYear,
-      whyNeeded:language === 'en' ? languageData.en.studyTestWhyNeeded_1 : languageData.jp.studyTestWhyNeeded_1,
+      whyNeeded: language === 'en' ? languageData.en.studyTestWhyNeeded_1 : languageData.jp.studyTestWhyNeeded_1,
       requiredScores: {
         bachelor: language === 'en' ? languageData.en.studyTestBachelorScore_1 : languageData.jp.studyTestBachelorScore_1,
         master: language === 'en' ? languageData.en.studyTestMasterScore_1 : languageData.jp.studyTestMasterScore_1,
@@ -47,17 +47,20 @@ export default function StudyTests() {
       href: "/tests/pte",
       icon: "🗣️",
       desc: language === 'en' ? languageData.en.studyTestsDesc_2 : languageData.jp.studyTestDesc_2,
-      highlights: ["AI Scoring", "Quick Results", "Widely Accepted"],
-      duration: "2 hours",
-      validity: "2 years",
-      whyNeeded:
-        "PTE Academic uses AI technology for unbiased scoring and delivers results within 48 hours. It's recognized by thousands of institutions globally and is ideal for those seeking quick turnaround times.",
+      highlights: [
+        language === 'en' ? languageData.en.aiScoring : languageData.jp.aiScoring,
+        language === 'en' ? languageData.en.quickResults : languageData.jp.quickResults,
+        language === 'en' ? languageData.en.widelyAccepted : languageData.jp.widelyAccepted,
+      ],
+      duration: language === 'en' ? languageData.en.studyTestDuration_2 : languageData.jp.studyTestDuration_2,
+      validity: language === 'en' ? languageData.en.twoYear : languageData.jp.twoYear,
+      whyNeeded: language === 'en' ? languageData.en.studyTestWhyNeeded_2 : languageData.jp.studyTestWhyNeeded_2,
       requiredScores: {
-        bachelor: "50 - 58 overall (with communicative skills at 50+)",
-        master: "58 - 65 overall (with communicative skills at 58+)",
-        diploma: "42 - 50 overall (with communicative skills at 42+)",
+        bachelor: language === 'en' ? languageData.en.studyTestBachelorScore_2 : languageData.jp.studyTestBachelorScore_2,
+        master: language === 'en' ? languageData.en.studyTestMasterScore_2 : languageData.jp.studyTestMasterScore_2,
+        diploma: language === 'en' ? languageData.en.studyTestDiplomaScore_2 : languageData.jp.studyTestDiplomaScore_2,
       },
-      format: "Computer-based only",
+      format: language === 'en' ? languageData.en.studyTestsFormat_2 : languageData.jp.studyTestsFormat_2,
       cost: "$185 - $210 USD",
     },
     {
@@ -65,18 +68,21 @@ export default function StudyTests() {
       name: "TOEFL",
       href: "/tests/toefl",
       icon: "📚",
-      desc: "The Test of English as a Foreign Language (TOEFL) measures English proficiency for academic purposes, accepted by over 11,000 universities worldwide.",
-      highlights: ["Academic English", "Global Recognition", "Online Test"],
-      duration: "2 hours (iBT)",
-      validity: "2 years",
-      whyNeeded:
-        "TOEFL is specifically designed for academic English and is the preferred test for North American universities. It assesses your ability to understand and use English in university settings.",
+      desc: language === 'en' ? languageData.en.studyTestsDesc_3 : languageData.jp.studyTestsDesc_3,
+      highlights: [
+        language === 'en' ? languageData.en.academicEnglish : languageData.jp.academicEnglish,
+        language === 'en' ? languageData.en.globalRecognition : languageData.jp.globalRecognition,
+        language === 'en' ? languageData.en.onlineTest : languageData.jp.onlineTest,
+      ],
+      duration: `${language === 'en' ? languageData.en.studyTestDuration_2 : languageData.jp.studyTestDuration_2}(iBT)`,
+      validity: language === 'en' ? languageData.en.twoYear : languageData.jp.twoYear,
+      whyNeeded: language === 'en' ? languageData.en.studyTestsWhyNeeded_3 : languageData.jp.studyTestsWhyNeeded_3,
       requiredScores: {
-        bachelor: "70 - 80 overall (with section scores 17+)",
-        master: "85 - 100 overall (with section scores 20+)",
-        diploma: "60 - 70 overall (with section scores 15+)",
+        bachelor: language === 'en' ? languageData.en.studyTestBachelorScore_3 : languageData.jp.studyTestBachelorScore_3,
+        master: language === 'en' ? languageData.en.studyTestMasterScore_3 : languageData.jp.studyTestMasterScore_3,
+        diploma: language === 'en' ? languageData.en.studyTestDiplomaScore_3 : languageData.jp.studyTestDiplomaScore_3,
       },
-      format: "Internet-based (iBT) or Paper-based",
+      format: language === 'en' ? languageData.en.studyTestsFormat_3 : languageData.jp.studyTestsFormat_3,
       cost: "$180 - $300 USD",
     },
     {
@@ -84,18 +90,21 @@ export default function StudyTests() {
       name: "SAT",
       href: "/tests/sat",
       icon: "🧠",
-      desc: "The Scholastic Assessment Test (SAT) evaluates mathematical, reading, and writing abilities, and is a key requirement for many U.S. universities.",
-      highlights: ["Math & English", "College Admissions", "Scholarship Aid"],
-      duration: "3 hours (without essay)",
-      validity: "5 years",
-      whyNeeded:
-        "The SAT is a standardized test for college admissions in the US. High scores can qualify you for merit-based scholarships and demonstrate readiness for college-level coursework.",
+      desc: language === 'en' ? languageData.en.studyTestsDesc_4 : languageData.jp.studyTestsDesc_4,
+      highlights: [
+        language === 'en' ? languageData.en.mathEnglish : languageData.jp.mathEnglish,
+        language === 'en' ? languageData.en.collegeAdmissions : languageData.jp.collegeAdmissions,
+        language === 'en' ? languageData.en.scholarshipAid : languageData.jp.scholarshipAid,
+      ],
+      duration: language === 'en' ? languageData.en.studyTestDuration_4 : languageData.jp.studyTestDuration_4,
+      validity: language === 'en' ? languageData.en.fiveYear : languageData.jp.fiveYear,
+      whyNeeded: language === 'en' ? languageData.en.studyTestsWhyNeeded_4 : languageData.jp.studyTestsWhyNeeded_4,
       requiredScores: {
-        bachelor: "1200 - 1400 (competitive institutions: 1400+)",
-        master: "Not typically required",
+        bachelor: language === 'en' ? languageData.en.studyTestBachelorScore_4 : languageData.jp.studyTestBachelorScore_4,
+        master: language === 'en' ? languageData.en.studyTestMasterScore_4 : languageData.jp.studyTestMasterScore_4,
         diploma: "1000 - 1200",
       },
-      format: "Paper-based or Digital",
+      format: language === 'en' ? languageData.en.studyTestsFormat_4 : languageData.jp.studyTestsFormat_4,
       cost: "$60 USD (without essay), $85 USD (with essay)",
     },
     {
@@ -103,18 +112,21 @@ export default function StudyTests() {
       name: "JLPT (N5–N1)",
       href: "/tests/jlpt",
       icon: "🇯🇵",
-      desc: "The Japanese Language Proficiency Test (JLPT) assesses non-native speakers' Japanese abilities, from beginner (N5) to advanced (N1), and is essential for study or work in Japan.",
-      highlights: ["5 Levels", "Language Proficiency", "Study & Work in Japan"],
-      duration: "105 - 170 minutes (varies by level)",
-      validity: "No expiration",
-      whyNeeded:
-        "JLPT certification is required for academic admissions, employment, and visa applications in Japan. It validates your Japanese language proficiency from basic communication to advanced business-level fluency.",
+      desc: language === 'en' ? languageData.en.studyTestsDesc_5 : languageData.jp.studyTestsDesc_5,
+      highlights: [
+        language === 'en' ? languageData.en.fiveLevels : languageData.jp.fiveLevels,
+        language === 'en' ? languageData.en.languageProficiency : languageData.jp.languageProficiency,
+        language === 'en' ? languageData.en.studyWorkInJapan : languageData.jp.studyWorkInJapan,
+      ],
+      duration: language === 'en' ? languageData.en.studyTestDuration_5 : languageData.jp.studyTestDuration_5,
+      validity: language === 'en' ? languageData.en.noExpiration : languageData.jp.noExpiration,
+      whyNeeded: language === 'en' ? languageData.en.studyTestsWhyNeeded_5 : languageData.jp.studyTestsWhyNeeded_5,
       requiredScores: {
-        bachelor: "N2 level (score 90+/180) - Upper intermediate",
-        master: "N1 level (score 100+/180) - Advanced",
-        diploma: "N3 level (score 95+/180) - Intermediate",
+        bachelor: language === 'en' ? languageData.en.studyTestBachelorScore_5 : languageData.jp.studyTestBachelorScore_5,
+        master: language === 'en' ? languageData.en.studyTestMasterScore_5 : languageData.jp.studyTestMasterScore_5,
+        diploma: language === 'en' ? languageData.en.studyTestDiplomaScore_5 : languageData.jp.studyTestDiplomaScore_5,
       },
-      format: "Paper-based only",
+      format: language === 'en' ? languageData.en.studyTestsFormat_5 : languageData.jp.studyTestsFormat_5,
       cost: "$60 - $80 USD",
     },
   ];
@@ -170,13 +182,16 @@ export default function StudyTests() {
           <h2 className="text-5xl md:text-6xl font-black text-white drop-shadow-2xl flex items-center gap-4 flex-col justify-center">
             <BookOpenCheck size={56} className="text-background" />
             <span className="bg-gradient-to-r from-white via-yellow-100 to-white bg-clip-text text-transparent">
-              Popular Study Tests
+              {
+                language === 'en' ? languageData.en.popularStudyTests : languageData.jp.popularStudyTests
+              }
             </span>
           </h2>
 
           <p className="text-lg md:text-xl max-w-3xl text-gray-100 drop-shadow-lg leading-relaxed">
-            Prepare for globally recognized tests that open doors to top
-            universities and international career opportunities.
+            {
+              language === 'en' ? languageData.en.studyTestsMainDesc : languageData.jp.studyTestsMainDesc
+            }
           </p>
         </div>
 
@@ -293,7 +308,13 @@ export default function StudyTests() {
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-indigo-100">
                 <h4 className="text-xl font-bold text-gray-800 mb-3 flex items-center gap-2">
                   <span className="text-2xl">💡</span>
-                  Why is {selectedTest.name} Needed?
+                  {
+                    language === 'en' ? languageData.en.whyIs : languageData.jp.whyIs
+                  } {selectedTest.name} 
+                  {
+                    language === 'en' ? languageData.en.needed : languageData.jp.needed
+                  }
+                  ?
                 </h4>
                 <p className="text-gray-700 leading-relaxed">
                   {selectedTest.whyNeeded}
@@ -303,7 +324,9 @@ export default function StudyTests() {
               {/* Format */}
               <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
                 <h4 className="font-semibold text-gray-800 mb-2">
-                  Test Format
+                  {
+                    language === 'en' ? languageData.en.testFormat : languageData.jp.testFormat
+                  }
                 </h4>
                 <p className="text-gray-600">{selectedTest.format}</p>
               </div>
@@ -312,14 +335,22 @@ export default function StudyTests() {
               <div>
                 <h4 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
                   <span className="text-2xl">🎯</span>
-                  Required Scores by Program Level
+                  {
+                    language === 'en' ? languageData.en.requiredScoresHeader : languageData.jp.requiredScoresHeader
+                  }
                 </h4>
 
                 <div className="space-y-3">
                   {/* Bachelor's */}
                   <div className="bg-green-50 p-5 rounded-xl border-l-4 border-green-500">
                     <h5 className="font-bold text-green-800 mb-2 flex items-center gap-2">
-                      🎓 Bachelor's Degree
+                      🎓
+                      {
+                        language === 'en' ? languageData.en.bachelors : languageData.jp.bachelors
+                      }
+                      {
+                        language === 'en' ? languageData.en.degree : languageData.jp.degree
+                      }
                     </h5>
                     <p className="text-gray-700">
                       {selectedTest.requiredScores.bachelor}
@@ -329,7 +360,13 @@ export default function StudyTests() {
                   {/* Master's */}
                   <div className="bg-blue-50 p-5 rounded-xl border-l-4 border-blue-500">
                     <h5 className="font-bold text-blue-800 mb-2 flex items-center gap-2">
-                      📚 Master's Degree
+                      📚 
+                      {
+                        language === 'en' ? languageData.en.masters : languageData.jp.masters
+                      }
+                      {
+                        language === 'en' ? languageData.en.degree : languageData.jp.degree
+                      }
                     </h5>
                     <p className="text-gray-700">
                       {selectedTest.requiredScores.master}
@@ -339,7 +376,10 @@ export default function StudyTests() {
                   {/* Diploma */}
                   <div className="bg-amber-50 p-5 rounded-xl border-l-4 border-amber-500">
                     <h5 className="font-bold text-amber-800 mb-2 flex items-center gap-2">
-                      📝 Diploma Programs
+                      📝 
+                      {
+                        language === 'en' ? languageData.en.diplomaProgram : languageData.jp.diplomaProgram
+                      }
                     </h5>
                     <p className="text-gray-700">
                       {selectedTest.requiredScores.diploma}
@@ -351,9 +391,10 @@ export default function StudyTests() {
               {/* Note */}
               <div className="bg-yellow-50 border border-yellow-200 p-4 rounded-xl">
                 <p className="text-sm text-yellow-800">
-                  <strong>Note:</strong> Requirements may vary by institution
-                  and country. Always check specific university requirements
-                  before applying.
+                  <strong>{language === 'en' ? languageData.en.note : languageData.jp.note}</strong> 
+                  {
+                    language === 'en' ? languageData.en.studyTestsNote : languageData.jp.studyTestsNote
+                  }
                 </p>
               </div>
             </div>
