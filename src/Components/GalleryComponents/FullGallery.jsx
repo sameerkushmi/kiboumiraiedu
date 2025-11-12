@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { X, ChevronLeft, ChevronRight, Camera } from "lucide-react";
+import { LanguageContext } from "../../Context/Context";
+import { languageData } from "../../Hooks/language";
 
 // Mock LazyMotionItem component
 const LazyMotionItem = ({ type, src }) => {
+
   if (type === "video") {
     return (
       <video
@@ -56,6 +59,7 @@ const GallerySkeletonGrid = ({ count = 12 }) => {
 };
 
 export default function FullGallery() {
+   const {language} = useContext(LanguageContext)
   const [layoutType] = useState("improved-masonry");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -90,53 +94,53 @@ export default function FullGallery() {
       alt: "Traveling students",
       title: "Journey Abroad",
       type: "image",
-      category: "Academics",
+      category: language === 'en' ? languageData.en.Academics : languageData.jp.Academics ,
     },
     {
       src: "Uploads/Gallery/twi.avif",
       alt: "Traveling students",
       title: "Journey Abroad",
       type: "image",
-      category: "Study",
+      category: language === 'en' ? languageData.en.Study : languageData.jp.Study ,
     },
     {
       src: "Uploads/Gallery/three.avif",
       alt: "Traveling students",
       title: "Journey Abroad",
       type: "image",
-      category: "Holiday",
+      category: language === 'en' ? languageData.en.Holiday : languageData.jp.Holiday ,
     },
     {
       src: "Uploads/Gallery/four.avif",
       alt: "Traveling students",
       title: "Journey Abroad",
       type: "image",
-      category: "Academics",
+      category: language === 'en' ? languageData.en.Academics : languageData.jp.Academics ,
     },
     {
       src: "Uploads/Gallery/five.avif",
       alt: "Traveling students",
       title: "Journey Abroad",
       type: "image",
-      category: "Academics",
+      category: language === 'en' ? languageData.en.Academics : languageData.jp.Academics ,
     },
     {
       src: "Uploads/Gallery/six.avif",
       alt: "Traveling students",
       title: "Journey Abroad",
       type: "image",
-      category: "Academics",
+      category: language === 'en' ? languageData.en.Academics : languageData.jp.Academics ,
     },
   ];
 
   const categories = [
-    "All",
+    language === 'en' ? languageData.en.all : languageData.jp.all,
     ...new Set(mediaFiles.map((file) => file.category)),
   ];
 
   // Filtered files
   const filteredFiles =
-    selectedCategory === "All"
+    selectedCategory === (language === 'en' ? languageData.en.all : languageData.jp.all)
       ? mediaFiles
       : mediaFiles.filter((file) => file.category === selectedCategory);
 
@@ -256,10 +260,14 @@ export default function FullGallery() {
           <div className="text-center py-20">
             <Camera size={32} className="mx-auto text-gray-400 mb-4" />
             <h3 className="text-xl font-semibold text-gray-700 mb-2">
-              No Images Found
+              {
+                language === 'en' ? languageData.en.noImageFound : languageData.jp.noImageFound
+              }
             </h3>
             <p className="text-gray-500">
-              Try refreshing the page or check back later for new content.
+             {
+              language === 'en' ? languageData.en.fullGalleryMainDesc : languageData.jp.fullGalleryMainDesc
+             }
             </p>
           </div>
         )}

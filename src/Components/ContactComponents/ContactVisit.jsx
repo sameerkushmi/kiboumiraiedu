@@ -1,11 +1,15 @@
+import { useContext, useState } from "react";
 import { Mail, MapPin, Phone, Navigation, Check } from "lucide-react";
-import React, { useState } from "react";
+import { LanguageContext } from "../../Context/Context";
+import { languageData } from "../../Hooks/language";
 
 export default function ContactVisit() {
+  const {language} = useContext(LanguageContext)
   const [isMapInteractive, setIsMapInteractive] = useState(false);
   const [phoneCopied, setPhoneCopied] = useState(false);
 
   const copyPhoneToClipboard = async () => {
+
     try {
       await navigator.clipboard.writeText("+977 9860904663");
       setPhoneCopied(true);
@@ -37,12 +41,14 @@ export default function ContactVisit() {
         {/* Content Section - Bottom */}
         <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-6 sm:p-8">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
-            Visit Our Office
+            {
+              language === 'en' ? languageData.en.VisitOurOffice : languageData.jp.VisitOurOffice
+            }
           </h2>
           <p className="text-base text-gray-300 leading-relaxed mb-6">
-            We're located in the heart of Kathmandu — feel free to visit us for
-            counseling, queries, or collaboration. Our team is always happy to
-            assist you.
+           {
+            language === 'en' ? languageData.en.contactVisitMainDesc : languageData.jp.contactVisitMainDesc
+           }
           </p>
 
           {/* Contact Information */}
@@ -93,7 +99,11 @@ export default function ContactVisit() {
             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group"
           >
             <Navigation className="w-5 h-5 group-hover:rotate-45 transition-transform duration-300" />
-            <span>Get Directions</span>
+            <span>
+              {
+                language === 'en' ? languageData.en.GetDirections : languageData.jp.GetDirections
+              }
+            </span>
           </a>
         </div>
       </div>
@@ -127,7 +137,9 @@ export default function ContactVisit() {
               <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-6 py-4 flex items-center gap-3">
                 <Navigation className="w-5 h-5 text-white" />
                 <span className="text-white font-semibold">
-                  Click to interact with map
+                  {
+                    language === 'en' ? languageData.en.Clicktointeractwithmap : languageData.jp.Clicktointeractwithmap
+                  }
                 </span>
               </div>
             </div>
@@ -140,7 +152,11 @@ export default function ContactVisit() {
             onClick={() => setIsMapInteractive(false)}
             className="absolute top-6 right-6 z-20 bg-white/90 hover:bg-white text-gray-800 px-4 py-2 rounded-full shadow-lg font-semibold transition-all duration-300 flex items-center gap-2"
           >
-            <span>Exit Map</span>
+            <span>
+              {
+                language === 'en' ? languageData.en.ExitMap : languageData.jp.ExitMap
+              }
+            </span>
             <svg
               className="w-4 h-4"
               fill="none"
@@ -166,12 +182,14 @@ export default function ContactVisit() {
           {/* Content Card */}
           <div className="bg-black/40 backdrop-blur-md rounded-2xl p-8 border border-white/10 shadow-2xl">
             <h2 className="text-4xl xl:text-5xl font-bold mb-4 text-white">
-              Visit Our Office
+              {
+                language === 'en' ? languageData.en.VisitOurOffice : languageData.jp.VisitOurOffice
+              }
             </h2>
             <p className="text-lg text-gray-200 leading-relaxed mb-8">
-              We're located in the heart of Kathmandu — feel free to visit us
-              for counseling, queries, or collaboration. Our team is always
-              happy to assist you.
+              {
+                language === 'en' ? languageData.en.contactVisitMainDesc : languageData.jp.contactVisitMainDesc
+              }
             </p>
 
             {/* Contact Information */}
@@ -223,7 +241,11 @@ export default function ContactVisit() {
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg transition-all duration-300 flex items-center justify-center gap-2 group"
               >
                 <Navigation className="w-5 h-5 group-hover:rotate-45 transition-transform duration-300" />
-                <span>Get Directions</span>
+                <span>
+                  {
+                    language === 'en' ? languageData.en.GetDirections : languageData.jp.GetDirections
+                  }
+                </span>
               </a>
 
               <button
@@ -231,7 +253,11 @@ export default function ContactVisit() {
                 className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-xl border border-white/30 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 <MapPin className="w-5 h-5" />
-                <span>Explore Map</span>
+                <span>
+                  {
+                    language === 'en' ? languageData.en.exploreMap : languageData.jp.exploreMap
+                  }
+                </span>
               </button>
             </div>
           </div>

@@ -1,118 +1,107 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
 import { Link } from "react-router-dom";
+import { languageData } from "../../Hooks/language";
+import { LanguageContext } from "../../Context/Context";
 
 export default function Question() {
+  const {language} = useContext(LanguageContext)
   const [openIndex, setOpenIndex] = useState(null);
 
-  const faqs = [
-    {
-      number: "01",
-      question: "Which countries can KBM help me apply to?",
-      subtitle: "Study abroad options",
-      answer:
-        "KBM Education Consultancy provides guidance for students and professionals who want to study or work in Japan, USA, Australia, UK, Canada, and other countries.",
-    },
-    {
-      number: "02",
-      question: "What visa types does KBM assist with?",
-      subtitle: "Visa guidance",
-      answer:
-        "We assist with student visas, SSW, TITP, work permits, and other relevant visa categories depending on the destination country.",
-    },
-    {
-      number: "03",
-      question: "How long does the application process take?",
-      subtitle: "Timeline info",
-      answer:
-        "The timeline depends on the country, visa type, and completeness of documents, but our team ensures you stay on track every step of the way.",
-    },
-    {
-      number: "04",
-      question: "Do you provide pre-departure training?",
-      subtitle: "Preparation support",
-      answer:
-        "Yes! KBM provides comprehensive pre-departure sessions, including cultural adaptation, communication tips, and career guidance.",
-    },
-    {
-      number: "05",
-      question: "Is the consultancy only for students?",
-      subtitle: "Eligibility",
-      answer:
-        "No, we also support working professionals seeking international career opportunities and specialized visa programs.",
-    },
-    {
-      number: "06",
-      question: "Can you help with university selection?",
-      subtitle: "University guidance",
-      answer:
-        "Absolutely! We help students choose universities and programs that match their academic background, career goals, and budget.",
-    },
-    {
-      number: "07",
-      question: "Do you provide document verification?",
-      subtitle: "Document assistance",
-      answer:
-        "Yes, our team reviews and verifies all required documents to reduce chances of visa rejection or application delays.",
-    },
-    {
-      number: "08",
-      question: "What is the cost of your services?",
-      subtitle: "Fees and charges",
-      answer:
-        "KBM Education Consultancy offers transparent pricing. Costs vary depending on the country, visa type, and level of service required.",
-    },
-    {
-      number: "09",
-      question: "Do you offer online consultations?",
-      subtitle: "Remote support",
-      answer:
-        "Yes, we provide consultations via Zoom or other platforms for students who cannot visit our office in person.",
-    },
-    {
-      number: "10",
-      question: "Can I track my application progress?",
-      subtitle: "Application tracking",
-      answer:
-        "We provide regular updates and a dedicated point of contact to ensure you know exactly where your application stands.",
-    },
-    {
-      number: "11",
-      question: "Do you help with scholarships?",
-      subtitle: "Financial aid guidance",
-      answer:
-        "Yes! KBM provides guidance on scholarship opportunities, eligibility, and application strategies to reduce financial burden.",
-    },
-    {
-      number: "12",
-      question: "What if my visa is rejected?",
-      subtitle: "Visa support",
-      answer:
-        "We review rejected applications, provide feedback, and help you reapply with stronger documentation and guidance.",
-    },
-    {
-      number: "13",
-      question: "Do you offer career counseling?",
-      subtitle: "Career support",
-      answer:
-        "Yes, our team provides career advice to help students and professionals align their international studies with future job opportunities.",
-    },
-    {
-      number: "14",
-      question: "Are your services personalized?",
-      subtitle: "Tailored guidance",
-      answer:
-        "Every student receives personalized support based on their goals, background, and the specific country they are targeting.",
-    },
-    {
-      number: "15",
-      question: "How do I start my application with KBM?",
-      subtitle: "Getting started",
-      answer:
-        "You can reach out via our website, email, or visit our office. Our team will schedule a consultation and guide you through the first steps.",
-    },
-  ];
+ const faqs = [
+  {
+    number: "01",
+    question: language === 'en' ? languageData.en.QNA1 : languageData.jp.QNA1,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle1 : languageData.jp.questionSubtitle1,
+    answer: language === 'en' ? languageData.en.questionAnswer1 : languageData.jp.questionAnswer1,
+  },
+  {
+    number: "02",
+    question: language === 'en' ? languageData.en.QNA2 : languageData.jp.QNA2,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle2 : languageData.jp.questionSubtitle2,
+    answer: language === 'en' ? languageData.en.questionAnswer2 : languageData.jp.questionAnswer2,
+  },
+  {
+    number: "03",
+    question: language === 'en' ? languageData.en.QNA3 : languageData.jp.QNA3,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle3 : languageData.jp.questionSubtitle3,
+    answer: language === 'en' ? languageData.en.questionAnswer3 : languageData.jp.questionAnswer3,
+  },
+  {
+    number: "04",
+    question: language === 'en' ? languageData.en.QNA4 : languageData.jp.QNA4,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle4 : languageData.jp.questionSubtitle4,
+    answer: language === 'en' ? languageData.en.questionAnswer4 : languageData.jp.questionAnswer4,
+  },
+  {
+    number: "05",
+    question: language === 'en' ? languageData.en.QNA5 : languageData.jp.QNA5,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle5 : languageData.jp.questionSubtitle5,
+    answer: language === 'en' ? languageData.en.questionAnswer5 : languageData.jp.questionAnswer5,
+  },
+  {
+    number: "06",
+    question: language === 'en' ? languageData.en.QNA6 : languageData.jp.QNA6,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle6 : languageData.jp.questionSubtitle6,
+    answer: language === 'en' ? languageData.en.questionAnswer6 : languageData.jp.questionAnswer6,
+  },
+  {
+    number: "07",
+    question: language === 'en' ? languageData.en.QNA7 : languageData.jp.QNA7,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle7 : languageData.jp.questionSubtitle7,
+    answer: language === 'en' ? languageData.en.questionAnswer7 : languageData.jp.questionAnswer7,
+  },
+  {
+    number: "08",
+    question: language === 'en' ? languageData.en.QNA8 : languageData.jp.QNA8,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle8 : languageData.jp.questionSubtitle8,
+    answer: language === 'en' ? languageData.en.questionAnswer8 : languageData.jp.questionAnswer8,
+  },
+  {
+    number: "09",
+    question: language === 'en' ? languageData.en.QNA9 : languageData.jp.QNA9,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle9 : languageData.jp.questionSubtitle9,
+    answer: language === 'en' ? languageData.en.questionAnswer9 : languageData.jp.questionAnswer9,
+  },
+  {
+    number: "10",
+    question: language === 'en' ? languageData.en.QNA10 : languageData.jp.QNA10,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle10 : languageData.jp.questionSubtitle10,
+    answer: language === 'en' ? languageData.en.questionAnswer10 : languageData.jp.questionAnswer10,
+  },
+  {
+    number: "11",
+    question: language === 'en' ? languageData.en.QNA11 : languageData.jp.QNA11,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle11 : languageData.jp.questionSubtitle11,
+    answer: language === 'en' ? languageData.en.questionAnswer11 : languageData.jp.questionAnswer11,
+  },
+  {
+    number: "12",
+    question: language === 'en' ? languageData.en.QNA12 : languageData.jp.QNA12,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle12 : languageData.jp.questionSubtitle12,
+    answer: language === 'en' ? languageData.en.questionAnswer12 : languageData.jp.questionAnswer12,
+  },
+  {
+    number: "13",
+    question: language === 'en' ? languageData.en.QNA13 : languageData.jp.QNA13,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle13 : languageData.jp.questionSubtitle13,
+    answer: language === 'en' ? languageData.en.questionAnswer13 : languageData.jp.questionAnswer13,
+  },
+  {
+    number: "14",
+    question: language === 'en' ? languageData.en.QNA14 : languageData.jp.QNA14,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle14 : languageData.jp.questionSubtitle14,
+    answer: language === 'en' ? languageData.en.questionAnswer14 : languageData.jp.questionAnswer14,
+  },
+  {
+    number: "15",
+    question: language === 'en' ? languageData.en.QNA15 : languageData.jp.QNA15,
+    subtitle: language === 'en' ? languageData.en.questionSubtitle15 : languageData.jp.questionSubtitle15,
+    answer: language === 'en' ? languageData.en.questionAnswer15 : languageData.jp.questionAnswer15,
+  },
+];
+
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -132,11 +121,14 @@ export default function Question() {
               {/* Main heading */}
               <div className="relative z-10">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-                  See Answer to Your Queries
+                  {
+                    language === 'en' ? languageData.en.questionHeader : languageData.jp.questionHeader
+                  }
                 </h1>
                 <p className="text-gray-600 text-base md:text-lg">
-                  Find answers to the most common questions about studying and
-                  working abroad with KBM Education Consultancy.
+                 {
+                  language === 'en' ? languageData.en.questionDesc : languageData.jp.questionDesc
+                 }
                 </p>
               </div>
             </div>

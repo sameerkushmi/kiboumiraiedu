@@ -1,12 +1,17 @@
-import React from "react";
+import { useContext } from "react";
+import { languageData } from "../../Hooks/language";
 import MainHeroHelper from "../HelperComponents/MainHeroHelper";
+import { LanguageContext } from "../../Context/Context";
 
 export default function GalleryHero() {
+
+  const { language } = useContext(LanguageContext)
+
   return (
     <div>
       <MainHeroHelper
-        title="Memories at KBM"
-        description="Take a glimpse into the vibrant life at KBM – from student achievements and events to cultural activities and memorable moments that make our community unique."
+        title={language === 'en' ? languageData.en.MemoriesatKBM : languageData.jp.MemoriesatKBM}
+        description={language === 'en' ? languageData.en.galleryHeroDesc : languageData.jp.galleryHeroDesc}
       />
     </div>
   );

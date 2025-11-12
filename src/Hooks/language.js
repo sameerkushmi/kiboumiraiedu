@@ -1,5 +1,3 @@
-import UKRequirement from "../Components/StudyComponents/UK/UKRequirement";
-
 export const languageData = {
     // english language list
     en: {
@@ -1131,7 +1129,95 @@ export const languageData = {
         QueensUniversity: `Queen's University`,
         UniversityofCalgary: 'University of Calgary',
         YorkUniversity: 'York University',
-        SimonFraserUniversity: 'Simon Fraser University'
+        SimonFraserUniversity: 'Simon Fraser University',
+        MemoriesatKBM: 'Memories at KBM',
+        galleryHeroDesc: `Take a glimpse into the vibrant life at KBM – from student achievements and events to cultural activities and memorable moments that make our community unique.`,
+        Academics: 'Academics',
+        Study: 'Study',
+        Holiday: 'Holiday',
+        all: 'All',
+        noImageFound: 'No Images Found',
+        fullGalleryMainDesc: ' Try refreshing the page or check back later for new content.',
+        FAQ: 'Frequently Asked Questions (FAQ)',
+        faqHeroDesc: `Find answers to the most common questions about studying abroad, visa assistance, and our services.`,
+        questionHeader: 'See Answer to Your Queries',
+        questionDesc: ` Find answers to the most common questions about studying and
+                  working abroad with KBM Education Consultancy.`,
+        QNA1: "Which countries can KBM help me apply to?",
+        questionSubtitle1: "Study abroad options",
+        questionAnswer1: "KBM Education Consultancy provides guidance for students and professionals who want to study or work in Japan, USA, Australia, UK, Canada, and other countries.",
+
+        QNA2: "What visa types does KBM assist with?",
+        questionSubtitle2: "Visa guidance",
+        questionAnswer2: "We assist with student visas, SSW, TITP, work permits, and other relevant visa categories depending on the destination country.",
+
+        QNA3: "How long does the application process take?",
+        questionSubtitle3: "Timeline info",
+        questionAnswer3: "The timeline depends on the country, visa type, and completeness of documents, but our team ensures you stay on track every step of the way.",
+
+        QNA4: "Do you provide pre-departure training?",
+        questionSubtitle4: "Preparation support",
+        questionAnswer4: "Yes! KBM provides comprehensive pre-departure sessions, including cultural adaptation, communication tips, and career guidance.",
+
+        QNA5: "Is the consultancy only for students?",
+        questionSubtitle5: "Eligibility",
+        questionAnswer5: "No, we also support working professionals seeking international career opportunities and specialized visa programs.",
+
+        QNA6: "Can you help with university selection?",
+        questionSubtitle6: "University guidance",
+        questionAnswer6: "Absolutely! We help students choose universities and programs that match their academic background, career goals, and budget.",
+
+        QNA7: "Do you provide document verification?",
+        questionSubtitle7: "Document assistance",
+        questionAnswer7: "Yes, our team reviews and verifies all required documents to reduce chances of visa rejection or application delays.",
+
+        QNA8: "What is the cost of your services?",
+        questionSubtitle8: "Fees and charges",
+        questionAnswer8: "KBM Education Consultancy offers transparent pricing. Costs vary depending on the country, visa type, and level of service required.",
+
+        QNA9: "Do you offer online consultations?",
+        questionSubtitle9: "Remote support",
+        questionAnswer9: "Yes, we provide consultations via Zoom or other platforms for students who cannot visit our office in person.",
+
+        QNA10: "Can I track my application progress?",
+        questionSubtitle10: "Application tracking",
+        questionAnswer10: "We provide regular updates and a dedicated point of contact to ensure you know exactly where your application stands.",
+
+        QNA11: "Do you help with scholarships?",
+        questionSubtitle11: "Financial aid guidance",
+        questionAnswer11: "Yes! KBM provides guidance on scholarship opportunities, eligibility, and application strategies to reduce financial burden.",
+
+        QNA12: "What if my visa is rejected?",
+        questionSubtitle12: "Visa support",
+        questionAnswer12: "We review rejected applications, provide feedback, and help you reapply with stronger documentation and guidance.",
+
+        QNA13: "Do you offer career counseling?",
+        questionSubtitle13: "Career support",
+        questionAnswer13: "Yes, our team provides career advice to help students and professionals align their international studies with future job opportunities.",
+
+        QNA14: "Are your services personalized?",
+        questionSubtitle14: "Tailored guidance",
+        questionAnswer14: "Every student receives personalized support based on their goals, background, and the specific country they are targeting.",
+
+        QNA15: "How do I start my application with KBM?",
+        questionSubtitle15: "Getting started",
+        questionAnswer15: "You can reach out via our website, email, or visit our office. Our team will schedule a consultation and guide you through the first steps.",
+        contactHeroDesc: `Have questions or need guidance? Reach out to our team for personalized support on study abroad programs, admissions, and student services. We're here to help you every step of the way.`,
+        contactFormHeader: `Let's Get In Touch`,
+        copiedtoclipboard: `Copied to clipboard!`,
+        or: 'OR',
+        InquiryPurpose: 'Inquiry Purpose',
+        OneonOneConunselling: 'One-on-One Conunselling',
+        CourseInquiry: 'Course Inquiry',
+        VisaPreperation : 'Visa Preperation',
+        VisitOurOffice: 'Visit Our Office',
+        contactVisitMainDesc: ` We're located in the heart of Kathmandu — feel free to visit us for
+                                counseling, queries, or collaboration. Our team is always happy to
+                                assist you.`,
+        GetDirections: 'Get Directions',
+        exploreMap : 'Explore Map',
+        ExitMap: 'Exit Map',
+        Clicktointeractwithmap: 'Click to interact with map'
     },
     // japanese language list
     jp: {
@@ -2130,9 +2216,96 @@ export const languageData = {
         UniversityofAlberta: 'アルバータ大学',
         UniversityofWaterloo: 'ウォータールー大学',
         WesternUniversity: 'ウェスタン大学',
-        QueensUniversity : 'クイーンズ大学',
+        QueensUniversity: 'クイーンズ大学',
         UniversityofCalgary: 'カルガリー大学',
         YorkUniversity: 'ヨーク大学',
-        SimonFraserUniversity: 'サイモン・フレイザー大学'
+        SimonFraserUniversity: 'サイモン・フレイザー大学',
+        MemoriesatKBM: 'KBMでの思い出',
+        galleryHeroDesc: `学生の成果やイベントから、私たちのコミュニティをユニークにする文化活動や思い出に残る瞬間まで、KBM での活気ある生活を垣間見てみましょう。`,
+        Academics: '学術',
+        Study: '勉強',
+        Holiday: '休日',
+        all: '全て',
+        noImageFound: '画像が見つかりません',
+        fullGalleryMainDesc: 'ページを更新するか、後で新しいコンテンツを確認してください。',
+        FAQ: 'よくある質問（FAQ）',
+        faqHeroDesc: '留学、ビザサポート、当社のサービスに関するよくある質問への回答をご覧ください。',
+        questionHeader: '質問への回答を見る',
+        questionDesc: 'KBM教育コンサルタントが、海外留学や就労に関するよくある質問への回答をお届けします。',
+        QNA1: "KBMはどの国への申請をサポートしていますか？",
+        questionSubtitle1: "留学先の選択肢",
+        questionAnswer1: "KBM教育コンサルタントは、日本、アメリカ、オーストラリア、イギリス、カナダなど、世界各国での留学・就労を希望する学生や社会人をサポートしています。",
+
+        QNA2: "KBMはどの種類のビザ申請を支援していますか？",
+        questionSubtitle2: "ビザサポート",
+        questionAnswer2: "私たちは、学生ビザ、SSW、TITP、就労許可証など、目的国に応じたさまざまなビザカテゴリーの申請をサポートしています。",
+
+        QNA3: "申請プロセスにはどのくらい時間がかかりますか？",
+        questionSubtitle3: "手続きの期間",
+        questionAnswer3: "国やビザの種類、書類の準備状況によって異なりますが、KBMのチームがすべてのステップでスムーズに進められるようサポートします。",
+
+        QNA4: "出発前トレーニングはありますか？",
+        questionSubtitle4: "準備サポート",
+        questionAnswer4: "はい！KBMでは、文化適応、コミュニケーションスキル、キャリアガイダンスを含む包括的な出発前オリエンテーションを実施しています。",
+
+        QNA5: "このコンサルタントは学生専用ですか？",
+        questionSubtitle5: "対象者について",
+        questionAnswer5: "いいえ。私たちは、国際的なキャリアチャンスや特別なビザプログラムを希望する社会人の方々にもサポートを提供しています。",
+
+        QNA6: "大学選びのサポートはありますか？",
+        questionSubtitle6: "大学選択の支援",
+        questionAnswer6: "もちろんです！学生の学歴、キャリア目標、予算に合わせて最適な大学やプログラムを選ぶお手伝いをします。",
+
+        QNA7: "書類の確認サービスはありますか？",
+        questionSubtitle7: "書類サポート",
+        questionAnswer7: "はい、当社のチームが必要な書類を確認・検証し、ビザ却下や申請遅延のリスクを最小限に抑えます。",
+
+        QNA8: "サービス料金はいくらですか？",
+        questionSubtitle8: "料金と費用",
+        questionAnswer8: "KBM教育コンサルタントは透明な料金体系を採用しています。料金は国、ビザの種類、サポートレベルによって異なります。",
+
+        QNA9: "オンラインで相談できますか？",
+        questionSubtitle9: "リモートサポート",
+        questionAnswer9: "はい、対面が難しい方のために、Zoomなどのオンラインプラットフォームを通じて相談を受け付けています。",
+
+        QNA10: "申請の進捗を確認できますか？",
+        questionSubtitle10: "進捗追跡",
+        questionAnswer10: "定期的な更新と専任の担当者を通じて、申請の進捗状況を常に把握できるようにしています。",
+
+        QNA11: "奨学金のサポートはありますか？",
+        questionSubtitle11: "経済的支援",
+        questionAnswer11: "はい！KBMは奨学金の機会、応募資格、申請方法についてアドバイスし、経済的負担を軽減するお手伝いをします。",
+
+        QNA12: "ビザが拒否された場合はどうなりますか？",
+        questionSubtitle12: "ビザ再申請サポート",
+        questionAnswer12: "拒否された申請を見直し、改善点をアドバイスし、より強力な書類で再申請をサポートします。",
+
+        QNA13: "キャリアカウンセリングは提供していますか？",
+        questionSubtitle13: "キャリアサポート",
+        questionAnswer13: "はい、留学や国際的な学びを将来のキャリアに結びつけるためのアドバイスを提供しています。",
+
+        QNA14: "サービスは個別対応ですか？",
+        questionSubtitle14: "パーソナライズ支援",
+        questionAnswer14: "はい、学生一人ひとりの目標や背景、希望する国に合わせた個別サポートを提供します。",
+
+        QNA15: "KBMへの申請を始めるにはどうすればよいですか？",
+        questionSubtitle15: "申し込み方法",
+        questionAnswer15: "当社のウェブサイト、メール、またはオフィスへの来訪を通じてご連絡ください。相談を予約し、最初のステップから丁寧にご案内いたします。",
+        contactHeroDesc: 'ご質問やご相談はお気軽にお問い合わせください。留学プログラム、入学手続き、学生サービスなど、個別サポートをご提供いたします。私たちは、あらゆる段階であなたをサポートします。',
+        contactFormHeader: '連絡を取りましょう',
+        copiedtoclipboard: 'クリップボードにコピーされました!',
+        or : 'または',
+        InquiryPurpose:'お問い合わせの目的',
+        OneonOneConunselling: 'マンツーマンカウンセリング',
+        CourseInquiry: 'コースのお問い合わせ',
+        VisaPreperation: 'ビザの準備',
+        VisitOurOffice: '私たちのオフィスを訪問してください',
+        contactVisitMainDesc: `カトマンズの中心部に位置していますので、お気軽にお越しください。
+                                カウンセリング、ご質問、コラボレーションなど、お気軽にご相談ください。
+                                チームはいつでも喜んでお手伝いいたします。`,
+        GetDirections: '道順を調べる',
+        exploreMap: '探索マップ',
+        ExitMap: '出口マップ',
+        Clicktointeractwithmap: 'クリックして地図を操作します'
     }
 }
