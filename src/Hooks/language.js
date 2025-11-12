@@ -1,5 +1,5 @@
 
-export  const languageData = {
+export const languageData = {
     // english language list
     en: {
         home: "Home",
@@ -18,7 +18,7 @@ export  const languageData = {
         successStories: 'Success Stories',
         testimonials: 'Testimonials',
         ourServices: 'Our Services',
-        comprehensiveSolutions:'Comprehensive solutions to help you achieve your academic and career goals abroad.',
+        comprehensiveSolutions: 'Comprehensive solutions to help you achieve your academic and career goals abroad.',
         viewServices: 'View All Services',
         counseling: 'Counseling',
         careerCounseling: 'Career Counseling',
@@ -36,7 +36,7 @@ export  const languageData = {
         studyinUSA: 'Study in USA',
         studyinCanada: 'Study in Canada',
         exploreMore: 'Explore More',
-        discoveradditionalresources:'Discover additional resources, support, and information to help you succeed.',
+        discoveradditionalresources: 'Discover additional resources, support, and information to help you succeed.',
         resources: 'Resources',
         gallery: 'Gallery',
         FAQ: 'FAQ',
@@ -45,14 +45,14 @@ export  const languageData = {
         yourGlobalPathway: 'Your Global Pathway',
         educationCareer: 'to Education & Career',
         homeHeroDesc: " We help students and professionals achieve their dreams abroad whether it's Japan, USA, Australia, UK, Canada, or other countries. From visas and documentation to pre-departure guidance and cultural adaptation, we support you at every step of your international journey.",
-        weareKBM : " We're KBM Education Consultancy Pvt. Ltd.",
-        para_1_KBM : `At KBM Education Consultancy, we guide students toward achieving
+        weareKBM: " We're KBM Education Consultancy Pvt. Ltd.",
+        para_1_KBM: `At KBM Education Consultancy, we guide students toward achieving
                     .their academic and career aspirations in Japan, USA, Australia,
                     UK, Canada, and other countries. With a focus on personalized
                     mentorship, practical guidance, and up-to-date industry insights,
                     we ensure every student is fully prepared for their international
                     journey`,
-        para_2_KBM : `Our dedicated team works closely with each student, providing
+        para_2_KBM: `Our dedicated team works closely with each student, providing
                     end-to-end support — from understanding visa requirements to
                     navigating educational pathways and career opportunities. At KBM,
                     your success is our priority, and we empower you to make informed
@@ -61,16 +61,16 @@ export  const languageData = {
         homeServicesPara_1: `KBM Education Consultancy helps students and professionals achieve
                             their dreams abroad. We provide visa assistance, mentorship, and
                             career guidance for Japan, USA, Australia, UK, Canada, and more.`,
-        careerStudyCounseling : 'Personalized Career & Study Counseling',
+        careerStudyCounseling: 'Personalized Career & Study Counseling',
         guidance: 'Guidance',
         careerPlanning: 'Career Planning',
         homeServicesPara_2: 'We provide one-on-one counseling sessions to help students choose the right country, university, and course based on their academic background and career goals. Our experienced counselors ensure you make informed decisions for your future abroad.',
         documentation: 'Documentation',
         documentPreparation: 'Document Preparation & Application Support',
-        SOP:'SOP',
+        SOP: 'SOP',
         financialDocuments: 'Financial Documents',
         applicationForms: 'Application Forms',
-        homeServicesPara_3 : 'From preparing your Statement of Purpose to organizing financial and academic documents, our team ensures that every paper meets embassy and university standards. We guide you through every step of the application process with accuracy and care.',
+        homeServicesPara_3: 'From preparing your Statement of Purpose to organizing financial and academic documents, our team ensures that every paper meets embassy and university standards. We guide you through every step of the application process with accuracy and care.',
         visaProcessing: 'Visa Processing',
         visaInterview: 'Visa Application & Interview Preparation',
         visaFiling: 'Visa Filing',
@@ -82,11 +82,11 @@ export  const languageData = {
         seeMoreStories: 'See More Stories',
         transformingFutures: 'Transforming Futures',
         homeTestimonialHeader: 'Hear What Our Students Say About KBM',
-        visaGranted : 'Visa Granted to',
+        visaGranted: 'Visa Granted to',
         australia: 'Australia',
         satisfiedStudents: '1000+ Satisfied Students from KBM',
         viewAllReviews: 'View All Reviews',
-        AaravSharma : 'Aarav Sharma',
+        AaravSharma: 'Aarav Sharma',
         studentJapan: 'Student – Japan',
         homeTestimonialsQuote_1: `KBM Education Consultancy made my journey to Japan completely 
                                 stress-free. From guiding me through the visa interview process to 
@@ -98,7 +98,7 @@ export  const languageData = {
                                 start my academic journey smoothly and settle into a new culture without worry.`,
         priyaKarki: 'Priya Karki',
         undergraduateStudentAustralia: 'Undergraduate Student – Australia',
-        homeTestimonialsQuote_2:`Getting my Australian student visa was one of the happiest moments of 
+        homeTestimonialsQuote_2: `Getting my Australian student visa was one of the happiest moments of 
                                 my life! KBM guided me from course selection to post-arrival assistance.
                                 Their team stayed in touch even after I landed in Sydney, making me feel
                                 like part of a family.`,
@@ -116,17 +116,17 @@ export  const languageData = {
                                 professionalism and care are unmatched.`,
         LetStart: `Let's Start a`,
         conversation: 'Conversation',
-        homeContactPara:`Have a question or project in mind? We'd love to hear from you.
+        homeContactPara: `Have a question or project in mind? We'd love to hear from you.
                         Reach out and let's create something amazing together.`,
-        phone:'Phone',
+        phone: 'Phone',
         email: 'Email',
-        location : 'Location',
+        location: 'Location',
         fullName: 'Full Name',
         johnDoe: 'John Doe',
         emailAddress: 'Email Address',
         emailExample: 'john@example.com',
         number: 'Number',
-        inquiryType:'Inquiry Type',
+        inquiryType: 'Inquiry Type',
         selectoption: 'Select an option',
         generalInquiry: 'General Inquiry',
         visaProcessing: 'Visa Processing',
@@ -144,7 +144,7 @@ export  const languageData = {
                     successful.`,
         letsConnect: 'Let’s Connect',
         scanToConnect: 'Scan to Connect',
-        index : 'Index',
+        index: 'Index',
         joinUs: 'JOIN US',
         privacyPolicy: 'PRIVACY POLICY',
         termServices: 'TERM & SERVICES',
@@ -178,8 +178,8 @@ export  const languageData = {
                         one-on-one counseling sessions to help you choose the right
                         destination, course, and institution that aligns with your
                         goals.`,
-         experiencedIndustryExperts: ' Experienced Industry Experts',
-         abooutWhyCardPara_2: `Our team of seasoned counselors and education experts bring
+        experiencedIndustryExperts: ' Experienced Industry Experts',
+        abooutWhyCardPara_2: `Our team of seasoned counselors and education experts bring
                 years of experience guiding students to top universities in
                 Japan, Australia, the UK, the USA, and Canada.`,
         transparentProcess: 'Transparent Process',
@@ -193,7 +193,7 @@ export  const languageData = {
         aboutWhyCTA: 'Discover how KBM can guide your study abroad journey',
         aboutTeamHeader: 'Who’s Behind Your Success?',
         at: 'At',
-        aboutTeamPara_1:`, our team of experienced counsellors, academic advisors, and
+        aboutTeamPara_1: `, our team of experienced counsellors, academic advisors, and
                         international education experts are dedicated to helping you achieve
                         your study abroad dreams. Each of our professionals brings years of
                         experience in guiding students toward the right universities and
@@ -218,7 +218,7 @@ export  const languageData = {
         previous: 'Previous',
         next: 'Next',
         sumanTamang: 'Suman Tamang',
-        CEOFounder : 'CEO & Founder',
+        CEOFounder: 'CEO & Founder',
         teamPara_3: `As the visionary behind KBM Education Consultancy, Suman Tamang has guided hundreds
                     of students toward achieving their study abroad dreams. With a deep understanding of 
                     international education systems and years of leadership experience, he ensures that every 
@@ -239,7 +239,7 @@ export  const languageData = {
                     student feels welcomed and guided from the moment they walk in. With a friendly 
                     approach and excellent communication skills, they assist with inquiries, 
                     appointments, and initial counseling coordination.",`,
-        languageInstructor:`Language Instructor`,
+        languageInstructor: `Language Instructor`,
         teamPara_7: `Our experienced Language Instructor provides comprehensive training for Japanese, 
                     English, and other language proficiency exams. With an engaging and supportive teaching style, 
                     they prepare students not only to pass tests but also to communicate confidently in their new 
@@ -295,7 +295,7 @@ export  const languageData = {
         aboutSubWhyDesc_1: `With over a decade of experience, our consultancy has guided hundreds of 
                             students and professionals toward successful academic and career outcomes both locally and 
                             internationally.`,
-        aboutSubWhyTitle_2 : 'Personalized Guidance',
+        aboutSubWhyTitle_2: 'Personalized Guidance',
         aboutSubWhyDesc_2: `We believe every individual’s journey is unique. Our counselors provide tailored
                             advice based on your goals, background, and aspirations to help you make the best
                             decisions for your future.`,
@@ -330,7 +330,7 @@ export  const languageData = {
         testimonialsHeader: 'What Do Our Students Say?',
         testimonialsDesc: `Hear from our students who experienced personal growth,
                         practical learning, and success through our programs.`,
-        testimonialsName_1 : 'Aarav Sharma',
+        testimonialsName_1: 'Aarav Sharma',
         testimonialsquote_1: `Thanks to KBM Education Consultancy, I’m now pursuing my IT degree in Japan.
                             From university selection to post-arrival guidance, they supported me like family.
                             Their constant communication after my visa approval made me feel secure and confident.`,
@@ -453,7 +453,7 @@ export  const languageData = {
         ourServicesInterviewPrepOffer_4: 'Training on required documents and interview etiquette',
         ourServicesInterviewPrepOffer_5: 'Cultural briefing for country-specific interviews',
         ourServicesTitle_7: 'Pre-departure Orientation',
-        ourServicesDesc_7:`Before you board your flight, we ensure you’re well-prepared for the journey 
+        ourServicesDesc_7: `Before you board your flight, we ensure you’re well-prepared for the journey 
                         ahead. Our pre-departure session covers essential travel tips, cultural 
                         guidance, financial management advice, and what to expect during your first 
                         few weeks abroad. It helps you transition smoothly into your new environment.`,
@@ -507,7 +507,7 @@ export  const languageData = {
         workFlowDesc_3: `We provide guidance for language and eligibility tests such as IELTS, TOEFL, 
                         JLPT, or country-specific exams, to ensure you meet visa and admission requirements.`,
         workFlowTitle_4: 'University & Program Selection',
-        workFlowDesc_4 : `We shortlist the best universities and programs across Japan, Australia, UK, 
+        workFlowDesc_4: `We shortlist the best universities and programs across Japan, Australia, UK, 
                         US, and Canada based on your budget, preferences, and scholarship opportunities.`,
         workFlowTitle_5: 'Visa Documentation Assistance',
         workFlowDesc_5: `Our experts guide you in preparing, verifying, and submitting all documents 
@@ -564,7 +564,7 @@ export  const languageData = {
                         wisely, students can reduce financial stress, make informed decisions, and explore ways to fund their 
                         education efficiently.`,
         benefitHeader: 'Benefits of Counselling',
-        benefitDesc : `Counselling empowers you to understand yourself better, make informed decisions, and overcome challenges 
+        benefitDesc: `Counselling empowers you to understand yourself better, make informed decisions, and overcome challenges 
                     with confidence. It helps improve focus, reduce stress, and enhance personal and professional growth. By 
                     providing guidance, support, and clarity, counselling enables you to achieve your goals, explore new 
                     opportunities, and build a successful and fulfilling future.`,
@@ -604,9 +604,9 @@ export  const languageData = {
         preferredCountry: 'Preferred Country',
         selectYourCountry: 'Select your preferred country...',
         selectYourUniversity: 'Select your preferred university...',
-        USA : 'USA',
-        UK : 'UK',
-        canada : 'Canada',
+        USA: 'USA',
+        UK: 'UK',
+        canada: 'Canada',
         japan: 'Japan',
         korea: 'Korea',
         preferredUniversity: 'Preferred University',
@@ -622,9 +622,9 @@ export  const languageData = {
         no: 'No',
         testTaken: 'Test Taken',
         yourScore: ' Your Score',
-        enterYourScore :'Enter your score...',
+        enterYourScore: 'Enter your score...',
         whichTestYouplanTake: 'Which test do you plan to take?',
-        additionalMessage: 'Additional Message / Notes' ,
+        additionalMessage: 'Additional Message / Notes',
         submitForm: 'Submit Form',
         uniSelheroTitle: 'Our Partner Universities',
         uniSelheroDesc: `Explore our global network of partner universities to find the perfect fit for your academic journey.`,
@@ -707,17 +707,17 @@ export  const languageData = {
         docTypesTitle_1_details_3: 'Credential evaluation reports for international qualifications',
         docTypesTitle_1_details_4: 'Grade conversion documents where required by the destination country',
         docTypesTitle_2: 'Language Proficiency Certificates (IELTS, JLPT, TOEFL)',
-        docTypesDesc_2:'Our team guides you in obtaining and submitting valid language certificates required for your chosen country.',
-        docTypesTitle_2_details_1:'translate to japanes = IELTS for English-speaking countries (minimum band requirements vary)' ,
-        docTypesTitle_2_details_2:'JLPT (N5-N1) for Japanese language programs and universities', 
-        docTypesTitle_2_details_3:'TOEFL iBT for US and Canadian institutions', 
-        docTypesTitle_2_details_4:'Other accepted tests like PTE, Duolingo English Test, or institution-specific exams"',
-        docTypesDesc_3: 'From sponsor letters to bank statements, we ensure your financial proofs meet official formats and criteria.' ,
-        docTypesTitle_3_details_1:'Bank statements covering 6-12 months showing sufficient funds',
-        docTypesTitle_3_details_2:'Sponsor letters from parents or guardians with income proof',
-        docTypesTitle_3_details_3:'Property documents, fixed deposits, or investment certificates',
-        docTypesTitle_3_details_4:'Scholarship award letters or financial aid documentation',
-        docTypesTitle_3_details_5:'Tax returns and employment letters of sponsors',
+        docTypesDesc_2: 'Our team guides you in obtaining and submitting valid language certificates required for your chosen country.',
+        docTypesTitle_2_details_1: 'translate to japanes = IELTS for English-speaking countries (minimum band requirements vary)',
+        docTypesTitle_2_details_2: 'JLPT (N5-N1) for Japanese language programs and universities',
+        docTypesTitle_2_details_3: 'TOEFL iBT for US and Canadian institutions',
+        docTypesTitle_2_details_4: 'Other accepted tests like PTE, Duolingo English Test, or institution-specific exams"',
+        docTypesDesc_3: 'From sponsor letters to bank statements, we ensure your financial proofs meet official formats and criteria.',
+        docTypesTitle_3_details_1: 'Bank statements covering 6-12 months showing sufficient funds',
+        docTypesTitle_3_details_2: 'Sponsor letters from parents or guardians with income proof',
+        docTypesTitle_3_details_3: 'Property documents, fixed deposits, or investment certificates',
+        docTypesTitle_3_details_4: 'Scholarship award letters or financial aid documentation',
+        docTypesTitle_3_details_5: 'Tax returns and employment letters of sponsors',
         docTypesTitle_4: 'Statement of Purpose (SOP) & Recommendation Letters',
         docTypesDesc_4: `Get expert help in crafting a strong SOP and professional recommendation letters to strengthen your application.`,
         docTypesTitle_4_details_1: 'Personalized SOP highlighting your academic goals and career aspirations',
@@ -740,7 +740,7 @@ export  const languageData = {
         docTypesTitle_6_details_4: 'Tracking and follow-up until COE is received',
         docTypesTitle_6_details_5: 'Assistance with visa application after COE approval',
         passportIDVerification: 'Passport & ID Verification',
-        docTypesDesc_7:'We review your passport and ID documents to ensure validity and compliance with embassy standards.',
+        docTypesDesc_7: 'We review your passport and ID documents to ensure validity and compliance with embassy standards.',
         docTypesTitle_7_details_1: 'Passport validity check (must be valid for at least 6 months beyond travel date)',
         docTypesTitle_7_details_2: 'Verification of personal information accuracy across all documents',
         docTypesTitle_7_details_3: 'National ID cards, birth certificates, and citizenship documents',
@@ -749,7 +749,7 @@ export  const languageData = {
         whatsIncluded: `What's Included`,
         docTypesNeedHelp: `Need help with this document? Our team provides personalized guidance and verification services.`,
         needHelpwithDocuments: 'Need help with your documents?',
-        contactOurPersonalizedDocumentation: 'Contact our experts for personalized documentation support' ,
+        contactOurPersonalizedDocumentation: 'Contact our experts for personalized documentation support',
         getStarted: 'Get Started',
         ourDocumentationProcess: 'Our Documentation Process',
         DocProcessDesc: `A clear, step-by-step workflow designed to make your documentation
@@ -776,7 +776,7 @@ export  const languageData = {
         courseHeroDesc: `Unlock your potential in technology! Our computer courses are designed for beginners and professionals 
                         who want to master practical computer skills, coding, and IT tools step by step.`,
         // courseSection tranlate
-        courseSectionHeader : 'Our Best Courses',
+        courseSectionHeader: 'Our Best Courses',
         courseSectionMainDesc: ' Master computers. Build skills. Shape your future.',
         basicCourse: 'Basic Course',
         advanceOfficePackage: 'Advance Office Package',
@@ -817,13 +817,13 @@ export  const languageData = {
         computerTrainingForm: 'Computer Training Form',
         age: 'Age',
         enterYourAge: 'Enter your Age here...',
-        gender:'Gender',
+        gender: 'Gender',
         male: 'Male',
         female: 'Female',
         courses: 'Courses',
         additionalQue: 'Enter any additional details or questions...',
         studyHeroheader: 'Your Global Education Journey',
-        japanHeroDescription : 'Experience world-class education in Japan while enjoying a vibrant culture, advanced technology, and unique traditions. Study in Japan offers students personal growth, career opportunities, and an unforgettable international experience.',
+        japanHeroDescription: 'Experience world-class education in Japan while enjoying a vibrant culture, advanced technology, and unique traditions. Study in Japan offers students personal growth, career opportunities, and an unforgettable international experience.',
         japanRequirementTitle: 'Requirement to Study in Japan',
         japanRequirementSubTitle: 'Understand all key requirements before applying for your Japanese student visa.',
         japanEducationalRequirement: 'Educational Requirements',
@@ -887,13 +887,13 @@ export  const languageData = {
                                 scholarships, and career opportunities in one of Asia's most advanced nations.`,
         teachLeader: 'Tech Leader',
         scholarships: 'Scholarships',
-        richCulture:'Rich Culture',
-        studyDestinationDesc_6:'South Korea combines cutting-edge innovation, affordable tuition, and a vibrant culture, making it a fast-rising destination for international learners.',
+        richCulture: 'Rich Culture',
+        studyDestinationDesc_6: 'South Korea combines cutting-edge innovation, affordable tuition, and a vibrant culture, making it a fast-rising destination for international learners.',
         KInnovation: 'K-Innovation',
         affordable: 'Affordable',
-        dynamicCulture:'Dynamic Culture',
+        dynamicCulture: 'Dynamic Culture',
         studyTestDesc_1: 'The International English Language Testing System (IELTS) is one of the most popular English proficiency exams accepted globally for study, migration, and work.',
-        listening : 'Listening',
+        listening: 'Listening',
         reading: 'Reading',
         wrinting: 'Writing',
         speaking: 'Speaking',
@@ -924,7 +924,7 @@ export  const languageData = {
         studyTestDiplomaScore_3: '60 - 70 overall (with section scores 15+)',
         studyTestsFormat_3: 'Internet-based (iBT) or Paper-based',
         studyTestsDesc_4: 'The Scholastic Assessment Test (SAT) evaluates mathematical, reading, and writing abilities, and is a key requirement for many U.S. universities.',
-        mathEnglish : 'Math & English',
+        mathEnglish: 'Math & English',
         collegeAdmissions: 'College Admissions',
         scholarshipAid: 'Scholarship Aid',
         studyTestDuration_4: '3 hours (without essay)',
@@ -933,16 +933,16 @@ export  const languageData = {
         studyTestBachelorScore_4: '1200 - 1400 (competitive institutions: 1400+)',
         studyTestMasterScore_4: 'Not typically required',
         studyTestsFormat_4: 'Paper-based or Digital',
-        studyTestsDesc_5:`The Japanese Language Proficiency Test (JLPT) assesses non-native speakers' Japanese abilities, from beginner (N5) to advanced (N1), and is essential for study or work in Japan.`,
+        studyTestsDesc_5: `The Japanese Language Proficiency Test (JLPT) assesses non-native speakers' Japanese abilities, from beginner (N5) to advanced (N1), and is essential for study or work in Japan.`,
         fiveLevels: '5 Levels',
         languageProficiency: 'Language Proficiency',
         studyWorkInJapan: 'Study & Work in Japan',
         studyTestDuration_5: '105 - 170 minutes (varies by level)',
         noExpiration: 'No Expiration',
-        studyTestsWhyNeeded_5:'JLPT certification is required for academic admissions, employment, and visa applications in Japan. It validates your Japanese language proficiency from basic communication to advanced business-level fluency.',
+        studyTestsWhyNeeded_5: 'JLPT certification is required for academic admissions, employment, and visa applications in Japan. It validates your Japanese language proficiency from basic communication to advanced business-level fluency.',
         studyTestBachelorScore_5: 'N2 level (score 90+/180) - Upper intermediate',
         studyTestMasterScore_5: 'N1 level (score 100+/180) - Advanced',
-        studyTestDiplomaScore_5:  'N3 level (score 95+/180) - Intermediate',
+        studyTestDiplomaScore_5: 'N3 level (score 95+/180) - Intermediate',
         studyTestsFormat_5: 'Paper-based only',
         popularStudyTests: 'Popular Study Tests',
         studyTestsMainDesc: 'Prepare for globally recognized tests that open doors to top universities and international career opportunities.',
@@ -952,10 +952,10 @@ export  const languageData = {
         requiredScoresHeader: 'Required Scores by Program Level',
         degree: 'Degree',
         diplomaProgram: 'Diploma Program',
-        studyTestsNote : `Requirements may vary by institution and country. Always check specific university requirements
+        studyTestsNote: `Requirements may vary by institution and country. Always check specific university requirements
                         before applying.`,
         note: 'Note:',
-        fillOurtForm : 'Fill Out the Form Below',
+        fillOurtForm: 'Fill Out the Form Below',
         preferredCourseStream: 'Preferred Course Stream',
         enterpreferredCourseStream: 'Enter preferred course stream...',
         UniversityOfTokyo: 'The University of Tokyo',
@@ -969,7 +969,28 @@ export  const languageData = {
         tokyoInstituteOfTechnology: 'Tokyo Institute of Technology',
         chooseOption: 'Choose an option',
         enterYourMessage: 'Enter your message here...',
-        ausHeroDesc: '`Experience top-quality education in Australia with diverse culture, innovative learning, and beautiful landscapes. Study in Australia fosters personal growth, global exposure, and career opportunities.'
+        ausHeroDesc: '`Experience top-quality education in Australia with diverse culture, innovative learning, and beautiful landscapes. Study in Australia fosters personal growth, global exposure, and career opportunities.',
+        ausRequirementTitle: 'Requirement to Study in Australia',
+        ausRequirementSubTitle: `Find out what you need to apply for your Australian student visa and start your studies in one of the world's best education systems.`,
+        ausRequirementContent1: 'Completion of at least 12 years of formal education (or equivalent to Australian Year 12).',
+        ausRequirementContent2: 'Certified copies of academic transcripts and certificates in English.',
+        ausRequirementContent3: 'For higher education, submission of English proficiency test scores (IELTS, TOEFL, or PTE Academic).',
+        ausRequirementContent4: 'Each university has specific academic entry requirements—check course prerequisites before applying.',
+        ausFinancialRequirementContent1: 'Evidence of sufficient funds to cover tuition fees, travel, and living expenses.',
+        ausFinancialRequirementContent2: 'Typically, at least AUD 24,505 per year (living cost estimate) plus tuition and travel costs.',
+        ausFinancialRequirementContent3: 'Recent bank statements, financial guarantee letters, or proof of income are accepted.',
+        ausFinancialRequirementContent4: 'Sponsored students must provide an official letter from the sponsor or scholarship provider.',
+        visaDocumentation: 'Visa & Documentation',
+        ausVisaDocumentationContent1: 'Valid passport with a minimum of 6 months remaining validity.',
+        ausVisaDocumentationContent2: 'Confirmation of Enrolment (CoE) issued by an Australian institution.',
+        ausVisaDocumentationContent3: 'Genuine Temporary Entrant (GTE) statement explaining study intentions.',
+        ausVisaDocumentationContent4: 'Overseas Student Health Cover (OSHC) proof before visa approval.',
+        ausVisaDocumentationContent5: 'Medical examination and police clearance certificates may be required.',
+        culturalPracticalPreparation: 'Cultural & Practical Preparation',
+        ausCulturalPracticalPreparationContent1: "Understand Australia’s academic culture emphasizing research and independent learning.",
+        ausCulturalPracticalPreparationContent2: "Learn about student work rights (up to 48 hours per fortnight during study sessions).",
+        ausCulturalPracticalPreparationContent3: "Explore accommodation options—homestay, student housing, or private rentals.",
+        ausCulturalPracticalPreparationContent4: "Familiarize yourself with public transport, healthcare, and local emergency contacts."
     },
     // japanese language list
     jp: {
@@ -1003,7 +1024,7 @@ export  const languageData = {
         viewOverview: '概要を見る',
         studyInJapan: '日本留学',
         studyinAustralia: 'オーストラリア留学',
-        studyinUnitedKingdom:'イギリス留学',
+        studyinUnitedKingdom: 'イギリス留学',
         studyinUSA: 'アメリカ留学',
         studyinCanada: 'カナダ留学',
         exploreMore: 'さらに詳しく見る',
@@ -1015,7 +1036,7 @@ export  const languageData = {
         contactSupport: 'サポートに連絡',
         yourGlobalPathway: 'あなたのグローバルへの道',
         educationCareer: '教育とキャリアへ',
-        homeHeroDesc:'私たちは、学生や社会人が海外での夢を実現できるよう支援しています。日本、アメリカ、オーストラリア、イギリス、カナダ、その他の国々など、どこであっても対応します。ビザや書類手続きから出発前のガイダンス、文化への適応まで、国際的な旅のあらゆる段階であなたをサポートします。',
+        homeHeroDesc: '私たちは、学生や社会人が海外での夢を実現できるよう支援しています。日本、アメリカ、オーストラリア、イギリス、カナダ、その他の国々など、どこであっても対応します。ビザや書類手続きから出発前のガイダンス、文化への適応まで、国際的な旅のあらゆる段階であなたをサポートします。',
         weareKBM: '私たちはKBMエデュケーションコンサルタンシー株式会社です。',
         para_1_KBM: `KBMエデュケーションコンサルタンシーでは、日本、アメリカ、オーストラリア、イギリス、カナダ、その他の国々で、学生が学業およびキャリアの目標を達成できるよう導いています。
                     私たちは、個別のメンタリング、実践的なガイダンス、そして最新の業界知識に焦点を当て、すべての学生が国際的な旅に万全の準備を整えられるようサポートしています。`,
@@ -1031,7 +1052,7 @@ export  const languageData = {
                             経験豊富なカウンセラーが、あなたが海外での将来に向けて最良の判断ができるようサポートします。`,
         documentation: '書類手続き',
         documentPreparation: '書類準備と申請サポート',
-        SOP:'志望理由書',
+        SOP: '志望理由書',
         financialDocuments: '財務書類',
         applicationForms: '申請書類',
         homeServicesPara_3: `志望理由書の作成から、財務・学業関連書類の整理まで、私たちのチームはすべての書類が大使館や大学の基準を満たすようサポートします。
@@ -1041,18 +1062,18 @@ export  const languageData = {
         visaFiling: 'ビザ申請提出',
         interviewGuidance: '面接ガイダンス',
         embassySupport: '大使館サポート',
-        homeServicesPara_4:`私たちの専門家は、必要なビザ書類の準備をサポートし、模擬面接を通じて自信を高めます。
+        homeServicesPara_4: `私たちの専門家は、必要なビザ書類の準備をサポートし、模擬面接を通じて自信を高めます。
                             最新の移民規則にも精通しており、スムーズなビザ承認プロセスをサポートします。`,
         homeSuccessStoriesHeader: '成果が物語る',
         readSuccessStories: '成功事例を読む',
-        seeMoreStories : 'さらに事例を見る',
+        seeMoreStories: 'さらに事例を見る',
         transformingFutures: '未来を変える',
         homeTestimonialHeader: 'KBMについて学生の声を聞く',
-        visaGranted:'ビザが許可された国',
+        visaGranted: 'ビザが許可された国',
         australia: 'オーストラリア',
         satisfiedStudents: 'KBMからの満足した学生 1000人以上',
         viewAllReviews: 'KBMからの満足した学生 1000人以上',
-        AaravSharma:'アーラヴ・シャルマ',
+        AaravSharma: 'アーラヴ・シャルマ',
         studentJapan: '学生 – 日本',
         homeTestimonialsQuote_1: `KBMエデュケーションコンサルタンシーのおかげで、私の日本への留学は完全にストレスフリーでした。
                                 ビザ面接のサポートから必要書類の理解まで、常に万全の準備ができるよう導いてくれました。
@@ -1069,15 +1090,15 @@ export  const languageData = {
                                 ビザが承認された後も、住居の手配、アルバイト、環境への適応などについてサポートしてくれました。
                                 彼らなしでは成し遂げられなかったでしょう。`,
         sanjanaRai: 'サンジャナ・ライ',
-        researchUnitedKingdom:'研究者 – イギリス',
+        researchUnitedKingdom: '研究者 – イギリス',
         homeTestimonialsQuote_4: `KBMエデュケーションコンサルタンシーは、イギリスの大学選択から出発前オリエンテーションまで、完全なサポートを提供してくれました。
                                 到着後もフォローアップを行い、すべてが順調に進むようにしてくれました。
                                 彼らのプロフェッショナリズムと丁寧さは比類がありません。`,
         LetStart: 'さあ、始めましょう',
         conversation: '会話',
-        homeContactPara:`質問やプロジェクトのアイデアがありますか？ぜひご連絡ください。
+        homeContactPara: `質問やプロジェクトのアイデアがありますか？ぜひご連絡ください。
                         一緒に素晴らしいものを作りましょう。`,
-        phone : '電話',
+        phone: '電話',
         email: 'メール',
         location: '所在地',
         fullName: 'フルネーム...',
@@ -1085,7 +1106,7 @@ export  const languageData = {
         emailAddress: 'メールアドレス...',
         emailExample: 'ジョン@エグザンプル.com',
         number: '番号',
-        inquiryType:'お問い合わせの種類',
+        inquiryType: 'お問い合わせの種類',
         selectoption: 'オプションを選択',
         generalInquiry: '一般的なお問い合わせ',
         visaProcessing: 'ビザ手続き',
@@ -1127,7 +1148,7 @@ export  const languageData = {
         experiencedIndustryExperts: '経験豊富な業界専門家',
         abooutWhyCardPara_2: `私たちの熟練したカウンセラーおよび教育専門家チームは、日本、オーストラリア、イギリス、
                             アメリカ、カナダの一流大学へ学生を導いてきた豊富な経験を持っています。`,
-        transparentProcess:`透明性のあるプロセス`,
+        transparentProcess: `透明性のあるプロセス`,
         aboutWhyCardPara_3: `私たちは誠実さと明確さを大切にしています。
                             書類手続きからビザ申請まで、各段階で何が行われているかを常に把握できるようにしています。
                             隠れた費用や予期せぬトラブルは一切ありません。`,
@@ -1139,7 +1160,7 @@ export  const languageData = {
         aboutWhyCTA: 'KBMがあなたの留学の旅をどのように導けるかをご覧ください',
         aboutTeamHeader: 'あなたの成功を支えるのは誰？',
         at: 'で',
-        aboutTeamPara_1:`, 私たちのチームは、経験豊富なカウンセラー、学術アドバイザー、そして国際教育の専門家で構成されており、あなたの留学の夢を実現するために全力を尽くしています。
+        aboutTeamPara_1: `, 私たちのチームは、経験豊富なカウンセラー、学術アドバイザー、そして国際教育の専門家で構成されており、あなたの留学の夢を実現するために全力を尽くしています。
                         それぞれの専門家が、日本、アメリカ、オーストラリア、イギリス、カナダなどの国々で、学生を最適な大学やプログラムへ導いてきた豊富な経験を持っています。`,
         aboutTeamPara_2: `私たちは、成功は個別のメンタリングから始まると信じています。
                         キャリアカウンセリングから出願サポート、ビザ手続き、出発前オリエンテーションに至るまで、私たちの専門家があなたの旅のすべての段階で寄り添います。
@@ -1154,7 +1175,7 @@ export  const languageData = {
         previous: '前へ',
         next: '次へ',
         sumanTamang: 'スマン・タマング',
-        CEOFounder : 'CEO兼創設者',
+        CEOFounder: 'CEO兼創設者',
         teamPara_3: `KBMエデュケーションコンサルタンシーのビジョナリーとして、スマン・タマングは数百人の学生が留学の夢を実現できるよう導いてきました。
                     国際教育システムへの深い理解と長年のリーダーシップ経験を活かし、すべての学生が旅の過程で透明性のある、
                     倫理的で個別のガイダンスを受けられるよう保証しています。`,
@@ -1165,7 +1186,7 @@ export  const languageData = {
                     点を置いており、すべての学生が初めから終わりまでスムーズで信頼できるプロセスを体験できるようにしています
                     。`,
         anilChaudhary: 'アニル・チャウダリー',
-        teamPara_5:`学生カウンセリングと国際的パートナーシップの豊富な経験を持つアニル・チャウダリーは、学生と最適な教育機関を結びつける幅広い専門知識を提供します。
+        teamPara_5: `学生カウンセリングと国際的パートナーシップの豊富な経験を持つアニル・チャウダリーは、学生と最適な教育機関を結びつける幅広い専門知識を提供します。
                     彼のアプローチは、実践的なアドバイスと共感を融合させ、学生が目標や夢に最適な学習の道を選べるよう支援します。`,
         frontDeskOfficer: 'フロントデスク担当',
         teamPara_6: `KBMの最初の窓口として、フロントデスク担当は学生が来訪した瞬間から歓迎され、適切に案内されるよう努めています。
@@ -1186,14 +1207,14 @@ export  const languageData = {
                     を乗り越えられるよう支援します。
                     最終的な目標は、学生が選んだ国で学業的にも職業的にも、そして個人的にも成功するために必要な知識・リソー
                     ス・スキルを身につけられるよう支援することです。`,
-        ourMission : '私たちの使命',
+        ourMission: '私たちの使命',
         ourMissionDesc: `KBM教育コンサルタントの使命は、学生が明確なビジョンと自信、そして個別のサポートをもって学問的・職業的な夢を実現できるよう導くことです。私たちは、正確な情報、透明なプロセス、
                         そして実践的なアドバイスを、留学のあらゆる段階—コースや大学の選択からビザ準備、到着後のサポートまで—で提供することに尽力しています。
                         支援的な環境を育むことで、学生が正しい判断を下し、困難を乗り越え、世界的なチャンスを掴む力を身につけることを目指しています。
                         メンタリング、専門知識、そして献身を通じて、私たちはすべての学生が自らの可能性を最大限に引き出し、
                         選んだ国で学業的にも個人的にも成功を収められるよう支援することを目標としています。`,
         ourValues: '私たちの価値観',
-        ourValuesDesc : `KBM教育コンサルタントでは、私たちの中核となる価値観がすべての決定と行動を導いています。
+        ourValuesDesc: `KBM教育コンサルタントでは、私たちの中核となる価値観がすべての決定と行動を導いています。
                     私たちは **誠実さ・透明性・正直さ** を大切にし、学生が留学の過程を通じて正確で信頼でき
                     るアドバイスを受けられるよう努めています。
                     **卓越性** を追求し、質の高いメンタリング、個別カウンセリング、そして学生が学業・キャリ
@@ -1291,7 +1312,7 @@ export  const languageData = {
                         リス、カナダなどでの留学に万全の準備を整えられるよう支援します。`,
         ourServicesHeader: '私たちの主要サービス',
         ourServicesDesc: `専門的なガイダンスにより、学業の道をスムーズに進め、留学の夢を自信を持って実現できるよう支援します。`,
-        ourServicesTitle_1:'1対1の個別相談',
+        ourServicesTitle_1: '1対1の個別相談',
         ourServicesSubTitle_1: '個別相談',
         ourServicesDesc_1: `あなたの留学の旅は、経験豊富なカウンセラーとの個別相談から始まります。この面談では、あなたの
                             学歴、キャリアの目標、経済的な状況、希望する留学先を丁寧に理解し、あなたの目標に合わせた独自
@@ -1302,7 +1323,7 @@ export  const languageData = {
         ourServicesConsultationOffer_3: `個別の留学ロードマップ`,
         ourServicesConsultationOffer_4: `コースの適格性と要件に関するガイダンス`,
         ourServicesConsultationOffer_5: `奨学金と予算計画に関する初期アドバイス`,
-        ourServicesTitle_2 : 'コースとキャリアのガイダンス',
+        ourServicesTitle_2: 'コースとキャリアのガイダンス',
         ourServicesDesc_2: `正しいコースを選ぶことは、海外での成功したキャリアを築くために非常に重要です。私たちのカウン
                             セラーは、あなたの学問的な興味、スキル、そして将来の目標を分析し、世界の一流大学の中から最適
                             なプログラムを見つけるお手伝いをします。また、就職市場の動向、インターンシップの機会、将来の
@@ -1358,7 +1379,7 @@ export  const languageData = {
         ourServicesPreDepartureOffer_2: '宿泊施設、銀行口座、SIMカードの設定に関するアドバイス',
         ourServicesPreDepartureOffer_3: '海外での安全対策と学生の権利に関するガイドライン',
         ourServicesPreDepartureOffer_4: 'カルチャーショックやホームシックへの対処法のヒント',
-        ourServicesPreDepartureOffer_5: '出発前の必需品チェックリスト', 
+        ourServicesPreDepartureOffer_5: '出発前の必需品チェックリスト',
         ourServicesTitle_8: '文化と言語トレーニング',
         ourServicesDesc_8: `海外留学は、新しい文化や言語への適応を意味します。私たちは、学生がスムーズに現地の生活に馴染
                             み、効果的にコミュニケーションを取れるよう、インタラクティブな文化オリエンテーションと初級レ
@@ -1370,7 +1391,7 @@ export  const languageData = {
         ourServicesCultureTrainingOffer_4: '経験豊富なメンターによるインタラクティブワークショップ',
         ourServicesCultureTrainingOffer_5: '文化への適応および統合のための戦略',
         ourServicesTitle_9: '到着後サポート',
-        ourServicesDesc_9 : `私たちのサポートは、あなたが留学先に到着した後も終わりません。到着後の最初の数か月間、宿泊施
+        ourServicesDesc_9: `私たちのサポートは、あなたが留学先に到着した後も終わりません。到着後の最初の数か月間、宿泊施
                             設の手配、アルバイト探し、現地での生活適応などをサポートします。必要な場合は、緊急時や相談時に
                             いつでも連絡を取ることができます。`,
         ourServicesPostArrivalOffer_1: '空港送迎の手配および宿泊サポート',
@@ -1382,16 +1403,16 @@ export  const languageData = {
         ourServicesDesc_10: `海外での教育は費用がかかりますが、私たちはその負担を管理可能にします。カウンセラーが奨学金の
                             機会、授業料割引、大学で利用可能な経済的支援のオプションを一緒に検討します。出願プロセス全体
                             をサポートすることで、余計なストレスを感じずに学業に集中できるようにします。`,
-        ourServicesScholarshipOffer_1 : '奨学金適格性の評価',
-        ourServicesScholarshipOffer_2 : 'ニーズベースおよびメリットベースの資金援助に関するガイダンス',
-        ourServicesScholarshipOffer_3 : '奨学金のエッセイおよび申請書のサポート',
-        ourServicesScholarshipOffer_4 : '財務状況を強化するためのアドバイス',
-        ourServicesScholarshipOffer_5 : '授業料免除および助成金に関する情報',
+        ourServicesScholarshipOffer_1: '奨学金適格性の評価',
+        ourServicesScholarshipOffer_2: 'ニーズベースおよびメリットベースの資金援助に関するガイダンス',
+        ourServicesScholarshipOffer_3: '奨学金のエッセイおよび申請書のサポート',
+        ourServicesScholarshipOffer_4: '財務状況を強化するためのアドバイス',
+        ourServicesScholarshipOffer_5: '授業料免除および助成金に関する情報',
         workFlowHeader: '私たちのワンストップ学生サポートの流れ',
         workFlowDesc: `初回の相談から到着後のサポートまで、私たちは留学の全てのステップであなたをサポートします。`,
         workFlowCTAHeader: '留学の旅を始める準備はできましたか？',
         workFlowCTADesc: `相談から到着後のサポートまで、ステップごとにあなたの留学プランを専門家と一緒に作りましょう。`,
-        contactWithUs : '私たちとつながる',
+        contactWithUs: '私たちとつながる',
         workFlowDesc_1: `まず、個別相談を通じて、あなたの留学目標、希望国（日本、オーストラリア、イギリス、アメリカ、カナ
                         ダ）、財務状況、ビザ要件を把握します。これにより、出願に最適なプランを設計することができます。`,
         workFlowTitle_2: 'コースおよび国のガイダンス',
@@ -1413,7 +1434,7 @@ export  const languageData = {
         workFlowDesc_9: `現地での初期生活の定着、宿泊手配、アルバイト案内、緊急サポートを提供します。`,
         workFlowDesc_10: `日本、オーストラリア、イギリス、アメリカ、カナダでの奨学金や資金援助の機会を特定し、経済的負担を軽減するお手伝いをします。`,
         counsellingHeroTitle: 'キャリアカウンセリング',
-        counsellingHeroDesc:`あなたのキャリアパスを計画し、留学目標を達成するための個別指導を受けられます。`,
+        counsellingHeroDesc: `あなたのキャリアパスを計画し、留学目標を達成するための個別指導を受けられます。`,
         counsellingServices: 'カウンセリングサービス',
         counsellingInfoDesc: `学業の道筋をサポートし、自信を持って留学の夢を実現できる専門的なガイダンス。`,
         carrerDesc: `あなたの可能性を最大限に引き出す、個別にカスタマイズされた専門的なキャリアガイダンス。キャリアカウンセリングサービスでは、強みの特定
@@ -1438,7 +1459,7 @@ export  const languageData = {
                         作成します。学生は弱点に重点を置き、時間を効果的に管理し、スコアを最大化する方法を学び、競争の激しいプログラムへの入学チャンスを
                         高めます。私たちの指導により、試験当日も自信を持って臨むことができます。`,
         carrerTitle_5: '資金計画と奨学金サポート',
-        carrerContent_5 : `留学には、授業料、宿泊費、生活費、その他の費用をカバーするための慎重な資金計画が必要です。私たちは、学生の渡航先、プログラム、
+        carrerContent_5: `留学には、授業料、宿泊費、生活費、その他の費用をカバーするための慎重な資金計画が必要です。私たちは、学生の渡航先、プログラム、
                         ライフスタイルに合わせた詳細な予算作成をサポートします。さらに、大学、政府、民間機関から提供される奨学金、助成金、経済的支援の機
                         会を特定します。これらの機会を理解し、賢く費用を管理する方法を学ぶことで、学生は経済的ストレスを軽減し、情報に基づいた意思決定を
                         行い、効率的に教育資金を確保することができます。`,
@@ -1482,14 +1503,14 @@ export  const languageData = {
         japan: '日本',
         korea: '韓国',
         preferredUniversity: '希望する大学',
-        enterPreferredUniversity : '希望する大学名を入力してください。...',
+        enterPreferredUniversity: '希望する大学名を入力してください。...',
         furtherDegree: '希望する学位',
         selectDegree: '学位を選択してください。',
         bachelors: '学士（Bachelor）',
         diploma: 'ディプロマ（Diploma）',
         masters: '修士（Masters）',
         enterYourPhone: '電話番号を入力してください。',
-        haveYouTakenTestBefore : 'これまでに試験を受けたことはありますか？',
+        haveYouTakenTestBefore: 'これまでに試験を受けたことはありますか？',
         yes: 'はい',
         no: 'いいえ',
         testTaken: '受験した試験',
@@ -1529,7 +1550,7 @@ export  const languageData = {
         visaProcessHeader: 'ビザサポートの手順',
         visaProcessDesc: `最初の相談から最終承認まで、ビザ申請の過程がスムーズで正確、かつストレスフリーになるように、ガイド付きの包括的なサポートを提供
                         します。`,
-        visaProcessTitle_1 : '初回相談とプロフィール確認',
+        visaProcessTitle_1: '初回相談とプロフィール確認',
         visaProcessDesc_1: 'あなたの経歴、学歴、希望渡航先を評価し、最適なビザを判断します。',
         visaProcessTitle_2: `ビザ種類の選択と適格性確認`,
         visaProcessDesc_2: `専門家が適切なビザ種類（学生ビザ、SSW、TITP、または就労ビザ）の選択をサポートし、すべての適格要件を満たしているか確認します。`,
@@ -1592,11 +1613,11 @@ export  const languageData = {
         docTypesTitle_5_details_5: '必要に応じた結核検査結果および胸部X線検査',
         certificateEligibility: '在留資格認定証明書（COE）',
         docTypesDesc_6: '日本のビザ申請における在留資格認定証明書（COE）の正確な準備と提出に関する指導',
-        docTypesTitle_6_details_1:'正確な情報を記入した在留資格認定証明書（COE）申請書',
-        docTypesTitle_6_details_2:'入国管理局のガイドラインに沿ってまとめられた補足書類',
-        docTypesTitle_6_details_3:'在留資格認定証明書（COE）発行のための日本の教育機関との調整',
-        docTypesTitle_6_details_4:'在留資格認定証明書（COE）受領までの追跡およびフォローアップ',
-        docTypesTitle_6_details_5:'COE承認後のビザ申請サポート',
+        docTypesTitle_6_details_1: '正確な情報を記入した在留資格認定証明書（COE）申請書',
+        docTypesTitle_6_details_2: '入国管理局のガイドラインに沿ってまとめられた補足書類',
+        docTypesTitle_6_details_3: '在留資格認定証明書（COE）発行のための日本の教育機関との調整',
+        docTypesTitle_6_details_4: '在留資格認定証明書（COE）受領までの追跡およびフォローアップ',
+        docTypesTitle_6_details_5: 'COE承認後のビザ申請サポート',
         passportIDVerification: 'パスポートおよび身分証明書の確認',
         docTypesDesc_7: 'パスポートおよび身分証明書を確認し、大使館の基準に適合しているかを確認します。',
         docTypesTitle_7_details_1: 'パスポート有効期限の確認（渡航日から少なくとも6か月以上有効であること）',
@@ -1626,7 +1647,7 @@ export  const languageData = {
         courseHeroDesc: `テクノロジーの可能性を広げましょう！当社のコンピューターコースは、実践的なパソコンスキル、コーディング、ITツールをステッ
                         プごとに習得したい初心者からプロまでを対象に設計されています。`,
         courseSectionHeader: 'おすすめコース',
-        courseSectionMainDesc:'コンピューターをマスターし、スキルを磨き、未来を切り拓こう。',
+        courseSectionMainDesc: 'コンピューターをマスターし、スキルを磨き、未来を切り拓こう。',
         basicCourse: '基礎コース',
         advanceOfficePackage: '上級オフィスパッケージコース',
         accountingTraining: '会計トレーニングコース',
@@ -1647,8 +1668,8 @@ export  const languageData = {
         emailTagline: '受信箱から成果へ — プロフェッショナルなメールをマスターしよう。',
         adobeIndesignCaption: '賢くデザインし、より良く発表する。InDesignをマスターしよう。',
         adobeIndesignTagline: 'デザインへの情熱を実践的な出版スキルに変えよう。',
-        adobePhotoshopCaption : 'Photoshopスキルで写真もキャリアも変えよう。',
-        adobePhotoshopTagline : '魅力的なグラフィックをデザインし、アイデアを形にしよう。',
+        adobePhotoshopCaption: 'Photoshopスキルで写真もキャリアも変えよう。',
+        adobePhotoshopTagline: '魅力的なグラフィックをデザインし、アイデアを形にしよう。',
         canvaCapiton: 'Canvaで、より賢く、速く、簡単にデザインしよう。',
         canvaTagline: 'アイデアから素晴らしいデザインへ — 今すぐCanvaの旅を始めよう。',
         tallyERP9Caption: '実践的なTallyトレーニングで会計スキルを向上させよう。',
@@ -1671,7 +1692,7 @@ export  const languageData = {
         female: '女性',
         courses: 'コース',
         additionalQue: '追加の詳細や質問を入力してください…',
-        studyHeroheader:'あなたのグローバル教育の旅',
+        studyHeroheader: 'あなたのグローバル教育の旅',
         japanHeroDescription: '活気あふれる文化、最先端のテクノロジー、そして独自の伝統を楽しみながら、日本で世界水準の教育を体験してください。日本留学は、学生の個人的な成長、キャリアアップ、そして忘れられない国際体験を提供します。',
         japanRequirementTitle: '日本留学の要件',
         japanRequirementSubTitle: '日本の学生ビザを申請する前に、すべての重要な要件を理解してください。',
@@ -1736,12 +1757,12 @@ export  const languageData = {
         affordable: '手頃な価格',
         dynamicCulture: 'ダイナミックな文化',
         studyTestDesc_1: '国際英語能力テスト（IELTS）は、留学、移住、仕事などで世界的に認められている最も人気のある英語能力試験の 1 つです。',
-        listening:'リスニング' ,
+        listening: 'リスニング',
         reading: '読む',
         wrinting: '書き込み',
-        speaking:'話し中',
+        speaking: '話し中',
         studyTestDuration_1: '2時間45分',
-        twoYear:'2年',
+        twoYear: '2年',
         studyTestWhyNeeded_1: `IELTSは、大学入学、専門職登録、移民申請に必要な英語能力を証明するテストです。大学、雇用主、政府など、世界中の11,0​​00以上の組織で認められています。`,
         studyTestBachelorScore_1: '全体で6.0～6.5（5.5未満のバンドはない）',
         studyTestMasterScore_1: '全体で6.5～7.0（6.0未満のバンドはない）',
@@ -1752,7 +1773,7 @@ export  const languageData = {
         quickResults: 'クイック結果',
         widelyAccepted: '広く受け入れられている',
         studyTestDuration_2: '2時間',
-        studyTestWhyNeeded_2:'PTE AcademicはAIテクノロジーを活用し、公平な採点を行い、48時間以内に結果をお届けします。世界中の数千もの教育機関で認められており、迅速な結果を求める方に最適です。',
+        studyTestWhyNeeded_2: 'PTE AcademicはAIテクノロジーを活用し、公平な採点を行い、48時間以内に結果をお届けします。世界中の数千もの教育機関で認められており、迅速な結果を求める方に最適です。',
         studyTestBachelorScore_2: '総合評価50～58（コミュニケーションスキルは50以上）',
         studyTestMasterScore_2: '総合スコア58～65（コミュニケーションスキルは58以上）',
         studyTestDiplomaScore_2: '全体総合スコア42～50（コミュニケーションスキルは42以上）で45～60',
@@ -1771,7 +1792,7 @@ export  const languageData = {
         collegeAdmissions: '大学入学',
         scholarshipAid: '奨学金援助',
         studyTestDuration_4: '3時間（エッセイなし）',
-        fiveYear:'5年',
+        fiveYear: '5年',
         studyTestsWhyNeeded_4: 'SATは、アメリカの大学入学のための標準テストです。高得点を取得すると、成績優秀者を対象とした奨学金の対象となるだけでなく、大学レベルの授業への準備が整っていることも証明されます。',
         studyTestBachelorScore_4: '1200 - 1400 (競争機関: 1400 以上)',
         studyTestMasterScore_4: '通常は必要ありません',
@@ -1811,6 +1832,27 @@ export  const languageData = {
         tokyoInstituteOfTechnology: '東京工業大学',
         chooseOption: 'オプションを選択してください',
         enterYourMessage: 'ここにメッセージを入力してください…',
-        ausHeroDesc: `多様な文化、革新的な学習環境、そして美しい景観に囲まれたオーストラリアで、質の高い教育を体験してください。オーストラリアでの学びは、個人の成長、グローバルな経験、そしてキャリアの機会を育みます。`
+        ausHeroDesc: `多様な文化、革新的な学習環境、そして美しい景観に囲まれたオーストラリアで、質の高い教育を体験してください。オーストラリアでの学びは、個人の成長、グローバルな経験、そしてキャリアの機会を育みます。`,
+        ausRequirementTitle: 'オーストラリア留学の要件',
+        ausRequirementSubTitle: 'オーストラリアの学生ビザを申請するために必要なものを確認し、世界最高峰の教育システムのひとつで勉強を始めましょう。',
+        ausRequirementContent1: '少なくとも 12 年間の正規教育（またはオーストラリアの Year 12 に相当）を修了していること。',
+        ausRequirementContent2: '英語で作成された成績証明書および証明書の認証コピー。',
+        ausRequirementContent3: '高等教育の場合は、英語能力試験のスコア（IELTS、TOEFL、またはPTE Academic）を提出してください。',
+        ausRequirementContent4: '各大学には特定の入学要件がありますので、応募する前にコースの前提条件を確認してください。',
+        ausFinancialRequirementContent1: '授業料、渡航費、生活費を賄うのに十分な資金があることの証明。',
+        ausFinancialRequirementContent2: '通常、年間少なくとも 24,505 オーストラリア ドル（生活費の見積もり）に加え、授業料と渡航費がかかります。',
+        ausFinancialRequirementContent3: '最近の銀行取引明細書、財務保証書、または収入証明書が受け付けられます。',
+        ausFinancialRequirementContent4: '奨学金を受けている学生は、スポンサーまたは奨学金提供者からの公式手紙を提出する必要があります。',
+        visaDocumentation: 'ビザと書類',
+        ausVisaDocumentationContent1: '有効期限が少なくとも 6 か月残っている有効なパスポート。',
+        ausVisaDocumentationContent2: 'オーストラリアの機関が発行した入学確認書（CoE）。',
+        ausVisaDocumentationContent3: '学習の意図を説明する真の一時入学者 (GTE) の声明。',
+        ausVisaDocumentationContent4: 'ビザ承認前の海外留学生健康保険（OSHC）の証明。',
+        ausVisaDocumentationContent5: '健康診断や警察の無犯罪証明書が必要になる場合があります。',
+        culturalPracticalPreparation: '文化と実践の準備',
+        ausCulturalPracticalPreparationContent1: "オーストラリアの学問文化を理解し、研究や自主的な学習を重視する姿勢を身につけましょう。",
+        ausCulturalPracticalPreparationContent2: "学期中は2週間で最大48時間まで働くことができる学生の労働権について学びましょう。",
+        ausCulturalPracticalPreparationContent3: "ホームステイ、学生寮、または民間賃貸などの宿泊オプションを調べましょう。",
+        ausCulturalPracticalPreparationContent4: "公共交通機関、医療サービス、そして地域の緊急連絡先について理解を深めましょう。"
     }
 }

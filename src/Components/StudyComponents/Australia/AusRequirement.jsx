@@ -1,60 +1,64 @@
-import React from "react";
+import { useContext } from "react";
 import { GraduationCap, DollarSign, FileText, Globe } from "lucide-react";
 
 import ReqAccordion from "../../HelperComponents/StudyReq/ReqAccordion";
+import { LanguageContext } from "../../../Context/Context";
+import { languageData } from "../../../Hooks/language";
+
+
+
+export default function AusRequirement() {
+  const {language} = useContext(LanguageContext)
 
 const australiaData = {
-  title: "Requirements to Study in Australia 🇦🇺",
-  subtitle:
-    "Find out what you need to apply for your Australian student visa and start your studies in one of the world's best education systems.",
+  title: (language === 'en' ? languageData.en.ausRequirementTitle + "🇦🇺": languageData.jp.ausRequirementTitle + "🇦🇺"),
+  subtitle:language === 'en' ? languageData.en.ausRequirementSubTitle : languageData.jp.ausRequirementSubTitle,
   backgroundImage: "/Uploads/study/aus/aus2.png",
   ctaText: "Apply Now",
   accentColor: "text-sky-400",
   items: [
     {
-      title: "Educational Requirements",
+      title: language === 'en' ? languageData.en.japanEducationalRequirement : languageData.jp.japanEducationalRequirement,
       icon: GraduationCap,
       content: [
-        "Completion of at least 12 years of formal education (or equivalent to Australian Year 12).",
-        "Certified copies of academic transcripts and certificates in English.",
-        "For higher education, submission of English proficiency test scores (IELTS, TOEFL, or PTE Academic).",
-        "Each university has specific academic entry requirements—check course prerequisites before applying.",
+        language === 'en' ? languageData.en.ausRequirementContent1 : languageData.jp.ausRequirementContent1,
+        language === 'en' ? languageData.en.ausRequirementContent2 : languageData.jp.ausRequirementContent2,
+        language === 'en' ? languageData.en.ausRequirementContent3 : languageData.jp.ausRequirementContent3,
+        language === 'en' ? languageData.en.ausRequirementContent4 : languageData.jp.ausRequirementContent4,
       ],
     },
     {
-      title: "Financial Requirements",
+      title: language === 'en'? languageData.en.japanFinancialRequirement : languageData.jp.japanFinancialRequirement,
       icon: DollarSign,
       content: [
-        "Evidence of sufficient funds to cover tuition fees, travel, and living expenses.",
-        "Typically, at least AUD 24,505 per year (living cost estimate) plus tuition and travel costs.",
-        "Recent bank statements, financial guarantee letters, or proof of income are accepted.",
-        "Sponsored students must provide an official letter from the sponsor or scholarship provider.",
+        language === 'en' ? languageData.en.ausFinancialRequirementContent1 : languageData.jp.ausFinancialRequirementContent1,
+        language === 'en' ? languageData.en.ausFinancialRequirementContent2 : languageData.jp.ausFinancialRequirementContent2,
+        language === 'en' ? languageData.en.ausFinancialRequirementContent3 : languageData.jp.ausFinancialRequirementContent3,
+        language === 'en' ? languageData.en.ausFinancialRequirementContent4 : languageData.jp.ausFinancialRequirementContent4,
       ],
     },
     {
-      title: "Visa & Documentation",
+      title: language === 'en' ? languageData.en.visaDocumentation : languageData.jp.visaDocumentation,
       icon: FileText,
       content: [
-        "Valid passport with a minimum of 6 months remaining validity.",
-        "Confirmation of Enrolment (CoE) issued by an Australian institution.",
-        "Genuine Temporary Entrant (GTE) statement explaining study intentions.",
-        "Overseas Student Health Cover (OSHC) proof before visa approval.",
-        "Medical examination and police clearance certificates may be required.",
+        language === 'en' ? languageData.en.ausVisaDocumentationContent1 : languageData.jp.ausVisaDocumentationContent1,
+        language === 'en' ? languageData.en.ausVisaDocumentationContent2 : languageData.jp.ausVisaDocumentationContent2,
+        language === 'en' ? languageData.en.ausVisaDocumentationContent3 : languageData.jp.ausVisaDocumentationContent3,
+        language === 'en' ? languageData.en.ausVisaDocumentationContent4 : languageData.jp.ausVisaDocumentationContent4,
+        language === 'en' ? languageData.en.ausVisaDocumentationContent5 : languageData.jp.ausVisaDocumentationContent5,
       ],
     },
     {
-      title: "Cultural & Practical Preparation",
+      title: language === 'en' ? languageData.en.culturalPracticalPreparation : languageData.jp.culturalPracticalPreparation,
       icon: Globe,
       content: [
-        "Understand Australia’s academic culture emphasizing research and independent learning.",
-        "Learn about student work rights (up to 48 hours per fortnight during study sessions).",
-        "Explore accommodation options—homestay, student housing, or private rentals.",
-        "Familiarize yourself with public transport, healthcare, and local emergency contacts.",
+        language === 'en' ? languageData.en.ausCulturalPracticalPreparationContent1 : languageData.jp.ausCulturalPracticalPreparationContent1,
+        language === 'en' ? languageData.en.ausCulturalPracticalPreparationContent2 : languageData.jp.ausCulturalPracticalPreparationContent2,
+        language === 'en' ? languageData.en.ausCulturalPracticalPreparationContent3 : languageData.jp.ausCulturalPracticalPreparationContent3,
+        language === 'en' ? languageData.en.ausCulturalPracticalPreparationContent4 : languageData.jp.ausCulturalPracticalPreparationContent4,
       ],
     },
   ],
 };
-
-export default function AusRequirement() {
   return <ReqAccordion {...australiaData} />;
 }
