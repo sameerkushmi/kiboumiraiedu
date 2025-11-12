@@ -1,60 +1,66 @@
-import React from "react";
+import { useContext } from "react";
 import { GraduationCap, DollarSign, FileText, Globe } from "lucide-react";
 
 import ReqAccordion from "../../HelperComponents/StudyReq/ReqAccordion";
+import { languageData } from "../../../Hooks/language";
+import { LanguageContext } from "../../../Context/Context";
 
-const australiaData = {
-  title: "Requirements to Study in Canada 🇨🇦",
-  subtitle:
-    "Find out what you need to apply for your Australian student visa and start your studies in one of the world's best education systems.",
+
+
+export default function CadRequirement() {
+
+  const {language} = useContext(LanguageContext)
+
+  const australiaData = {
+  title: language === 'en' ? languageData.en.cadRequirementTitle : languageData.jp.cadRequirementTitle,
+  subtitle:language === 'en' ? languageData.en.cadRequirementSubTitle : languageData.jp.cadRequirementSubTitle ,
   backgroundImage: "/Uploads/study/cad/cad.jpg",
   ctaText: "Apply Now",
   accentColor: "text-sky-400",
   items: [
     {
-      title: "Educational Requirements",
+      title: language === 'en' ? languageData.en.japanEducationalRequirement : languageData.jp.japanEducationalRequirement,
       icon: GraduationCap,
       content: [
-        "Completion of at least 12 years of formal education (equivalent to Canadian high school diploma).",
-        "Certified copies of academic transcripts and certificates translated into English or French.",
-        "For post-secondary or graduate programs, submission of English or French language proficiency scores (IELTS, TOEFL, or TEF).",
-        "Each college or university may have specific academic entry requirements—check course prerequisites before applying.",
+        language === 'en' ? languageData.en.cadRequirementContent1:languageData.jp.cadRequirementContent1,
+        language === 'en' ? languageData.en.cadRequirementContent2:languageData.jp.cadRequirementContent2,
+        language === 'en' ? languageData.en.cadRequirementContent3:languageData.jp.cadRequirementContent3,
+        language === 'en' ? languageData.en.cadRequirementContent4:languageData.jp.cadRequirementContent4,
       ],
     },
     {
-      title: "Financial Requirements",
+      title: language === 'en' ? languageData.en.japanFinancialRequirement : languageData.jp.japanFinancialRequirement,
       icon: DollarSign,
       content: [
-        "Proof of sufficient funds to cover tuition, living expenses, and return transportation.",
-        "Minimum financial requirement: CAD 20,635 per year (outside Quebec) or as per IRCC guidelines.",
-        "Acceptable proof includes recent bank statements, GIC (Guaranteed Investment Certificate), or sponsor letters.",
-        "Sponsored or scholarship students must provide official documentation confirming financial support.",
+        language === 'en' ? languageData.en.cadFinancialRequirementContent1 : languageData.jp.cadFinancialRequirementContent1,
+        language === 'en' ? languageData.en.cadFinancialRequirementContent2 : languageData.jp.cadFinancialRequirementContent2,
+        language === 'en' ? languageData.en.cadFinancialRequirementContent3 : languageData.jp.cadFinancialRequirementContent3,
+        language === 'en' ? languageData.en.cadFinancialRequirementContent4 : languageData.jp.cadFinancialRequirementContent4,
       ],
     },
     {
-      title: "Visa & Documentation",
+      title: language === 'en' ? languageData.en.visaDocumentation : languageData.jp.visaDocumentation,
       icon: FileText,
       content: [
-        "Valid passport with at least 6 months of remaining validity.",
-        "Letter of Acceptance (LOA) from a Designated Learning Institution (DLI) in Canada.",
-        "Completed Study Permit application with Statement of Purpose (SOP).",
-        "Proof of payment for tuition fees and GIC (if applicable).",
-        "Medical examination and police clearance certificates may be required depending on country of residence.",
+        language === 'en' ? languageData.en.cadVisaDocumentationContent1 : languageData.jp.cadVisaDocumentationContent1,
+        language === 'en' ? languageData.en.cadVisaDocumentationContent2 : languageData.jp.cadVisaDocumentationContent2,
+        language === 'en' ? languageData.en.cadVisaDocumentationContent3 : languageData.jp.cadVisaDocumentationContent3,
+        language === 'en' ? languageData.en.cadVisaDocumentationContent4 : languageData.jp.cadVisaDocumentationContent4,
+        language === 'en' ? languageData.en.cadVisaDocumentationContent5 : languageData.jp.cadVisaDocumentationContent5,
       ],
     },
     {
-      title: "Cultural & Practical Preparation",
+      title: language === 'en' ? languageData.en.culturalPracticalPreparation : languageData.jp.culturalPracticalPreparation,
       icon: Globe,
       content: [
-        "Familiarize yourself with Canada’s multicultural and inclusive academic environment.",
-        "Understand student work rights—up to 20 hours per week during study and full-time during scheduled breaks.",
-        "Research accommodation options such as on-campus housing, homestay, or private rentals.",
-        "Learn about public transport, healthcare (e.g., provincial health insurance), and emergency contacts before arrival.",
+        language === 'en' ? languageData.en.cadCulturalPreparationContent1 : languageData.jp.cadCulturalPreparationContent1,
+        language === 'en' ? languageData.en.cadCulturalPreparationContent2 : languageData.jp.cadCulturalPreparationContent2,
+        language === 'en' ? languageData.en.cadCulturalPreparationContent3 : languageData.jp.cadCulturalPreparationContent3,
+        language === 'en' ? languageData.en.cadCulturalPreparationContent4 : languageData.jp.cadCulturalPreparationContent4,
       ],
     },
   ],
 };
 
-export default function CadRequirement() {
   return <ReqAccordion {...australiaData} />;
 }

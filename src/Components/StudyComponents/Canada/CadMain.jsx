@@ -1,4 +1,3 @@
-import React from "react";
 import CadHero from "./CadHero";
 import CadRequirement from "./CadRequirement";
 import CadWhy from "./CadWhy";

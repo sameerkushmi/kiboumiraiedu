@@ -1,23 +1,29 @@
+import { useContext } from "react";
 import StudyWhy from "../../HelperComponents/StudyReq/StudyWhy";
+import { LanguageContext } from "../../../Context/Context";
+import { languageData } from "../../../Hooks/language";
 
 export default function CadWhy() {
+
+  const {language} = useContext(LanguageContext)
+
   const canadaReasons = [
-    "High-quality education with internationally recognized degrees.",
-    "Welcoming, multicultural society with a safe environment for students.",
-    "Opportunities for part-time work during studies to gain experience.",
-    "Post-graduation work permits and pathways to permanent residency.",
-    "Vibrant student communities with cultural and recreational activities.",
-    "Modern infrastructure, advanced research facilities, and technology-driven learning.",
-    "Generous scholarships and financial support options for international students.",
-    "Strong economy with demand for skilled graduates across multiple industries.",
-    "Beautiful natural landscapes and high quality of life.",
-    "Supportive policies for international students, including healthcare and housing assistance.",
+    language === 'en' ? languageData.en.cadWhyCanadaReason1:languageData.jp.cadWhyCanadaReason1,
+    language === 'en' ? languageData.en.cadWhyCanadaReason2:languageData.jp.cadWhyCanadaReason2,
+    language === 'en' ? languageData.en.cadWhyCanadaReason3:languageData.jp.cadWhyCanadaReason3,
+    language === 'en' ? languageData.en.cadWhyCanadaReason4:languageData.jp.cadWhyCanadaReason4,
+    language === 'en' ? languageData.en.cadWhyCanadaReason5:languageData.jp.cadWhyCanadaReason5,
+    language === 'en' ? languageData.en.cadWhyCanadaReason6:languageData.jp.cadWhyCanadaReason6,
+    language === 'en' ? languageData.en.cadWhyCanadaReason7:languageData.jp.cadWhyCanadaReason7,
+    language === 'en' ? languageData.en.cadWhyCanadaReason8:languageData.jp.cadWhyCanadaReason8,
+    language === 'en' ? languageData.en.cadWhyCanadaReason9:languageData.jp.cadWhyCanadaReason9,
+    language === 'en' ? languageData.en.cadWhyCanadaReason10:languageData.jp.cadWhyCanadaReason10,
   ];
 
   return (
     <StudyWhy
-      title="Why Choose Canada 🇨🇦"
-      description="Canada is known for its top-quality education, safe environment, and excellent career opportunities, making it a top choice for international students."
+      title={language === 'en' ? languageData.en.WhyChooseCanada : languageData.jp.WhyChooseCanada}
+      description={language === 'en' ? languageData.en.cadWhyDesc : languageData.jp.cadWhyDesc}
       backgroundImage="/Uploads/study/cad/cadwhy.webp"
       reasons={canadaReasons}
     />
