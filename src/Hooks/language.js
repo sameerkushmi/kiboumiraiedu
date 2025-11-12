@@ -969,6 +969,7 @@ export  const languageData = {
         tokyoInstituteOfTechnology: 'Tokyo Institute of Technology',
         chooseOption: 'Choose an option',
         enterYourMessage: 'Enter your message here...',
+        ausHeroDesc: '`Experience top-quality education in Australia with diverse culture, innovative learning, and beautiful landscapes. Study in Australia fosters personal growth, global exposure, and career opportunities.'
     },
     // japanese language list
     jp: {
@@ -1810,5 +1811,6 @@ export  const languageData = {
         tokyoInstituteOfTechnology: '東京工業大学',
         chooseOption: 'オプションを選択してください',
         enterYourMessage: 'ここにメッセージを入力してください…',
+        ausHeroDesc: `多様な文化、革新的な学習環境、そして美しい景観に囲まれたオーストラリアで、質の高い教育を体験してください。オーストラリアでの学びは、個人の成長、グローバルな経験、そしてキャリアの機会を育みます。`
     }
 }

@@ -1,13 +1,18 @@
-import React from "react";
+import  { useContext } from "react";
 import StudyHero from "../../HelperComponents/StudyHero/StudyHero";
+import { LanguageContext } from "../../../Context/Context";
+import { languageData } from "../../../Hooks/language";
 
 export default function AusHero() {
+
+  const { language} = useContext(LanguageContext);
+
   return (
     <div>
       <StudyHero
         bgImg="/Uploads/study/aus/aus.webp"
-        title="Australia 🇦🇺"
-        description="Experience top-quality education in Australia with diverse culture, innovative learning, and beautiful landscapes. Study in Australia fosters personal growth, global exposure, and career opportunities."
+        title={`${language === 'en' ? languageData.en.australia : languageData.jp.australia} 🇦🇺`}
+        description={language === 'en' ? languageData.en.ausHeroDesc : languageData.jp.ausHeroDesc}
         img="/Uploads/home/hero.avif"
         video="/Uploads/home/hero.mp4"
       />

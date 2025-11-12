@@ -1,4 +1,3 @@
-import React from "react";
 import AusHero from "./AusHero";
 import AusRequirement from "./AusRequirement";
 import AusWhy from "./AusWhy";
