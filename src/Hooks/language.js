@@ -990,7 +990,19 @@ export const languageData = {
         ausCulturalPracticalPreparationContent1: "Understand Australia’s academic culture emphasizing research and independent learning.",
         ausCulturalPracticalPreparationContent2: "Learn about student work rights (up to 48 hours per fortnight during study sessions).",
         ausCulturalPracticalPreparationContent3: "Explore accommodation options—homestay, student housing, or private rentals.",
-        ausCulturalPracticalPreparationContent4: "Familiarize yourself with public transport, healthcare, and local emergency contacts."
+        ausCulturalPracticalPreparationContent4: "Familiarize yourself with public transport, healthcare, and local emergency contacts.",
+        whyChooseAustraliaTitle: 'Why Choose Australia',
+        whyChooseAustraliaDesc: 'Australia stands out as one of the best destinations for higher education and skilled careers — offering academic excellence, global exposure, and a high quality of life.',
+        ausWhyReasons1: "Globally recognized universities offering a wide range of academic programs.",
+        ausWhyReasons2: "High quality of education supported by advanced teaching and research facilities.",
+        ausWhyReasons3: "Welcoming multicultural society with students from all around the world.",
+        ausWhyReasons4: "Opportunity to work part-time while studying to gain international experience.",
+        ausWhyReasons5: "Strong post-study work rights and pathway to permanent residency.",
+        ausWhyReasons6: "Safe, clean, and friendly cities ranked among the best in the world for students.",
+        ausWhyReasons7: "Vibrant lifestyle with beautiful beaches, nature, and modern infrastructure.",
+        ausWhyReasons8: "Excellent healthcare system and support services for international students.",
+        ausWhyReasons9: "Scholarships and financial aid opportunities available for deserving students.",
+        ausWhyReasons10: "Strong economy and demand for skilled professionals across multiple industries."
     },
     // japanese language list
     jp: {
@@ -1853,6 +1865,18 @@ export const languageData = {
         ausCulturalPracticalPreparationContent1: "オーストラリアの学問文化を理解し、研究や自主的な学習を重視する姿勢を身につけましょう。",
         ausCulturalPracticalPreparationContent2: "学期中は2週間で最大48時間まで働くことができる学生の労働権について学びましょう。",
         ausCulturalPracticalPreparationContent3: "ホームステイ、学生寮、または民間賃貸などの宿泊オプションを調べましょう。",
-        ausCulturalPracticalPreparationContent4: "公共交通機関、医療サービス、そして地域の緊急連絡先について理解を深めましょう。"
+        ausCulturalPracticalPreparationContent4: "公共交通機関、医療サービス、そして地域の緊急連絡先について理解を深めましょう。",
+        whyChooseAustraliaTitle: 'なぜオーストラリアを選ぶのか',
+        whyChooseAustraliaDesc: 'オーストラリアは、優れた学問、国際的な経験、質の高い生活を提供しており、高等教育と熟練したキャリアを築くのに最適な目的地の一つとして際立っています。',
+        ausWhyReasons1: "幅広い学術プログラムを提供する、世界的に認知された大学が多数あります。",
+        ausWhyReasons2: "先進的な教育および研究施設に支えられた高品質な教育を受けることができます。",
+        ausWhyReasons3: "世界中から学生が集まる、多文化で歓迎的な社会です。",
+        ausWhyReasons4: "留学中に国際的な経験を積むためのパートタイム就労の機会があります。",
+        ausWhyReasons5: "卒業後の就労権が充実しており、永住権取得への道も開かれています。",
+        ausWhyReasons6: "安全で清潔、そして学生にとって世界でも有数に住みやすい都市があります。",
+        ausWhyReasons7: "美しいビーチや自然、現代的なインフラに囲まれた活気あるライフスタイルを楽しめます。",
+        ausWhyReasons8: "国際学生向けの優れた医療制度とサポートサービスがあります。",
+        ausWhyReasons9: "優秀な学生のための奨学金や経済支援の機会が豊富です。",
+        ausWhyReasons10: "強固な経済基盤と、多くの産業での熟練した専門職の需要があります。"
     }
 }
